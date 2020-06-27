@@ -23,7 +23,7 @@ endmusic=0;
 //often repeating the same init because copy-pasta
 over=false;
 allfiring = false;
-flank=0; 
+flank=0;
 obranadone=0;
 cheat2=false; 
 desertion=0;

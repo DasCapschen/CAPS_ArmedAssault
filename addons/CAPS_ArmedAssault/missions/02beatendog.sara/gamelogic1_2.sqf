@@ -11,4 +11,4 @@ sleep 15;
 
 [west,"HQ"] sideRadio "02r09"; 
 echo1 sideRadio "02r10"; 
-flank=1;
+flank = 1;

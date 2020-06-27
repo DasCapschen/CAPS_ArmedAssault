@@ -1,0 +1,52 @@
+_preload = [] spawn {@preloadCamera position t6 and 2 preloadobject t6}
+~3
+_camera = "camera" camCreate [8388.39,4348.80,0.74] 
+_camera cameraEffect ["internal","back"]
+
+titleCut ["","BLACK IN", 2]
+
+
+
+enableRadio false
+setaccTime 0.2
+
+;=== 15:43:18
+_camera camSetTarget t6
+_camera camSetRelPos [0.12,37.71,3.23]
+_camera camSetFOV 0.703
+_camera camCommit 0
+@camCommitted _camera
+
+;? (isKeyActive "M02") or (("iskeyactive _x" count ["M01","M02","M03","M04","M05","M06","M07","M08","M09","M10","M11","M12","M13","M14","M15"]) >= 12) : goto "Sem"
+;cutRsc ["UnlockMission", "PLAIN"]
+;playSound "fanfare"
+;#Sem
+;activateKey "M02"
+
+;? (isKeyActive "K01") or (("isKeyActive _x" count ["M01","M02","M03","M04","M05","M06","M07","M08","M09","M10","M11","M12","M13","M14","M15"]) != 15) : goto "tam"
+;activateKey "K01"
+;cutRsc ["UnlockCampaign", "PLAIN"]
+;playSound "fanfare"
+;#tam
+
+
+;=== 15:44:23
+_camera camSetTarget t6
+_camera camSetRelPos [-18.98,32.83,3.27]
+_camera camSetFOV 0.094
+_camera camCommit 1
+@camCommitted _camera
+
+~0.2
+titleCut ["","BLACK OUT", 0.6]
+
+@camCommitted _camera
+terminate _preload
+~0.6
+
+setaccTime 1
+
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+end=true

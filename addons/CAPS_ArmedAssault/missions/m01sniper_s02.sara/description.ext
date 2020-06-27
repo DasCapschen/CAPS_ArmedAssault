@@ -1,0 +1,43 @@
+minScore=999;
+avgScore=2800;
+maxScore=7399;
+
+onLoadName = $STR_M01_NAME;
+onLoadMission = $STR_M01_OnLoad;
+
+briefingName = $STR_M01_NAME;
+overviewText = "There is a convoy full of soldiers heading to enemy positions from reinforcement base. Your task is to hide in the bushes or anywhere and when convoy passes by, shoot down all you can.";
+overviewPicture = "\CAPS_ArmedAssault\pictures\m01s02.paa";
+
+class CfgDebriefing
+{  
+	class End1
+	{
+		title = "Mission Completed";
+		subtitle = "";
+		description = "Good job, soldier! The enemy reinforcements were destroyed. The enemy will definitely miss those soldiers.";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+	};
+
+	class End2
+	{
+		title = "Mission Failed";
+		subtitle = "";
+		description = "Soldier, you failed your mission! The enemy reinforcements reached their destination.";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+	};
+
+	class End3
+	{
+		title = "Mission Failed";
+		subtitle = "";
+		description = "You failed.";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+	};
+};

@@ -1,0 +1,183 @@
+minScore=200;
+avgScore=2500;
+maxScore=6000;
+
+onLoadMission=$STRD_M03_OnLoad;
+
+
+// Control types
+#define CT_STATIC           0
+#define CT_BUTTON           1
+#define CT_EDIT             2
+#define CT_SLIDER           3
+#define CT_COMBO            4
+#define CT_LISTBOX          5
+#define CT_TOOLBOX          6
+#define CT_CHECKBOXES       7
+#define CT_PROGRESS         8
+#define CT_HTML             9
+#define CT_STATIC_SKEW      10
+#define CT_ACTIVETEXT       11
+#define CT_TREE             12
+#define CT_STRUCTURED_TEXT  13
+#define CT_CONTEXT_MENU     14
+#define CT_CONTROLS_GROUP   15
+#define CT_XKEYDESC         40
+#define CT_XBUTTON          41
+#define CT_XLISTBOX         42
+#define CT_XSLIDER          43
+#define CT_XCOMBO           44
+#define CT_ANIMATED_TEXTURE 45
+#define CT_OBJECT           80
+#define CT_OBJECT_ZOOM      81
+#define CT_OBJECT_CONTAINER 82
+#define CT_OBJECT_CONT_ANIM 83
+#define CT_LINEBREAK        98
+#define CT_USER             99
+#define CT_MAP              100
+#define CT_MAP_MAIN         101
+
+
+// Static styles
+#define ST_POS            0x0F
+#define ST_HPOS           0x03
+#define ST_VPOS           0x0C
+#define ST_LEFT           0x00
+#define ST_RIGHT          0x01
+#define ST_CENTER         0x02
+#define ST_DOWN           0x04
+#define ST_UP             0x08
+#define ST_VCENTER        0x0c
+
+#define ST_TYPE           0xF0
+#define ST_SINGLE         0
+#define ST_MULTI          16
+#define ST_TITLE_BAR      32
+#define ST_PICTURE        48
+#define ST_FRAME          64
+#define ST_BACKGROUND     80
+#define ST_GROUP_BOX      96
+#define ST_GROUP_BOX2     112
+#define ST_HUD_BACKGROUND 128
+#define ST_TILE_PICTURE   144
+#define ST_WITH_RECT      160
+#define ST_LINE           176
+
+
+class CfgSounds
+{
+	sounds[] = {};
+};
+class CfgRadio
+{
+	sounds[] = {};
+
+class M03r01
+	{
+		name = "";
+		sound[] = {"M03r01.ogg", db+20, 1.0};
+		title = $STR_M03r01;
+	};
+
+class M03r02
+	{
+		name = "";
+		sound[] = {"M03r02.ogg", db+20, 1.0};
+		title = $STR_M03r02;
+	};
+
+class M03r03
+	{
+		name = "";
+		sound[] = {"M03r03.ogg", db+20, 1.0};
+		title = $STR_M03r03;
+	};
+
+class M03r04
+	{
+		name = "";
+		sound[] = {"M03r04.ogg", db+20, 1.0};
+		title = $STR_M03r04;
+	};
+
+class M03r05
+	{
+		name = "";
+		sound[] = {"M03r05.ogg", db+20, 1.0};
+		title = $STR_M03r05;
+	};
+
+class M03r06
+	{
+		name = "";
+		sound[] = {"M03r06.ogg", db+20, 1.0};
+		title = $STR_M03r06;
+	};
+
+class M03r07
+	{
+		name = "";
+		sound[] = {"M03r07.ogg", db+20, 1.0};
+		title = $STR_M03r07;
+	};
+
+class M03r08
+	{
+		name = "";
+		sound[] = {"M03r08.ogg", db+20, 1.0};
+		title = $STR_M03r08;
+	};
+
+class M03r09
+	{
+		name = "";
+		sound[] = {"03rM09.ogg", db+20, 1.0};
+		title = $STR_M03r09;
+	};
+class UNIV_r09
+	{
+		name = "";
+		sound[] = {"UNIV_R09.ogg", db+20, 1.0};
+		title = $STR_UNIV_R09;
+	};
+
+};
+class CfgSFX
+{
+	sounds[] = {};
+};
+class CfgEnvSounds
+{
+	sounds[] = {};
+};
+class CfgMusic
+{
+	tracks[]= {};
+};
+
+class TimeWindow
+{
+  idd = 1000;
+	movingEnable = false;
+	onLoad = "_this exec ""Time.sqs""";
+	controls[] = {Text,Time};
+
+  class Text
+  {
+		idc = -1; type = 0;style = ST_CENTER;
+		colorText[]= {1,1,1,1};
+		font = BitStream;
+		SizeEx = 0.024;
+		colorBackground[]= {0,0,0,0};
+    x = 0.0; y = 0.05;
+    w = 1.0; h = 0.04;
+    text = "$STR_M02n02";
+  };
+  class Time : Text
+  {
+    idc = 2000;
+    y = 0.08; h = 0.04;
+    sizeEx = 0.024;
+    text = 0.09;
+  };
+};

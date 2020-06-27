@@ -1,0 +1,455 @@
+onLoadName = $STRC_CX01;
+onLoadMission = $STRC_CX01;
+// onLoadIntro=$;
+
+onLoadIntroTime = false;
+onLoadMissionTime = true;
+
+briefingName = $STRC_CX01;
+overviewText = "AAN TV";
+overviewPicture = "\CAPS_ArmedAssault\pictures\aan.paa";
+
+class RscTitles
+{
+
+    class BlackFade
+    {
+        idd = -1;
+        movingEnable = false;
+        duration = 10000;
+        fadein = 0;
+        fadeout = 0;
+        name = "TV";
+        controls[] =   {blackSolid};
+        class blackSolid
+        {
+            x = -1;
+            y = 0;
+            w = 3;
+            h = 1;
+            type = 0;
+            idc = -1;
+            style = 48;
+            colorBackground[] = {0, 0, 0, 0};
+            colorText[] = {1, 1, 1, 1};
+            font = BitStream;
+            sizeEx = 0;
+            lineSpacing = 0;
+            text = "#(argb,8,8,3)color(0,0,0,1)";
+        };
+    };
+    
+    class TVoverlay
+    {
+        idd = -1;
+        movingEnable = false;
+        duration = 10000;
+        fadein = 0;
+        fadeout = 0;
+        name = "TV";
+        controls[] =   {black1, black2,TVDay,AANCorner};
+        class black1
+        {
+            x = -1.5;
+            y = -0.1;
+            w = 1.5;
+            h = 1.2;
+            type = 0;
+            idc = -1;
+            style = 48;
+            colorBackground[] = {0, 0, 0, 0};
+            colorText[] = {1, 1, 1, 1};
+            font = BitStream;
+            sizeEx = 0;
+            lineSpacing = 0;
+            text = "#(argb,8,8,3)color(0,0,0,1)";
+        };
+        class black2
+        {
+            x = 1;
+            y = -0.1;
+            w = 1.5;
+            h = 1.2;
+            type = 0;
+            idc = -1;
+            style = 48;
+            colorBackground[] = {0, 0, 0, 0};
+            colorText[] = {1, 1, 1, 1};
+            font = BitStream;
+            sizeEx = 0;
+            lineSpacing = 0;
+            text = "#(argb,8,8,3)color(0,0,0,1)";
+        };
+        class TVDay
+        {
+            x = -0.2;
+            y = -0.12;
+            w = 1.4;
+            h = 1.2;
+            type = 0;
+            idc = -1;
+            style = 48;
+            colorBackground[] = {0, 0, 0, 0};
+            colorText[] = {1, 1, 1, 1};
+            font = BitStream;
+            sizeEx = 0;
+            lineSpacing = 0;
+            text = "tv_screen_ca.paa";
+        };
+        class AANCorner
+            {
+                x = 0.78;
+                y = 0.84;
+                w = 0.16;
+                h = 0.11;
+                type = 0;
+                idc = -1;
+                style = 48;
+                colorBackground[] = {0, 0, 0, 0};
+                colorText[] = {1, 1, 1, 1};
+                font = BitStream;
+                sizeEx = 0;
+                lineSpacing = 0;
+                text = "logo_tv_small_ca.paa";
+            };
+    };
+    class TVoverlayFadeOut
+    {
+            idd = -1;
+            movingEnable = false;
+            duration = 10000;
+            fadein = 0;
+            fadeout = 5;
+            name = "TV";
+            controls[] =   {black1, black2,TVDay,AANCorner};
+        class black1
+        {
+            x = -1.5;
+            y = -0.1;
+            w = 1.5;
+            h = 1.2;
+            type = 0;
+            idc = -1;
+            style = 48;
+            colorBackground[] = {0, 0, 0, 0};
+            colorText[] = {1, 1, 1, 1};
+            font = BitStream;
+            sizeEx = 0;
+            lineSpacing = 0;
+            text = "#(argb,8,8,3)color(0,0,0,1)";
+        };	
+        class black2
+        {
+            x = 1;
+            y = -0.1;
+            w = 1.5;
+            h = 1.2;
+            type = 0;
+            idc = -1;
+            style = 48;
+            colorBackground[] = {0, 0, 0, 0};
+            colorText[] = {1, 1, 1, 1};
+            font = BitStream;
+            sizeEx = 0;
+            lineSpacing = 0;
+            text = "#(argb,8,8,3)color(0,0,0,1)";
+        };    	
+        class TVDay
+        {
+            x = -0.2;
+            y = -0.12;
+            w = 1.4;
+            h = 1.2;
+            type = 0;
+            idc = -1;
+            style = 48;
+            colorBackground[] = {0, 0, 0, 0};
+            colorText[] = {1, 1, 1, 1};
+            font = BitStream;
+            sizeEx = 0;
+            lineSpacing = 0;
+            text = "tv_screen_ca.paa";
+        };
+        class AANCorner
+        {
+            x = 0.78;
+            y = 0.84;
+            w = 0.16;
+            h = 0.11;
+            type = 0;
+            idc = -1;
+            style = 48;
+            colorBackground[] = {0, 0, 0, 0};
+            colorText[] = {1, 1, 1, 1};
+            font = BitStream;
+            sizeEx = 0;
+            lineSpacing = 0;
+            text = "logo_tv_small_ca.paa";
+        };
+    };
+    class TVoverlayBlack
+    {
+            idd = -1;
+            movingEnable = false;
+            duration = 10000;
+            fadein = 0;
+            fadeout = 0;
+            name = "TV";
+            controls[] =   {black1, TVDay,AANCorner};
+        class black1
+        {
+            x = -1.5;
+            y = -0.1;
+            w = 4;
+            h = 1.2;
+            type = 0;
+            idc = -1;
+            style = 48;
+            colorBackground[] = {0, 0, 0, 0};
+            colorText[] = {1, 1, 1, 1};
+            font = BitStream;
+            sizeEx = 0;
+            lineSpacing = 0;
+            text = "#(argb,8,8,3)color(0,0,0,1)";
+        };	
+        class TVDay
+        {
+            x = -0.2;
+            y = -0.12;
+            w = 1.4;
+            h = 1.2;
+            type = 0;
+            idc = -1;
+            style = 48;
+            colorBackground[] = {0, 0, 0, 0};
+            colorText[] = {1, 1, 1, 1};
+            font = BitStream;
+            sizeEx = 0;
+            lineSpacing = 0;
+            text = "tv_screen_ca.paa";
+        };
+        class AANCorner
+        {
+            x = 0.78;
+            y = 0.84;
+            w = 0.16;
+            h = 0.11;
+            type = 0;
+            idc = -1;
+            style = 48;
+            colorBackground[] = {0, 0, 0, 0};
+            colorText[] = {1, 1, 1, 1};
+            font = BitStream;
+            sizeEx = 0;
+            lineSpacing = 0;
+            text = "logo_tv_small_ca.paa";
+        };
+    };
+    class TVoverlayLogo
+    {
+            idd = -1;
+            movingEnable = false;
+            duration = 10000;
+            fadein = 0;
+            fadeout = 0;
+            name = "TV";
+            controls[] =   {AANbig,black1,black2,TVDay};
+        class black1
+        {
+            x = -1.5;
+            y = -0.1;
+            w = 1.5;
+            h = 1.2;
+            type = 0;
+            idc = -1;
+            style = 48;
+            colorBackground[] = {0, 0, 0, 0};
+            colorText[] = {1, 1, 1, 1};
+            font = BitStream;
+            sizeEx = 0;
+            lineSpacing = 0;
+            text = "#(argb,8,8,3)color(0,0,0,1)";
+        };	
+        class black2
+        {
+            x = 1;
+            y = -0.1;
+            w = 1.5;
+            h = 1.2;
+            type = 0;
+            idc = -1;
+            style = 48;
+            colorBackground[] = {0, 0, 0, 0};
+            colorText[] = {1, 1, 1, 1};
+            font = BitStream;
+            sizeEx = 0;
+            lineSpacing = 0;
+            text = "#(argb,8,8,3)color(0,0,0,1)";
+        };    		
+        class TVDay
+        {
+            x = -0.2;
+            y = -0.12;
+            w = 1.4;
+            h = 1.2;
+            type = 0;
+            idc = -1;
+            style = 48;
+            colorBackground[] = {0, 0, 0, 0};
+            colorText[] = {1, 1, 1, 1};
+            font = BitStream;
+            sizeEx = 0;
+            lineSpacing = 0;
+            text = "tv_screen_ca.paa";
+        };
+        class AANbig
+        {
+            x = -0.25;
+            y = 0;
+            w = 1.5;
+            h = 1;
+            type = 0;
+            idc = -1;
+            style = 48;
+            colorBackground[] = {0, 0, 0, 0};
+            colorText[] = {1, 1, 1, 1};
+            font = BitStream;
+            sizeEx = 0;
+            lineSpacing = 0;
+            text = "tv_screen_aan_co.paa";
+        };
+    };
+    class overlayLogoAAN
+    {
+            idd = -1;
+            movingEnable = false;
+            duration = 10000;
+            fadein = 0;
+            fadeout = 0;
+            name = "TV";
+            controls[] =   {black1, black2,AANCorner};
+        class black1
+        {
+            x = -1.5;
+            y = -0.1;
+            w = 1.1;
+            h = 1.2;
+            type = 0;
+            idc = -1;
+            style = 48;
+            colorBackground[] = {0, 0, 0, 0};
+            colorText[] = {1, 1, 1, 1};
+            font = BitStream;
+            sizeEx = 0;
+            lineSpacing = 0;
+            text = "#(argb,8,8,3)color(0,0,0,1)";
+        };	
+        class black2
+        {
+            x = 1.4;
+            y = -0.1;
+            w = 1.1;
+            h = 1.2;
+            type = 0;
+            idc = -1;
+            style = 48;
+            colorBackground[] = {0, 0, 0, 0};
+            colorText[] = {1, 1, 1, 1};
+            font = BitStream;
+            sizeEx = 0;
+            lineSpacing = 0;
+            text = "#(argb,8,8,3)color(0,0,0,1)";
+        };    	
+        class AANCorner
+        {
+            x = 0.77;
+            y = 0.88;
+            w = 0.225;
+            h = 0.15;
+            type = 0;
+            idc = -1;
+            style = 48;
+            colorBackground[] = {0, 0, 0, 0};
+            colorText[] = {1, 1, 1, 1};
+            font = BitStream;
+            sizeEx = 0;
+            lineSpacing = 0;
+            text = "logo_tv_small_ca.paa";
+        };
+    };
+};
+
+class CfgSounds
+{
+    sounds[] = { };
+
+    class 01v01
+    {
+        name = "01v01";
+        sound[] = {"sound\01v01.ogg", db+12, 1.0};
+        titles[] = {0,$STRC_01v01};
+    };
+    class 01v02
+    {
+        name = "01v02";
+        sound[] = {"sound\01v02.ogg", db+12, 1.0};
+        titles[] = {0,$STRC_01v02};
+    };
+    class 01v03
+    {
+        name = "01v03";
+        sound[] = {"sound\01v03.ogg", db+12, 1.0};
+        titles[] = {0,$STRC_01v03};
+    };
+    class 01v04
+    {
+        name = "01v04";
+        sound[] = {"sound\01v04.ogg", db+12, 1.0};
+        titles[] = {0,$STRC_01v04};
+    };
+    class 01v05
+    {
+        name = "01v05";
+        sound[] = {"sound\01v05.ogg", db+12, 1.0};
+        titles[] = {0,$STRC_01v05};
+    };
+    class 01v06
+    {
+        name = "01v06";
+        sound[] = {"sound\01v06.ogg", db+12, 1.0};
+        titles[] = {0,$STRC_01v06};
+    };
+    class 01v07
+    {
+        name = "01v07";
+        sound[] = {"sound\01v07.ogg", db+12, 1.0};
+        //forceTitles=true;
+        titles[] = {0,$STRC_01v07};
+    };
+    class 01v08
+    {
+        name = "01v08";
+        sound[] = {"sound\01v08.ogg", db+12, 1.0};
+        //forceTitles=true;
+        titles[] = {0,$STRC_01v08};
+    };
+    class 01v09
+    {
+        name = "01v09";
+        sound[] = {"sound\01v09.ogg", db+12, 1.0};
+        //forceTitles=true;
+        titles[] = {0,$STRC_01v09};
+    };
+    class 01v10
+    {
+        name = "01v10";
+        sound[] = {"sound\01v10.ogg", db+12, 1.0};
+        titles[] = {0,$STRC_01v10};
+    };
+    class 01v11
+    {
+        name = "01v11";
+        sound[] = {"sound\01v11.ogg", db+12, 1.0};
+        titles[] = {0,$STRC_01v11};
+    };
+};

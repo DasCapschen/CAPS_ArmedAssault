@@ -1,0 +1,30 @@
+_grupy = units group aP + units group aS1
+_venku = []
+
+_i = 0;
+
+#ZPET
+
+? _i >= count _grupy : goto "ZAB"
+? (not ((_grupy select _i) in aUH)) and (not canStand (_grupy select _i)) : _venku = _venku + [_grupy select _i]
+~0.0001
+_i = _i+1;
+goto "ZPET"
+
+#ZAB
+~0.002
+? inside : exit
+
+_j = 0;
+#SEM
+? _j >= count _venku : goto "KONEC"
+? _venku select _j distance aUH < 50: goto "ZAB"
+
+[_venku select _j] join GrpNull
+_venku select _j setdamage 1
+~0.0001
+_j = _j+1
+goto "SEM"
+
+#KONEC
+exit

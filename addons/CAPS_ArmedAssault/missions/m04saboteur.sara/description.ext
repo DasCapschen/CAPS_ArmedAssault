@@ -1,0 +1,65 @@
+showGPS=1;
+
+//keys[]={"M01", "M02", "M03", "M04", "M05", "M06", "M07", "M08", "M09", "M10", "M11", "M12", "M13", "M14", "M15"};
+//keysLimit = 4;
+//doneKeys[]={"M07"};
+
+statsColumn=6;
+
+coefLoser=0;
+coefEnd1=3;
+coefEnd2=1;
+coefEnd3=0;
+coefEnd4=0;
+coefEnd5=0;
+coefEnd6=0;
+
+
+
+minScore=0;
+avgScore=1900;
+maxScore=4500;
+
+class Weapons
+{
+  class M24
+  {
+      count = 1;
+  };
+  class M16A2
+  {
+      count = 1;
+  };  
+  class Javelin
+  {
+      count = 1;
+  };    
+};
+
+class Magazines
+{
+  class 5rnd_762x51_M24
+  {
+      count = 10;
+  };
+  class 30rnd_556x45_stanag
+  {
+      count = 10;
+  };
+  class 30rnd_9x19_MP5SD
+  {
+      count = 10;
+  };
+  class PipeBomb
+  {
+      count = 5;
+  };
+  class TimeBomb
+  {
+      count = 5;
+  };   
+  class Javelin
+  {
+      count = 1;
+  };     
+};

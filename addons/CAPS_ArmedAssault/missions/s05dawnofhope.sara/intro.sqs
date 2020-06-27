@@ -1,0 +1,123 @@
+_camera = "camera" camCreate [9839.73,9951.39,1.47]
+_camera cameraEffect ["internal","back"]
+
+_preload = [] spawn {waitUntil{preloadCamera [9837.33,9943.37,1.61]}}
+
+cutText[localize "STR_LOADING", "BLACK FADED"]
+
+;=== 19:57:04
+_camera camSetTarget [9838.31,109936.60,139.68]
+_camera camSetPos [9837.33,9943.37,1.61]
+_camera camSetFOV 0.500
+_camera camCommit 0
+@camCommitted _camera
+
+@scriptDone _preload
+~1
+cutText ["","BLACK IN", 2]
+terminate _preload
+
+
+;goto "marianna"
+
+ed say "05v50"
+
+~4
+
+ed say "05v51"
+
+~4
+
+ed say "05v52"
+~1
+_preload = [] spawn {waitUntil{preloadCamera [10484.19,10731.64,1.86]}}
+
+~3
+
+ed say "05v53"
+
+~6
+
+ed say "05v54"
+
+~15
+
+
+#marianna
+
+marian playMove "ActsPercMstpSnonWnonDnon_MarianQ_shot5";
+
+dude playMove "ActsPercMstpSnonWnonDnon_MarianQ_shot5man";
+
+~2
+
+;=== 21:16:00
+_camera camSetTarget [75684.06,84914.98,-15634.68]
+_camera camSetPos [10484.57,10729.28,1.61]
+_camera camSetFOV 0.514
+_camera camCommit 0
+@camCommitted _camera
+
+;=== 21:16:22
+_camera camSetTarget [44415.06,103482.16,-15635.14]
+_camera camSetPos [10485.81,10728.20,1.45]
+_camera camSetFOV 0.514
+_camera camCommit 40
+
+
+
+
+~2
+
+marian say "05v55"
+
+~5
+
+marian say "05v56"
+
+~24
+
+playSound "05v57"
+
+~18
+
+marian say "05v58"
+
+~15
+
+marian say "05v59"
+
+~15
+
+marian say "05v60"
+
+;=== 21:17:14
+_camera camSetTarget [44704.60,104273.67,-8786.57]
+_camera camSetPos [10485.56,10725.42,0.37]
+_camera camSetFOV 0.514
+_camera camCommit 1
+
+~4.5
+
+bouchni setdammage 1
+
+bomberman action ["TOUCHOFF", bomberman]
+
+~0.25
+
+titleCut ["","white out", 0.1]
+
+~5
+
+playSound "05v61"
+
+~5
+
+
+ending = true
+
+
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+exit

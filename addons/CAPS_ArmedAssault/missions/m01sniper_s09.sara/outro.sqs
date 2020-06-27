@@ -1,0 +1,32 @@
+_won = _this select 1
+
+_camera = "camera" camCreate [9578.59,3540.29,1.66]
+_camera cameraEffect ["internal","back"]
+
+;detail na hlavu
+_camera camSetTarget player
+_camera camSetRelPos [0.33,-0.23,1.51]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+;=== 15:16:15
+_camera camSetTarget player
+_camera camSetRelPos [6.30,-21.27,8.29]
+_camera camSetFOV 0.528
+_camera camCommit 10
+
+~4
+
+? _won : titleText [localize "STRC_CA_COMPLETED","PLAIN",0.5]; GLB_MSXX = 1
+? !_won : titleText [localize "STRC_CA_FALED","PLAIN",0.5]; GLB_MSXX = 0
+
+
+~4
+
+forceEnd
+
+@camCommitted _camera
+
+player cameraEffect ["terminate","back"]
+camDestroy _camera

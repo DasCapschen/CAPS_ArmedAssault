@@ -1,0 +1,130 @@
+_camera = "camera" camCreate [9839.73,9951.39,1.47]
+_camera cameraEffect ["internal","back"]
+_camera camCommand "inertia on"
+
+_preload = [] spawn {waitUntil{preloadCamera [9839.73,9951.39,1.47]}}
+
+titleText[localize "STR_LOADING", "PLAIN"]
+
+titleCut ["","black faded", 0]
+
+;=== 19:57:04
+_camera camSetTarget [-4099.56,-88825.38,7130.55]
+_camera camSetPos [9839.73,9951.39,1.47]
+_camera camSetFOV 0.208
+_camera camCommit 0
+@camCommitted _camera
+
+@scriptDone _preload
+titleText["", "PLAIN"]
+titleCut ["","black in", 2]
+~1
+terminate _preload
+
+ed say "06v50"
+
+~4
+
+_preload = [] spawn {waitUntil{preloadCamera [9839.73,9951.39,1.47]}}
+
+ed say "06v51"
+
+~4
+
+ed say "06v52"
+
+~4
+
+ed say "06v53"
+
+~4
+
+ed say "06v54"
+
+~4
+
+;Corp
+_camera camSetTarget [68718.59,-62404.48,34002.59]
+_camera camSetPos [7974.11,9388.57,1.65]
+_camera camSetFOV 0.324
+_camera camCommit 0
+@camCommitted _camera
+
+~1
+
+Corp say "06v55"
+
+~2
+
+Davies say "06v56"
+
+~2
+
+;DaviesMiddle
+_camera camSetTarget [56141.71,-73731.24,27771.03]
+_camera camSetPos [7974.11,9388.57,1.65]
+_camera camSetFOV 0.292
+_camera camCommit 2
+@camCommitted _camera
+
+~3
+
+Davies say "06v57"
+
+~4
+
+Davies say "06v58"
+
+tankGo = true
+
+~4
+
+Davies say "06v59"
+
+~2
+
+;DaviesClose
+_camera camSetTarget [55490.67,-73453.13,29659.64]
+_camera camSetPos [7973.99,9388.48,1.66]
+_camera camSetFOV 0.165
+_camera camCommit 2.5
+@camCommitted _camera
+
+~2
+
+Davies say "06v60"
+
+~1
+
+playSound "06v61"
+
+~1
+
+;Pan1
+_camera camSetTarget [-59658.68,-64240.83,-2127.55]
+_camera camSetPos [7973.99,9388.48,1.66]
+_camera camSetFOV 0.241
+_camera camCommit 1.5
+@camCommitted _camera
+
+~0.5
+
+;Pam2
+_camera camSetTarget [-89826.66,-11359.65,-2127.58]
+_camera camSetPos [7973.99,9388.48,1.66]
+_camera camSetFOV 0.447
+_camera camCommit 4
+@camCommitted _camera
+
+~2
+
+titleCut ["","black out", 2]
+
+~2
+
+
+ending = true
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+exit

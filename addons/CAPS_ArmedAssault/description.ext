@@ -1,0 +1,544 @@
+class Campaign
+{
+	//stringtable does not work here (why?)
+	//name = $STRC_CA_NAME;
+	//briefingName = $STRC_CA_NAME;
+	briefingName = "Armed Assault";
+	author = "Bohemia Interactive (ported by DasCapschen)";
+	firstBattle = Beginning;
+    overviewPicture = "\CAPS_ArmedAssault\pictures\arma1.paa";
+    overviewText = "The 'Armed Assault' Campaign from ArmA 1 ported to ArmA 3";
+
+    
+    class MissionDefault
+    {
+        endDefault = ; // valid
+        cutscene = ;
+        lives = -1;
+    };
+
+	class Beginning
+	{
+		name = "Beginning";
+		cutscene = ;
+		firstMission = x01Intro;
+		endDefault = ;
+
+		class x01Intro: MissionDefault
+		{
+			end1 = 01Transport;
+			end2 = 01Transport;
+			end3 = 01Transport;
+			end4 = 01Transport;
+			end5 = 01Transport;
+			end6 = 01Transport;
+			lost = 01Transport;
+			template = x01Intro.Sara;
+		};
+		
+		class 01Transport: MissionDefault
+		{
+			end1 = x02BreakingNews;
+			end2 = x02BreakingNews;
+			end3 = x02BreakingNews;
+			end4 = x02BreakingNews;
+			end5 = x02BreakingNews;
+			end6 = x02BreakingNews;
+			lost = 01Transport;
+			template = 01Transport.Sara;
+		};
+		class x02BreakingNews: MissionDefault
+		{
+			end1 = S02BeatenDog;
+			end2 = S02BeatenDog;
+			end3 = S02BeatenDog;
+			end4 = S02BeatenDog;
+			end5 = S02BeatenDog;
+			end6 = S02BeatenDog;
+			lost = S02BeatenDog;
+			template = x02BreakingNews.Sara;
+		};		
+		
+		class S02BeatenDog: MissionDefault
+		{
+			end1 = M01Sniper_S02;
+			end2 = M13Directhit_S02;
+			end3 = 02BeatenDog;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = S02BeatenDog;
+			template = S02BeatenDog.Sara;
+		};
+		class M01Sniper_S02: MissionDefault
+		{
+			end1 = S02BeatenDog;
+			end2 = S02BeatenDog;
+			end3 = S02BeatenDog;
+			end4 = S02BeatenDog;
+			end5 = S02BeatenDog;
+			end6 = S02BeatenDog;
+			lost = S02BeatenDog;
+			template = M01Sniper_S02.Sara;
+		};
+		class M13DirectHit_S02: MissionDefault
+		{
+			end1 = S02BeatenDog;
+			end2 = S02BeatenDog;
+			end3 = S02BeatenDog;
+			end4 = S02BeatenDog;
+			end5 = S02BeatenDog;
+			end6 = S02BeatenDog;
+			lost = S02BeatenDog;
+			template = M13DirectHit_S02.Sara;
+		};
+		class 02BeatenDog: MissionDefault
+		{
+			end1 = x03Interview;
+			end2 = x03Interview;
+			end3 = x03Interview;
+			end4 = x03Interview;
+			end5 = x03Interview;
+			end6 = x03Interview;
+			lost = 02BeatenDog;
+			template = 02BeatenDog.Sara;
+		};
+		
+		class x03Interview: MissionDefault
+		{
+			end1 = S03Dolores;
+			end2 = S03Dolores;
+			end3 = S03Dolores;
+			end4 = S03Dolores;
+			end5 = S03Dolores;
+			end6 = S03Dolores;
+			lost = S03Dolores;
+			template = x03Interview.Sara;
+		};		
+
+		
+		class S03Dolores: MissionDefault
+		{
+			end1 = M08Unsurrounding_S03;
+			end2 = M14ConstructionConvoy_S03;
+			end3 = 03Dolores;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = S03Dolores;
+			template = S03Dolores.Sara;
+		};
+		class M08Unsurrounding_S03: MissionDefault
+		{
+			end1 = S03Dolores;
+			end2 = S03Dolores;
+			end3 = S03Dolores;
+			end4 = S03Dolores;
+			end5 = S03Dolores;
+			end6 = S03Dolores;
+			lost = S03Dolores;
+			template = M08Unsurrounding_S03.Sara;
+		};
+		class M14ConstructionConvoy_S03: MissionDefault
+		{
+			end1 = S03Dolores;
+			end2 = S03Dolores;
+			end3 = S03Dolores;
+			end4 = S03Dolores;
+			end5 = S03Dolores;
+			end6 = S03Dolores;
+			lost = S03Dolores;
+			template = M14ConstructionConvoy_S03.Sara;
+		};
+		class 03Dolores: MissionDefault
+		{
+			end1 = x04NightReport;
+			end2 = x04NightReport;
+			end3 = x04NightReport;
+			end4 = x04NightReport;
+			end5 = x04NightReport;
+			end6 = x04NightReport;
+			lost = 03Dolores;
+			template = 03Dolores.Sara;
+		};
+		
+		class x04NightReport: MissionDefault
+		{
+			end1 = S04BattleOfSomato;
+			end2 = S04BattleOfSomato;
+			end3 = S04BattleOfSomato;
+			end4 = S04BattleOfSomato;
+			end5 = S04BattleOfSomato;
+			end6 = S04BattleOfSomato;
+			lost = S04BattleOfSomato;
+			template = x04NightReport.Sara;
+		};	
+		
+		class S04BattleOfSomato: MissionDefault
+		{
+			end1 = M05SanitaryOperation_S04;
+			end2 = M01Sniper_S04;
+			end3 = 04BattleOfSomato;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = S04BattleOfSomato;
+			template = S04BattleOfSomato.Sara;
+		};
+		class M05SanitaryOperation_S04: MissionDefault
+		{
+			end1 = S04BattleOfSomato;
+			end2 = S04BattleOfSomato;
+			end3 = S04BattleOfSomato;
+			end4 = S04BattleOfSomato;
+			end5 = S04BattleOfSomato;
+			end6 = S04BattleOfSomato;
+			lost = S04BattleOfSomato;
+			template = M05SanitaryOperation_S04.Sara;
+		};
+		class M01Sniper_S04: MissionDefault
+		{
+			end1 = S04BattleOfSomato;
+			end2 = S04BattleOfSomato;
+			end3 = S04BattleOfSomato;
+			end4 = S04BattleOfSomato;
+			end5 = S04BattleOfSomato;
+			end6 = S04BattleOfSomato;
+			lost = S04BattleOfSomato;
+			template = M01Sniper_S04.Sara;
+		};
+		class 04BattleOfSomato: MissionDefault
+		{
+			end1 = x05WarReporter;
+			end2 = x05WarReporter;
+			end3 = x05WarReporter;
+			end4 = x05WarReporter;
+			end5 = x05WarReporter;
+			end6 = x05WarReporter;
+			lost = 04BattleOfSomato;
+			template = 04BattleOfSomato.Sara;
+		};
+		
+		class x05WarReporter: MissionDefault
+		{
+			end1 = S05DawnOfHope;
+			end2 = S05DawnOfHope;
+			end3 = S05DawnOfHope;
+			end4 = S05DawnOfHope;
+			end5 = S05DawnOfHope;
+			end6 = S05DawnOfHope;
+			lost = S05DawnOfHope;
+			template = x05WarReporter.Sara;
+		};	
+		class S05DawnOfHope: MissionDefault
+		{
+			end1 = M15AmmunitionDumps_S05;
+			end2 = M03DriverTransport_S05;
+			end3 = 05DawnOfHope;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = S05DawnOfHope;
+			template = S05DawnOfHope.Sara;
+		};
+		class M15AmmunitionDumps_S05: MissionDefault
+		{
+			end1 = S05DawnOfHope;
+			end2 = S05DawnOfHope;
+			end3 = S05DawnOfHope;
+			end4 = S05DawnOfHope;
+			end5 = S05DawnOfHope;
+			end6 = S05DawnOfHope;
+			lost = S05DawnOfHope;
+			template = M15AmmunitionDumps_S05.Sara;
+		};
+		class M03DriverTransport_S05: MissionDefault
+		{
+			end1 = S05DawnOfHope;
+			end2 = S05DawnOfHope;
+			end3 = S05DawnOfHope;
+			end4 = S05DawnOfHope;
+			end5 = S05DawnOfHope;
+			end6 = S05DawnOfHope;
+			lost = S05DawnOfHope;
+			template = M03DriverTransport_S05.Sara;
+		};		
+		class 05DawnOfHope: MissionDefault
+		{
+			end1 = x06ReadyForWar;
+			end2 = x06ReadyForWar;
+			end3 = x06ReadyForWar;
+			end4 = x06ReadyForWar;
+			end5 = x06ReadyForWar;
+			end6 = x06ReadyForWar;
+			lost = 05DawnOfHope;
+			template = 05DawnOfHope.Sara;
+		};
+		
+		class x06ReadyForWar: MissionDefault
+		{
+			end1 = S06Reclaiming;
+			end2 = S06Reclaiming;
+			end3 = S06Reclaiming;
+			end4 = S06Reclaiming;
+			end5 = S06Reclaiming;
+			end6 = S06Reclaiming;
+			lost = S06Reclaiming;
+			template = x06ReadyForWar.Sara;
+		};	
+		
+		class S06Reclaiming: MissionDefault
+		{
+			end1 = M09ConvoyAttack_S06;
+			end2 = M07ChopperAssault_S06;
+			end3 = 06Reclaiming;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = S06Reclaiming;
+			template = S06Reclaiming.Sara;
+		};
+		class M07ChopperAssault_S06: MissionDefault
+		{
+			end1 = S06Reclaiming;
+			end2 = S06Reclaiming;
+			end3 = S06Reclaiming;
+			end4 = S06Reclaiming;
+			end5 = S06Reclaiming;
+			end6 = S06Reclaiming;
+			lost = S06Reclaiming;
+			template = M07ChopperAssault_S06.Sara;
+		};
+		class M09ConvoyAttack_S06: MissionDefault
+		{
+			end1 = S06Reclaiming;
+			end2 = S06Reclaiming;
+			end3 = S06Reclaiming;
+			end4 = S06Reclaiming;
+			end5 = S06Reclaiming;
+			end6 = S06Reclaiming;
+			lost = S06Reclaiming;
+			template = M09ConvoyAttack_S06.Sara;
+		};
+		class 06Reclaiming: MissionDefault
+		{
+			end1 = x07Revelations;
+			end2 = x07Revelations;
+			end3 = x07Revelations;
+			end4 = x07Revelations;
+			end5 = x07Revelations;
+			end6 = x07Revelations;
+			lost = 06Reclaiming;
+			template = 06Reclaiming.Sara;
+		};
+		class x07Revelations: MissionDefault
+		{
+			end1 = S07IntoTheEnemyTerritory;
+			end2 = S07IntoTheEnemyTerritory;
+			end3 = S07IntoTheEnemyTerritory;
+			end4 = S07IntoTheEnemyTerritory;
+			end5 = S07IntoTheEnemyTerritory;
+			end6 = S07IntoTheEnemyTerritory;
+			lost = S07IntoTheEnemyTerritory;
+			template = x07Revelations.Sara;
+		};	
+
+		
+		class S07IntoTheEnemyTerritory: MissionDefault
+		{
+			end1 = M06ChopperTransport_S07;
+			end2 = M16BigBang_S07;
+			end3 = 07aIntoTheEnemyTerritory;
+			end4 = M16BigBang_b_S07;
+			end5 = ;
+			end6 = ;
+			lost = S07IntoTheEnemyTerritory;
+			template = S07IntoTheEnemyTerritory.Sara;
+		};
+
+		class M06ChopperTransport_S07: MissionDefault
+		{
+			end1 = S07IntoTheEnemyTerritory;
+			end2 = S07IntoTheEnemyTerritory;
+			end3 = S07IntoTheEnemyTerritory;
+			end4 = S07IntoTheEnemyTerritory;
+			end5 = S07IntoTheEnemyTerritory;
+			end6 = S07IntoTheEnemyTerritory;
+			lost = S07IntoTheEnemyTerritory;
+			template = M06ChopperTransport_S07.Sara;
+		};
+		class M16BigBang_S07: MissionDefault
+		{
+			end1 = S07IntoTheEnemyTerritory;
+			end2 = S07IntoTheEnemyTerritory;
+			end3 = S07IntoTheEnemyTerritory;
+			end4 = S07IntoTheEnemyTerritory;
+			end5 = S07IntoTheEnemyTerritory;
+			end6 = S07IntoTheEnemyTerritory;
+			lost = S07IntoTheEnemyTerritory;
+			template = M16BigBang_S07.Sara;
+		};
+		class M16BigBang_b_S07: MissionDefault
+		{
+			end1 = S07IntoTheEnemyTerritory;
+			end2 = S07IntoTheEnemyTerritory;
+			end3 = S07IntoTheEnemyTerritory;
+			end4 = S07IntoTheEnemyTerritory;
+			end5 = S07IntoTheEnemyTerritory;
+			end6 = S07IntoTheEnemyTerritory;
+			lost = S07IntoTheEnemyTerritory;
+			template = M16BigBang_b_S07.Sara;
+		};
+	
+				
+		class 07aIntoTheEnemyTerritory: MissionDefault
+		{
+			end1 = x08ShortNews;
+			end2 = x08ShortNews;
+			end3 = x08ShortNews;
+			end4 = x08ShortNews;
+			end5 = x08ShortNews;
+			end6 = x08ShortNews;
+			lost = 07aIntoTheEnemyTerritory;
+			template = 07aIntoTheEnemyTerritory.Sara;
+		};
+		
+		
+		class x08ShortNews: MissionDefault
+		{
+			end1 = S08Gryphons;
+			end2 = S08Gryphons;
+			end3 = S08Gryphons;
+			end4 = S08Gryphons;
+			end5 = S08Gryphons;
+			end6 = S08Gryphons;
+			lost = S08Gryphons;
+			template = x08ShortNews.Sara;
+		};		
+		
+		class S08Gryphons: MissionDefault
+		{
+			end1 = M04Saboteur_S08;
+			end2 = M10ArmoredFist_S08;
+			end3 = 08Gryphons;
+			end4 = M17TheCamp_S08;
+			end5 = ;
+			end6 = ;
+			lost = S08Gryphons;
+			template = S08Gryphons.Sara;
+		};
+		
+		class M04Saboteur_S08: MissionDefault
+		{
+			end1 = S08Gryphons;
+			end2 = S08Gryphons;
+			end3 = S08Gryphons;
+			end4 = S08Gryphons;
+			end5 = S08Gryphons;
+			end6 = S08Gryphons;
+			lost = S08Gryphons;
+			template = M04Saboteur_S08.Sara;
+		};
+		
+		class M10ArmoredFist_S08: MissionDefault
+		{
+			end1 = S08Gryphons;
+			end2 = S08Gryphons;
+			end3 = S08Gryphons;
+			end4 = S08Gryphons;
+			end5 = S08Gryphons;
+			end6 = S08Gryphons;
+			lost = S08Gryphons;
+			template = M10ArmoredFist_S08.Sara;
+		};
+		
+		class M17TheCamp_S08: MissionDefault
+		{
+			end1 = S08Gryphons;
+			end2 = S08Gryphons;
+			end3 = S08Gryphons;
+			end4 = S08Gryphons;
+			end5 = S08Gryphons;
+			end6 = S08Gryphons;
+			lost = S08Gryphons;
+			template = M17TheCamp_S08.Sara;
+		};
+
+		class 08Gryphons: MissionDefault
+		{
+			end1 = x09QuickUpdate;
+			end2 = 08Gryphons;
+			end3 = 08Gryphons;
+			end4 = 08Gryphons;
+			end5 = 08Gryphons;
+			end6 = 08Gryphons;
+			lost = 08Gryphons;
+			template = 08Gryphons.Sara;
+		};
+		
+		class x09QuickUpdate: MissionDefault
+		{
+			end1 = S09FinalCountdown;
+			end2 = S09FinalCountdown;
+			end3 = S09FinalCountdown;
+			end4 = S09FinalCountdown;
+			end5 = S09FinalCountdown;
+			end6 = S09FinalCountdown;
+			lost = S09FinalCountdown;
+			template = x09QuickUpdate.Sara;
+		};		
+		
+		
+		class S09FinalCountdown: MissionDefault
+		{
+			end1 = ;
+			end2 = ;
+			end3 = 09FinalCountdown;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = S09FinalCountdown;
+			template = S09FinalCountdown.Sara;
+		};
+		
+		class 09FinalCountdown: MissionDefault
+		{
+			end1 = 09Tsunami;
+			end2 = 09FinalCountdown;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = ;
+			template = 09FinalCountdown.Sara;
+		};
+
+		class 09Tsunami: MissionDefault
+		{
+			end1 = X10Outro;
+			end2 = X10Outro;
+			end3 = X10Outro;
+			end4 = X10Outro;
+			end5 = X10Outro;
+			end6 = X10Outro;
+			lost = 09FinalCountdown;
+			template = 09Tsunami.Sara;
+		};
+
+		class X10Outro: MissionDefault
+		{
+			end1 = ;
+			end2 = ;
+			end3 = ;
+			end4 = ;
+			end5 = ;
+			end6 = ;
+			lost = ;
+			template = x10Outro.Sara;
+		};
+	};
+};
+
+class Awards {};
+
+class Penalties {};

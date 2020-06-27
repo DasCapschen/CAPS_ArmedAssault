@@ -1,0 +1,13 @@
+//v1 setpos [ getPos v1 select 0, getPos v1 select 1,(getpos v1 select 2) -10];
+v2 setpos [ getPos v2 select 0, getPos v2 select 1,(getpos v2 select 2) -10];
+v3 setpos [ getPos v3 select 0, getPos v3 select 1,(getpos v3 select 2) -10];
+v4 setpos [ getPos v4 select 0, getPos v4 select 1,(getpos v4 select 2) -10];
+v5 setpos [ getPos v5 select 0, getPos v5 select 1,(getpos v5 select 2) -10];
+v6 setpos [ getPos v6 select 0, getPos v6 select 1,(getpos v6 select 2) -10];
+v7 setpos [ getPos v7 select 0, getPos v7 select 1,(getpos v7 select 2) -10];
+v8 setpos [ getPos v8 select 0, getPos v8 select 1,(getpos v8 select 2) -10];
+v9 setpos [ getPos v9 select 0, getPos v9 select 1,(getpos v9 select 2) -10];
+q10 setpos [(getpos q10 select 0)- 450, getPos q10 select 1, getPos q10 select 2];
+q11 setpos [(getpos q11 select 0)- 450, getPos q11 select 1, getPos q11 select 2];
+q12 setpos [(getpos q12 select 0)- 450, getPos q12 select 1, getPos q12 select 2];
+q13 setpos [(getpos q13 select 0)- 450, getPos q13 select 1, getPos q13 select 2];

@@ -1,0 +1,50 @@
+setDate [2002, 7, 19, 7, 00];
+0 setOvercast 0.22;
+0 setfog 0.00;
+camUseNVG false;
+
+camera = "camera" CamCreate getpos player
+camera CameraEffect ["Internal","Back"]
+titlecut ["","plain"]
+
+camera camSetTarget [(getpos chop select 0), (getpos chop select 1)+35, (getpos chop select 2)-20]
+camera camSetPos [(getpos chop select 0)-50, (getpos chop select 1), (getpos chop select 2)+10]
+camera camSetFOV 1
+camera camCommit 0
+@camCommitted camera
+
+#loop
+?glob_selectmission!=1:exit
+camera camSetTarget [(getpos chop select 0), (getpos chop select 1)+39, (getpos chop select 2)-20]
+camera camSetPos [(getpos chop select 0)-80 , (getpos chop select 1), (getpos chop select 2)+10]
+camera camSetFOV 1
+camera camCommit 15
+@camCommitted camera
+?glob_selectmission!=1:exit
+
+?glob_selectmission!=1:exit
+camera camSetTarget [(getpos chop select 0), (getpos chop select 1)+39, (getpos chop select 2)-20]
+camera camSetPos [(getpos chop select 0)-80 , (getpos chop select 1), (getpos chop select 2)+10]
+camera camSetFOV 1
+camera camCommit 3
+@camCommitted camera
+?glob_selectmission!=1:exit
+
+
+?glob_selectmission!=1:exit
+camera camSetTarget [(getpos chop select 0), (getpos chop select 1)+35, (getpos chop select 2)-20]
+camera camSetPos [(getpos chop select 0)-50, (getpos chop select 1), (getpos chop select 2)+10]
+camera camSetFOV 1
+camera camCommit 15
+@camCommitted camera
+?glob_selectmission!=1:exit
+
+?glob_selectmission!=1:exit
+camera camSetTarget [(getpos chop select 0), (getpos chop select 1)+35, (getpos chop select 2)-20]
+camera camSetPos [(getpos chop select 0)-50, (getpos chop select 1), (getpos chop select 2)+10]
+camera camSetFOV 1
+camera camCommit 3
+@camCommitted camera
+?glob_selectmission!=1:exit
+
+goto "loop"

@@ -1,0 +1,98 @@
+minScore=0;
+avgScore=1000;
+maxScore=6000;
+
+onLoadMission=$STRC_07nm;
+
+statsColumn=2;
+
+coefLoser=0;
+coefEnd1=3;
+coefEnd2=2;
+coefEnd3=0;
+coefEnd4=0;
+coefEnd5=0;
+coefEnd6=0;
+
+
+onLoadName = $STRC_CA_07a;
+briefingName = $STRC_CA_07a;
+overviewText = "Our first steps in the enemy territory. A base has been established in the city of Modesta, and we expect the SLA to launch a counter attack there soon.";
+overviewPicture = "\CAPS_ArmedAssault\pictures\c07.paa";
+
+
+class CfgRadio
+{
+	sounds[] = { };
+
+	class 07ar01
+	{
+		name = "";
+		sound[] = {"07ar01.ogg", db+20, 1.0};
+		title = $STRC_07ar01;
+	};
+
+	class 07ar02
+	{
+		name = "";
+		sound[] = {"07ar02.ogg", db+20, 1.0};
+		title = $STRC_07ar02;
+	};
+	class 07ar03
+	{
+		name = "";
+		sound[] = {"07ar03.ogg", db+20, 1.0};
+		title = $STRC_07ar03;
+	};
+	class 07ar04
+	{
+		name = "";
+		sound[] = {"07ar04.ogg", db+20, 1.0};
+		title = $STRC_07ar04;
+	};
+	class 07ar05
+	{
+		name = "";
+		sound[] = {"07ar05.ogg", db+20, 1.0};
+		title = $STRC_07ar05;
+	};
+	class 07ar06
+	{
+		name = "";
+		sound[] = {"07ar06.ogg", db+20, 1.0};
+		title = $STRC_07ar06;
+	};
+	class 07ar07
+	{
+		name = "";
+		sound[] = {"07ar07.ogg", db+20, 1.0};
+		title = $STRC_07ar07;
+	};
+	class 07ar08
+	{
+		name = "";
+		sound[] = {"07ar08.ogg", db+20, 1.0};
+		title = $STRC_07ar08;
+	};
+	class 07ar09
+	{
+		name = "";
+		sound[] = {"07ar09.ogg", db+20, 1.0};
+		title = $STRC_07ar09;
+	};
+	class 07ar10
+	{
+		name = "";
+		sound[] = {"07ar10.ogg", db+20, 1.0};
+		title = $STRC_07ar10;
+	};
+
+};
+class CfgSFX
+{
+	sounds[] = {};
+};
+class CfgEnvSounds
+{
+	sounds[] = {};
+};

@@ -1,0 +1,24 @@
+setDate [2002, 7, 11, 12, 20];
+0 setOvercast 0.30;
+0 setfog 0.1;
+camUseNVG false;
+
+camera = "camera" CamCreate getpos player
+camera CameraEffect ["Internal","Back"]
+titlecut ["","plain"]
+
+camera camSetTarget [(getpos truck select 0), (getpos truck select 1)+35, (getpos truck select 2)-25]
+camera camSetPos [(getpos truck select 0)-50, (getpos truck select 1), (getpos truck select 2)+15]
+camera camSetFOV 1
+camera camCommit 0
+@camCommitted camera
+
+#loop
+?glob_selectmission!=4:exit
+camera camSetTarget [(getpos truck select 0), (getpos truck select 1)+39, (getpos truck select 2)-25]
+camera camSetPos [(getpos truck select 0)-50, (getpos truck select 1), (getpos truck select 2)+15]
+camera camSetFOV 1
+camera camCommit 0
+@camCommitted camera
+?glob_selectmission!=4:exit
+goto "loop"

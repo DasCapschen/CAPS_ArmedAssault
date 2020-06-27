@@ -1,0 +1,557 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"CACharacters",
+		"caweapons",
+		"camisc",
+		"CABuildings",
+		"sara"
+	};
+	addOnsAuto[]=
+	{
+		"cacharacters",
+		"caweapons",
+		"camisc",
+		"CABuildings",
+		"sara"
+	};
+	randomSeed=13064707;
+	class Intel
+	{
+		briefingName="@STRC_CS02";
+		month=6;
+		day=11;
+	};
+	class Groups
+	{
+		items=2;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7960.177734,168.974991,7787.430176};
+					azimut=-347.080048;
+					id=0;
+					side="WEST";
+					vehicle="SoldierWB";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.600000;
+				};
+			};
+		};
+		class Item1
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12634.560547,45.756577,7649.546875};
+					azimut=41.037201;
+					id=36;
+					side="WEST";
+					vehicle="M2StaticMG";
+					leader=1;
+					skill=0.600000;
+					text="stat";
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=35;
+		class Item0
+		{
+			position[]={12607.580078,51.059013,7631.265137};
+			azimut=121.709137;
+			id=1;
+			side="EMPTY";
+			vehicle="FenceWood";
+			skill=0.200000;
+		};
+		class Item1
+		{
+			position[]={12609.651367,51.177170,7629.987305};
+			azimut=121.709137;
+			id=2;
+			side="EMPTY";
+			vehicle="FenceWood";
+			skill=0.200000;
+		};
+		class Item2
+		{
+			position[]={12611.686523,51.191376,7628.722656};
+			azimut=121.709137;
+			id=3;
+			side="EMPTY";
+			vehicle="FenceWood";
+			skill=0.200000;
+		};
+		class Item3
+		{
+			position[]={12612.520508,51.332802,7627.023926};
+			azimut=214.137878;
+			id=4;
+			side="EMPTY";
+			vehicle="FenceWood";
+			skill=0.200000;
+		};
+		class Item4
+		{
+			position[]={12611.146484,51.584648,7625.013184};
+			azimut=214.137878;
+			id=5;
+			side="EMPTY";
+			vehicle="FenceWood";
+			skill=0.200000;
+		};
+		class Item5
+		{
+			position[]={12609.810547,51.829121,7623.035156};
+			azimut=214.137878;
+			id=6;
+			side="EMPTY";
+			vehicle="FenceWood";
+			skill=0.200000;
+		};
+		class Item6
+		{
+			position[]={12607.279297,51.211422,7630.272949};
+			azimut=32.814068;
+			id=7;
+			side="EMPTY";
+			vehicle="M2StaticMG";
+			lock="UNLOCKED";
+			skill=0.723560;
+		};
+		class Item7
+		{
+			position[]={12609.603516,51.354336,7628.128418};
+			azimut=32.814068;
+			id=8;
+			side="EMPTY";
+			vehicle="M2StaticMG";
+			lock="UNLOCKED";
+			skill=0.891099;
+		};
+		class Item8
+		{
+			position[]={12635.889648,45.386490,7650.884277};
+			azimut=41.092438;
+			id=9;
+			side="EMPTY";
+			vehicle="Wire";
+			skill=0.600000;
+		};
+		class Item9
+		{
+			position[]={12625.678711,45.573769,7659.144531};
+			azimut=41.092438;
+			id=10;
+			side="EMPTY";
+			vehicle="Wire";
+			skill=0.600000;
+		};
+		class Item10
+		{
+			position[]={12644.077148,45.382675,7643.784180};
+			azimut=41.092438;
+			id=11;
+			side="EMPTY";
+			vehicle="Wire";
+			skill=0.600000;
+		};
+		class Item11
+		{
+			position[]={12623.213867,48.402493,7641.472168};
+			azimut=129.623810;
+			id=12;
+			side="EMPTY";
+			vehicle="FenceWood";
+			skill=0.200000;
+		};
+		class Item12
+		{
+			position[]={12625.083984,48.400433,7639.916016};
+			azimut=129.623810;
+			id=13;
+			side="EMPTY";
+			vehicle="FenceWood";
+			skill=0.200000;
+		};
+		class Item13
+		{
+			position[]={12626.925781,48.417530,7638.386719};
+			azimut=129.623810;
+			id=14;
+			side="EMPTY";
+			vehicle="FenceWood";
+			skill=0.200000;
+		};
+		class Item14
+		{
+			position[]={12628.726563,48.447357,7636.808105};
+			azimut=131.631332;
+			id=15;
+			side="EMPTY";
+			vehicle="FenceWood";
+			skill=0.200000;
+		};
+		class Item15
+		{
+			position[]={12630.549805,48.490234,7635.191895};
+			azimut=131.631332;
+			id=16;
+			side="EMPTY";
+			vehicle="FenceWood";
+			skill=0.200000;
+		};
+		class Item16
+		{
+			position[]={12632.333008,48.556870,7633.597656};
+			azimut=131.631332;
+			id=17;
+			side="EMPTY";
+			vehicle="FenceWood";
+			skill=0.200000;
+		};
+		class Item17
+		{
+			position[]={12612.250977,48.281242,7650.864746};
+			azimut=129.623810;
+			id=18;
+			side="EMPTY";
+			vehicle="FenceWood";
+			skill=0.200000;
+		};
+		class Item18
+		{
+			position[]={12614.128906,48.297611,7649.314941};
+			azimut=129.623810;
+			id=19;
+			side="EMPTY";
+			vehicle="FenceWood";
+			skill=0.200000;
+		};
+		class Item19
+		{
+			position[]={12615.963867,48.320152,7647.782715};
+			azimut=129.623810;
+			id=20;
+			side="EMPTY";
+			vehicle="FenceWood";
+			skill=0.200000;
+		};
+		class Item20
+		{
+			position[]={12617.765625,48.352676,7646.205078};
+			azimut=131.631332;
+			id=21;
+			side="EMPTY";
+			vehicle="FenceWood";
+			skill=0.200000;
+		};
+		class Item21
+		{
+			position[]={12621.368164,48.407455,7642.994629};
+			azimut=131.631332;
+			id=22;
+			side="EMPTY";
+			vehicle="FenceWood";
+			skill=0.200000;
+		};
+		class Item22
+		{
+			position[]={12645.057617,47.643906,7630.860352};
+			azimut=35.420410;
+			id=23;
+			side="EMPTY";
+			vehicle="Fortress1";
+			skill=0.600000;
+		};
+		class Item23
+		{
+			position[]={12651.476563,45.496185,7638.079590};
+			azimut=30.703905;
+			id=24;
+			side="EMPTY";
+			vehicle="Wire";
+			skill=0.600000;
+		};
+		class Item24
+		{
+			position[]={12660.808594,45.904594,7632.571777};
+			azimut=30.703867;
+			id=25;
+			side="EMPTY";
+			vehicle="Wire";
+			skill=0.600000;
+			init="flank=0";
+		};
+		class Item25
+		{
+			position[]={12618.599609,51.145645,7624.590332};
+			azimut=123.165619;
+			id=26;
+			side="EMPTY";
+			vehicle="FenceWood";
+			skill=0.200000;
+		};
+		class Item26
+		{
+			position[]={12620.635742,51.160049,7623.255371};
+			azimut=123.165619;
+			id=27;
+			side="EMPTY";
+			vehicle="FenceWood";
+			skill=0.200000;
+		};
+		class Item27
+		{
+			position[]={12622.639648,51.199047,7621.941406};
+			azimut=123.165619;
+			id=28;
+			side="EMPTY";
+			vehicle="FenceWood";
+			skill=0.200000;
+		};
+		class Item28
+		{
+			position[]={12626.636719,51.306023,7619.275391};
+			azimut=125.173141;
+			id=29;
+			side="EMPTY";
+			vehicle="FenceWood";
+			skill=0.200000;
+		};
+		class Item29
+		{
+			position[]={12628.631836,51.402775,7617.869629};
+			azimut=125.173141;
+			id=30;
+			side="EMPTY";
+			vehicle="FenceWood";
+			skill=0.200000;
+		};
+		class Item30
+		{
+			position[]={12630.581055,51.548283,7616.488281};
+			azimut=125.173141;
+			id=31;
+			side="EMPTY";
+			vehicle="FenceWood";
+			skill=0.200000;
+		};
+		class Item31
+		{
+			position[]={12616.602539,51.143253,7625.895996};
+			azimut=125.173141;
+			id=32;
+			side="EMPTY";
+			vehicle="FenceWood";
+			skill=0.200000;
+		};
+		class Item32
+		{
+			position[]={12635.158203,52.076408,7613.761719};
+			azimut=125.173141;
+			id=33;
+			side="EMPTY";
+			vehicle="FenceWood";
+			skill=0.200000;
+		};
+		class Item33
+		{
+			position[]={12637.142578,52.343342,7612.356934};
+			azimut=125.173141;
+			id=34;
+			side="EMPTY";
+			vehicle="FenceWood";
+			skill=0.200000;
+		};
+		class Item34
+		{
+			position[]={12639.100586,52.597061,7610.979492};
+			azimut=125.173141;
+			id=35;
+			side="EMPTY";
+			vehicle="FenceWood";
+			skill=0.200000;
+		};
+	};
+	class Sensors
+	{
+		items=7;
+		class Item0
+		{
+			position[]={7949.492676,168.974991,7754.160645};
+			a=0.000000;
+			b=0.000000;
+			timeoutMin=0.300000;
+			timeoutMid=0.300000;
+			timeoutMax=0.300000;
+			type="END1";
+			age="UNKNOWN";
+			text="Konec1";
+			expCond="end1";
+			expActiv="camera CameraEffect [""Terminate"",""Back""];  camDestroy camera";
+			class Effects
+			{
+			};
+		};
+		class Item1
+		{
+			position[]={7957.535156,168.974991,7754.573730};
+			a=0.000000;
+			b=0.000000;
+			timeoutMin=0.300000;
+			timeoutMid=0.300000;
+			timeoutMax=0.300000;
+			type="END2";
+			age="UNKNOWN";
+			text="Konec2";
+			expCond="end2";
+			expActiv="camera CameraEffect [""Terminate"",""Back""];  camDestroy camera";
+			class Effects
+			{
+			};
+		};
+		class Item2
+		{
+			position[]={7965.362305,168.974991,7754.575684};
+			a=0.000000;
+			b=0.000000;
+			timeoutMin=0.500000;
+			timeoutMid=0.500000;
+			timeoutMax=0.500000;
+			type="END3";
+			age="UNKNOWN";
+			text="Konec3";
+			expCond="end3";
+			expActiv="camera CameraEffect [""Terminate"",""Back""];  camDestroy camera";
+			class Effects
+			{
+			};
+		};
+		class Item3
+		{
+			position[]={7948.612305,168.974991,7746.474121};
+			a=0.000000;
+			b=0.000000;
+			timeoutMin=0.300000;
+			timeoutMid=0.300000;
+			timeoutMax=0.300000;
+			type="END4";
+			age="UNKNOWN";
+			text="Konec4";
+			expCond="end4";
+			expActiv="camera CameraEffect [""Terminate"",""Back""];  camDestroy camera";
+			class Effects
+			{
+			};
+		};
+		class Item4
+		{
+			position[]={7957.534180,168.974991,7747.158691};
+			a=0.000000;
+			b=0.000000;
+			timeoutMin=0.300000;
+			timeoutMid=0.300000;
+			timeoutMax=0.300000;
+			type="END5";
+			age="UNKNOWN";
+			text="Konec5";
+			expCond="end5";
+			expActiv="camera CameraEffect [""Terminate"",""Back""];  camDestroy camera";
+			class Effects
+			{
+			};
+		};
+		class Item5
+		{
+			position[]={7965.362305,168.974991,7747.157715};
+			a=0.000000;
+			b=0.000000;
+			timeoutMin=0.300000;
+			timeoutMid=0.300000;
+			timeoutMax=0.300000;
+			type="END6";
+			age="UNKNOWN";
+			text="Konec6";
+			expCond="end6";
+			expActiv="camera CameraEffect [""Terminate"",""Back""];  camDestroy camera";
+			class Effects
+			{
+			};
+		};
+		class Item6
+		{
+			position[]={7898.542969,168.974991,7752.550781};
+			a=30.000000;
+			b=30.000000;
+			rectangular=1;
+			age="UNKNOWN";
+			text="sfxback";
+			expCond="true";
+			expActiv="0 fadeMusic 0.3; enableEnvironment false";
+			class Effects
+			{
+				track="ATrack8";
+			};
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"sara"
+	};
+	addOnsAuto[]=
+	{
+		"sara"
+	};
+	randomSeed=11405315;
+	class Intel
+	{
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"sara"
+	};
+	addOnsAuto[]=
+	{
+		"sara"
+	};
+	randomSeed=7386115;
+	class Intel
+	{
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"sara"
+	};
+	addOnsAuto[]=
+	{
+		"sara"
+	};
+	randomSeed=12902915;
+	class Intel
+	{
+	};
+};

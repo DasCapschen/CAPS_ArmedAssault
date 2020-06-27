@@ -1,0 +1,92 @@
+_camera = "camera" camCreate [8849.12,7800.76,1.67]
+_camera cameraEffect ["internal","back"]
+
+_preload = [] spawn {waitUntil{preloadCamera [9837.33,9943.37,1.61]}}
+
+cutText[localize "STR_LOADING", "BLACK FADED"]
+
+
+;=== 18:09:38
+_camera camSetTarget [9838.31,109936.60,139.68]
+_camera camSetPos [9837.33,9943.37,1.61]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+@scriptDone _preload
+terminate _preload
+
+~2
+
+cutText ["","BLACK IN", 2]
+
+reporter say "04v01"
+
+~7
+
+reporter say "04v02"
+
+~7
+
+reporter say "04v03"
+
+_preload = [] spawn {waitUntil{preloadCamera [8849.03,7803.88,1.78]}}
+
+~10
+
+reporter say "04v04"
+
+~3
+~4
+
+ed playMove "ActsPercMstpSnonWnonDnon_MarianQ_shot4";
+col playMove "ActsPercMstpSnonWnonDnon_MarianQ_shot4man";
+~1
+
+skiptime 9.5
+
+
+;=== 18:37:33
+_camera camSetTarget [1982.56,-91821.55,-5083.98]
+_camera camSetPos [8849.03,7803.88,1.78]
+_camera camSetFOV 0.20
+_camera camCommit 0
+@camCommitted _camera
+
+
+col say "04v05"
+
+~5
+
+corp say "04v06"
+
+comein = true
+
+~1
+
+ed say "04v07"
+
+~4
+
+ed say "04v08"
+
+~7
+ed say "04v09"
+
+~7
+ed say "04v10"
+
+~7
+
+ed say "04v11"
+
+~15
+
+titleCut ["","black out", 2]
+
+~2
+
+ending = true
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+exit

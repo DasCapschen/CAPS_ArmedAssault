@@ -1,0 +1,561 @@
+onLoadName = $STRC_CX07;
+onLoadMission = $STRC_CX07;
+// onLoadIntro=$;
+
+onLoadIntroTime = false;
+onLoadMissionTime = true;
+
+briefingName = $STRC_CX07;
+overviewText = "AAN TV";
+overviewPicture = "\CAPS_ArmedAssault\pictures\aan.paa";
+
+class RscTitles
+{
+	class overlayBlack
+	{
+	    	idd = -1;
+	    	movingEnable = false;
+	    	duration = 10000;
+	    	fadein = 0;
+	    	fadeout = 0;
+	    	name = "TV";
+	    	controls[] =   {black1};
+		class black1
+		{
+			x = -1.5;
+			y = -0.1;
+			w = 4;
+			h = 1.2;
+			type = 0;
+			idc = -1;
+			style = 48;
+			colorBackground[] = {0, 0, 0, 0};
+			colorText[] = {1, 1, 1, 1};
+			font = BitStream;
+			sizeEx = 0;
+			lineSpacing = 0;
+			
+			text = "#(argb,8,8,3)color(0,0,0,1)";
+		};	
+	};	
+	class overlayNews
+	{
+	    	idd = -1;
+	    	movingEnable = false;
+	    	duration = 10000;
+	    	fadein = 0;
+	    	fadeout = 0;
+	    	name = "TV";
+	    	controls[] =   {black1,AANbig2};
+		class black1
+		{
+			x = -1.5;
+			y = -0.1;
+			w = 4;
+			h = 1.2;
+			type = 0;
+			idc = -1;
+			style = 48;
+			colorBackground[] = {0, 0, 0, 0};
+			colorText[] = {1, 1, 1, 1};
+			font = BitStream;
+			sizeEx = 0;
+			lineSpacing = 0;
+			
+			text = "#(argb,8,8,3)color(0,0,0,1)";
+		};	
+		class AANbig2
+		  {
+			   x = -0.25;
+			   y = 0;
+			   w = 1.5;
+			   h = 1;
+			   type = 0;
+			   idc = -1;
+			   style = 48;
+			   colorBackground[] = {0, 0, 0, 0};
+			   colorText[] = {1, 1, 1, 1};
+			   font = BitStream;
+			   sizeEx = 0;
+			   lineSpacing = 0;
+			   
+			   text = "tv_screen_aan_co.paa";
+		  };
+	};
+	class overlayLogoAAN
+	{
+	    	idd = -1;
+	    	movingEnable = false;
+	    	duration = 10000;
+	    	fadein = 0;
+	    	fadeout = 0;
+	    	name = "TV";
+	    	controls[] =   {black1, black2,AANCorner};
+		class black1
+		{
+			x = -1.5;
+			y = -0.1;
+			w = 1.1;
+			h = 1.2;
+			type = 0;
+			idc = -1;
+			style = 48;
+			colorBackground[] = {0, 0, 0, 0};
+			colorText[] = {1, 1, 1, 1};
+			font = BitStream;
+			sizeEx = 0;
+			lineSpacing = 0;
+			
+			text = "#(argb,8,8,3)color(0,0,0,1)";
+		};	
+		class black2
+		{
+			x = 1.4;
+			y = -0.1;
+			w = 1.1;
+			h = 1.2;
+			type = 0;
+			idc = -1;
+			style = 48;
+			colorBackground[] = {0, 0, 0, 0};
+			colorText[] = {1, 1, 1, 1};
+			font = BitStream;
+			sizeEx = 0;
+			lineSpacing = 0;
+			
+			text = "#(argb,8,8,3)color(0,0,0,1)";
+		};    	
+		class AANCorner
+		  {
+			   x = 0.77;
+			   y = 0.88;
+			   w = 0.225;
+			   h = 0.15;
+			   type = 0;
+			   idc = -1;
+			   style = 48;
+			   colorBackground[] = {0, 0, 0, 0};
+			   colorText[] = {1, 1, 1, 1};
+			   font = BitStream;
+			   sizeEx = 0;
+			   lineSpacing = 0;
+			   
+			   text = "logo_tv_small_ca.paa";
+		  };
+	};
+};
+
+class CfgSounds
+{
+	sounds[] = 
+	{
+	};
+
+	class xAv01
+	{
+		name = "";
+		
+		sound[] = {"sound\xAv01.ogg", db+20, 1.0};
+		titles[] = 
+		{
+			0, $STRC_xAv01
+		};
+	};
+	class xAv02
+	{
+		name = "";
+
+		sound[] = {"sound\xAv02.ogg", db+20, 1.0};
+		titles[] = 
+		{
+			0, $STRC_xAv02
+		};
+	};
+	class xAv03
+	{
+		name = "";
+
+		sound[] = {"sound\xAv03.ogg", db+20, 1.0};
+		titles[] = 
+		{
+			0, $STRC_xAv03
+		};
+	};
+	class xAv04
+	{
+		name = "";
+
+		sound[] = {"sound\xAv04.ogg", db+20, 1.0};
+		titles[] = 
+		{
+			0, $STRC_xAv04
+		};
+	};
+	class xAv05
+	{
+		name = "";
+
+		sound[] = {"sound\xAv05.ogg", db+20, 1.0};
+		titles[] = 
+		{
+			0, $STRC_xAv05
+		};
+	};
+	class xAv06
+	{
+		name = "";
+
+		sound[] = {"sound\xAv06.ogg", db+20, 1.0};
+		titles[] = 
+		{
+			0, $STRC_xAv06
+		};
+	};
+	class xAv07
+	{
+		name = "";
+
+		sound[] = {"sound\xAv07.ogg", db+20, 1.0};
+		titles[] = 
+		{
+			0, $STRC_xAv07
+		};
+	};
+	class xAv08
+	{
+		name = "";
+		//forceTitles=true;
+		sound[] = {"sound\xAv08.ogg", db+20, 1.0};
+		titles[] = 
+		{
+			0, $STRC_xAv08
+		};
+	};
+	class xAv09
+	{
+		name = "";
+		//forceTitles=true;
+		sound[] = {"sound\xAv09.ogg", db+20, 1.0};
+		titles[] = 
+		{
+			0, $STRC_xAv09
+		};
+	};
+	class xAv10
+	{
+		name = "";
+		//forceTitles=true;
+		sound[] = {"sound\xAv10.ogg", db+20, 1.0};
+		titles[] = 
+		{
+			0, $STRC_xAv10
+		};
+	};
+	class xAv11
+	{
+		name = "";
+		//forceTitles=true;
+		sound[] = {"sound\xAv11.ogg", db+20, 1.0};
+		titles[] = 
+		{
+			0, $STRC_xAv11
+		};
+	};
+	class xAv12
+	{
+		name = "";
+		//forceTitles=true;
+		sound[] = {"sound\xAv12.ogg", db+20, 1.0};
+		titles[] = 
+		{
+			0, $STRC_xAv12
+		};
+	};
+	class xAv13
+	{
+		name = "";
+		//forceTitles=true;
+		sound[] = {"sound\xAv13.ogg", db+20, 1.0};
+		titles[] = 
+		{
+			0, $STRC_xAv13
+		};
+	};
+	class xAv14
+	{
+		name = "";
+		//forceTitles=true;
+		sound[] = {"sound\xAv14.ogg", db+20, 1.0};
+		titles[] = 
+		{
+			0, $STRC_xAv14
+		};
+	};
+	class xAv15
+	{
+		name = "";
+		//forceTitles=true;
+		sound[] = {"sound\xAv15.ogg", db+20, 1.0};
+		titles[] = 
+		{
+			0, $STRC_xAv15
+		};
+	};
+	class xAv16
+	{
+		name = "";
+		//forceTitles=true;
+		sound[] = {"sound\xAv16.ogg", db+20, 1.0};
+		titles[] = 
+		{
+			0, $STRC_xAv16
+		};
+	};
+	class xAv17
+	{
+		name = "";
+
+		sound[] = {"sound\xAv17.ogg", db+20, 1.0};
+		titles[] = 
+		{
+			0, $STRC_xAv17
+		};
+	};
+	class xAv18
+	{
+		name = "";
+
+		sound[] = {"sound\xAv18.ogg", db+20, 1.0};
+		titles[] = 
+		{
+			0, $STRC_xAv18
+		};
+	};
+	class xAv19
+	{
+		name = "";
+
+		sound[] = {"sound\xAv19.ogg", db+20, 1.0};
+		titles[] = 
+		{
+			0, $STRC_xAv19
+		};
+	};
+	class xAv20
+	{
+		name = "";
+
+		sound[] = {"sound\xAv20.ogg", db+20, 1.0};
+		titles[] = 
+		{
+			0, $STRC_xAv20
+		};
+	};
+	class xAv21
+	{
+		name = "";
+
+		sound[] = {"sound\xAv21.ogg", db+20, 1.0};
+		titles[] = 
+		{
+			0, $STRC_xAv21
+		};
+	};
+	class xAv22
+	{
+		name = "";
+
+		sound[] = {"sound\xAv22.ogg", db+20, 1.0};
+		titles[] = 
+		{
+			0, $STRC_xAv22
+		};
+	};
+	class xAv23
+	{
+		name = "";
+
+		sound[] = {"sound\xAv23.ogg", db+20, 1.0};
+		titles[] = 
+		{
+			0, $STRC_xAv23
+		};
+	};
+	class xAv24
+	{
+		name = "";
+
+		sound[] = {"sound\xAv24.ogg", db+20, 1.0};
+		titles[] = 
+		{
+			0, $STRC_xAv24
+		};
+	};
+	class xAv25
+	{
+		name = "";
+
+		sound[] = {"sound\xAv25.ogg", db+20, 1.0};
+		titles[] = 
+		{
+			0, $STRC_xAv25
+		};
+	};
+	class xAv26
+	{
+		name = "";
+
+		sound[] = {"sound\xAv26.ogg", db+20, 1.0};
+		titles[] = 
+		{
+			0, $STRC_xAv26
+		};
+	};
+	class xAv27
+	{
+		name = "";
+
+		sound[] = {"sound\xAv27.ogg", db+20, 1.0};
+		titles[] = 
+		{
+			0, $STRC_xAv27
+		};
+	};
+	class xAv28
+	{
+		name = "";
+
+		sound[] = {"sound\xAv28.ogg", db+20, 1.0};
+		titles[] = 
+		{
+			0, $STRC_xAv28
+		};
+	};
+	class xAv29
+	{
+		name = "";
+
+		sound[] = {"sound\xAv29.ogg", db+20, 1.0};
+		titles[] = 
+		{
+			0, $STRC_xAv29
+		};
+	};
+	class xAv30
+	{
+		name = "";
+
+		sound[] = {"sound\xAv30.ogg", db+20, 1.0};
+		titles[] = 
+		{
+			0, $STRC_xAv30
+		};
+	};
+	class xAv31
+	{
+		name = "";
+
+		sound[] = {"sound\xAv31.ogg", db+20, 1.0};
+		titles[] = {};
+	};
+	class xAv32
+	{
+		name = "";
+
+		sound[] = {"sound\xAv32.ogg", db+20, 1.0};
+		titles[] = 
+		{
+			0, $STRC_xAv32
+		};
+	};
+	class xAv33
+	{
+		name = "";
+
+		sound[] = {"sound\xAv33.ogg", db+20, 1.0};
+		titles[] = 
+		{
+			0, $STRC_xAv33
+		};
+	};
+	class xAv34
+	{
+		name = "";
+
+		sound[] = {"sound\xAv34.ogg", db+20, 1.0};
+		titles[] = 
+		{
+			0, $STRC_xAv34
+		};
+	};
+	class xAv35
+	{
+		name = "";
+
+		sound[] = {"sound\xAv35.ogg", db+20, 1.0};
+		titles[] = 
+		{
+			0, $STRC_xAv35
+		};
+	};
+	class xAv36
+	{
+		name = "";
+
+		sound[] = {"sound\xAv36.ogg", db+20, 1.0};
+		titles[] = 
+		{
+			0, $STRC_xAv36
+		};
+	};
+	class xAv37
+	{
+		name = "";
+
+		sound[] = {"sound\xAv37.ogg", db+20, 1.0};
+		titles[] = 
+		{
+			0, $STRC_xAv37
+		};
+	};
+	class xAv38
+	{
+		name = "";
+
+		sound[] = {"sound\xAv38.ogg", db+20, 1.0};
+		titles[] = 
+		{
+			0, $STRC_xAv38
+		};
+	};
+	class xAv39
+	{
+		name = "";
+
+		sound[] = {"sound\xAv39.ogg", db+20, 1.0};
+		titles[] = 
+		{
+			0, $STRC_xAv39
+		};
+	};
+	class xAv40
+	{
+		name = "";
+
+		sound[] = {"sound\xAv40.ogg", db+20, 1.0};
+		titles[] = 
+		{
+			0, $STRC_xAv40
+		};
+	};
+	class xAv41
+	{
+		name = "";
+
+		sound[] = {"sound\xAv41.ogg", db+20, 1.0};
+		titles[] = 
+		{
+			0, $STRC_xAv41
+		};
+	};
+};

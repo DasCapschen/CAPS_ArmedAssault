@@ -1,0 +1,209 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"CACharacters",
+		"sara"
+	};
+	addOnsAuto[]=
+	{
+		"cacharacters",
+		"sara"
+	};
+	randomSeed=13064707;
+	class Intel
+	{
+		briefingName="@STRC_CS05";
+		hour=16;
+	};
+	class Groups
+	{
+		items=1;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7960.177734,168.974991,7787.430176};
+					azimut=-347.080048;
+					id=0;
+					side="WEST";
+					vehicle="SoldierWB";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.600000;
+				};
+			};
+		};
+	};
+	class Sensors
+	{
+		items=7;
+		class Item0
+		{
+			position[]={7949.492676,168.974991,7754.160645};
+			a=0.000000;
+			b=0.000000;
+			timeoutMin=0.300000;
+			timeoutMid=0.300000;
+			timeoutMax=0.300000;
+			type="END1";
+			age="UNKNOWN";
+			text="Konec1";
+			expCond="end1";
+			expActiv="camera CameraEffect [""Terminate"",""Back""];  camDestroy camera";
+			class Effects
+			{
+			};
+		};
+		class Item1
+		{
+			position[]={7957.535156,168.974991,7754.573730};
+			a=0.000000;
+			b=0.000000;
+			timeoutMin=0.300000;
+			timeoutMid=0.300000;
+			timeoutMax=0.300000;
+			type="END2";
+			age="UNKNOWN";
+			text="Konec2";
+			expCond="end2";
+			expActiv="camera CameraEffect [""Terminate"",""Back""];  camDestroy camera";
+			class Effects
+			{
+			};
+		};
+		class Item2
+		{
+			position[]={7965.362305,168.974991,7754.575684};
+			a=0.000000;
+			b=0.000000;
+			timeoutMin=0.500000;
+			timeoutMid=0.500000;
+			timeoutMax=0.500000;
+			type="END3";
+			age="UNKNOWN";
+			text="Konec3";
+			expCond="end3";
+			expActiv="camera CameraEffect [""Terminate"",""Back""];  camDestroy camera";
+			class Effects
+			{
+			};
+		};
+		class Item3
+		{
+			position[]={7948.612305,168.974991,7746.474121};
+			a=0.000000;
+			b=0.000000;
+			timeoutMin=0.300000;
+			timeoutMid=0.300000;
+			timeoutMax=0.300000;
+			type="END4";
+			age="UNKNOWN";
+			text="Konec4";
+			expCond="end4";
+			expActiv="camera CameraEffect [""Terminate"",""Back""];  camDestroy camera";
+			class Effects
+			{
+			};
+		};
+		class Item4
+		{
+			position[]={7957.534180,168.974991,7747.158691};
+			a=0.000000;
+			b=0.000000;
+			timeoutMin=0.300000;
+			timeoutMid=0.300000;
+			timeoutMax=0.300000;
+			type="END5";
+			age="UNKNOWN";
+			text="Konec5";
+			expCond="end5";
+			expActiv="camera CameraEffect [""Terminate"",""Back""];  camDestroy camera";
+			class Effects
+			{
+			};
+		};
+		class Item5
+		{
+			position[]={7965.362305,168.974991,7747.157715};
+			a=0.000000;
+			b=0.000000;
+			timeoutMin=0.300000;
+			timeoutMid=0.300000;
+			timeoutMax=0.300000;
+			type="END6";
+			age="UNKNOWN";
+			text="Konec6";
+			expCond="end6";
+			expActiv="camera CameraEffect [""Terminate"",""Back""];  camDestroy camera";
+			class Effects
+			{
+			};
+		};
+		class Item6
+		{
+			position[]={7897.249023,168.974991,7771.096191};
+			a=30.000000;
+			b=30.000000;
+			rectangular=1;
+			age="UNKNOWN";
+			text="sfxback";
+			expCond="true";
+			expActiv="0 fadeMusic 0.2; enableEnvironment false";
+			class Effects
+			{
+				track="ATrack24";
+			};
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"sara"
+	};
+	addOnsAuto[]=
+	{
+		"sara"
+	};
+	randomSeed=11405315;
+	class Intel
+	{
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"sara"
+	};
+	addOnsAuto[]=
+	{
+		"sara"
+	};
+	randomSeed=7386115;
+	class Intel
+	{
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"sara"
+	};
+	addOnsAuto[]=
+	{
+		"sara"
+	};
+	randomSeed=12902915;
+	class Intel
+	{
+	};
+};

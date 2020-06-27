@@ -1,0 +1,55 @@
+class Sentences
+{
+    class Intro 
+    {
+        actor = "cS1";
+        text = $STRC_01v06;
+        speech[] = { "\sound\01v06.ogg" };
+        class Arguments {};
+    };
+    
+    class Question
+    {
+        actor = "cS1";
+        text = $STRC_01v07;
+        speech[] = { "\sound\01v07.ogg" };
+        class Arguments {};
+    };
+    
+    class Answer1
+    {
+        actor = "wS1";
+        text = $STRC_01v08;
+        speech[] = { "\sound\01v08.ogg" };
+        class Arguments {};
+    };
+    
+    class Answer2
+    {
+        actor = "wS1";
+        text = $STRC_01v09;
+        speech[] = { "\sound\01v09.ogg" };
+        class Arguments {};
+    };
+    
+    class End1
+    {
+        actor = "cS1";
+        text = $STRC_01v10;
+        speech[] = { "\sound\01v10.ogg" };
+        class Arguments {};
+    };
+    
+    class End2
+    {
+        actor = "cS1";
+        text = $STRC_01v11;
+        speech[] = { "\sound\01v11.ogg" };
+        class Arguments {};
+    };
+};
+
+class Arguments {};
+class Special {};
+startWithVocal[] = { hour };
+startWithConsonant[] = { europe, university };

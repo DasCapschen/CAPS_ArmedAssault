@@ -1,0 +1,221 @@
+version=53;
+class EditorData
+{
+	moveGridStep=1;
+	angleGridStep=0.2617994;
+	scaleGridStep=1;
+	autoGroupingDist=10;
+	toggles=1;
+	class ItemIDProvider
+	{
+		nextID=705;
+	};
+	class Camera
+	{
+		pos[]={7637.606,25.447508,6246.2881};
+		dir[]={-0.89138484,-0.28909791,-0.3490876};
+		up[]={-0.26919469,0.95729637,-0.10542308};
+		aside[]={-0.36465809,-9.2550181e-008,0.93114483};
+	};
+};
+binarizationWanted=0;
+addons[]=
+{
+	"CUP_CAMisc",
+	"A3_Characters_F",
+	"A3_Characters_F_Exp_Civil",
+	"CUP_Creatures_People_Civil_Chernarus"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=4;
+		class Item0
+		{
+			className="CUP_CAMisc";
+			name="CUP_CAMisc";
+		};
+		class Item1
+		{
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item2
+		{
+			className="A3_Characters_F_Exp";
+			name="Arma 3 Apex - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item3
+		{
+			className="CUP_Creatures_People_Civil_Chernarus";
+			name="CUP_Creatures_People_Civil_Chernarus";
+		};
+	};
+};
+randomSeed=288624;
+class ScenarioData
+{
+	author="DasCapschen";
+};
+class Intro
+{
+	class Intel
+	{
+		startWeather=0.56268197;
+		startWind=0.1;
+		forecastWeather=0.569525;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		month=6;
+		day=23;
+		hour=4;
+		minute=45;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
+	};
+	class Entities
+	{
+		items=4;
+		class Item0
+		{
+			dataType="Trigger";
+			position[]={9913.792,141.39751,10132.163};
+			class Attributes
+			{
+				condition="ending";
+				sizeA=0;
+				sizeB=0;
+				type="END1";
+			};
+			id=699;
+			type="EmptyDetector";
+			atlOffset=1.4025116;
+		};
+		class Item1
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9854.4619,143.61363,10150.882};
+				angles[]={-0,0.00037791615,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="this setPos [(position this select 0),(position this select 1),0.17]";
+				name="studio";
+			};
+			id=700;
+			type="TVStudio";
+		};
+		class Item2
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={9854.3633,139.99643,10140.354};
+						angles[]={-0,0.00037831758,0};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this execVM ""intro.sqf""";
+						name="cameraman1";
+						isPlayer=1;
+						isPlayable=1;
+					};
+					id=702;
+					type="C_man_1";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=701;
+			atlOffset=70.019997;
+		};
+		class Item3
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={9854.5078,139.99643,10150.596};
+						angles[]={-0,3.1419718,0};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="this lookAt cameraman1";
+						name="Ed";
+					};
+					id=704;
+					type="CUP_C_C_Functionary_01";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=703;
+			atlOffset=70.019997;
+		};
+	};
+};
+class Mission
+{
+	class Intel
+	{
+		briefingName="@STRC_CX08";
+		startWind=0.1;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
+	};
+};
+class OutroLoose
+{
+	class Intel
+	{
+		startWind=0.1;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
+	};
+};
+class OutroWin
+{
+	class Intel
+	{
+		startWind=0.1;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
+	};
+};

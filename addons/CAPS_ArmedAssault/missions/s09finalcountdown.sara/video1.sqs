@@ -1,0 +1,36 @@
+camera = "camera" CamCreate getpos player
+camera CameraEffect ["Internal","Back"]
+titlecut ["","plain"]
+
+camera camSetTarget [58730.56,91523.69,-23558.38]
+camera camSetPos [9131.78,8001.33,4.92]
+camera camSetFOV 0.336
+camera camCommit 0
+
+~2
+#loop
+?glob_selectmission!=1:exit
+camera camSetTarget [18056.99,106547.79,-14265.18]
+camera camSetPos [9131.78,8001.33,4.92]
+camera camSetFOV 0.336
+camera camCommit 15
+@camCommitted camera
+?glob_selectmission!=1:exit
+camera camSetTarget [-28335.13,98635.66,-19346.29]
+camera camSetPos [9131.78,8001.33,4.92]
+camera camSetFOV 0.336
+camera camCommit 12
+~15
+?glob_selectmission!=1:exit
+camera camSetTarget [18056.99,106547.79,-14265.18]
+camera camSetPos [9131.78,8001.33,4.92]
+camera camSetFOV 0.336
+camera camCommit 12
+@camCommitted camera
+?glob_selectmission!=1:exit
+camera camSetTarget [58730.56,91523.69,-23558.38]
+camera camSetPos [9131.78,8001.33,4.92]
+camera camSetFOV 0.336
+camera camCommit 15
+~18
+goto "loop"

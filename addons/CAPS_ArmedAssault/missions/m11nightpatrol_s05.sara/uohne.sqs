@@ -1,0 +1,33 @@
+mluvi = true
+
+? not alive off: goto "konec"
+
+PC doWatch off
+
+~1
+
+doStop off
+
+off reveal aP
+
+off doWatch aP
+
+off say "M11v01"
+~5
+
+aP say "M11v02"
+~3
+off say "M11v03"
+~8
+aP say "M11v04"
+~6
+
+#konec
+
+rozhovor = true
+
+~1
+
+[off] allowGetIn true
+
+

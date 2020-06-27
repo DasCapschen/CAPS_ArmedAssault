@@ -1,0 +1,18 @@
+
+_who = units posadka;
+Dovezl = false;
+
+#MAINLoop
+~2
+
+_i = 0;
+_j = 0;
+
+#LOOP
+
+? (_who select _i) distance objTarget < 50 : _j = _j+1;
+? _i+1 < count _who : _i=_i+1; goto "LOOP"
+
+? _j >= 9 : Dovezl = true; "3" objStatus "done"; aP exec "Outro.sqs"; exit
+
+? Controlling : goto "MAINLOOP"

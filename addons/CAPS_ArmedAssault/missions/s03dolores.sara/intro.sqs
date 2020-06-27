@@ -1,0 +1,114 @@
+_camera = "camera" camCreate [11441.77,6323.54,1.73]
+_camera cameraEffect ["internal","back"]
+
+
+_preload = [] spawn {waitUntil{preloadCamera [11441.77,6323.54,1.73]}}
+
+cutText[localize "STR_LOADING", "BLACK FADED"]
+
+;=== 17:23:09
+_camera camSetTarget [-61210.46,-54870.01,-31249.66]
+_camera camSetPos [11434.70,6321.49,1.60]
+_camera camSetFOV 0.700
+_camera camCommit 0
+@camCommitted _camera
+
+
+
+@scriptDone _preload
+
+ed playMove "ActsPercMstpSnonWnonDnon_MarianQ_shot3";
+
+armstrong playMove "ActsPercMstpSnonWnonDnon_MarianQ_shot3man";
+
+~6
+
+;=== 17:23:24
+_camera camSetTarget [24396.74,-90441.91,-21624.84]
+_camera camSetPos [11434.65,6321.88,1.60]
+_camera camSetFOV 0.550
+_camera camCommit 15
+
+
+cutText ["","BLACK IN", 2]
+
+~2.5
+
+ed say "03v01"
+
+~7.7
+
+ed say "03v02"
+
+~9.8
+
+armstrong say "03v03"
+
+~7
+
+armstrong say "03v04"
+
+~8.5
+
+ed say "03v05"
+
+~14
+
+armstrong say "03v06"
+
+~8.5
+
+armstrong say "03v07"
+
+~11
+
+armstrong say "03v08"
+
+~10
+
+ed say "03v09"
+
+~13.5
+
+armstrong say "03v10"
+
+~11
+
+ed say "03v11"
+
+~2.5
+
+armstrong say "03v12"
+
+~4
+
+~1
+
+ed say "03v13"
+
+~4
+
+ed say "03v14"
+
+~8
+
+ed say "03v15"
+
+~7
+
+ed say "03v16"
+
+
+~5
+~13
+
+
+titleCut ["","black out", 2]
+
+~2
+
+ending = true
+player cameraEffect ["terminate","back"]
+camDestroy _camera
+
+exit

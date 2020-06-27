@@ -1,0 +1,11 @@
+
+#loop
+? pristal==0 : goto "poloopu";
+? fuel wah1 == 1 : goto "afterloop";
+wah1 setfuel (fuel wah1) + 0.0005;
+goto "loop"
+
+#afterloop
+gass=1;
+
+#poloopu

@@ -1,0 +1,59 @@
+briefingName = $STRC_CS02;
+overviewText = "The strategy map allows you to view the area before the mission and decide what action to take.";
+overviewPicture = "\CAPS_ArmedAssault\pictures\strategymap.paa";
+
+briefing = 0;
+debriefing = 0;
+
+class CfgSounds
+{
+	sounds[] = 
+	{
+	};
+
+	class 02v01
+	{
+		name = "";
+		sound[] = {"sound\02v01.wss", db+20, 1.0};
+		titles[] = 
+		{
+			0, $STRC_02v01
+		};
+	};
+	class 02v02
+	{
+		name = "";
+		sound[] = {"sound\02v02.wss", db+20, 1.0};
+		titles[] = 
+		{
+			0, $STRC_02v02
+		};
+	};
+	class 02v03
+	{
+		name = "";
+		sound[] = {"sound\02v03.wss", db+20, 1.0};
+		titles[] = 
+		{
+			0, $STRC_02v03
+		};
+	};
+	class 02v04
+	{
+		name = "";
+		sound[] = {"sound\02v04.wss", db+20, 1.0};
+		titles[] = 
+		{
+			0, $STRC_02v04
+		};
+	};
+	class 02v05
+	{
+		name = "";
+		sound[] = {"sound\02v05.wss", db+20, 1.0};
+		titles[] = 
+		{
+			0, $STRC_02v05
+		};
+	};
+};

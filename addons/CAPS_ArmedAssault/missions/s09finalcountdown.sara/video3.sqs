@@ -1,0 +1,47 @@
+setDate [2002, 7, 19, 6, 08];
+0 setOvercast 0.17;
+0 setfog 0.00;
+camUseNVG false;
+
+camera = "camera" CamCreate getpos player
+camera CameraEffect ["Internal","Back"]
+titlecut ["","plain"]
+
+camera camSetTarget [14313,12412,-110]
+camera camSetPos [14395,11911,50]
+camera camSetFOV 0.5
+camera camCommit 0
+@camCommitted camera
+
+
+#loop
+
+?glob_selectmission!=3:exit
+
+camera camSetTarget [14013,12412,-120]
+camera camSetPos [14395,11911,60]
+camera camSetFOV 0.5
+camera camCommit 15
+@camCommitted camera
+
+?glob_selectmission!=3:exit
+
+camera camSetTarget [14013,12412,-120]
+camera camSetPos [14395,11911,60]
+camera camSetFOV 0.5
+camera camCommit 2
+@camCommitted camera
+
+camera camSetTarget [14313,12412,-110]
+camera camSetPos [14395,11911,50]
+camera camSetFOV 0.5
+camera camCommit 15
+@camCommitted camera
+
+camera camSetTarget [14313,12412,-110]
+camera camSetPos [14395,11911,50]
+camera camSetFOV 0.5
+camera camCommit 2
+@camCommitted camera
+
+goto "loop"

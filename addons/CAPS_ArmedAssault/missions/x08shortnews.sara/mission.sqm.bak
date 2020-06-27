@@ -1,0 +1,148 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"sara"
+	};
+	addOnsAuto[]=
+	{
+		"sara"
+	};
+	randomSeed=16198659;
+	class Intel
+	{
+		briefingName="@STRC_CX08";
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"cacharacters",
+		"CAMisc",
+		"sara"
+	};
+	addOnsAuto[]=
+	{
+		"cacharacters",
+		"CAMisc",
+		"sara"
+	};
+	randomSeed=6533123;
+	class Intel
+	{
+		startWeather=0.562682;
+		forecastWeather=0.569525;
+		month=6;
+		day=23;
+		hour=4;
+		minute=45;
+	};
+	class Groups
+	{
+		items=2;
+		class Item0
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9854.363281,141.397507,10140.254883};
+					azimut=0.021676;
+					id=0;
+					side="CIV";
+					vehicle="Civilian";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.600000;
+					text="cameraman1";
+					init="this execVM ""intro.sqf""";
+				};
+			};
+		};
+		class Item1
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9854.507813,141.397507,10150.496094};
+					azimut=-179.978287;
+					id=1;
+					side="CIV";
+					vehicle="Anchorman";
+					leader=1;
+					skill=0.600000;
+					text="Ed";
+					init="this lookAt cameraman1";
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=1;
+		class Item0
+		{
+			position[]={9854.461914,141.397507,10150.881836};
+			azimut=0.021653;
+			id=2;
+			side="EMPTY";
+			vehicle="TVStudio";
+			init="this setPos [(position this select 0),(position this select 1),0.17]";
+			skill=0.600000;
+			text="studio";
+		};
+	};
+	class Sensors
+	{
+		items=1;
+		class Item0
+		{
+			position[]={9913.791992,141.397507,10132.163086};
+			a=0.000000;
+			b=0.000000;
+			type="END1";
+			age="UNKNOWN";
+			expCond="ending";
+			class Effects
+			{
+			};
+		};
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"sara"
+	};
+	addOnsAuto[]=
+	{
+		"sara"
+	};
+	randomSeed=7386115;
+	class Intel
+	{
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"sara"
+	};
+	addOnsAuto[]=
+	{
+		"sara"
+	};
+	randomSeed=12902915;
+	class Intel
+	{
+	};
+};

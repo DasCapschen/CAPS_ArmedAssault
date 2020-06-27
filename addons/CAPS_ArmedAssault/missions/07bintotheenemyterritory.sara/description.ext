@@ -1,0 +1,79 @@
+minScore=0;
+avgScore=1000;
+maxScore=6000;
+
+//onLoadMission="03: Sanitary Operation";
+
+statsColumn=2;
+
+coefLoser=0;
+coefEnd1=3;
+coefEnd2=2;
+coefEnd3=0;
+coefEnd4=0;
+coefEnd5=0;
+coefEnd6=0;
+
+
+onLoadName = $STRC_CA_07b;
+briefingName = $STRC_CA_07b;
+overviewText = "Special operations commando attack the enemy helicopter base to weaken the OPFOR position on the southern area of their land.";
+overviewPicture = "\CAPS_ArmedAssault\pictures\c07b.paa";
+
+
+class CfgRadio
+{
+	sounds[] = { };
+
+	class 07r50
+	{
+		name = "07r50";
+		sound[] = {"07r50.ogg", db-40, 1.0};
+		title = $STRC_07r50;
+	};
+	class 07r51
+	{
+		name = "07r51";
+		sound[] = {"07r51.ogg", db-40, 1.0};
+		title = $STRC_07r51;
+	};
+	class 07r52
+	{
+		name = "07r52";
+		sound[] = {"07r52.ogg", db-40, 1.0};
+		title = $STRC_07r52;
+	};
+	class 07r53
+	{
+		name = "07r53";
+		sound[] = {"07r53.ogg", db-40, 1.0};
+		title = $STRC_07r53;
+	};
+	class 07r54
+	{
+		name = "07r54";
+		sound[] = {"07r54.ogg", db-40, 1.0};
+		title = $STRC_07r54;
+	};
+	class 07r55
+	{
+		name = "07r55";
+		sound[] = {"07r55.ogg", db-40, 1.0};
+		title = $STRC_07r55;
+	};
+	class 07r56
+	{
+		name = "07r56";
+		sound[] = {"07r56.ogg", db-40, 1.0};
+		title = $STRC_07r56;
+	};
+};
+
+class CfgSFX
+{
+	sounds[] = {};
+};
+class CfgEnvSounds
+{
+	sounds[] = {};
+};

@@ -8,18 +8,18 @@ class EditorData
 	toggles=1025;
 	class ItemIDProvider
 	{
-		nextID=107;
+		nextID=119;
 	};
 	class MarkerIDProvider
 	{
-		nextID=11;
+		nextID=22;
 	};
 	class Camera
 	{
-		pos[]={7997.2578,191.41595,7771.4766};
-		dir[]={0.9520874,-0.066245265,0.29878679};
-		up[]={0.063321419,0.99779409,0.019872211};
-		aside[]={0.29944462,-5.5425335e-007,-0.95418411};
+		pos[]={7994.1445,175.74245,7770.2998};
+		dir[]={-0.024209883,-0.31002331,0.95050776};
+		up[]={-0.0078977607,0.95068866,0.31003675};
+		aside[]={0.99975902,-1.1244119e-006,0.025462329};
 	};
 };
 binarizationWanted=0;
@@ -31,7 +31,8 @@ addons[]=
 	"CUP_Creatures_Military_USMC",
 	"A3_Modules_F_StrategicMap",
 	"A3_Structures_F_Walls",
-	"CUP_WheeledVehicles_MTVR"
+	"CUP_WheeledVehicles_MTVR",
+	"A3_Modules_F_Intel"
 };
 class AddonsMetaData
 {
@@ -110,24 +111,23 @@ class Mission
 	};
 	class Entities
 	{
-		items=60;
+		items=61;
 		class Item0
 		{
 			dataType="Trigger";
-			position[]={7898.543,168.97499,7752.5508};
+			position[]={7966.0962,168.97501,7776.9966};
 			class Attributes
 			{
 				text="sfxback";
 				condition="true";
 				onActivation="0 fadeMusic 0.3; enableEnvironment false";
-				sizeA=30;
-				sizeB=30;
+				sizeA=0;
+				sizeB=0;
 				isRectangle=1;
 				effectMusic="ATrack8";
 			};
 			id=6;
 			type="EmptyDetector";
-			atlOffset=-1.5258789e-005;
 		};
 		class Item1
 		{
@@ -773,7 +773,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={7994.7461,168.97644,7793.8228};
-						angles[]={-0,0.22549655,0};
+						angles[]={0,0.22549655,0};
 					};
 					side="West";
 					flags=6;
@@ -983,11 +983,12 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={11532.414,78.39534,7368.1777};
-				angles[]={0.099212877,0,6.1058578};
+				position[]={11532.414,78.395348,7368.1782};
+				angles[]={0.099204518,0,6.1058598};
 			};
 			id=48;
 			type="ModuleStrategicMapInit_F";
+			atlOffset=7.6293945e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -1926,7 +1927,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={7995.5684,169.8831,7796.7769};
-				angles[]={-0,0.17855215,0};
+				angles[]={0,0.17855215,0};
 			};
 			side="Empty";
 			flags=4;
@@ -2219,9 +2220,10 @@ class Mission
 		class Item50
 		{
 			dataType="Trigger";
-			position[]={7992.7925,168.97501,7799.8071};
+			position[]={7992.792,168.97501,7799.8071};
 			class Attributes
 			{
+				text="StratMap";
 				condition="call{OpenStratMap}";
 				onActivation="call{OpenStratMap = false;}";
 				sizeA=0;
@@ -2319,12 +2321,12 @@ class Mission
 		class Item52
 		{
 			dataType="Trigger";
-			position[]={8007.2856,170.30736,7772.0566};
+			position[]={8005.1182,170.30698,7783.6289};
 			class Attributes
 			{
-				name="BIS_Zora_0";
-				sizeA=33.044189;
-				sizeB=49.015625;
+				text="Lose Left Briefing";
+				sizeA=30.875999;
+				sizeB=32.924999;
 				activationType="NOT PRESENT";
 				activationBy="ANYPLAYER";
 				type="LOOSE";
@@ -2332,19 +2334,19 @@ class Mission
 			};
 			id=94;
 			type="EmptyDetectorAreaR50";
-			atlOffset=0.23439026;
+			atlOffset=0.81399536;
 		};
 		class Item53
 		{
 			dataType="Trigger";
-			position[]={7996.8223,168.97501,7795.2041};
+			position[]={7996.8218,168.97501,7795.2041};
 			class Attributes
 			{
-				name="BIS_Zora_1";
+				text="Return to Briefing";
 				condition="call{this}";
 				onActivation="call{hint ""Return to the Briefing!""}";
-				sizeA=8.6616211;
-				sizeB=9.3706818;
+				sizeA=8.6619997;
+				sizeB=9.3710003;
 				repeatable=1;
 				activationType="NOT PRESENT";
 				activationBy="ANYPLAYER";
@@ -2359,7 +2361,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8008.1211,171.99365,7780.228};
-				angles[]={-0,0.69441408,0.10085597};
+				angles[]={0,0.69441408,0.10085597};
 			};
 			side="Empty";
 			flags=4;
@@ -3353,6 +3355,115 @@ class Mission
 			{
 			};
 			id=106;
+		};
+		class Item60
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={7992.2241,168.97501,7784.3311};
+			};
+			id=107;
+			type="ModuleCreateDiaryRecord_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleCreateDiaryRecord_F_PresetTitle";
+					expression="_this setVariable ['PresetTitle',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Situation";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCreateDiaryRecord_F_Title";
+					expression="_this setVariable ['Title',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCreateDiaryRecord_F_Description";
+					expression="_this setVariable ['Description',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="@STRC_CUI_SITREP";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleCreateDiaryRecord_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=3;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleCreateDiaryRecord_F_Subject";
+					expression="_this setVariable ['Subject',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				nAttributes=5;
+			};
 		};
 	};
 	class Connections

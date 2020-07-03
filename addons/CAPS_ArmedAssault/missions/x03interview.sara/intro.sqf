@@ -30,10 +30,13 @@ armstrong setMimic "neutral";
 ed switchMove "ActsPercMstpSnonWnonDnon_MarianQ_shot3";
 armstrong switchMove "ActsPercMstpSnonWnonDnon_MarianQ_shot3man";
 
+ed kbAddTopic ["interview", "conversation.bikb"];
+Armstrong kbAddTopic ["interview", "conversation.bikb"];
+
 titleText["","PLAIN",0];
 cutRSC ["overlayLogoAAN","PLAIN NOFADE"];
 sleep 0.5;
-ed say2D "03v01";
+ed kbTell [player, "interview", "03v01"];
 sleep 2;
 
 //std pohled na par
@@ -46,34 +49,34 @@ waitUntil{ camCommitted _camera };
 
 sleep 1.5;
 
-ed say2D "03v02";
+ed kbTell [player, "interview", "03v02"];
 sleep 3.8;
-armstrong say2D "03v03";
+armstrong kbTell [player, "interview", "03v03"];
 sleep 9.5;
 sleep 1.5;
-ed say2D "03v05";
+ed kbTell [player, "interview", "03v05"];
 sleep 10;
-armstrong say2D "03v04";
+armstrong kbTell [player, "interview", "03v04"];
 sleep 5.5;
-armstrong say2D "03v06";
+armstrong kbTell [player, "interview", "03v06"];
 sleep 4;
-armstrong say2D "03v07";
+armstrong kbTell [player, "interview", "03v07"];
 sleep 10.5;
-ed say2D "03v09";
+ed kbTell [player, "interview", "03v09"];
 sleep 10.5;
-armstrong say2D "03v10";
+armstrong kbTell [player, "interview", "03v10"];
 sleep 5.5;
-ed say2D "03v11";
+ed kbTell [player, "interview", "03v11"];
 sleep 4.0;
 
 _camera camPrepareTarget [52924.19,97244.55,-16434.16];
 _camera camPreparePos [13318.80,6908.43,7.73];
 _camera camPrepareFOV 0.700;
 
-armstrong say2D "03v12";
+armstrong kbTell [player, "interview", "03v12"];
 
 sleep 8.3;
-ed say2D "03v13";
+ed kbTell [player, "interview", "03v13"];
 sleep 5.5;
 titleText["","PLAIN",0];
 cutRSC ["overlayNews","PLAIN NOFADE"];

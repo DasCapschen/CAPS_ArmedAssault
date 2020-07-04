@@ -13,19 +13,19 @@ class RscTitles
 {
 	class overlayBlack
 	{
-	    	idd = -1;
-	    	movingEnable = false;
-	    	duration = 10000;
-	    	fadein = 0;
-	    	fadeout = 0;
-	    	name = "TV";
-	    	controls[] =   {black1};
+		idd = -1;
+		movingEnable = false;
+		duration = 10000;
+		fadein = 0;
+		fadeout = 0;
+		name = "TV";
+		controls[] =   {black1};
 		class black1
 		{
 			x = -1.5;
-			y = -0.1;
+			y = -1.5;
 			w = 4;
-			h = 1.2;
+			h = 4;
 			type = 0;
 			idc = -1;
 			style = 48;
@@ -40,19 +40,19 @@ class RscTitles
 	};	
 	class overlayNews
 	{
-	    	idd = -1;
-	    	movingEnable = false;
-	    	duration = 10000;
-	    	fadein = 0;
-	    	fadeout = 0;
-	    	name = "TV";
-	    	controls[] =   {black1,AANbig};
+		idd = -1;
+		movingEnable = false;
+		duration = 10000;
+		fadein = 0;
+		fadeout = 0;
+		name = "TV";
+		controls[] =   {black1,AANbig};
 		class black1
 		{
 			x = -1.5;
-			y = -0.1;
+			y = -1.5;
 			w = 4;
-			h = 1.2;
+			h = 4;
 			type = 0;
 			idc = -1;
 			style = 48;
@@ -84,19 +84,19 @@ class RscTitles
 	};
 	class overlayMap
 	{
-	    	idd = -1;
-	    	movingEnable = false;
-	    	duration = 10000;
-	    	fadein = 1;
-	    	fadeout = 1;
-	    	name = "TV";
-	    	controls[] =   {black1,AANbig};
+		idd = -1;
+		movingEnable = false;
+		duration = 10000;
+		fadein = 1;
+		fadeout = 1;
+		name = "TV";
+		controls[] =   {black1,AANbig};
 		class black1
 		{
 			x = -1.5;
-			y = -0.1;
+			y = -1.5;
 			w = 4;
-			h = 1.2;
+			h = 4;
 			type = 0;
 			idc = -1;
 			style = 48;
@@ -128,80 +128,46 @@ class RscTitles
 	};
 	class overlayLogoAAN
 	{
-	    	idd = -1;
-	    	movingEnable = false;
-	    	duration = 10000;
-	    	fadein = 0;
-	    	fadeout = 0;
-	    	name = "TV";
-	    	controls[] =   {black1, black2,AANCorner};
-		class black1
-		{
-			x = -1.5;
-			y = -0.1;
-			w = 1.1;
-			h = 1.2;
-			type = 0;
-			idc = -1;
-			style = 48;
-			colorBackground[] = {0, 0, 0, 0};
-			colorText[] = {1, 1, 1, 1};
-			font = BitStream;
-			sizeEx = 0;
-			lineSpacing = 0;
-			
-			text = "#(argb,8,8,3)color(0,0,0,1)";
-		};	
-		class black2
-		{
-			x = 1.4;
-			y = -0.1;
-			w = 1.1;
-			h = 1.2;
-			type = 0;
-			idc = -1;
-			style = 48;
-			colorBackground[] = {0, 0, 0, 0};
-			colorText[] = {1, 1, 1, 1};
-			font = BitStream;
-			sizeEx = 0;
-			lineSpacing = 0;
-			
-			text = "#(argb,8,8,3)color(0,0,0,1)";
-		};    	
+		idd = -1;
+		movingEnable = false;
+		duration = 10000;
+		fadein = 0;
+		fadeout = 0;
+		name = "TV";
+		controls[] =   {AANCorner};   	
 		class AANCorner
-		  {
-			   x = 0.77;
-			   y = 0.88;
-			   w = 0.225;
-			   h = 0.15;
-			   type = 0;
-			   idc = -1;
-			   style = 48;
-			   colorBackground[] = {0, 0, 0, 0};
-			   colorText[] = {1, 1, 1, 1};
-			   font = BitStream;
-			   sizeEx = 0;
-			   lineSpacing = 0;
-			   
-			   text = "logo_tv_small_ca.paa";
-		  };
+		{
+			x = 0.77;
+			y = 0.88;
+			w = 0.225;
+			h = 0.15;
+			type = 0;
+			idc = -1;
+			style = 48;
+			colorBackground[] = {0, 0, 0, 0};
+			colorText[] = {1, 1, 1, 1};
+			font = BitStream;
+			sizeEx = 0;
+			lineSpacing = 0;
+			
+			text = "logo_tv_small_ca.paa";
+		};
 	};
 	class overlayJPGdamage
 	{
-	    	idd = -1;
-	    	movingEnable = false;
-	    	duration = 10000;
-	    	fadein = 0;
-	    	fadeout = 0;
-	    	name = "TV";
-	    	controls[] =   {black1, black2,jpgmess,AANCorner};
+		idd = -1;
+		movingEnable = false;
+		duration = 10000;
+		fadein = 0;
+		fadeout = 0;
+		name = "TV";
+		controls[] =   {black1,jpgmess,AANCorner};
 		class black1
 		{
 			x = -1.5;
-			y = -0.1;
-			w = 1.1;
-			h = 1.2;
+			y = -1.5;
+			w = 4;
+			h = 4;
 			type = 0;
 			idc = -1;
 			style = 48;
@@ -212,58 +178,41 @@ class RscTitles
 			lineSpacing = 0;
 			
 			text = "#(argb,8,8,3)color(0,0,0,1)";
-		};	
-		class black2
-		{
-			x = 1.4;
-			y = -0.1;
-			w = 1.1;
-			h = 1.2;
-			type = 0;
-			idc = -1;
-			style = 48;
-			colorBackground[] = {0, 0, 0, 0};
-			colorText[] = {1, 1, 1, 1};
-			font = BitStream;
-			sizeEx = 0;
-			lineSpacing = 0;
-			
-			text = "#(argb,8,8,3)color(0,0,0,1)";
-		};    	
+		}; 	
 		class jpgmess
-		  {
-			   x = -0.25;
-			   y = 0;
-			   w = 1.5;
-			   h = 1;
-			   type = 0;
-			   idc = -1;
-			   style = 48;
-			   colorBackground[] = {0, 0, 0, 0};
-			   colorText[] = {1, 1, 1, 1};
-			   font = BitStream;
-			   sizeEx = 0;
-			   lineSpacing = 0;
-			   
-			   text = "damagedJPG_co.paa";
-		  };
+		{
+			x = -0.25;
+			y = 0;
+			w = 1.5;
+			h = 1;
+			type = 0;
+			idc = -1;
+			style = 48;
+			colorBackground[] = {0, 0, 0, 0};
+			colorText[] = {1, 1, 1, 1};
+			font = BitStream;
+			sizeEx = 0;
+			lineSpacing = 0;
+			
+			text = "damagedJPG_co.paa";
+		};
 		class AANCorner
-		  {
-			   x = 0.77;
-			   y = 0.88;
-			   w = 0.225;
-			   h = 0.15;
-			   type = 0;
-			   idc = -1;
-			   style = 48;
-			   colorBackground[] = {0, 0, 0, 0};
-			   colorText[] = {1, 1, 1, 1};
-			   font = BitStream;
-			   sizeEx = 0;
-			   lineSpacing = 0;
-			   
-			   text = "logo_tv_small_ca.paa";
-		  };
+		{
+			x = 0.77;
+			y = 0.88;
+			w = 0.225;
+			h = 0.15;
+			type = 0;
+			idc = -1;
+			style = 48;
+			colorBackground[] = {0, 0, 0, 0};
+			colorText[] = {1, 1, 1, 1};
+			font = BitStream;
+			sizeEx = 0;
+			lineSpacing = 0;
+			
+			text = "logo_tv_small_ca.paa";
+		};
 	};	
 };
 

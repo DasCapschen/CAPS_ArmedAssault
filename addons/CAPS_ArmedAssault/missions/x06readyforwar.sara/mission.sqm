@@ -8,14 +8,14 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=627;
+		nextID=628;
 	};
 	class Camera
 	{
-		pos[]={7955.6587,19.039433,9408.4307};
-		dir[]={0.35922107,-0.45503917,-0.8148182};
-		up[]={0.18356398,0.89046758,-0.41637716};
-		aside[]={-0.91503692,-4.5401976e-009,-0.40340284};
+		pos[]={9237.0742,149.31793,10129.271};
+		dir[]={0.42555025,-0.6166324,0.66232467};
+		up[]={0.33332133,0.78725129,0.51877993};
+		aside[]={0.84131235,6.5891072e-008,-0.5405516};
 	};
 };
 binarizationWanted=0;
@@ -286,7 +286,26 @@ class Intro
 								};
 							};
 						};
-						nAttributes=2;
+						class Attribute2
+						{
+							property="unitName";
+							expression="_this setname _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Ed";
+								};
+							};
+						};
+						nAttributes=3;
 					};
 				};
 			};
@@ -1144,7 +1163,7 @@ class Intro
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7976.4673,5.503593,9385.1377};
+						position[]={7976.4668,5.5036922,9385.1377};
 						angles[]={0,4.6639032,0};
 					};
 					side="West";
@@ -1157,14 +1176,75 @@ class Intro
 					};
 					id=597;
 					type="CUP_B_USMC_Officer";
-					atlOffset=0.0084204674;
+					atlOffset=0.0085196495;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male05ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="unitName";
+							expression="_this setname _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Colonel Davies";
+								};
+							};
+						};
+						nAttributes=3;
+					};
 				};
 			};
 			class Attributes
 			{
 			};
 			id=596;
-			atlOffset=0.0084204674;
+			atlOffset=0.0085196495;
 		};
 		class Item33
 		{
@@ -1643,7 +1723,7 @@ class Intro
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9244.9121,139.99643,10101.965};
+						position[]={9244.8701,139.99643,10143.938};
 					};
 					side="Independent";
 					flags=7;
@@ -1657,6 +1737,25 @@ class Intro
 					class CustomAttributes
 					{
 						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
 						{
 							property="speaker";
 							expression="_this setspeaker _value;";
@@ -1675,7 +1774,7 @@ class Intro
 								};
 							};
 						};
-						class Attribute1
+						class Attribute2
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -1694,7 +1793,45 @@ class Intro
 								};
 							};
 						};
-						nAttributes=2;
+						class Attribute3
+						{
+							property="ENH_setCaptive";
+							expression="_this setCaptive _value";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="hideObject";
+							expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						nAttributes=5;
 					};
 				};
 			};

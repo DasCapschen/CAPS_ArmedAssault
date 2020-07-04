@@ -62,6 +62,7 @@ setaperture 30;
 sleep 1;
 _camera camCommitPrepared 0;
 cutRSC ["overlayLogoAAN","PLAIN NOFADE"];
+player setPos [7973.01,9385.96,0];
 titleText["","PLAIN",0];
 sleep 1;
 

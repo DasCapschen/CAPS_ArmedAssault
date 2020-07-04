@@ -182,6 +182,8 @@ wS1 kbAddTopic ["interview", "conversation.bikb"];
 
 //caman is player
 
+0.5 fadeSound 1;
+
 cS1 kbTell [caman, "interview", "Intro"]; //cS1 say2D "01v06";
 sleep 6;
 cS1 kbTell [caman, "interview", "Question"]; //cS1 say2D "01v07";

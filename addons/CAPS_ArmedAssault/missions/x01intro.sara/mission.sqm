@@ -8,14 +8,14 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=162;
+		nextID=166;
 	};
 	class Camera
 	{
-		pos[]={7544.5806,132.67369,6280.7061};
-		dir[]={0.79634434,-0.58804208,0.14168629};
-		up[]={0.57895947,0.80882251,0.10300929};
-		aside[]={0.17517547,-7.5669959e-009,-0.98455667};
+		pos[]={12378.375,36.239704,8468.9063};
+		dir[]={-0.29345164,-0.53861237,0.78980845};
+		up[]={-0.18759149,0.84255064,0.50489134};
+		aside[]={0.93739426,1.1373777e-007,0.34828627};
 	};
 };
 binarizationWanted=0;
@@ -233,7 +233,7 @@ class Intro
 			class PositionInfo
 			{
 				position[]={12167.952,29.938984,7126.0498};
-				angles[]={-0,3.1415927,0};
+				angles[]={0,3.1415927,0};
 			};
 			side="Empty";
 			flags=4;
@@ -358,7 +358,7 @@ class Intro
 											"STRING"
 										};
 									};
-									value="Gordon Reed";
+									value="Gordon";
 								};
 							};
 						};
@@ -1417,7 +1417,7 @@ class Intro
 					class PositionInfo
 					{
 						position[]={12166.903,28.441439,7121.21};
-						angles[]={-0,5.5721116,0};
+						angles[]={0,5.5721116,0};
 					};
 					side="Civilian";
 					flags=6;
@@ -3084,7 +3084,7 @@ class Intro
 					class PositionInfo
 					{
 						position[]={12376.349,31.996439,8476.9668};
-						angles[]={-0,3.1598973,0};
+						angles[]={0,3.1598973,0};
 					};
 					side="West";
 					flags=6;
@@ -3209,6 +3209,41 @@ class Mission
 		forecastWaves=0.1;
 		startFogDecay=0.0049333;
 		forecastFogDecay=0.0049333;
+	};
+	class Entities
+	{
+		items=1;
+		class Item0
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={7651.2134,15.37135,6298.4795};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						isPlayer=1;
+					};
+					id=165;
+					type="B_support_AMG_F";
+					atlOffset=0.00015640259;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=164;
+			atlOffset=0.00015640259;
+		};
 	};
 };
 class OutroLoose

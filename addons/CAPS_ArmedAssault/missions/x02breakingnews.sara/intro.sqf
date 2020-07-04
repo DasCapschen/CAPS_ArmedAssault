@@ -19,7 +19,7 @@ _camera camSetPos [12372.40,7323.52,1.42];
 _camera camSetFOV 0.11;
 _camera camCommit 0;
 sleep 8.5;
-0.5 fadeSound 0.15;
+0.5 fadeSound 1;
 setAperture 48;
 
 //zmizet logo

@@ -8,14 +8,14 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=424;
+		nextID=425;
 	};
 	class Camera
 	{
-		pos[]={8851.8018,174.7735,7801.0146};
-		dir[]={-0.87057388,-0.3704907,-0.32395396};
-		up[]={-0.34726775,0.92881548,-0.1292235};
-		aside[]={-0.34876794,-7.5437129e-008,0.93726134};
+		pos[]={8850.5313,181.40211,7804.5391};
+		dir[]={-0.31635562,-0.87829566,-0.35850489};
+		up[]={-0.58112967,0.47811103,-0.65855563};
+		aside[]={-0.74981165,-3.1688251e-007,0.66165584};
 	};
 };
 binarizationWanted=0;
@@ -197,7 +197,6 @@ class Intro
 			};
 			id=356;
 			type="EmptyDetector";
-			atlOffset=0.0004119873;
 		};
 		class Item3
 		{
@@ -205,7 +204,7 @@ class Intro
 			class PositionInfo
 			{
 				position[]={8845.5127,174.81834,7793.6919};
-				angles[]={-0,5.4105206,0.040477127};
+				angles[]={0,5.4105206,0.040477127};
 			};
 			side="Empty";
 			flags=4;
@@ -1602,7 +1601,26 @@ class Intro
 								};
 							};
 						};
-						nAttributes=2;
+						class Attribute2
+						{
+							property="unitName";
+							expression="_this setname _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Ed";
+								};
+							};
+						};
+						nAttributes=3;
 					};
 				};
 			};
@@ -1623,7 +1641,7 @@ class Intro
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9264.0391,139.99643,10098.674};
+						position[]={9245.125,139.99643,10144.773};
 					};
 					side="Independent";
 					flags=7;
@@ -1638,6 +1656,25 @@ class Intro
 					class CustomAttributes
 					{
 						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
 						{
 							property="speaker";
 							expression="_this setspeaker _value;";
@@ -1656,7 +1693,7 @@ class Intro
 								};
 							};
 						};
-						class Attribute1
+						class Attribute2
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -1675,7 +1712,45 @@ class Intro
 								};
 							};
 						};
-						nAttributes=2;
+						class Attribute3
+						{
+							property="ENH_setCaptive";
+							expression="_this setCaptive _value";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="hideObject";
+							expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						nAttributes=5;
 					};
 				};
 			};

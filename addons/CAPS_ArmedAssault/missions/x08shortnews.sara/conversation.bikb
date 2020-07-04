@@ -1,0 +1,29 @@
+class Sentences
+{
+    class 06v01 
+    {
+        actor = "ed";
+        text = $STRC_06v01;
+        speech[] = { "\sound\06v01.ogg" };
+        class Arguments {};
+    };
+    class 06v02 
+    {
+        actor = "ed";
+        text = $STRC_06v02;
+        speech[] = { "\sound\06v02.ogg" };
+        class Arguments {};
+    };
+    class 06v03 
+    {
+        actor = "ed";
+        text = $STRC_06v03;
+        speech[] = { "\sound\06v03.ogg" };
+        class Arguments {};
+    };
+};
+
+class Arguments {};
+class Special {};
+startWithVocal[] = { hour };
+startWithConsonant[] = { europe, university };

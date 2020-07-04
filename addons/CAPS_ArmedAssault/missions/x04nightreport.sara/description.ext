@@ -13,19 +13,19 @@ class RscTitles
 {
 	class overlayBlack
 	{
-	    	idd = -1;
-	    	movingEnable = false;
-	    	duration = 10000;
-	    	fadein = 0;
-	    	fadeout = 0;
-	    	name = "TV";
-	    	controls[] =   {black1};
+		idd = -1;
+		movingEnable = false;
+		duration = 10000;
+		fadein = 0;
+		fadeout = 0;
+		name = "TV";
+		controls[] =   {black1};
 		class black1
 		{
 			x = -1.5;
-			y = -0.1;
+			y = -1.5;
 			w = 4;
-			h = 1.2;
+			h = 4;
 			type = 0;
 			idc = -1;
 			style = 48;
@@ -40,19 +40,19 @@ class RscTitles
 	};	
 	class overlayNews
 	{
-	    	idd = -1;
-	    	movingEnable = false;
-	    	duration = 10000;
-	    	fadein = 0;
-	    	fadeout = 0;
-	    	name = "TV";
-	    	controls[] =   {black1,AANbig};
+		idd = -1;
+		movingEnable = false;
+		duration = 10000;
+		fadein = 0;
+		fadeout = 0;
+		name = "TV";
+		controls[] =   {black1,AANbig};
 		class black1
 		{
 			x = -1.5;
-			y = -0.1;
+			y = -1.5;
 			w = 4;
-			h = 1.2;
+			h = 4;
 			type = 0;
 			idc = -1;
 			style = 48;
@@ -65,32 +65,32 @@ class RscTitles
 			text = "#(argb,8,8,3)color(0,0,0,1)";
 		};	
 		class AANbig
-		  {
-			   x = -0.25;
-			   y = 0;
-			   w = 1.5;
-			   h = 1;
-			   type = 0;
-			   idc = -1;
-			   style = 48;
-			   colorBackground[] = {0, 0, 0, 0};
-			   colorText[] = {1, 1, 1, 1};
-			   font = BitStream;
-			   sizeEx = 0;
-			   lineSpacing = 0;
-			   
-			   text = "tv_screen_aan_co.paa";
-		  };
+		{
+			x = -0.25;
+			y = 0;
+			w = 1.5;
+			h = 1;
+			type = 0;
+			idc = -1;
+			style = 48;
+			colorBackground[] = {0, 0, 0, 0};
+			colorText[] = {1, 1, 1, 1};
+			font = BitStream;
+			sizeEx = 0;
+			lineSpacing = 0;
+			
+			text = "tv_screen_aan_co.paa";
+		};
 	};
 	class overlayLogoAAN
 	{
-	    	idd = -1;
-	    	movingEnable = false;
-	    	duration = 10000;
-	    	fadein = 0;
-	    	fadeout = 0;
-	    	name = "TV";
-	    	controls[] =   {black1, black2,AANCorner};
+		idd = -1;
+		movingEnable = false;
+		duration = 10000;
+		fadein = 0;
+		fadeout = 0;
+		name = "TV";
+		controls[] =   {AANCorner};
 		class black1
 		{
 			x = -1.5;

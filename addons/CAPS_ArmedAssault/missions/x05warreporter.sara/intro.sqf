@@ -9,17 +9,18 @@ showcinemaborder true;
 0 setRain 0;
 
 //initial cam setup
-_camera = "camera" camCreate [9245.30,10141.92,1.53];
+_camera = "camera" camCreate [2511.14,2519.75,1.53];
 _camera cameraEffect ["internal","back"];
 _camera camcommand "inertia on";
 
 //TVstudio default kamera
-_camera camPrepareTarget [6635.59,110107.85,-2000];
-_camera camPreparePos [9245.30,10141.92,1.53];
+_camera camPrepareTarget [2511.09,2523.42,1.53];
+_camera camPreparePos [2511.14,2519.75,1.53];
 _camera camPrepareFOV 0.25;
 
 sleep 8;
 0 setovercast 0;
+0 setRain 0;
 setaperture 18;
 
 studioMan kbAddTopic ["interview", "conversation.bikb"];
@@ -27,17 +28,18 @@ marian kbAddTopic ["interview", "conversation.bikb"];
 
 //zmizet logo
 _camera camCommitPrepared 0;
-0.5 fadeSound 0.05;
+0.5 fadeSound 1;
 studioMan setMimic "normal";
 studioMan disableAI "Move";
 marian setMimic "normal";
 studioMan switchMove "ActsPercMstpSnonWnonDnon_MarianQ_TVstudioMan_LoopLong";
-_camera camSetTarget [6635.59,110107.85,-2000];
-_camera camSetPos [9245.30,10141.92,1.53];
+_camera camSetTarget [2511.09,2523.42,1.53];
+_camera camSetPos [2511.14,2519.75,1.53];
 _camera camSetFOV 0.17;
 _camera camCommit 3;
 titleText["","PLAIN",0];
 cutRSC ["overlayLogoAAN","PLAIN NOFADE"];
+player setPos [2511.14,2519.75,0];
 sleep 2;
 studioMan kbTell [player, "interview", "05v50"];
 sleep 7;
@@ -54,8 +56,8 @@ studioMan kbTell [player, "interview", "05v52"];
 sleep 6;
 studioMan kbTell [player, "interview", "05v53"];
 sleep 8;
-_camera camSetTarget [-17000,110107.85,1000];
-_camera camSetPos [9245.30,10141.92,1.53];
+_camera camSetTarget [2509.23,2524.49,2];
+_camera camSetPos [2511.14,2519.75,1.53];
 _camera camSetFOV 0.08;
 _camera camCommit 4;
 sleep 2;
@@ -65,8 +67,8 @@ sleep 2;
 studioMan kbTell [player, "interview", "05v54"];
 sleep 2;
 cutRSC ["overlayLogoAAN","PLAIN NOFADE"];
-_camera camSetTarget [6635.59,110107.85,-2000];
-_camera camSetPos [9245.30,10141.92,1.53];
+_camera camSetTarget [2511.09,2523.42,1.53];
+_camera camSetPos [2511.14,2519.75,1.53];
 _camera camSetFOV 0.17;
 _camera camCommit 0.5;
 waitUntil{ camCommitted _camera };
@@ -84,29 +86,32 @@ _camera camSetTarget [189425.22,-13587.16,-1199.50];
 _camera camSetPos [10383.09,10155.50,1.25];
 _camera camSetFOV 0.2;
 enableEnvironment true;
-0.5 fadeSound 0.3;
+0.5 fadeSound 0.7;
 _camera camCommit 0;
 waitUntil{ camCommitted _camera };
 marian switchMove "ActsPercMstpSnonWnonDnon_MarianQ_shot5";
 sleep 0.5;
 cutRSC ["overlayLogoAAN","PLAIN NOFADE"];
 titleText["","PLAIN",0];
+player setPos [10384.2,10154.8,0];
 sleep 1.5;
 marian kbTell [player, "interview", "05v55"];
 sleep 13;
 tankyVpred=true;;
 marian kbTell [player, "interview", "05v56"];
+
 //TVstudio default kamera
-_camera camPrepareTarget [6635.59,110107.85,-2000];
-_camera camPreparePos [9245.30,10141.92,1.53];
+_camera camPrepareTarget [2511.09,2523.42,1.53];
+_camera camPreparePos [2511.14,2519.75,1.53];
 _camera camPrepareFOV 0.15;
 
 tankyVpred=true;
 sleep 13;
-0.5 fadeSound 0.05;
+0.5 fadeSound 1;
 setaperture 18;
 0 setOvercast 0;
 skipTime 10;
+player setPos [2511.14,2519.75,0];
 titleText["","PLAIN",0];
 _camera camCommitPrepared 0;
 enableEnvironment false;
@@ -124,6 +129,7 @@ sleep 6.5;
 setaperture 32;
 skipTime -10;
 titleText["","PLAIN",0];
+player setPos [10384.2,10154.8,0];
 0.5 fadeSound 0.7;
 enableEnvironment true;
 _camera camCommitPrepared 0;
@@ -166,18 +172,23 @@ sleep 0.05;
 cutRSC ["overlayJPGdamage","PLAIN NOFADE"];
 sleep 1;
 cutRSC ["overlayNews","PLAIN NOFADE"];
-_camera camSetTarget [6635.59,110107.85,-2000];
-_camera camSetPos [9245.30,10141.92,1.53];
+
+//TVstudio default kamera
+_camera camPrepareFOV 0.25;
+_camera camSetTarget [2511.09,2523.42,1.53];
+_camera camSetPos [2511.14,2519.75,1.53];
 _camera camSetFOV 0.17;
 _camera camCommit 0.5;
 waitUntil{ camCommitted _camera };
+
 sleep 3;
 setaperture 18;
 0 setOvercast 0;
 skipTime 10;
-0.5 fadeSound 0.05;
+0.5 fadeSound 1;
 enableEnvironment false;
 sleep 2;
+player setPos [2511.14,2519.75,0];
 cutRSC ["overlayLogoAAN","PLAIN NOFADE"];
 studioMan kbTell [player, "interview", "05v61"];
 sleep 5;

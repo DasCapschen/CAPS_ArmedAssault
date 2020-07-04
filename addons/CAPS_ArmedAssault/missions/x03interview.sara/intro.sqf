@@ -22,7 +22,7 @@ sleep 8;
 _camera camCommitPrepared 0;
 
 //zmizet logo
-0.5 fadeSound 0.5;
+0.5 fadeSound 1;
 enableEnvironment true;
 ed setMimic "neutral";
 armstrong setMimic "neutral";

@@ -13,19 +13,19 @@ class RscTitles
 {
 	class overlayBlack
 	{
-	    	idd = -1;
-	    	movingEnable = false;
-	    	duration = 10000;
-	    	fadein = 0;
-	    	fadeout = 0;
-	    	name = "TV";
-	    	controls[] =   {black1};
+		idd = -1;
+		movingEnable = false;
+		duration = 10000;
+		fadein = 0;
+		fadeout = 0;
+		name = "TV";
+		controls[] =   {black1};
 		class black1
 		{
-			x = -1.5;
-			y = -0.1;
-			w = 4;
-			h = 1.2;
+			x = safezoneX;
+			y = safezoneY;
+			w = safezoneW;
+			h = safezoneH;
 			type = 0;
 			idc = -1;
 			style = 48;
@@ -40,13 +40,13 @@ class RscTitles
 	};	
 	class overlayNews
 	{
-	    	idd = -1;
-	    	movingEnable = false;
-	    	duration = 10000;
-	    	fadein = 0;
-	    	fadeout = 0;
-	    	name = "TV";
-	    	controls[] =   {black1,AANbig2};
+		idd = -1;
+		movingEnable = false;
+		duration = 10000;
+		fadein = 0;
+		fadeout = 0;
+		name = "TV";
+		controls[] =   {black1,AANbig};
 		class black1
 		{
 			x = -1.5;
@@ -64,39 +64,12 @@ class RscTitles
 			
 			text = "#(argb,8,8,3)color(0,0,0,1)";
 		};	
-		class AANbig2
-		  {
-			   x = -0.25;
-			   y = 0;
-			   w = 1.5;
-			   h = 1;
-			   type = 0;
-			   idc = -1;
-			   style = 48;
-			   colorBackground[] = {0, 0, 0, 0};
-			   colorText[] = {1, 1, 1, 1};
-			   font = BitStream;
-			   sizeEx = 0;
-			   lineSpacing = 0;
-			   
-			   text = "tv_screen_aan_co.paa";
-		  };
-	};
-	class overlayLogoAAN
-	{
-	    	idd = -1;
-	    	movingEnable = false;
-	    	duration = 10000;
-	    	fadein = 0;
-	    	fadeout = 0;
-	    	name = "TV";
-	    	controls[] =   {black1, black2,AANCorner};
-		class black1
+		class AANbig
 		{
-			x = -1.5;
-			y = -0.1;
-			w = 1.1;
-			h = 1.2;
+			x = safezoneX;
+			y = safezoneY;
+			w = safezoneW;
+			h = safezoneH;
 			type = 0;
 			idc = -1;
 			style = 48;
@@ -106,43 +79,35 @@ class RscTitles
 			sizeEx = 0;
 			lineSpacing = 0;
 			
-			text = "#(argb,8,8,3)color(0,0,0,1)";
-		};	
-		class black2
-		{
-			x = 1.4;
-			y = -0.1;
-			w = 1.1;
-			h = 1.2;
-			type = 0;
-			idc = -1;
-			style = 48;
-			colorBackground[] = {0, 0, 0, 0};
-			colorText[] = {1, 1, 1, 1};
-			font = BitStream;
-			sizeEx = 0;
-			lineSpacing = 0;
-			
-			text = "#(argb,8,8,3)color(0,0,0,1)";
-		};    	
-		class AANCorner
-		  {
-			   x = 0.77;
-			   y = 0.88;
-			   w = 0.225;
-			   h = 0.15;
-			   type = 0;
-			   idc = -1;
-			   style = 48;
-			   colorBackground[] = {0, 0, 0, 0};
-			   colorText[] = {1, 1, 1, 1};
-			   font = BitStream;
-			   sizeEx = 0;
-			   lineSpacing = 0;
-			   
-			   text = "logo_tv_small_ca.paa";
-		  };
+			text = "tv_screen_aan_co.paa";
+		};
 	};
+    class overlayLogoAAN
+    {
+        idd = -1;
+        movingEnable = false;
+        duration = 10000;
+        fadein = 0;
+        fadeout = 0;
+        name = "TV";
+        controls[] =   {AANCorner};  	
+        class AANCorner
+        {
+            x = 0.90 * safezoneW + safezoneX;
+            y = 0.80 * safezoneH + safezoneY;
+            w = 0.225;
+            h = 0.15;
+            type = 0;
+            idc = -1;
+            style = 48;
+            colorBackground[] = {0, 0, 0, 0};
+            colorText[] = {1, 1, 1, 1};
+            font = BitStream;
+            sizeEx = 0;
+            lineSpacing = 0;
+            text = "logo_tv_small_ca.paa";
+        };
+    };
 };
 
 class CfgSounds
@@ -281,103 +246,11 @@ class CfgSounds
 			0, $STRC_XTv13
 		};
 	};
-
-	class XTv20
-	{
-		name = "";
-
-		sound[] = {"sound\XTv20.ogg", db+20, 1.0};
-		titles[] = 
-		{
-			0, $STRC_XTv20
-		};
-	};
-	class XTv21
-	{
-		name = "";
-
-		sound[] = {"sound\XTv21.ogg", db+20, 1.0};
-		titles[] = 
-		{
-			0, $STRC_XTv21
-		};
-	};
-	class XTv22
-	{
-		name = "";
-
-		sound[] = {"sound\XTv22.ogg", db+20, 1.0};
-		titles[] = 
-		{
-			0, $STRC_XTv22
-		};
-	};
-	class XTv23
-	{
-		name = "";
-
-		sound[] = {"sound\XTv23.ogg", db+20, 1.0};
-		titles[] = 
-		{
-			0, $STRC_XTv23
-		};
-	};
-	class XTv24
-	{
-		name = "";
-
-		sound[] = {"sound\XTv24.ogg", db+20, 1.0};
-		titles[] = 
-		{
-			0, $STRC_XTv24
-		};
-	};
-	class XTv25
-	{
-		name = "";
-
-		sound[] = {"sound\XTv25.ogg", db+20, 1.0};
-		titles[] = 
-		{
-			0, $STRC_XTv25
-		};
-	};
-	class XTv26
-	{
-		name = "";
-
-		sound[] = {"sound\XTv26.ogg", db+20, 1.0};
-		titles[] = 
-		{
-			0, $STRC_XTv26
-		};
-	};
-	class XTv27
-	{
-		name = "";
-
-		sound[] = {"sound\XTv27.ogg", db+20, 1.0};
-		titles[] = 
-		{
-			0, $STRC_XTv27
-		};
-	};
-	class XTv28
-	{
-		name = "";
-
-		sound[] = {"sound\XTv28.ogg", db+20, 1.0};
-		titles[] = 
-		{
-			0, $STRC_XTv28
-		};
-	};
-
 	class XTv80
 	{
 		name = "";
 		//forceTitles=true;	
-		sound[] = {"sound\XTv80.ogg", db+20, 1.0};
+		sound[] = {"sound\XTv80.ogg", db+0, 1.0};
 		titles[] = 
 		{
 			0, $STRC_XTv80
@@ -387,14 +260,14 @@ class CfgSounds
 	{
 		name = "";
 		//forceTitles=true;
-		sound[] = {"sound\XTv81.ogg", db+20, 1.0};
+		sound[] = {"sound\XTv81.ogg", db+0, 1.0};
 		titles[] = {};
 	};
 	class XTv82
 	{
 		name = "";
 		//forceTitles=true;
-		sound[] = {"sound\XTv82.ogg", db+20, 1.0};
+		sound[] = {"sound\XTv82.ogg", db+0, 1.0};
 		titles[] = 
 		{
 			0, $STRC_XTv82
@@ -404,7 +277,7 @@ class CfgSounds
 	{
 		name = "";
 		//forceTitles=true;
-		sound[] = {"sound\XTv83.ogg", db+20, 1.0};
+		sound[] = {"sound\XTv83.ogg", db+0, 1.0};
 		titles[] = 
 		{
 			0, $STRC_XTv83
@@ -414,7 +287,7 @@ class CfgSounds
 	{
 		name = "";
 		//forceTitles=true;
-		sound[] = {"sound\XTv84.ogg", db+20, 1.0};
+		sound[] = {"sound\XTv84.ogg", db+0, 1.0};
 		titles[] = 
 		{
 			0, $STRC_XTv84
@@ -424,7 +297,7 @@ class CfgSounds
 	{
 		name = "";
 		//forceTitles=true;
-		sound[] = {"sound\XTv85.ogg", db+20, 1.0};
+		sound[] = {"sound\XTv85.ogg", db+0, 1.0};
 		titles[] = 
 		{
 			0, $STRC_XTv85
@@ -434,7 +307,7 @@ class CfgSounds
 	{
 		name = "";
 
-		sound[] = {"sound\XTv86.ogg", db+20, 1.0};
+		sound[] = {"sound\XTv86.ogg", db+0, 1.0};
 		//forceTitles=true;
 		titles[] = 
 		{

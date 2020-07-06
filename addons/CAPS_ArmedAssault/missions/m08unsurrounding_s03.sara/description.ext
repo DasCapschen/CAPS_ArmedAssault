@@ -2,75 +2,58 @@ minScore=999;
 avgScore=2800;
 maxScore=7399;
 
+onLoadName = $STR_M08_NAME;
 onLoadMission=$STR_M08_OnLoad;
 
-class Weapons
-{
-    class AK74
-    {
-        count = 1;
-    };
-    class AK74GL
-    {
-        count = 1;
-    };
-    class PK
-    {
-        count = 1;
-    };
-    class SVD
-    {
-        count = 1;
-    };
-    class AKS74U
-    {
-        count = 1;
-    };
-};
+briefingName = $STR_M08_NAME;
+overviewText = "The SLAs are surrounding us at camps north of Dolores. Your main task is to command two HMMWVs and clear all sector from enemies. Secondary task is to search for another hidden camps.";
+overviewPicture = "\CAPS_ArmedAssault\pictures\m08s03.paa";
 
-class Magazines
-{
-    class 30rnd_545x39_AK
-    {
-        count = 5;
-    };
-    class HandGrenadeTimed
-    {
-        count = 5;
-    };
-    class 1rnd_HE_GP25
-    {
-        count = 5;
-    };
-    class 100rnd_762x54_PK
-    {
-        count = 10;
-    };
-    class PG7V
-    {
-        count = 5;
-    };
-    class 10rnd_762x54_SVD
-    {
-        count = 10;
-    };
-    class SmokeShell
-    {
-        count = 5;
-    };
-};
-
-class CfgRadio
-{
-	sounds[] = {};
-};
-
-class CfgSFX
-{
-	sounds[] = {};
-};
-
-class CfgEnvSounds
-{
-	sounds[] = {};
+class CfgDebriefing
+{  
+	class End1
+	{
+		title = "Mission Completed";
+		subtitle = "";
+		description = "Phenomenal job, soldier. All marked and hidden camps were destroyed.";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+	};
+    class End2
+	{
+		title = "Mission Completed";
+		subtitle = "";
+		description = "Great job, soldier. All marked camps (+ two hidden) were destroyed.";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+	};
+    class End3
+	{
+		title = "Mission Completed";
+		subtitle = "";
+		description = "Nice job, soldier. All marked camps (+ one hidden) were destroyed.";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+	};
+    class End4
+	{
+		title = "Mission Completed";
+		subtitle = "";
+		description = "Good job, soldier. All marked camps were destroyed.";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+	};
+    class End5
+	{
+		title = "Mission Failed";
+		subtitle = "";
+		description = "Both HMMWV has been destroyed. Mission failed.";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+	};
 };

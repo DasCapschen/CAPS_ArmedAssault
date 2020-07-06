@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=932;
+		nextID=933;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={12972.257,217.26047,7881.5947};
-		dir[]={-0.67094797,-0.60112286,-0.43429986};
-		up[]={-0.504655,0.79913282,-0.32666075};
-		aside[]={-0.54342592,-2.0163134e-007,0.83953208};
+		pos[]={12857.204,115.09168,7309.542};
+		dir[]={-0.48819268,-0.64746302,0.58531982};
+		up[]={-0.41472602,0.76207495,0.49723557};
+		aside[]={0.76799566,-3.4109689e-007,0.64055681};
 	};
 };
 binarizationWanted=0;
@@ -230,7 +230,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=373;
+		items=374;
 		class Item0
 		{
 			dataType="Marker";
@@ -20614,11 +20614,12 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={12777.258,32.766647,7385.9072};
-				angles[]={6.1190944,0,6.2600417};
+				position[]={12777.258,32.766651,7385.9072};
+				angles[]={6.1190891,0,6.2600422};
 			};
 			id=899;
 			type="ModuleCreateDiaryRecord_F";
+			atlOffset=3.8146973e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -20674,7 +20675,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="I still can't get my head around it, but maybe writing it down will help. We're in the middle of a war. Christ, no one saw this one coming." \n "" \n "SLA forces have taken full control of the border city of Corazol and continue to press Westward. In the North, troops of the Royal Army Corps of Sahrani have set up defensive positions along the coastal route, and our Stryker Platoons have been put in charge of the defense of the Southern part of the island. It's a lot of land to cover with just two platoons, but you have to use what you’ve got. " \n "" \n "Our task is to defend the city of Ortego. After taking out the enemy in the open, we plan to advance back North on Corazol, while the RACS (callsign Marble) comes in from the West. We retake the city, and we’re back at DFAC in time for dinner. Piece of cake.";
+							value="I still can't get my head around it, but maybe writing it down will help. We're in the middle of a war. Christ, no one saw this one coming." \n "<br/><br/>" \n "SLA forces have taken full control of the border city of Corazol and continue to press Westward. In the North, troops of the Royal Army Corps of Sahrani have set up defensive positions along the coastal route, and our Stryker Platoons have been put in charge of the defense of the Southern part of the island. It's a lot of land to cover with just two platoons, but you have to use what you’ve got. " \n "<br/><br/>" \n "Our task is to defend the city of Ortego. After taking out the enemy in the open, we plan to advance back North on Corazol, while the RACS (callsign Marble) comes in from the West. We retake the city, and we’re back at DFAC in time for dinner. Piece of cake.";
 						};
 					};
 				};
@@ -20785,7 +20786,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Repel the enemy attack from the North and join forces with the Royal Army Corps of Sahrani (Codename Marble) to regain control of Corazol." \n "" \n "We are positioned <marker name=""start"">North</marker> of the city of Ortego.";
+							value="Repel the enemy attack from the North and join forces with the Royal Army Corps of Sahrani (Codename Marble) to regain control of Corazol." \n "<br/><br/>" \n "We are positioned <marker name=""start"">North</marker> of the city of Ortego.";
 						};
 					};
 				};
@@ -21061,7 +21062,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={13058.145,19.501469,8532.8232};
-				angles[]={0.13691807,0,6.2010813};
+				angles[]={0.13692108,0,6.2010846};
 			};
 			name="CreateTask2";
 			id=903;
@@ -21285,13 +21286,12 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={13241.104,19.079626,8817.6504};
-				angles[]={6.1578465,0,6.1845074};
+				position[]={13241.104,19.079748,8817.6504};
+				angles[]={6.1578531,0,6.1845045};
 			};
 			name="CreateTask3";
 			id=904;
 			type="ModuleTaskCreate_F";
-			atlOffset=-0.00012207031;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -21385,7 +21385,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Take control of the city.";
+							value="Take control of the city";
 						};
 					};
 				};
@@ -21961,7 +21961,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11596.205,15.956264,6160.1748};
-				angles[]={0.06739822,0,6.2494483};
+				angles[]={0.067404613,0,6.2494478};
 			};
 			name="CreateTask6";
 			id=907;
@@ -22059,7 +22059,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Retreat!";
+							value="Retreat";
 						};
 					};
 				};
@@ -23133,6 +23133,116 @@ class Mission
 			id=931;
 			type="FenceWood";
 			atlOffset=-3.8146973e-006;
+		};
+		class Item373
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={12801.527,34.204594,7393.9048};
+				angles[]={6.1190891,0,6.2600422};
+			};
+			id=932;
+			type="ModuleCreateDiaryRecord_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleCreateDiaryRecord_F_PresetTitle";
+					expression="_this setVariable ['PresetTitle',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Execution";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCreateDiaryRecord_F_Title";
+					expression="_this setVariable ['Title',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCreateDiaryRecord_F_Description";
+					expression="_this setVariable ['Description',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="1. Hold your position and defeat the enemy attack." \n "<br/>" \n "2. Push the enemy back to <marker name=""Cora"">Corazol</marker>." \n "<br/>" \n "3. Take control of the city of Corazol.";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleCreateDiaryRecord_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=3;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleCreateDiaryRecord_F_Subject";
+					expression="_this setVariable ['Subject',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				nAttributes=5;
+			};
 		};
 	};
 	class Connections

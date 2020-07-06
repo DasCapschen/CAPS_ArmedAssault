@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=263;
+		nextID=264;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={12763.476,135.24776,7345.041};
-		dir[]={0.67090958,-0.65228671,0.35298362};
-		up[]={0.5772984,0.75793177,0.30373079};
-		aside[]={0.46564996,2.6496127e-007,-0.88506258};
+		pos[]={13020.371,135.24776,7256.4746};
+		dir[]={-0.24167512,-0.54048288,0.80602372};
+		up[]={-0.15524556,0.8413071,0.51777083};
+		aside[]={0.95795298,-2.2002496e-007,0.28722429};
 	};
 };
 binarizationWanted=0;
@@ -175,7 +175,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=71;
+		items=72;
 		class Item0
 		{
 			dataType="Marker";
@@ -2824,7 +2824,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="2. Wait for the Enemy";
+							value="Wait for the Enemy";
 						};
 					};
 				};
@@ -3050,7 +3050,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="1. Get in Position";
+							value="Get in Position";
 						};
 					};
 				};
@@ -3275,7 +3275,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="3. Engage the enemy";
+							value="Engage the enemy";
 						};
 					};
 				};
@@ -3402,7 +3402,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={12839.016,28.421978,7333.3018};
-				angles[]={6.2270842,0,0.047593758};
+				angles[]={6.2270904,0,0.047595128};
 			};
 			name="Task3";
 			id=227;
@@ -3500,7 +3500,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="4. Extraction";
+							value="Extraction";
 						};
 					};
 				};
@@ -4413,6 +4413,115 @@ class Mission
 					};
 				};
 				nAttributes=2;
+			};
+		};
+		class Item71
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={13002.83,37.379589,7416.0928};
+			};
+			id=263;
+			type="ModuleCreateDiaryRecord_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleCreateDiaryRecord_F_PresetTitle";
+					expression="_this setVariable ['PresetTitle',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Execution";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCreateDiaryRecord_F_Title";
+					expression="_this setVariable ['Title',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCreateDiaryRecord_F_Description";
+					expression="_this setVariable ['Description',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="1. You'll take up a concealed position <marker name='tower'>near the road</marker>." \n "<br/>" \n "2. The enemy convoy will travel from <marker name='load'>the staging area</marker> to <marker name='base'>this camp</marker>." \n "<br/>" \n "3. Engage all enemies. The convoy vehicles may be allowed to escape, but not with troops aboard." \n "<br/>" \n "4. Reach the <marker name='end'>extraction point</marker>.";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleCreateDiaryRecord_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=3;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleCreateDiaryRecord_F_Subject";
+					expression="_this setVariable ['Subject',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				nAttributes=5;
 			};
 		};
 	};

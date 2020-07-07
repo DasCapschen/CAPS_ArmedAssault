@@ -861,7 +861,7 @@ class Mission
 					combatMode="RED";
 					formation="LINE";
 					combat="AWARE";
-					expActiv="[this, ""grupa1"", -180] exec ""poplach.sqs""";
+					expActiv="0 = [this, ""grupa1"", -180] execVM ""poplach.sqf""";
 					synchronizations[]={0};
 					class Effects
 					{
@@ -943,7 +943,7 @@ class Mission
 					combatMode="RED";
 					formation="LINE";
 					combat="AWARE";
-					expActiv="[this, ""grupa2"", -90] exec ""poplach.sqs""";
+					expActiv="0 = [this, ""grupa2"", -90] execVM ""poplach.sqf""";
 					synchronizations[]={1};
 					class Effects
 					{
@@ -1051,7 +1051,7 @@ class Mission
 					combatMode="RED";
 					formation="LINE";
 					combat="AWARE";
-					expActiv="[this, ""grupa3"", -180] exec ""poplach.sqs""";
+					expActiv="0 = [this, ""grupa3"", -180] execVM ""poplach.sqf""";
 					synchronizations[]={2};
 					class Effects
 					{
@@ -1172,7 +1172,7 @@ class Mission
 					combatMode="RED";
 					formation="LINE";
 					combat="AWARE";
-					expActiv="[this, ""grupa4"", +90] exec ""poplach.sqs""";
+					expActiv="0 = [this, ""grupa4"", +90] execVM ""poplach.sqf""";
 					synchronizations[]={3};
 					class Effects
 					{
@@ -1262,7 +1262,7 @@ class Mission
 					combatMode="RED";
 					formation="LINE";
 					combat="AWARE";
-					expActiv="[this, ""grupa1"", -180] exec ""poplach.sqs""";
+					expActiv="0 = [this, ""grupa1"", -180] execVM ""poplach.sqf""";
 					synchronizations[]={4};
 					class Effects
 					{
@@ -1323,7 +1323,7 @@ class Mission
 					combatMode="RED";
 					formation="LINE";
 					combat="AWARE";
-					expActiv="[this, ""grupa5"", +90] exec ""poplach.sqs""";
+					expActiv="0 = [this, ""grupa5"", +90] execVM ""poplach.sqf""";
 					synchronizations[]={5};
 					class Effects
 					{
@@ -2018,214 +2018,7 @@ class Mission
 					vehicle="Logic";
 					leader=1;
 					skill=0.600000;
-				};
-			};
-			class Waypoints
-			{
-				items=16;
-				class Item0
-				{
-					position[]={12887.471680,45.413280,8095.241699};
-					type="AND";
-					expActiv="wPlt1L lookAt wS1L; wPlt1L say ""06v05""";
-					class Effects
-					{
-					};
-					timeoutMin=1.000000;
-					timeoutMid=1.000000;
-					timeoutMax=1.000000;
-					showWP="NEVER";
-				};
-				class Item1
-				{
-					position[]={12904.716797,44.979973,8095.278809};
-					type="AND";
-					expActiv="wS1TA3 say ""06v01""; {_x lookAt wCAS1} forEach [wS1TA2, wS1TA3, wS1TA4, wS1TB1, wS1TB2]";
-					synchronizations[]={6};
-					class Effects
-					{
-					};
-					showWP="NEVER";
-				};
-				class Item2
-				{
-					position[]={12921.955078,44.983658,8095.318359};
-					type="AND";
-					expActiv="wS1TB2 say ""06v02""; {_x lookAt wCAS1} forEach [wS1TA1, wS1TB3, wS1TB4]";
-					class Effects
-					{
-					};
-					timeoutMin=1.000000;
-					timeoutMid=1.000000;
-					timeoutMax=1.000000;
-					showWP="NEVER";
-				};
-				class Item3
-				{
-					position[]={12939.722656,45.843521,8095.366211};
-					type="AND";
-					expActiv="wS1TA4 say ""06v03""; wPlt1L lookAt wCAS1";
-					class Effects
-					{
-					};
-					timeoutMin=0.300000;
-					timeoutMid=0.300000;
-					timeoutMax=0.300000;
-					showWP="NEVER";
-				};
-				class Item4
-				{
-					position[]={12956.331055,45.228302,8095.346680};
-					type="AND";
-					expActiv="wS1TB4 say ""06v04""; {_x lookAt objNull} forEach [wS1TA2, wS1TA3, wS1TA4, wS1TB1, wS1TB2]";
-					class Effects
-					{
-					};
-					timeoutMin=1.000000;
-					timeoutMid=1.000000;
-					timeoutMax=1.000000;
-					showWP="NEVER";
-				};
-				class Item5
-				{
-					position[]={12974.994141,45.092350,8095.403320};
-					type="AND";
-					expActiv="wPlt1L say ""06v06""; {_x lookAt objNull} forEach [wS1TA1, wS1TB3, wS1TB4]; wPlt1L lookAt wStr3";
-					synchronizations[]={7,8,9,15};
-					class Effects
-					{
-					};
-					timeoutMin=4.000000;
-					timeoutMid=4.000000;
-					timeoutMax=4.000000;
-					showWP="NEVER";
-				};
-				class Item6
-				{
-					position[]={12992.789063,44.819328,8095.428223};
-					type="AND";
-					expActiv="hint localize ""STRC_06h01""";
-					synchronizations[]={29};
-					class Effects
-					{
-					};
-					timeoutMin=3.000000;
-					timeoutMid=3.000000;
-					timeoutMax=3.000000;
-					showWP="NEVER";
-				};
-				class Item7
-				{
-					position[]={13011.033203,44.864540,8095.460449};
-					type="AND";
-					expCond="({(count crew _x) == 10} count [wStr1, wStr2, wStr3]) == 3";
-					synchronizations[]={10,27,28};
-					class Effects
-					{
-					};
-					showWP="NEVER";
-				};
-				class Item8
-				{
-					position[]={13011.180664,46.435513,8074.183594};
-					type="AND";
-					expActiv="wPlt1L sideRadio ""06r01""";
-					class Effects
-					{
-					};
-					timeoutMin=2.000000;
-					timeoutMid=2.000000;
-					timeoutMax=2.000000;
-					showWP="NEVER";
-				};
-				class Item9
-				{
-					position[]={13031.610352,45.876919,8074.223633};
-					type="AND";
-					expActiv="wS3L sideRadio ""06r02""";
-					class Effects
-					{
-					};
-					timeoutMin=4.000000;
-					timeoutMid=4.000000;
-					timeoutMax=4.000000;
-					showWP="NEVER";
-				};
-				class Item10
-				{
-					position[]={13050.542969,45.021755,8074.282227};
-					type="AND";
-					expActiv="wPlt1L sideRadio ""06r03""";
-					class Effects
-					{
-					};
-					timeoutMin=3.000000;
-					timeoutMid=3.000000;
-					timeoutMax=3.000000;
-					showWP="NEVER";
-				};
-				class Item11
-				{
-					position[]={13071.998047,44.754665,8074.282227};
-					type="AND";
-					expActiv="wS1L sideRadio ""06r04""";
-					class Effects
-					{
-					};
-					timeoutMin=2.000000;
-					timeoutMid=2.000000;
-					timeoutMax=2.000000;
-					showWP="NEVER";
-				};
-				class Item12
-				{
-					position[]={13091.510742,44.427525,8074.282227};
-					type="AND";
-					expActiv="wPlt1L sideRadio ""06r05""";
-					class Effects
-					{
-					};
-					timeoutMin=3.000000;
-					timeoutMid=3.000000;
-					timeoutMax=3.000000;
-					showWP="NEVER";
-				};
-				class Item13
-				{
-					position[]={13110.381836,43.931335,8074.041992};
-					type="AND";
-					expActiv="wS2L sideRadio ""06r06""";
-					class Effects
-					{
-					};
-					timeoutMin=3.000000;
-					timeoutMid=3.000000;
-					timeoutMax=3.000000;
-					showWP="NEVER";
-				};
-				class Item14
-				{
-					position[]={13130.359375,42.952648,8074.041992};
-					type="AND";
-					expActiv="wPlt1L sideRadio ""06r07""";
-					class Effects
-					{
-					};
-					timeoutMin=3.000000;
-					timeoutMid=3.000000;
-					timeoutMax=3.000000;
-					showWP="NEVER";
-				};
-				class Item15
-				{
-					position[]={13150.548828,41.819984,8074.041992};
-					type="AND";
-					expCond="wStr1 in list Outpost";
-					expActiv="wPlt1L sideRadio ""06r08""";
-					class Effects
-					{
-					};
-					showWP="NEVER";
+					init="0 = this execVM ""gamelogic1.sqf"";";
 				};
 			};
 		};
@@ -2781,24 +2574,7 @@ class Mission
 					vehicle="Logic";
 					leader=1;
 					skill=0.600000;
-				};
-			};
-			class Waypoints
-			{
-				items=1;
-				class Item0
-				{
-					position[]={13391.554688,3.301061,8575.998047};
-					type="AND";
-					expActiv="deleteVehicle wCAS1; deleteVehicle wCAS2";
-					synchronizations[]={16};
-					class Effects
-					{
-					};
-					timeoutMin=4.000000;
-					timeoutMid=4.000000;
-					timeoutMax=4.000000;
-					showWP="NEVER";
+					init="0 = this execVM ""gamelogic2.sqf"";";
 				};
 			};
 		};
@@ -3132,110 +2908,7 @@ class Mission
 					vehicle="Logic";
 					leader=1;
 					skill=0.600000;
-				};
-			};
-			class Waypoints
-			{
-				items=8;
-				class Item0
-				{
-					position[]={12675.179688,0.822121,9300.376953};
-					type="AND";
-					expActiv="wPlt1L sideRadio ""06r09""";
-					synchronizations[]={32};
-					class Effects
-					{
-					};
-					timeoutMin=2.000000;
-					timeoutMid=2.000000;
-					timeoutMax=2.000000;
-					showWP="NEVER";
-				};
-				class Item1
-				{
-					position[]={12714.855469,-20.025000,9300.376953};
-					type="AND";
-					expCond="({!canMove _x} count [eAA1, eAA2]) == 1";
-					expActiv="wS1L sideRadio ""06r10""";
-					class Effects
-					{
-					};
-					showWP="NEVER";
-				};
-				class Item2
-				{
-					position[]={12755.901367,0.584601,9300.376953};
-					type="AND";
-					expCond="({!canMove _x} count [eAA1, eAA2]) == 2";
-					expActiv="wS1L sideRadio ""06r11""";
-					class Effects
-					{
-					};
-					showWP="NEVER";
-				};
-				class Item3
-				{
-					position[]={12796.945313,-20.025000,9300.376953};
-					type="AND";
-					expActiv="wPlt1L sideRadio ""06r12""";
-					class Effects
-					{
-					};
-					timeoutMin=4.000000;
-					timeoutMid=4.000000;
-					timeoutMax=4.000000;
-					showWP="NEVER";
-				};
-				class Item4
-				{
-					position[]={12840.805664,-20.025000,9299.633789};
-					type="AND";
-					expActiv="wS1L sideRadio ""06r14""";
-					synchronizations[]={20};
-					class Effects
-					{
-					};
-					showWP="NEVER";
-				};
-				class Item5
-				{
-					position[]={12883.589844,-20.025000,9299.633789};
-					type="AND";
-					expActiv="hq sideRadio ""06r15""";
-					class Effects
-					{
-					};
-					timeoutMin=4.000000;
-					timeoutMid=4.000000;
-					timeoutMax=4.000000;
-					showWP="NEVER";
-				};
-				class Item6
-				{
-					position[]={12929.754883,-19.695410,9299.633789};
-					type="AND";
-					expCond="opravdovykonec";
-					expActiv="wS1L sideRadio ""06r16""";
-					class Effects
-					{
-					};
-					timeoutMin=5.000000;
-					timeoutMid=7.000000;
-					timeoutMax=9.000000;
-					showWP="NEVER";
-				};
-				class Item7
-				{
-					position[]={12975.357422,-19.673437,9299.609375};
-					type="AND";
-					expActiv="hq sideRadio ""06r18""; ending = true";
-					class Effects
-					{
-					};
-					timeoutMin=5.000000;
-					timeoutMid=5.000000;
-					timeoutMax=5.000000;
-					showWP="NEVER";
+					init="0 = this execVM ""gamelogic3.sqf"";";
 				};
 			};
 		};
@@ -3253,21 +2926,7 @@ class Mission
 					vehicle="Logic";
 					leader=1;
 					skill=0.600000;
-				};
-			};
-			class Waypoints
-			{
-				items=1;
-				class Item0
-				{
-					position[]={12853.002930,-20.025000,9383.592773};
-					type="AND";
-					expActiv="hq sideRadio ""06r19""";
-					synchronizations[]={21};
-					class Effects
-					{
-					};
-					showWP="NEVER";
+					init="0 = this execVM ""gamelogic4.sqf"";";
 				};
 			};
 		};
@@ -4469,7 +4128,7 @@ class Mission
 			leader=1;
 			skill=0.200000;
 			text="t1";
-			init="this addEventHandler [""killed"", {[(_this select 0), true, 15, 0.2, 3, 60] exec ""scripts\FG.sqs""}]";
+			init="this addEventHandler [""killed"", {0 = [(_this select 0), true, 15, 0.2, 3, 60] execVM ""scripts\FG.sqf""}]";
 		};
 		class Item50
 		{
@@ -5555,7 +5214,7 @@ class Mission
 			timeoutMax=6.000000;
 			age="UNKNOWN";
 			expCond="ending";
-			expActiv="player exec ""outro.sqs""; ";
+			expActiv="0 = player execVM ""outroWon.sqf""; ";
 			class Effects
 			{
 			};
@@ -5567,7 +5226,7 @@ class Mission
 			b=0.000000;
 			age="UNKNOWN";
 			expCond="endingLose";
-			expActiv="player exec ""outro2.sqs"";";
+			expActiv="0 = player execVM ""outroLost.sqf"";";
 			class Effects
 			{
 			};

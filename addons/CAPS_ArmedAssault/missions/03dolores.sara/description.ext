@@ -13,6 +13,39 @@ briefingName = $STRC_CA_03;
 overviewText = "After our defeat in Ortego we are trying to stop the enemy in Dolores. But we have no time to organize strong defence. We can not defeat them by power, our chance is to make a trap - city bridges is our tactical benefit. We must fight to the last blood drop.";
 overviewPicture = "\CAPS_ArmedAssault\pictures\c03.paa";
 
+class CfgDebriefing
+{  
+	class End1
+	{
+		title = "Mission Completed";
+		subtitle = "";
+		description = "Despite the eventual retreat, a large part of the SLA armored force was succesfully destroyed at Dolores. This has surely reduced the strength of future enemy operations in the Southern sector, giving us time to reestablish our defenses.";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+	};
+
+	class End2
+	{
+		title = "Mission Failed";
+		subtitle = "";
+		description = "The enemy forces were prematurely alerted to the ambush, and managed to pull out in time.";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+	};
+
+	class End3
+	{
+		title = "Mission Failed";
+		subtitle = "";
+		description = "Desertion is not tolerated, soldier!";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+	};
+};
+
 class CfgSounds
 {
 	sounds[] = { };

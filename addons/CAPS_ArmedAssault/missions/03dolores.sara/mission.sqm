@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1371;
+		nextID=1374;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={12032.628,59.523827,6531.3408};
-		dir[]={-0.013253875,-0.39244705,-0.91976506};
-		up[]={-0.005655827,0.91974223,-0.39248481};
-		aside[]={-0.99996614,-6.8220834e-007,0.014409007};
+		pos[]={11521.328,51.81031,6339.7383};
+		dir[]={-0.72851604,-0.65824312,0.18970178};
+		up[]={-0.63700378,0.75280535,0.16587241};
+		aside[]={0.25199261,-8.3760824e-008,0.96773416};
 	};
 };
 binarizationWanted=0;
@@ -262,7 +262,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=292;
+		items=294;
 		class Item0
 		{
 			dataType="Marker";
@@ -462,7 +462,7 @@ class Mission
 			colorName="ColorEAST";
 			a=2;
 			b=2;
-			angle=225.08382;
+			angle=225.0838;
 			id=951;
 			atlOffset=0.060304642;
 		};
@@ -532,7 +532,7 @@ class Mission
 			text="@STRC_03t01";
 			type="mil_objective";
 			id=957;
-			atlOffset=0.078022003;
+			atlOffset=0.078101158;
 		};
 		class Item25
 		{
@@ -621,7 +621,7 @@ class Mission
 			};
 			id=964;
 			type="EmptyDetector";
-			atlOffset=5.209497;
+			atlOffset=8.392334e-005;
 		};
 		class Item31
 		{
@@ -638,7 +638,7 @@ class Mission
 			};
 			id=965;
 			type="EmptyDetector";
-			atlOffset=0.12726402;
+			atlOffset=0.12739944;
 		};
 		class Item32
 		{
@@ -716,7 +716,7 @@ class Mission
 			};
 			id=970;
 			type="EmptyDetector";
-			atlOffset=13.703859;
+			atlOffset=3.8146973e-006;
 		};
 		class Item37
 		{
@@ -984,7 +984,7 @@ class Mission
 			};
 			id=987;
 			type="EmptyDetector";
-			atlOffset=0.00025558472;
+			atlOffset=0.00049781799;
 		};
 		class Item54
 		{
@@ -1070,7 +1070,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={11630.782,11.644842,6208.667};
-			angle=3.1457293;
+			angle=3.1457291;
 			class Attributes
 			{
 				condition="flash==1";
@@ -4728,7 +4728,7 @@ class Mission
 					showWP="NEVER";
 					syncId=5;
 					id=1190;
-					atlOffset=0.07820034;
+					atlOffset=0.078335762;
 				};
 				class Item4
 				{
@@ -11584,6 +11584,225 @@ class Mission
 								};
 							};
 							value="IMPORTANT! READ!";
+						};
+					};
+				};
+				nAttributes=5;
+			};
+		};
+		class Item292
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={11499.146,26.733839,6356.1929};
+				angles[]={-0,0,6.2786837};
+			};
+			id=1371;
+			type="ModuleCreateDiaryRecord_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleCreateDiaryRecord_F_PresetTitle";
+					expression="_this setVariable ['PresetTitle',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Mission";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCreateDiaryRecord_F_Title";
+					expression="_this setVariable ['Title',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCreateDiaryRecord_F_Description";
+					expression="_this setVariable ['Description',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="A large-scale ambush is being prepared for the SLA armored force moving South from <marker name=""Ortego"">Ortego</marker>. The bridges in the city of <marker name=""Dolores"">Dolores</marker> connect all major roads in the South of the island. Taking them out is an obvious priority, but we plan on taking out a large amount of SLA armor along with them." \n "<br/><br/>" \n "The city's center is located between two arms of the sea reaching inland, resulting in a peninsula-like landmass. Taking out the city's three bridges will leave any units trapped in the center with only one escape: North. At the base of the peninsula, 3rd Platoon has prepared a defensive line that will engage the enemy forces attempting to get out of the city. The remnants of 2nd Platoon will try to hold off any enemy reinforcements coming in from the East." \n "<br/><br/>" \n "To further 'motivate' the enemy to move out of the center, we have placed hidden caches of M136 Anti-Tank rounds around the town for you to use.";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleCreateDiaryRecord_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=3;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleCreateDiaryRecord_F_Subject";
+					expression="_this setVariable ['Subject',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				nAttributes=5;
+			};
+		};
+		class Item293
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={11498.306,26.75511,6360.457};
+			};
+			id=1373;
+			type="ModuleCreateDiaryRecord_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleCreateDiaryRecord_F_PresetTitle";
+					expression="_this setVariable ['PresetTitle',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Execution";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCreateDiaryRecord_F_Title";
+					expression="_this setVariable ['Title',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCreateDiaryRecord_F_Description";
+					expression="_this setVariable ['Description',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="1. Place satchel charges under the <marker name=""Bridge1"">first bridge</marker> and find a nearby place to hide." \n "<br/>" \n "2. Upon hearing ""Flash! Flash! Flash!"", detonate the charges. Proceed to harrass the enemy with <marker name=""AT1"">AT fire</marker>." \n "<br/>" \n "3. Make your way back to <marker name=""3rd"">3rd Platoon</marker> and help fend off the enemy troops." \n "<br/>" \n "4. Board a vehicle and proceed to rendezvous point <marker name=""konec"">Diamond</marker>, or retreat to the <marker name=""hills"">hills</marker> to the North.";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleCreateDiaryRecord_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=3;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleCreateDiaryRecord_F_Subject";
+					expression="_this setVariable ['Subject',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
 						};
 					};
 				};

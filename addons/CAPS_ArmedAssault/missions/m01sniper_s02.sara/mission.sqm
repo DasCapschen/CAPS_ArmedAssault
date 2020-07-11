@@ -369,7 +369,7 @@ class Mission
 			{
 				text="OutroDesertedTrigger";
 				condition="call{this && introEnd && (not gameover)}";
-				onActivation="call{CAPS_M01_S02=""_failed""; saveVar ""CAPS_M01_S02""; deserted = true; player execVM ""outroLose.sqf"";}";
+				onActivation="call{CAPS_M01_S02=""_failed""; saveVar ""CAPS_M01_S02""; deserted = true; player execVM ""outroLost.sqf"";}";
 				sizeA=200;
 				sizeB=300;
 				activationType="NOT PRESENT";
@@ -608,7 +608,7 @@ class Mission
 			{
 				text="OutroLoseTrigger";
 				condition="call{finished && ((not enemiesKilled) or compromised)}";
-				onActivation="call{0 = player execVM ""outroLose.sqf"";}";
+				onActivation="call{0 = player execVM ""outroLost.sqf"";}";
 				sizeA=0;
 				sizeB=0;
 				timeout[]={2,2,2};

@@ -51,7 +51,7 @@ class Mission
 					special="NONE";
 					id=0;
 					side="WEST";
-					vehicle="SoldierWSaboteurPipe";
+vehicle="CUP_B_FR_Saboteur";
 					player="PLAYER COMMANDER";
 					leader=1;
 					rank="CAPTAIN";
@@ -120,7 +120,7 @@ class Mission
 					azimut=44.352543;
 					id=4;
 					side="EAST";
-					vehicle="SoldierEB";
+vehicle="CUP_O_sla_Soldier";
 					leader=1;
 					rank="SERGEANT";
 					skill=0.466667;
@@ -133,7 +133,7 @@ class Mission
 					azimut=-135.647476;
 					id=43;
 					side="EAST";
-					vehicle="SoldierEMG";
+vehicle="CUP_O_sla_Soldier_MG";
 					rank="SERGEANT";
 					skill=0.466667;
 				};
@@ -213,7 +213,7 @@ class Mission
 					azimut=193.709839;
 					id=5;
 					side="EAST";
-					vehicle="SoldierEB";
+vehicle="CUP_O_sla_Soldier";
 					leader=1;
 					rank="SERGEANT";
 					skill=0.466667;
@@ -226,7 +226,7 @@ class Mission
 					azimut=143.709869;
 					id=6;
 					side="EAST";
-					vehicle="SoldierEB";
+vehicle="CUP_O_sla_Soldier";
 					rank="SERGEANT";
 					skill=0.466667;
 				};
@@ -271,7 +271,7 @@ class Mission
 					azimut=193.709839;
 					id=7;
 					side="EAST";
-					vehicle="SoldierEB";
+vehicle="CUP_O_sla_Soldier";
 					leader=1;
 					rank="CORPORAL";
 					skill=0.333333;
@@ -348,7 +348,7 @@ class Mission
 					azimut=-11.589227;
 					id=8;
 					side="EAST";
-					vehicle="SoldierEB";
+vehicle="CUP_O_sla_Soldier";
 					rank="LIEUTENANT";
 					skill=0.600000;
 				};
@@ -358,7 +358,7 @@ class Mission
 					azimut=-11.589227;
 					id=9;
 					side="EAST";
-					vehicle="SoldierEB";
+vehicle="CUP_O_sla_Soldier";
 					rank="CORPORAL";
 					skill=0.333333;
 				};
@@ -368,7 +368,7 @@ class Mission
 					azimut=-11.589227;
 					id=10;
 					side="EAST";
-					vehicle="SquadLeaderE";
+vehicle="CUP_O_sla_Soldier_SL";
 					leader=1;
 					rank="CAPTAIN";
 					skill=0.733333;
@@ -380,7 +380,7 @@ class Mission
 					azimut=-11.589227;
 					id=38;
 					side="EAST";
-					vehicle="SoldierEAT";
+vehicle="CUP_O_sla_Soldier_AT";
 					rank="CAPTAIN";
 					skill=0.733333;
 				};
@@ -394,7 +394,7 @@ class Mission
 					combatMode="RED";
 					formation="LINE";
 					combat="AWARE";
-					expActiv="[this, ""grupa1"", -180] exec ""poplach.sqs""";
+					expActiv="0 = [this, ""grupa1"", -180] execVM ""poplach.sqf""";
 					synchronizations[]={0};
 					class Effects
 					{
@@ -424,7 +424,7 @@ class Mission
 					azimut=-11.589227;
 					id=11;
 					side="EAST";
-					vehicle="SoldierEB";
+vehicle="CUP_O_sla_Soldier";
 					rank="CORPORAL";
 					skill=0.333333;
 				};
@@ -434,7 +434,7 @@ class Mission
 					azimut=-11.589227;
 					id=12;
 					side="EAST";
-					vehicle="SoldierEB";
+vehicle="CUP_O_sla_Soldier";
 					rank="LIEUTENANT";
 					skill=0.600000;
 				};
@@ -444,7 +444,7 @@ class Mission
 					azimut=-11.589227;
 					id=13;
 					side="EAST";
-					vehicle="SoldierEMG";
+vehicle="CUP_O_sla_Soldier_MG";
 					rank="LIEUTENANT";
 					skill=0.600000;
 				};
@@ -454,7 +454,7 @@ class Mission
 					azimut=-11.589227;
 					id=14;
 					side="EAST";
-					vehicle="SquadLeaderE";
+vehicle="CUP_O_sla_Soldier_SL";
 					leader=1;
 					rank="CAPTAIN";
 					skill=0.733333;
@@ -466,7 +466,7 @@ class Mission
 					azimut=-11.589227;
 					id=39;
 					side="EAST";
-					vehicle="SoldierEAT";
+vehicle="CUP_O_sla_Soldier_AT";
 					rank="CAPTAIN";
 					skill=0.733333;
 				};
@@ -480,7 +480,7 @@ class Mission
 					combatMode="RED";
 					formation="LINE";
 					combat="AWARE";
-					expActiv="[this, ""grupa2"", -90] exec ""poplach.sqs""";
+					expActiv="0 = [this, ""grupa2"", -90] execVM ""poplach.sqf""";
 					synchronizations[]={1};
 					class Effects
 					{
@@ -551,7 +551,7 @@ class Mission
 					azimut=-11.589227;
 					id=15;
 					side="EAST";
-					vehicle="SoldierEB";
+vehicle="CUP_O_sla_Soldier";
 					rank="LIEUTENANT";
 					skill=0.600000;
 				};
@@ -561,7 +561,7 @@ class Mission
 					azimut=-11.589227;
 					id=16;
 					side="EAST";
-					vehicle="SoldierEB";
+vehicle="CUP_O_sla_Soldier";
 					rank="CORPORAL";
 					skill=0.333333;
 				};
@@ -571,7 +571,7 @@ class Mission
 					azimut=-11.589227;
 					id=17;
 					side="EAST";
-					vehicle="SoldierEMG";
+vehicle="CUP_O_sla_Soldier_MG";
 					rank="LIEUTENANT";
 					skill=0.600000;
 				};
@@ -581,7 +581,7 @@ class Mission
 					azimut=-11.589227;
 					id=18;
 					side="EAST";
-					vehicle="SquadLeaderE";
+vehicle="CUP_O_sla_Soldier_SL";
 					leader=1;
 					rank="CAPTAIN";
 					skill=0.733333;
@@ -593,7 +593,7 @@ class Mission
 					azimut=-11.589227;
 					id=40;
 					side="EAST";
-					vehicle="SoldierEAT";
+vehicle="CUP_O_sla_Soldier_AT";
 					rank="CAPTAIN";
 					skill=0.733333;
 				};
@@ -607,7 +607,7 @@ class Mission
 					combatMode="RED";
 					formation="LINE";
 					combat="AWARE";
-					expActiv="[this, ""grupa3"", -180] exec ""poplach.sqs""";
+					expActiv="0 = [this, ""grupa3"", -180] execVM ""poplach.sqf""";
 					synchronizations[]={2};
 					class Effects
 					{
@@ -680,7 +680,7 @@ class Mission
 					azimut=-53.025356;
 					id=19;
 					side="EAST";
-					vehicle="SoldierECrew";
+vehicle="CUP_O_sla_Crew";
 					rank="LIEUTENANT";
 					skill=0.600000;
 				};
@@ -690,7 +690,7 @@ class Mission
 					azimut=-53.025356;
 					id=20;
 					side="EAST";
-					vehicle="SoldierECrew";
+vehicle="CUP_O_sla_Crew";
 					rank="LIEUTENANT";
 					skill=0.600000;
 				};
@@ -700,7 +700,7 @@ class Mission
 					azimut=-53.025356;
 					id=21;
 					side="EAST";
-					vehicle="SoldierECrew";
+vehicle="CUP_O_sla_Crew";
 					leader=1;
 					rank="CAPTAIN";
 					skill=0.733333;
@@ -716,7 +716,7 @@ class Mission
 					combatMode="RED";
 					formation="LINE";
 					combat="AWARE";
-					expActiv="[this, ""grupa4"", +90] exec ""poplach.sqs""";
+					expActiv="0 = [this, ""grupa4"", +90] execVM ""poplach.sqf""";
 					synchronizations[]={3};
 					class Effects
 					{
@@ -756,7 +756,7 @@ class Mission
 					azimut=95.287201;
 					id=22;
 					side="EAST";
-					vehicle="SoldierEB";
+vehicle="CUP_O_sla_Soldier";
 					rank="CORPORAL";
 					skill=0.333333;
 				};
@@ -766,7 +766,7 @@ class Mission
 					azimut=95.287201;
 					id=23;
 					side="EAST";
-					vehicle="SoldierEB";
+vehicle="CUP_O_sla_Soldier";
 					rank="CORPORAL";
 					skill=0.333333;
 				};
@@ -776,7 +776,7 @@ class Mission
 					azimut=95.287201;
 					id=24;
 					side="EAST";
-					vehicle="SoldierEMG";
+vehicle="CUP_O_sla_Soldier_MG";
 					rank="LIEUTENANT";
 					skill=0.600000;
 				};
@@ -786,7 +786,7 @@ class Mission
 					azimut=95.287201;
 					id=25;
 					side="EAST";
-					vehicle="SquadLeaderE";
+vehicle="CUP_O_sla_Soldier_SL";
 					leader=1;
 					rank="CAPTAIN";
 					skill=0.733333;
@@ -802,7 +802,7 @@ class Mission
 					combatMode="RED";
 					formation="LINE";
 					combat="AWARE";
-					expActiv="[this, ""grupa1"", -180] exec ""poplach.sqs""";
+					expActiv="0 = [this, ""grupa1"", -180] execVM ""poplach.sqf""";
 					synchronizations[]={4};
 					class Effects
 					{
@@ -832,7 +832,7 @@ class Mission
 					azimut=-53.025356;
 					id=26;
 					side="EAST";
-					vehicle="SoldierECrew";
+vehicle="CUP_O_sla_Crew";
 					rank="LIEUTENANT";
 					skill=0.600000;
 				};
@@ -842,7 +842,7 @@ class Mission
 					azimut=-53.025356;
 					id=27;
 					side="EAST";
-					vehicle="SoldierECrew";
+vehicle="CUP_O_sla_Crew";
 					rank="LIEUTENANT";
 					skill=0.600000;
 				};
@@ -852,7 +852,7 @@ class Mission
 					azimut=-53.025356;
 					id=28;
 					side="EAST";
-					vehicle="SoldierECrew";
+vehicle="CUP_O_sla_Crew";
 					leader=1;
 					rank="CAPTAIN";
 					skill=0.733333;
@@ -869,7 +869,7 @@ class Mission
 					combatMode="RED";
 					formation="LINE";
 					combat="AWARE";
-					expActiv="[this, ""grupa5"", +90] exec ""poplach.sqs""";
+					expActiv="0 = [this, ""grupa5"", +90] execVM ""poplach.sqf""";
 					synchronizations[]={5};
 					class Effects
 					{
@@ -909,7 +909,7 @@ class Mission
 					azimut=130.000000;
 					id=41;
 					side="EAST";
-					vehicle="Mi17";
+vehicle="CUP_O_Mi17_TK";
 					leader=1;
 					rank="CAPTAIN";
 					skill=0.733333;
@@ -944,7 +944,7 @@ class Mission
 					azimut=262.781830;
 					id=42;
 					side="EAST";
-					vehicle="UAZ";
+vehicle="CUP_O_UAZ_Unarmed_SLA";
 					leader=1;
 					rank="CAPTAIN";
 					skill=0.733333;
@@ -1006,7 +1006,7 @@ class Mission
 					azimut=109.504410;
 					id=44;
 					side="EAST";
-					vehicle="SoldierEB";
+vehicle="CUP_O_sla_Soldier";
 					leader=1;
 					rank="CAPTAIN";
 					skill=0.733333;
@@ -1049,7 +1049,7 @@ class Mission
 					azimut=73.493126;
 					id=46;
 					side="EAST";
-					vehicle="SoldierESaboteurPipe";
+vehicle="CUP_O_sla_SpecOps_Demo";
 					leader=1;
 					skill=1.000000;
 				};
@@ -1059,7 +1059,7 @@ class Mission
 					azimut=73.493126;
 					id=47;
 					side="EAST";
-					vehicle="SoldierESaboteurPipe";
+vehicle="CUP_O_sla_SpecOps_Demo";
 					skill=1.000000;
 				};
 				class Item2
@@ -1068,7 +1068,7 @@ class Mission
 					azimut=73.493126;
 					id=48;
 					side="EAST";
-					vehicle="SoldierESaboteurPipe";
+vehicle="CUP_O_sla_SpecOps_Demo";
 					skill=1.000000;
 				};
 			};
@@ -1098,7 +1098,7 @@ class Mission
 					azimut=238.352585;
 					id=49;
 					side="EAST";
-					vehicle="SoldierEB";
+vehicle="CUP_O_sla_Soldier";
 					leader=1;
 					skill=0.600000;
 				};
@@ -1131,7 +1131,7 @@ class Mission
 					azimut=17.931662;
 					id=50;
 					side="EAST";
-					vehicle="SoldierESniper";
+vehicle="CUP_O_sla_Sniper";
 					leader=1;
 					skill=0.600000;
 				};
@@ -1164,7 +1164,7 @@ class Mission
 					azimut=-124.499031;
 					id=51;
 					side="EAST";
-					vehicle="SoldierESniper";
+vehicle="CUP_O_sla_Sniper";
 					leader=1;
 					skill=0.600000;
 				};
@@ -1197,7 +1197,7 @@ class Mission
 					azimut=194.699356;
 					id=52;
 					side="EAST";
-					vehicle="SoldierEB";
+vehicle="CUP_O_sla_Soldier";
 					leader=1;
 					skill=0.600000;
 				};
@@ -1230,7 +1230,7 @@ class Mission
 					azimut=33.708279;
 					id=54;
 					side="EAST";
-					vehicle="UralOpen";
+vehicle="CUP_O_Ural_Open_RU";
 					leader=1;
 					lock="UNLOCKED";
 					skill=0.200000;
@@ -1295,7 +1295,7 @@ class Mission
 					azimut=-37.048717;
 					id=55;
 					side="EAST";
-					vehicle="SquadleaderE";
+vehicle="CUP_O_sla_Soldier_SL";
 					leader=1;
 					rank="SERGEANT";
 					skill=0.466667;
@@ -1306,7 +1306,7 @@ class Mission
 					azimut=-37.048717;
 					id=56;
 					side="EAST";
-					vehicle="SoldierEMG";
+vehicle="CUP_O_sla_Soldier_MG";
 					skill=0.200000;
 				};
 				class Item2
@@ -1315,7 +1315,7 @@ class Mission
 					azimut=-37.048717;
 					id=57;
 					side="EAST";
-					vehicle="TeamLeaderE";
+vehicle="CUP_O_sla_Soldier_SL";
 					rank="CORPORAL";
 					skill=0.333333;
 				};
@@ -1325,7 +1325,7 @@ class Mission
 					azimut=-37.048717;
 					id=58;
 					side="EAST";
-					vehicle="SoldierEG";
+vehicle="CUP_O_sla_Soldier_GL";
 					skill=0.200000;
 				};
 				class Item4
@@ -1334,7 +1334,7 @@ class Mission
 					azimut=-37.048717;
 					id=59;
 					side="EAST";
-					vehicle="SoldierEMG";
+vehicle="CUP_O_sla_Soldier_MG";
 					skill=0.200000;
 				};
 			};
@@ -1373,7 +1373,7 @@ class Mission
 					azimut=368.541534;
 					id=60;
 					side="WEST";
-					vehicle="M2StaticMG";
+vehicle="CUP_B_M2StaticMG_USMC";
 					leader=1;
 					lock="UNLOCKED";
 					rank="COLONEL";
@@ -1393,7 +1393,7 @@ class Mission
 					azimut=6.616561;
 					id=61;
 					side="WEST";
-					vehicle="M2StaticMG";
+vehicle="CUP_B_M2StaticMG_USMC";
 					leader=1;
 					lock="UNLOCKED";
 					rank="COLONEL";
@@ -1413,7 +1413,7 @@ class Mission
 					azimut=368.541534;
 					id=62;
 					side="WEST";
-					vehicle="M2StaticMG";
+vehicle="CUP_B_M2StaticMG_USMC";
 					leader=1;
 					lock="UNLOCKED";
 					rank="COLONEL";
@@ -1433,7 +1433,7 @@ class Mission
 					azimut=-166.023224;
 					id=63;
 					side="EAST";
-					vehicle="SoldierEB";
+vehicle="CUP_O_sla_Soldier";
 					leader=1;
 					lock="UNLOCKED";
 					rank="COLONEL";
@@ -1453,7 +1453,7 @@ class Mission
 					azimut=196.205994;
 					id=64;
 					side="EAST";
-					vehicle="SoldierEB";
+vehicle="CUP_O_sla_Soldier";
 					leader=1;
 					lock="UNLOCKED";
 					rank="COLONEL";
@@ -1473,7 +1473,7 @@ class Mission
 					azimut=238.352585;
 					id=65;
 					side="EAST";
-					vehicle="SoldierEB";
+vehicle="CUP_O_sla_Soldier";
 					leader=1;
 					skill=0.600000;
 				};
@@ -1504,7 +1504,7 @@ class Mission
 			azimut=-54.270546;
 			id=1;
 			side="EMPTY";
-			vehicle="T72";
+vehicle="CUP_O_T72_SLA";
 			leader=1;
 			skill=0.200000;
 			text="t1";
@@ -1516,7 +1516,7 @@ class Mission
 			azimut=-13.977146;
 			id=2;
 			side="EMPTY";
-			vehicle="T72";
+vehicle="CUP_O_T72_SLA";
 			leader=1;
 			skill=0.200000;
 			text="t2";
@@ -1528,7 +1528,7 @@ class Mission
 			azimut=-422.213013;
 			id=3;
 			side="EMPTY";
-			vehicle="BMP2";
+vehicle="CUP_O_BMP2_SLA";
 			leader=1;
 			skill=0.200000;
 			text="bmp";
@@ -1539,7 +1539,7 @@ class Mission
 			azimut=-163.593002;
 			id=29;
 			side="EMPTY";
-			vehicle="AmmoBoxWest";
+vehicle="CUP_USBasicAmmunitionBox";
 			skill=0.200000;
 			init="m04_s08=0; dokonceno=0";
 		};
@@ -1621,7 +1621,7 @@ class Mission
 			azimut=-70.430878;
 			id=45;
 			side="EMPTY";
-			vehicle="UAZ";
+vehicle="CUP_O_UAZ_Unarmed_SLA";
 			lock="LOCKED";
 			skill=0.200000;
 		};
@@ -2187,7 +2187,7 @@ class Mission
 			b=0.000000;
 			type="SWITCH";
 			age="UNKNOWN";
-			expCond="(getDammage t1 > 0.7) or (getDammage t2 > 0.7) or (getDammage bmp > 0.7)";
+			expCond="(damage t1 > 0.7) or (damage t2 > 0.7) or (damage bmp > 0.7)";
 			expActiv="dokonceno=1";
 			class Effects
 			{
@@ -2204,8 +2204,8 @@ class Mission
 			timeoutMax=2.000000;
 			age="UNKNOWN";
 			text="KONEC SPUST OUTRO";
-			expCond="konec && (getDammage t1 > 0.7 && getdammage t2 > 0.7 && getDammage bmp > 0.7)";
-			expActiv="m04_s08=1; savevar ""m04_s08""; player exec ""outro.sqs"";";
+			expCond="konec && (damage t1 > 0.7 && damage t2 > 0.7 && damage bmp > 0.7)";
+			expActiv="m04_s08=1; savevar ""m04_s08""; 0 = player execVM ""outroWin.sqf"";";
 			class Effects
 			{
 			};
@@ -2246,8 +2246,8 @@ class Mission
 			timeoutMax=2.000000;
 			age="UNKNOWN";
 			text="KONEC SPUST OUTRO";
-			expCond="konec && ((getdammage t1 < 0.7) or (getdammage t2 < 0.7) or (getDammage bmp < 0.7))";
-			expActiv="m04_s08=1; savevar ""m04_s08""; player exec ""outro2.sqs"";";
+			expCond="konec && ((damage t1 < 0.7) or (damage t2 < 0.7) or (damage bmp < 0.7))";
+			expActiv="m04_s08=1; savevar ""m04_s08""; 0 = player execVM ""outroLost.sqf"";";
 			class Effects
 			{
 			};

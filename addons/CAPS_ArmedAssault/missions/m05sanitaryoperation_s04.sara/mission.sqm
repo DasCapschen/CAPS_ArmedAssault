@@ -1227,7 +1227,7 @@ vehicle="CUP_B_HMMWV_Unarmed_USMC";
 			position[]={11539.282227,197.886353,9315.754883};
 			name="Start";
 			text="@STR_M05n10";
-			type="Start";
+			type="mil_Start";
 			angle=-228.373001;
 		};
 		class Item1
@@ -1235,14 +1235,14 @@ vehicle="CUP_B_HMMWV_Unarmed_USMC";
 			position[]={11501.854492,231.322662,9037.772461};
 			name="Destr";
 			text="@STR_M05n11";
-			type="Destroy";
+			type="mil_Destroy";
 		};
 		class Item2
 		{
 			position[]={11531.970703,226.122559,9087.725586};
 			name="Rus";
 			markerType="ELLIPSE";
-			type="Flag";
+			type="mil_objective";
 			colorName="ColorRedAlpha";
 			a=150.000000;
 			b=150.000000;
@@ -1252,7 +1252,7 @@ vehicle="CUP_B_HMMWV_Unarmed_USMC";
 			position[]={11413.096680,230.928253,9071.469727};
 			name="Pick";
 			text="@STR_M05n12";
-			type="Pickup";
+			type="mil_Pickup";
 			colorName="ColorGreenAlpha";
 		};
 		class Item4
@@ -1260,7 +1260,7 @@ vehicle="CUP_B_HMMWV_Unarmed_USMC";
 			position[]={11282.202148,161.486526,9286.557617};
 			name="N1";
 			text="Bravo";
-			type="Marker";
+			type="mil_Marker";
 			colorName="ColorGreen";
 			angle=-53.132000;
 		};
@@ -1268,7 +1268,7 @@ vehicle="CUP_B_HMMWV_Unarmed_USMC";
 		{
 			position[]={11347.109375,193.057968,9194.397461};
 			name="bravoattack";
-			type="Arrow";
+			type="mil_Arrow";
 			colorName="ColorGreen";
 			angle=148.983994;
 		};
@@ -1276,7 +1276,7 @@ vehicle="CUP_B_HMMWV_Unarmed_USMC";
 		{
 			position[]={11593.666992,219.945679,9208.591797};
 			name="foxtrotattack";
-			type="Arrow";
+			type="mil_Arrow";
 			colorName="ColorGreen";
 			angle=183.235001;
 		};
@@ -1284,7 +1284,7 @@ vehicle="CUP_B_HMMWV_Unarmed_USMC";
 		{
 			position[]={11120.753906,143.861023,9428.813477};
 			name="home";
-			type="Flag1";
+			type="mil_Flag";
 			colorName="ColorBlue";
 		};
 		class Item8
@@ -1292,7 +1292,7 @@ vehicle="CUP_B_HMMWV_Unarmed_USMC";
 			position[]={11000.162109,138.971451,9448.741211};
 			name="paraisotown";
 			markerType="ELLIPSE";
-			type="Flag";
+			type="mil_objective";
 			colorName="ColorGreen";
 			a=200.000000;
 			b=200.000000;

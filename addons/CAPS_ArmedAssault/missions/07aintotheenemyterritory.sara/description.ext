@@ -20,6 +20,38 @@ briefingName = $STRC_CA_07a;
 overviewText = "Our first steps in the enemy territory. A base has been established in the city of Modesta, and we expect the SLA to launch a counter attack there soon.";
 overviewPicture = "\CAPS_ArmedAssault\pictures\c07.paa";
 
+class CfgDebriefing
+{  
+	class End1
+	{
+		title = "Mission Completed";
+		subtitle = "";
+		description = "Good job, soldiers. The enemy is on the run.";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+	};
+
+	class End2
+	{
+		title = "Mission Failed";
+		subtitle = "";
+		description = "We have lost the base at Modesta. This will severely compromise our advance toward the capital.";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+	};
+
+	class End3
+	{
+		title = "Mission Failed";
+		subtitle = "";
+		description = "Desertion is not tolerated, soldier!";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+	};
+};
 
 class CfgRadio
 {

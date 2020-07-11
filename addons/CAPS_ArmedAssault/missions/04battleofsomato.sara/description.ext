@@ -13,6 +13,39 @@ briefingName = $STRC_CA_04;
 overviewText = "Enemy is pushing us from the South.";
 overviewPicture = "\CAPS_ArmedAssault\pictures\c04.paa";
 
+class CfgDebriefing
+{  
+	class End1
+	{
+		title = "Mission Completed";
+		subtitle = "";
+		description = "Excellent work, soldiers! The SLA headquarters on the Southern front has been destroyed, and we have started to regain control over the Southern provinces.";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+	};
+
+	class End2
+	{
+		title = "Mission Failed";
+		subtitle = "";
+		description = "Our position at Gulan has been overrun.";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+	};
+
+	class End3
+	{
+		title = "Mission Failed";
+		subtitle = "";
+		description = "Desertion is not tolerated, soldier!";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+	};
+};
+
 class CfgRadio
 {
 	sounds[] = { };

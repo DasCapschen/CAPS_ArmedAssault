@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=410;
+		nextID=413;
 	};
 	class MarkerIDProvider
 	{
@@ -16,17 +16,16 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={8124.9097,201.985,7854.9639};
-		dir[]={0.88335812,-0.15361835,-0.44281119};
-		up[]={0.13733003,0.98813027,-0.068841115};
-		aside[]={-0.44813016,-2.5029294e-009,-0.893969};
+		pos[]={8094.2715,201.985,7783.0791};
+		dir[]={0.076880835,-0.71456808,0.69533461};
+		up[]={0.078529306,0.69956684,0.71023983};
+		aside[]={0.99394721,5.2066753e-008,-0.10989749};
 	};
 };
 binarizationWanted=0;
 addons[]=
 {
 	"A3_Ui_F",
-	"CUP_Core",
 	"CUP_Buildings_Config",
 	"CUP_CAMisc",
 	"CUP_WheeledVehicles_HMMWV",
@@ -39,7 +38,8 @@ addons[]=
 	"CUP_Creatures_Military_SLA",
 	"CUP_WheeledVehicles_BRDM2",
 	"CUP_Creatures_StaticWeapons",
-	"CUP_TrackedVehicles_BMP"
+	"CUP_TrackedVehicles_BMP",
+	"A3_Modules_F_Intel"
 };
 class AddonsMetaData
 {
@@ -55,74 +55,76 @@ class AddonsMetaData
 		};
 		class Item1
 		{
-			className="CUP_Core";
-			name="CUP_Core";
-		};
-		class Item2
-		{
 			className="CUP_Buildings_Config";
 			name="CUP_Buildings_Config";
 		};
-		class Item3
+		class Item2
 		{
 			className="CUP_CAMisc";
 			name="CUP_CAMisc";
 		};
-		class Item4
+		class Item3
 		{
 			className="CUP_WheeledVehicles_HMMWV";
 			name="CUP_WheeledVehicles_HMMWV";
 		};
-		class Item5
+		class Item4
 		{
 			className="CUP_Misc3_Config";
 			name="CUP_Misc3_Config";
 		};
-		class Item6
+		class Item5
 		{
 			className="CUP_WheeledVehicles_LR";
 			name="CUP_WheeledVehicles_LR";
 		};
-		class Item7
+		class Item6
 		{
 			className="CUP_TrackedVehicles_T72";
 			name="CUP_TrackedVehicles_T72";
 		};
-		class Item8
+		class Item7
 		{
 			className="CUP_WheeledVehicles_UAZ";
 			name="CUP_WheeledVehicles_UAZ";
 		};
-		class Item9
+		class Item8
 		{
 			className="CUP_WheeledVehicles_MTVR";
 			name="CUP_WheeledVehicles_MTVR";
 		};
-		class Item10
+		class Item9
 		{
 			className="CUP_Creatures_Military_USMC";
 			name="CUP_Creatures_Military_USMC";
 		};
-		class Item11
+		class Item10
 		{
 			className="CUP_Creatures_Military_SLA";
 			name="CUP_Creatures_Military_SLA";
 		};
-		class Item12
+		class Item11
 		{
 			className="CUP_WheeledVehicles_BRDM2";
 			name="CUP_WheeledVehicles_BRDM2";
 		};
-		class Item13
+		class Item12
 		{
 			className="CUP_Creatures_StaticWeapons";
 			name="CUP_Creatures_StaticWeapons";
 		};
-		class Item14
+		class Item13
 		{
 			className="CUP_TrackedVehicles_BMP";
 			name="CUP_TrackedVehicles_BMP";
 			author="Community Cupgrade Project";
+		};
+		class Item14
+		{
+			className="A3_Modules_F";
+			name="Arma 3 Alpha - Scripted Modules";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
 		};
 	};
 };
@@ -167,14 +169,14 @@ class Mission
 	};
 	class Entities
 	{
-		items=189;
+		items=192;
 		class Item0
 		{
 			dataType="Marker";
 			position[]={8162.7129,176.98499,7829.2964};
 			name="beg";
 			type="mil_flag";
-			colorName="ColorBlue";
+			colorName="ColorWEST";
 			id=0;
 			atlOffset=-1.5258789e-005;
 		};
@@ -184,7 +186,7 @@ class Mission
 			position[]={8715.2471,34.965,6333.2891};
 			name="objective2";
 			type="mil_flag";
-			colorName="ColorRed";
+			colorName="ColorEAST";
 			id=1;
 		};
 		class Item2
@@ -193,7 +195,7 @@ class Mission
 			position[]={8899.6357,169.38327,8058.6738};
 			name="objective";
 			type="mil_destroy";
-			colorName="ColorBlue";
+			colorName="ColorWEST";
 			id=2;
 			atlOffset=-0.0016174316;
 		};
@@ -203,7 +205,7 @@ class Mission
 			position[]={9002.4883,88.418083,6600.2554};
 			name="join";
 			type="mil_join";
-			colorName="ColorBlue";
+			colorName="ColorWEST";
 			id=3;
 			atlOffset=-0.0061721802;
 		};
@@ -213,7 +215,7 @@ class Mission
 			position[]={8539.2412,188.71707,7951.1274};
 			name="usw1";
 			type="mil_arrow";
-			colorName="ColorBlue";
+			colorName="ColorWEST";
 			angle=73.402588;
 			id=4;
 			atlOffset=-0.017608643;
@@ -224,7 +226,7 @@ class Mission
 			position[]={8868.8594,185.25574,7654.5};
 			name="usw1_1";
 			type="mil_arrow";
-			colorName="ColorBlue";
+			colorName="ColorWEST";
 			angle=182.74452;
 			id=5;
 			atlOffset=-0.019073486;
@@ -232,13 +234,13 @@ class Mission
 		class Item6
 		{
 			dataType="Marker";
-			position[]={8903.7061,138.20212,7109.6094};
+			position[]={8903.7061,138.202,7109.6089};
 			name="usw1_1_1";
 			type="mil_arrow";
-			colorName="ColorRed";
+			colorName="ColorEAST";
 			angle=353.23697;
 			id=6;
-			atlOffset=-0.016052246;
+			atlOffset=-0.015945435;
 		};
 		class Item7
 		{
@@ -247,7 +249,7 @@ class Mission
 			name="eter";
 			markerType="ELLIPSE";
 			type="mil_objective";
-			colorName="ColorRed";
+			colorName="ColorEAST";
 			fillName="FDiagonal";
 			a=120;
 			b=120;
@@ -256,30 +258,30 @@ class Mission
 		class Item8
 		{
 			dataType="Marker";
-			position[]={8896.4189,191.0117,7596.5596};
+			position[]={8896.4189,191.01199,7596.5601};
 			name="eter2";
 			markerType="ELLIPSE";
 			type="mil_objective";
-			colorName="ColorRedAlpha";
+			colorName="ColorEAST";
 			a=420;
 			b=200;
-			angle=309.60629;
+			angle=309.60596;
 			id=8;
-			atlOffset=-0.0078735352;
+			atlOffset=-0.0076293945;
 		};
 		class Item9
 		{
 			dataType="Marker";
-			position[]={8792.4854,134.92499,7041.814};
+			position[]={8792.4854,134.925,7041.814};
 			name="eter2_1";
 			markerType="ELLIPSE";
 			type="mil_objective";
-			colorName="ColorRedAlpha";
+			colorName="ColorEAST";
 			a=420;
 			b=200;
-			angle=264.17206;
+			angle=264.17197;
 			id=9;
-			atlOffset=-0.014175415;
+			atlOffset=-0.014160156;
 		};
 		class Item10
 		{
@@ -540,7 +542,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={8716.4766,35.490181,6450.3496};
-			angle=-5.9887819;
+			angle=-5.9887815;
 			class Attributes
 			{
 				condition="this && done2==1";
@@ -573,7 +575,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={9441.9561,38.195034,5045.2603};
-			angle=10.369592;
+			angle=10.369591;
 			class Attributes
 			{
 				condition="strilej==1 && rounds==0";
@@ -590,7 +592,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={9468.0732,36.287998,5024.2925};
-			angle=3.0664382;
+			angle=3.066438;
 			class Attributes
 			{
 				condition="strilej==1";
@@ -608,7 +610,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={9477.0889,35.820621,5026.1782};
-			angle=3.0664382;
+			angle=3.066438;
 			class Attributes
 			{
 				condition="strilej==1";
@@ -626,7 +628,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={9485.959,35.687813,5028.6606};
-			angle=3.0664382;
+			angle=3.066438;
 			class Attributes
 			{
 				condition="strilej==1";
@@ -644,7 +646,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={9477.2441,34.884117,5016.5039};
-			angle=3.0664382;
+			angle=3.066438;
 			class Attributes
 			{
 				condition="strilej==1";
@@ -662,7 +664,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={9486.7012,33.861839,5017.1963};
-			angle=3.0664382;
+			angle=3.066438;
 			class Attributes
 			{
 				condition="strilej==1 && rounds<4";
@@ -680,7 +682,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={9495.2832,33.092613,5018.2368};
-			angle=3.0664382;
+			angle=3.066438;
 			class Attributes
 			{
 				condition="strilej==1 && rounds>3";
@@ -698,7 +700,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={9487.7422,31.172207,5007.8345};
-			angle=3.0664382;
+			angle=3.066438;
 			class Attributes
 			{
 				condition="strilej==2";
@@ -716,7 +718,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={9451.1592,37.133965,5046.1289};
-			angle=10.369592;
+			angle=10.369591;
 			class Attributes
 			{
 				condition="strilej==1 && rounds==1";
@@ -781,7 +783,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={9460.6162,36.289577,5046.5913};
-			angle=10.369592;
+			angle=10.369591;
 			class Attributes
 			{
 				condition="strilej==1 && rounds==2";
@@ -1197,7 +1199,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8096.687,178.146,7868.0874};
-				angles[]={-0,1.5479552,0};
+				angles[]={0,1.5479552,0};
 			};
 			side="Empty";
 			flags=4;
@@ -1214,7 +1216,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8145.9063,178.146,7904.8311};
-				angles[]={-0,3.1454861,0};
+				angles[]={0,3.1454861,0};
 			};
 			side="Empty";
 			flags=4;
@@ -1263,7 +1265,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8096.4844,178.146,7876.29};
-				angles[]={-0,1.553129,0};
+				angles[]={0,1.553129,0};
 			};
 			side="Empty";
 			flags=4;
@@ -1280,7 +1282,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8129.4297,178.146,7904.54};
-				angles[]={-0,3.1512506,0};
+				angles[]={0,3.1512506,0};
 			};
 			side="Empty";
 			flags=4;
@@ -1314,7 +1316,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8157.4004,177.30092,7874.5708};
-				angles[]={-0,1.569989,0};
+				angles[]={0,1.569989,0};
 			};
 			side="Empty";
 			flags=4;
@@ -1331,7 +1333,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8173.5024,177.73882,7874.0435};
-				angles[]={-0,1.5940259,0};
+				angles[]={0,1.5940259,0};
 			};
 			side="Empty";
 			flags=4;
@@ -1348,7 +1350,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8165.1973,177.30092,7897.6743};
-				angles[]={-0,4.7045555,0};
+				angles[]={0,4.7045555,0};
 			};
 			side="Empty";
 			flags=4;
@@ -1365,7 +1367,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8176.5254,177.5432,7898.3203};
-				angles[]={-0,4.7082634,0};
+				angles[]={0,4.7082634,0};
 			};
 			side="Empty";
 			flags=4;
@@ -1414,7 +1416,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8229.3232,177.68651,7884.9219};
-				angles[]={-0,2.1790943,0};
+				angles[]={0,2.1790943,0};
 			};
 			side="Empty";
 			flags=4;
@@ -1447,7 +1449,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8223.9043,179.58792,7857.083};
-				angles[]={-0,3.1678073,0};
+				angles[]={0,3.1678073,0};
 			};
 			side="Empty";
 			flags=4;
@@ -1465,7 +1467,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8232.3076,179.58792,7857.415};
-				angles[]={-0,3.1678073,0};
+				angles[]={0,3.1678073,0};
 			};
 			side="Empty";
 			flags=4;
@@ -1501,7 +1503,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8249.1484,178.3903,7847.25};
-				angles[]={-0,3.1358016,0.076350667};
+				angles[]={0,3.1358016,0.076350667};
 			};
 			side="Empty";
 			flags=4;
@@ -1538,7 +1540,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8156.8667,177.89337,7854.0649};
-				angles[]={-0,3.1530766,0};
+				angles[]={0,3.1530766,0};
 			};
 			side="Empty";
 			flags=4;
@@ -1555,7 +1557,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8141.3872,177.30333,7892.0601};
-				angles[]={-0,0.77518964,0};
+				angles[]={0,0.77518964,0};
 			};
 			side="Empty";
 			flags=4;
@@ -1572,7 +1574,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8140.0371,177.30333,7888.7168};
-				angles[]={-0,6.0445504,0};
+				angles[]={0,6.0445504,0};
 			};
 			side="Empty";
 			flags=4;
@@ -1589,7 +1591,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8189.2588,177.30333,7781.6851};
-				angles[]={-0,6.234417,0};
+				angles[]={0,6.234417,0};
 			};
 			side="Empty";
 			flags=4;
@@ -1606,7 +1608,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8125.7681,177.30333,7791.7539};
-				angles[]={-0,5.796268,0};
+				angles[]={0,5.796268,0};
 			};
 			side="Empty";
 			flags=4;
@@ -1623,7 +1625,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8081.4502,177.69211,7797.312};
-				angles[]={-0,1.5938766,0};
+				angles[]={0,1.5938766,0};
 			};
 			side="Empty";
 			flags=4;
@@ -1640,7 +1642,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8081.3662,177.69211,7804.2681};
-				angles[]={-0,1.5938766,0};
+				angles[]={0,1.5938766,0};
 			};
 			side="Empty";
 			flags=4;
@@ -1657,7 +1659,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8081.3228,177.69211,7811.395};
-				angles[]={-0,1.5938766,0};
+				angles[]={0,1.5938766,0};
 			};
 			side="Empty";
 			flags=4;
@@ -1674,7 +1676,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8081.5493,177.69211,7817.6177};
-				angles[]={-0,1.5938766,0};
+				angles[]={0,1.5938766,0};
 			};
 			side="Empty";
 			flags=4;
@@ -1724,7 +1726,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8174.8486,178.78941,7835.252};
-				angles[]={-0,4.7083573,0};
+				angles[]={0,4.7083573,0};
 			};
 			side="Empty";
 			flags=4;
@@ -1742,7 +1744,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8206.8232,179.58792,7781.6045};
-				angles[]={-0,6.2608795,0};
+				angles[]={0,6.2608795,0};
 			};
 			side="Empty";
 			flags=4;
@@ -1760,7 +1762,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8216.6982,179.58792,7781.606};
-				angles[]={-0,6.253305,0};
+				angles[]={0,6.253305,0};
 			};
 			side="Empty";
 			flags=4;
@@ -1815,7 +1817,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8696.5869,38.941803,6368.5391};
-				angles[]={-0,0.017120406,0};
+				angles[]={0,0.017120406,0};
 			};
 			side="Empty";
 			flags=4;
@@ -1833,7 +1835,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8642.1963,36.316925,6313.0127};
-				angles[]={-0,4.7125382,0};
+				angles[]={0,4.7125382,0};
 			};
 			side="Empty";
 			flags=4;
@@ -1850,7 +1852,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8642.3457,36.316925,6325.8159};
-				angles[]={-0,4.7125382,0};
+				angles[]={0,4.7125382,0};
 			};
 			side="Empty";
 			flags=4;
@@ -1867,7 +1869,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8642.4316,36.316925,6338.0103};
-				angles[]={-0,4.7125382,0};
+				angles[]={0,4.7125382,0};
 			};
 			side="Empty";
 			flags=4;
@@ -1884,7 +1886,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8642.6133,36.316925,6350.8945};
-				angles[]={-0,4.7125382,0};
+				angles[]={0,4.7125382,0};
 			};
 			side="Empty";
 			flags=4;
@@ -1901,7 +1903,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8642.5205,36.316925,6364.7017};
-				angles[]={-0,4.7125382,0};
+				angles[]={0,4.7125382,0};
 			};
 			side="Empty";
 			flags=4;
@@ -1918,7 +1920,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8645.4697,36.316925,6391.0337};
-				angles[]={-0,5.7036576,0};
+				angles[]={0,5.7036576,0};
 			};
 			side="Empty";
 			flags=4;
@@ -1935,7 +1937,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8656.0479,36.316925,6396.1411};
-				angles[]={-0,5.9582429,0};
+				angles[]={0,5.9582429,0};
 			};
 			side="Empty";
 			flags=4;
@@ -1952,7 +1954,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8671.1787,36.316925,6398.1499};
-				angles[]={-0,6.2709532,0};
+				angles[]={0,6.2709532,0};
 			};
 			side="Empty";
 			flags=4;
@@ -1969,7 +1971,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8684.79,36.316925,6397.9692};
-				angles[]={-0,6.2829785,0};
+				angles[]={0,6.2829785,0};
 			};
 			side="Empty";
 			flags=4;
@@ -1986,7 +1988,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8697.6729,36.316925,6398.1494};
-				angles[]={-0,6.2829785,0};
+				angles[]={0,6.2829785,0};
 			};
 			side="Empty";
 			flags=4;
@@ -2003,7 +2005,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8735.9141,36.152515,6244.5991};
-				angles[]={-0,0.81937623,0};
+				angles[]={0,0.81937623,0};
 			};
 			side="Empty";
 			flags=4;
@@ -2021,7 +2023,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8669.9961,35.283325,6362.0542};
-				angles[]={-0,0.81937623,0};
+				angles[]={0,0.81937623,0};
 			};
 			side="Empty";
 			flags=4;
@@ -2038,7 +2040,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8673.7568,35.066719,6361.9185};
-				angles[]={-0,3.323765,0};
+				angles[]={0,3.323765,0};
 			};
 			side="Empty";
 			flags=4;
@@ -2074,7 +2076,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8721.3154,35.718208,6349.6523};
-				angles[]={-0,4.7647581,0};
+				angles[]={0,4.7647581,0};
 			};
 			side="Empty";
 			flags=4;
@@ -2091,7 +2093,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8729.8682,35.718208,6332.3564};
-				angles[]={-0,4.6975088,0};
+				angles[]={0,4.6975088,0};
 			};
 			side="Empty";
 			flags=4;
@@ -2108,7 +2110,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8735.8643,35.718208,6318.0557};
-				angles[]={-0,4.6975088,0};
+				angles[]={0,4.6975088,0};
 			};
 			side="Empty";
 			flags=4;
@@ -2125,7 +2127,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8706.6924,35.718208,6274.9619};
-				angles[]={-0,6.2397099,0};
+				angles[]={0,6.2397099,0};
 			};
 			side="Empty";
 			flags=4;
@@ -2142,7 +2144,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8667.8984,36.404388,6293.2583};
-				angles[]={-0,4.7032619,0};
+				angles[]={0,4.7032619,0};
 			};
 			side="Empty";
 			flags=4;
@@ -2159,7 +2161,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8732.3662,36.404388,6279.0444};
-				angles[]={-0,4.7032619,0};
+				angles[]={0,4.7032619,0};
 			};
 			side="Empty";
 			flags=4;
@@ -2194,7 +2196,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8676.9961,36.144501,6379.9751};
-				angles[]={-0,4.6914587,0};
+				angles[]={0,4.6914587,0};
 			};
 			side="Empty";
 			flags=4;
@@ -2211,7 +2213,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8706.041,35.680111,6381.689};
-				angles[]={-0,4.5806394,0.0022375863};
+				angles[]={0,4.5806394,0.0022375863};
 			};
 			side="Empty";
 			flags=4;
@@ -2228,7 +2230,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8703.7275,35.666515,6299.3716};
-				angles[]={-0,3.8523135,0};
+				angles[]={0,3.8523135,0};
 			};
 			side="Empty";
 			flags=4;
@@ -2245,7 +2247,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8702.8564,35.050686,6354.5869};
-				angles[]={-0,4.5806394,0};
+				angles[]={0,4.5806394,0};
 			};
 			side="Empty";
 			flags=4;
@@ -2262,7 +2264,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8691.3291,36.795456,6327.8403};
-				angles[]={-0,4.7311535,0};
+				angles[]={0,4.7311535,0};
 			};
 			side="Empty";
 			flags=4;
@@ -2280,7 +2282,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8691.4434,36.795456,6336.2646};
-				angles[]={-0,4.731154,0};
+				angles[]={0,4.731154,0};
 			};
 			side="Empty";
 			flags=4;
@@ -2297,7 +2299,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8760.1914,36.926132,6314.1362};
-				angles[]={-0,1.5636597,0};
+				angles[]={0,1.5636597,0};
 			};
 			side="Empty";
 			flags=4;
@@ -2315,7 +2317,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8754.1953,36.926132,6333.2813};
-				angles[]={-0,1.7084731,0};
+				angles[]={0,1.7084731,0};
 			};
 			side="Empty";
 			flags=4;
@@ -2333,7 +2335,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8752.3486,36.926132,6340.6621};
-				angles[]={-0,2.0475678,0};
+				angles[]={0,2.0475678,0};
 			};
 			side="Empty";
 			flags=4;
@@ -2369,7 +2371,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8683.3916,35.013268,6297.4272};
-				angles[]={-0,3.1236007,0};
+				angles[]={0,3.1236007,0};
 			};
 			side="Empty";
 			flags=4;
@@ -2386,7 +2388,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8688.834,35.013268,6296.7393};
-				angles[]={-0,3.1236007,0};
+				angles[]={0,3.1236007,0};
 			};
 			side="Empty";
 			flags=4;
@@ -2403,7 +2405,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8674.1289,35.013268,6335.4468};
-				angles[]={-0,2.3552811,0};
+				angles[]={0,2.3552811,0};
 			};
 			side="Empty";
 			flags=4;
@@ -2420,7 +2422,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8722.9063,37.153252,6316.6074};
-				angles[]={-0,3.1291862,0};
+				angles[]={0,3.1291862,0};
 			};
 			side="Empty";
 			flags=4;
@@ -2437,7 +2439,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8710.2207,37.153252,6321.9141};
-				angles[]={-0,3.0734894,0};
+				angles[]={0,3.0734894,0};
 			};
 			side="Empty";
 			flags=4;
@@ -2454,7 +2456,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8619.5859,35.283325,6341.5439};
-				angles[]={-0,5.7426567,0};
+				angles[]={0,5.7426567,0};
 			};
 			side="Empty";
 			flags=4;
@@ -2473,7 +2475,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8675.2188,35.283325,6362.0522};
-				angles[]={-0,5.7426567,0};
+				angles[]={0,5.7426567,0};
 			};
 			side="Empty";
 			flags=4;
@@ -2492,7 +2494,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8672.0068,35.283325,6348.835};
-				angles[]={-0,5.7426567,0};
+				angles[]={0,5.7426567,0};
 			};
 			side="Empty";
 			flags=4;
@@ -2518,7 +2520,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={8124.9097,176.98643,7880.0137};
-						angles[]={-0,1.7788395,0};
+						angles[]={0,1.7788395,0};
 					};
 					side="West";
 					flags=6;
@@ -2540,7 +2542,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={8118.9849,176.98643,7876.2041};
-						angles[]={-0,1.7788395,0};
+						angles[]={0,1.7788395,0};
 					};
 					side="West";
 					flags=4;
@@ -2558,7 +2560,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={8121.0503,176.98643,7885.9883};
-						angles[]={-0,1.7788395,0};
+						angles[]={0,1.7788395,0};
 					};
 					side="West";
 					flags=4;
@@ -2576,7 +2578,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={8113.0601,176.98643,7872.3447};
-						angles[]={-0,1.7788395,0};
+						angles[]={0,1.7788395,0};
 					};
 					side="West";
 					flags=4;
@@ -2594,7 +2596,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={8117.1909,176.98643,7891.9131};
-						angles[]={-0,1.7788395,0};
+						angles[]={0,1.7788395,0};
 					};
 					side="West";
 					flags=4;
@@ -2613,7 +2615,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={8107.1348,176.98643,7868.4854};
-						angles[]={-0,1.7788395,0};
+						angles[]={0,1.7788395,0};
 					};
 					side="West";
 					flags=4;
@@ -2629,7 +2631,6 @@ class Mission
 				{
 					dataType="Waypoint";
 					position[]={8216.6982,177.485,7781.6055};
-					id=148;
 					type="GetIn";
 					synchronizations[]={0};
 					class Effects
@@ -2637,6 +2638,7 @@ class Mission
 					};
 					showWP="NEVER";
 					syncId=1;
+					id=148;
 					atlOffset=0.5;
 					class AttachedTo
 					{
@@ -2744,7 +2746,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={8176.4331,176.98643,7849.0327};
-						angles[]={-0,3.1917439,0};
+						angles[]={0,3.1917439,0};
 					};
 					side="West";
 					flags=6;
@@ -2777,7 +2779,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={8143.0005,176.98643,7810.8247};
-						angles[]={-0,1.3517628,0};
+						angles[]={0,1.3517628,0};
 					};
 					side="West";
 					flags=6;
@@ -2798,7 +2800,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={8139.2065,176.98643,7804.9077};
-						angles[]={-0,1.3517628,0};
+						angles[]={0,1.3517628,0};
 					};
 					side="West";
 					flags=4;
@@ -2817,7 +2819,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={8137.0337,176.98643,7814.6685};
-						angles[]={-0,1.3517628,0};
+						angles[]={0,1.3517628,0};
 					};
 					side="West";
 					flags=4;
@@ -2835,7 +2837,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={8135.4121,176.98643,7798.9404};
-						angles[]={-0,1.3517628,0};
+						angles[]={0,1.3517628,0};
 					};
 					side="West";
 					flags=4;
@@ -2853,7 +2855,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={8131.0664,176.98643,7818.4629};
-						angles[]={-0,1.3517628,0};
+						angles[]={0,1.3517628,0};
 					};
 					side="West";
 					flags=4;
@@ -2871,7 +2873,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={8131.6182,176.98643,7792.9736};
-						angles[]={-0,1.3517628,0};
+						angles[]={0,1.3517628,0};
 					};
 					side="West";
 					flags=4;
@@ -2890,7 +2892,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={8125.0996,176.98643,7822.2568};
-						angles[]={-0,1.3517628,0};
+						angles[]={0,1.3517628,0};
 					};
 					side="West";
 					flags=4;
@@ -2908,7 +2910,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={8127.8242,176.98643,7787.0068};
-						angles[]={-0,1.3517628,0};
+						angles[]={0,1.3517628,0};
 					};
 					side="West";
 					flags=4;
@@ -2926,7 +2928,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={8119.1328,176.98643,7826.0508};
-						angles[]={-0,1.3517628,0};
+						angles[]={0,1.3517628,0};
 					};
 					side="West";
 					flags=4;
@@ -3076,7 +3078,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={8169.0732,176.98643,7815.3965};
-						angles[]={-0,1.4084772,0};
+						angles[]={0,1.4084772,0};
 					};
 					side="West";
 					flags=6;
@@ -3158,7 +3160,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8169.0732,179.17325,7815.3467};
-				angles[]={-0,1.4084772,0};
+				angles[]={0,1.4084772,0};
 			};
 			side="West";
 			flags=6;
@@ -4358,7 +4360,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={8157.1582,176.98643,7897.4521};
-						angles[]={-0,1.4084772,0};
+						angles[]={0,1.4084772,0};
 					};
 					side="West";
 					flags=6;
@@ -4376,7 +4378,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={8153.0317,176.98643,7891.7598};
-						angles[]={-0,1.4084772,0};
+						angles[]={0,1.4084772,0};
 					};
 					side="West";
 					flags=4;
@@ -4475,7 +4477,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={8403.7598,190.85759,7988.1079};
-						angles[]={-0,1.4084772,6.2741952};
+						angles[]={0,1.4084772,6.2741952};
 					};
 					side="West";
 					flags=4;
@@ -4849,7 +4851,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={8772.1152,174.70184,7830.521};
-						angles[]={-0,0,6.0683522};
+						angles[]={0,0,6.0683522};
 					};
 					side="West";
 					flags=4;
@@ -4865,7 +4867,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={8772.1152,174.70184,7830.521};
-						angles[]={-0,0,6.0683522};
+						angles[]={0,0,6.0683522};
 					};
 					side="West";
 					flags=6;
@@ -4881,7 +4883,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={8792.6699,172.35426,7810.5215};
-						angles[]={-0,0,6.2337265};
+						angles[]={0,0,6.2337265};
 					};
 					side="West";
 					flags=4;
@@ -4897,7 +4899,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={8792.6699,172.35426,7810.5215};
-						angles[]={-0,0,6.2337265};
+						angles[]={0,0,6.2337265};
 					};
 					side="West";
 					flags=4;
@@ -5066,7 +5068,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8772.6699,177.2435,7830.4717};
-				angles[]={-0,0,6.0683522};
+				angles[]={0,0,6.0683522};
 			};
 			side="West";
 			flags=6;
@@ -5083,7 +5085,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8793.2246,174.89592,7810.4722};
-				angles[]={-0,0,6.2337265};
+				angles[]={0,0,6.2337265};
 			};
 			side="West";
 			flags=4;
@@ -5560,6 +5562,7 @@ class Mission
 					};
 					id=310;
 					type="CUP_O_sla_Soldier_SL";
+					atlOffset=7.6293945e-006;
 				};
 				class Item5
 				{
@@ -5672,7 +5675,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={8671.2148,34.966438,6374.5298};
-						angles[]={-0,2.3532624,0};
+						angles[]={0,2.3532624,0};
 					};
 					side="East";
 					flags=6;
@@ -5691,7 +5694,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={8664.1436,34.966438,6374.5591};
-						angles[]={-0,2.3532624,0};
+						angles[]={0,2.3532624,0};
 					};
 					side="East";
 					flags=4;
@@ -5709,7 +5712,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={8671.1943,34.966438,6381.6504};
-						angles[]={-0,2.3532624,0};
+						angles[]={0,2.3532624,0};
 					};
 					side="East";
 					flags=4;
@@ -5726,7 +5729,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={8657.0732,34.966438,6374.5381};
-						angles[]={-0,2.3532624,0};
+						angles[]={0,2.3532624,0};
 					};
 					side="East";
 					flags=4;
@@ -5743,7 +5746,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={8671.1738,34.966438,6388.7217};
-						angles[]={-0,2.3532624,0};
+						angles[]={0,2.3532624,0};
 					};
 					side="East";
 					flags=4;
@@ -5762,7 +5765,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={8650.002,34.966438,6374.5176};
-						angles[]={-0,2.3532624,0};
+						angles[]={0,2.3532624,0};
 					};
 					side="East";
 					flags=4;
@@ -5780,7 +5783,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={8671.1523,34.966438,6395.7925};
-						angles[]={-0,2.3532624,0};
+						angles[]={0,2.3532624,0};
 					};
 					side="East";
 					flags=4;
@@ -5797,7 +5800,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={8642.9307,34.966438,6374.4966};
-						angles[]={-0,2.3532624,0};
+						angles[]={0,2.3532624,0};
 					};
 					side="East";
 					flags=4;
@@ -5814,7 +5817,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={8671.1318,34.966438,6402.8638};
-						angles[]={-0,2.3532624,0};
+						angles[]={0,2.3532624,0};
 					};
 					side="East";
 					flags=4;
@@ -6564,7 +6567,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={8738.1553,34.966438,6302.0601};
-						angles[]={-0,0.79584169,0};
+						angles[]={0,0.79584169,0};
 					};
 					side="East";
 					flags=6;
@@ -6686,7 +6689,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={8686.1895,34.966438,6279.1392};
-						angles[]={-0,0.043877751,0};
+						angles[]={0,0.043877751,0};
 					};
 					side="East";
 					flags=6;
@@ -6903,7 +6906,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={8681.5811,34.966438,6328.4932};
-						angles[]={-0,1.7283483,0};
+						angles[]={0,1.7283483,0};
 					};
 					side="East";
 					flags=6;
@@ -7038,7 +7041,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={8667.167,34.966438,6309.3672};
-						angles[]={-0,1.2929367,0};
+						angles[]={0,1.2929367,0};
 					};
 					side="East";
 					flags=6;
@@ -7056,7 +7059,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={8663.7305,34.966438,6303.2373};
-						angles[]={-0,1.2929367,0};
+						angles[]={0,1.2929367,0};
 					};
 					side="East";
 					flags=4;
@@ -7085,12 +7088,12 @@ class Mission
 				{
 					dataType="Waypoint";
 					position[]={8763.4209,35.466228,6348.9634};
-					id=406;
 					type="GetIn";
 					class Effects
 					{
 					};
 					showWP="NEVER";
+					id=406;
 					atlOffset=0.5;
 					class AttachedTo
 					{
@@ -7142,6 +7145,333 @@ class Mission
 			{
 			};
 			id=402;
+		};
+		class Item189
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={8092.314,176.985,7803.4668};
+			};
+			id=410;
+			type="ModuleCreateDiaryRecord_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleCreateDiaryRecord_F_PresetTitle";
+					expression="_this setVariable ['PresetTitle',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Situation";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCreateDiaryRecord_F_Title";
+					expression="_this setVariable ['Title',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCreateDiaryRecord_F_Description";
+					expression="_this setVariable ['Description',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="The heartland of South Sahrani is still firmly in our hands and the RACS are doing a great job defending the Northern part of the country. However, the enemy now controls most of the Southern provinces. While we're expecting some Slag attacks tonight, our Night Vision capabilities should give us a major advantage. This could be our first shot at launching a counter attack on the enemy's positions and hitting them where it hurts.";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleCreateDiaryRecord_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=3;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleCreateDiaryRecord_F_Subject";
+					expression="_this setVariable ['Subject',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				nAttributes=5;
+			};
+		};
+		class Item190
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={8097.7202,176.985,7803.1899};
+			};
+			id=411;
+			type="ModuleCreateDiaryRecord_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleCreateDiaryRecord_F_PresetTitle";
+					expression="_this setVariable ['PresetTitle',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Mission";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCreateDiaryRecord_F_Title";
+					expression="_this setVariable ['Title',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCreateDiaryRecord_F_Description";
+					expression="_this setVariable ['Description',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="As expected, the SLA forces are trying to push Northwards during the night. Other than the tanks, most of their troops are not equipped with Night Vision equipment, making any large formation movements at night a great target of opportunity for us.";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleCreateDiaryRecord_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=3;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleCreateDiaryRecord_F_Subject";
+					expression="_this setVariable ['Subject',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				nAttributes=5;
+			};
+		};
+		class Item191
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={8105.6011,176.985,7802.9321};
+			};
+			id=412;
+			type="ModuleCreateDiaryRecord_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleCreateDiaryRecord_F_PresetTitle";
+					expression="_this setVariable ['PresetTitle',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Execution";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCreateDiaryRecord_F_Title";
+					expression="_this setVariable ['Title',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCreateDiaryRecord_F_Description";
+					expression="_this setVariable ['Description',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="1. You will start in the <marker name=""Beg"">base near Gulan</marker>, from where you will depart in a HMMWV equipped with a TOW missile launcher, and a radio to call in artillery fire missions." \n "<br/>" \n "2. Head East, keep a low profile, and intercept the <marker name=""objective"">SLA assault</marker>. Use your TOW launcher against the tanks." \n "<br/>" \n "3. Once the attack has been defeated, join up with the <marker name=""join"">rest of your squad</marker>." \n "<br/>" \n "4. With the support of some <marker name=""RACS"">RACS troops</marker> proceed to attack and destroy the <marker name=""objective2"">base</marker>.";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleCreateDiaryRecord_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=3;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleCreateDiaryRecord_F_Subject";
+					expression="_this setVariable ['Subject',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				nAttributes=5;
+			};
 		};
 	};
 	class Connections

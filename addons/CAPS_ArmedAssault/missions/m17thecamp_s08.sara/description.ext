@@ -2,75 +2,8 @@ minScore=209;
 avgScore=490;
 maxScore=609;
 
+onLoadName = $STR_M17_Name;
 onLoadMission=$STRD_M17_OnLoad;
-
-class Weapons
-{
-    class AK74
-    {
-        count = 1;
-    };
-    class AK74GL
-    {
-        count = 1;
-    };
-    class PK
-    {
-        count = 1;
-    };
-    class SVD
-    {
-        count = 1;
-    };
-    class AKS74U
-    {
-        count = 1;
-    };
-};
-
-class Magazines
-{
-    class 30rnd_545x39_AK
-    {
-        count = 5;
-    };
-    class HandGrenadeTimed
-    {
-        count = 5;
-    };
-    class 1rnd_HE_GP25
-    {
-        count = 5;
-    };
-    class 100rnd_762x54_PK
-    {
-        count = 10;
-    };
-    class PG7V
-    {
-        count = 5;
-    };
-    class 10rnd_762x54_SVD
-    {
-        count = 10;
-    };
-    class SmokeShell
-    {
-        count = 5;
-    };
-};
-
-class CfgRadio
-{
-	sounds[] = {};
-};
-
-class CfgSFX
-{
-	sounds[] = {};
-};
-
-class CfgEnvSounds
-{
-	sounds[] = {};
-};
+briefingName = $STR_M17_Name;
+overviewText = "We've decided to try to surround the enemy, so we're sending five engineers to build a camp close to enemy territory. You have to protect them until they've finished their work.";
+overviewPicture = "\CAPS_ArmedAssault\pictures\m16as07.paa";

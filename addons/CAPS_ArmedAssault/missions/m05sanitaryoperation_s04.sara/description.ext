@@ -2,11 +2,11 @@ minScore=0;
 avgScore=1000;
 maxScore=6000;
 
+onLoadName = $STR_M05_Name;
 onLoadMission=$STR_M05_OnLoad;
-
-//keys[]={"M01", "M02", "M03", "M04", "M05", "M06", "M07", "M08", "M09", "M10", "M11", "M12", "M13", "M14", "M15"};
-//keysLimit = 0;
-//doneKeys[]={"M03"};
+briefingName = $STR_M05_Name;
+overviewText = "Special forces unit is preparing to cleanse the area of unwelcome SLA occupants. You are one of those highly trained soldiers...";
+overviewPicture = "\CAPS_ArmedAssault\pictures\m05s04.paa";
 
 statsColumn=2;
 
@@ -17,19 +17,3 @@ coefEnd3=0;
 coefEnd4=0;
 coefEnd5=0;
 coefEnd6=0;
-
-
-class CfgRadio
-{
-	sounds[] = {};
-};
-
-class CfgSFX
-{
-	sounds[] = {};
-};
-
-class CfgEnvSounds
-{
-	sounds[] = {};
-};

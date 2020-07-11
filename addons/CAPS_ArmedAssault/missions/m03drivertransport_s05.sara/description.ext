@@ -7,7 +7,7 @@ onLoadMission = $STRD_M03_OnLoad;
 
 briefingName = $STR_M03_Name;
 overviewText = "After these last few tiring days you were trying to enjoy a little sleep in your barracks, the sounds of gunfire a explosions roused you suddenly from your slumber. You have no idea whats going on.";
-overviewPicture = "\CAPS_ArmedAssault\pictures\M03.paa";
+overviewPicture = "\CAPS_ArmedAssault\pictures\m03s05.paa";
 
 
 // Control types
@@ -147,7 +147,7 @@ class TimeWindow
 {
 	idd = 1000;
 	movingEnable = false;
-	onLoad = "_this exec ""Time.sqs""";
+	onLoad = "_this execVM ""Time.sqf""";
 	controls[] = {Text,Time};
 
 	class Text

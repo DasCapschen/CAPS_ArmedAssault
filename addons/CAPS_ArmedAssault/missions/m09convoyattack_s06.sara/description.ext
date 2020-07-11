@@ -1,5 +1,3 @@
-onLoadMission=$STRD_M09_OnLoad;
-
 minScore=500;
 avgScore=2000;
 maxScore=4000;
@@ -15,15 +13,8 @@ coefEnd5=0;
 coefEnd6=0;
 
 
-class CfgRadio
-{
-	sounds[] = { };
-};
-class CfgSFX
-{
-	sounds[] = {};
-};
-class CfgEnvSounds
-{
-	sounds[] = {};
-};
+onLoadName = $STR_M09_Name;
+onLoadMission=$STRD_M09_OnLoad;
+briefingName = $STR_M09_Name;
+overviewText = "Take to the skies in your attack helicopter. Fly low, hit hard, get in there and take out that convoy.";
+overviewPicture = "\CAPS_ArmedAssault\pictures\m09s06.paa";

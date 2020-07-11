@@ -678,7 +678,7 @@ class Mission
 			{
 				text="ukonceni opravdu";
 				condition="over";
-				onActivation="m10_S08=1; savevar ""m10_s08""; forceEnd";
+				onActivation="forceEnd";
 				sizeA=0;
 				sizeB=0;
 				type="END1";
@@ -787,7 +787,7 @@ class Mission
 			{
 				text="badend";
 				condition="whatever";
-				onActivation="m10_s08=2; savevar ""m10_s08"";";
+				onActivation="CAPS_M10_S08=2; savevar ""CAPS_M10_S08"";";
 				sizeA=0;
 				sizeB=0;
 				type="END2";
@@ -1241,7 +1241,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.66553301;
-				init="m10_S08=0";
+				init="";
 			};
 			id=3483;
 			type="GraveCrossHelmet";

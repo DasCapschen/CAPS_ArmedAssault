@@ -490,7 +490,7 @@ class Mission
 			class Attributes
 			{
 				condition="pocase==1";
-				onActivation="captain sideradio ""m03r09""; m03_s05=2; savevar ""m03_s05"";";
+				onActivation="captain sideradio ""m03r09"";";
 				sizeA=0;
 				sizeB=0;
 			};
@@ -600,7 +600,7 @@ class Mission
 			position[]={9649.0146,15.870585,11011.232};
 			class Attributes
 			{
-				onActivation="m03_s05=1; savevar ""m03_s05""; player sideradio ""univ_r09""; privezl=1;";
+				onActivation="player sideradio ""univ_r09""; privezl=1;";
 				sizeA=100;
 				sizeB=100;
 				activationByOwner="GROUP";
@@ -806,7 +806,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="m03_s05=0";
+				init="";
 			};
 			id=508;
 			type="Camp";

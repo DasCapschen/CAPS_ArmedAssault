@@ -41,4 +41,6 @@ waitUntil{ camCommitted _camera };
 player cameraEffect ["terminate","back"];
 camDestroy _camera;
 
+CAPS_M08_S03=1; 
+saveVar "CAPS_M08_S03";
 overWon = true;

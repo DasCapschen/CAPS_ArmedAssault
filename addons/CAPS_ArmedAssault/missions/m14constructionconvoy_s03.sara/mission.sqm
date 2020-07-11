@@ -582,7 +582,7 @@ class Mission
 				name="GOODEND";
 				text="SuccessOutro";
 				condition="call{vehicle player==boat && alldestroyed==1}";
-				onActivation="call{CAPS_M14_S03=""_done""; saveVar ""CAPS_M14_S03""; 0 = player execVM ""outro.sqf"";}";
+				onActivation="call{0 = player execVM ""outro.sqf"";}";
 				sizeA=0;
 				sizeB=0;
 				timeout[]={2,2,2};
@@ -746,7 +746,7 @@ class Mission
 				name="badend_hlaska";
 				text="FailedOutro";
 				condition="call{pocet >= 2}";
-				onActivation="call{CAPS_M14_S03=""_failed""; saveVar ""CAPS_M14_S03""; 0 = player execVM ""outro2.sqf"";}";
+				onActivation="call{0 = player execVM ""outro2.sqf"";}";
 				sizeA=0;
 				sizeB=0;
 			};
@@ -907,7 +907,7 @@ class Mission
 			class Attributes
 			{
 				text="Boat Destroyed Music";
-				condition="getDammage boat > 0.7";
+				condition="damage boat > 0.7";
 				sizeA=0;
 				sizeB=0;
 				effectMusic="ATrack10";
@@ -923,8 +923,8 @@ class Mission
 			class Attributes
 			{
 				text="Boat Destroyed";
-				condition="call{getDammage boat > 0.7}";
-				onActivation="call{CAPS_M14_S03=""_failed""; saveVar ""CAPS_M14_S03""; 0 = player execVM ""outro3.sqf"";}";
+				condition="call{damage boat > 0.7}";
+				onActivation="call{0 = player execVM ""outro3.sqf"";}";
 				sizeA=0;
 				sizeB=0;
 				timeout[]={2,2,2};

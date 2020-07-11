@@ -41,6 +41,6 @@ waitUntil{ camCommitted _camera };
 car cameraEffect ["terminate","back"];
 camDestroy _camera;
 
-overLost = true;
-CAPS_M01_S02 = "_failed";
+CAPS_M01_S02 = 2;
 saveVar "CAPS_M01_S02";
+overLost = true;

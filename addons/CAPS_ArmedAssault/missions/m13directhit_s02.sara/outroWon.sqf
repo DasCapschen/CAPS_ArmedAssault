@@ -42,7 +42,7 @@ et2 cameraEffect ["terminate","back"];
 camDestroy _camera;
 camUseNVG false;
 
+CAPS_M13_S02=1; 
+saveVar "CAPS_M13_S02";
 overWon = true;
 
-CAPS_M13_S02="_done"; 
-saveVar "CAPS_M13_S02";

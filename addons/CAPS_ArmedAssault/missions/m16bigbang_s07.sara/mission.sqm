@@ -402,7 +402,7 @@ class Mission
 			{
 				text="ujelikonec";
 				condition="(u1arrive==1 && u2arrive==1) && realkonec == 1";
-				onActivation="m16_s07=2; savevar ""m16_s07"";";
+				onActivation="CAPS_M16_S07=2; savevar ""CAPS_M16_S07""; ";
 				sizeA=0;
 				sizeB=0;
 				type="END3";
@@ -557,7 +557,7 @@ class Mission
 			{
 				text="alarmkonec";
 				condition="(posily==1 && realkonec == 1) && ((damage u2<0.6) or (damage u1<0.6))";
-				onActivation="m16_s07=2; savevar ""m16_s07"";";
+				onActivation="CAPS_M16_S07=2; savevar ""CAPS_M16_S07""; ";
 				sizeA=0;
 				sizeB=0;
 				type="END2";
@@ -574,7 +574,7 @@ class Mission
 			{
 				text="alarmkonec";
 				condition="(damage u2>0.6) && (damage u1>0.6) && realkonec==1";
-				onActivation="m16_s07=1; savevar ""m16_s07""; m16b_s07=0; savevar ""m16b_s07"";";
+				onActivation="CAPS_M16_S07=1; savevar ""CAPS_M16_S07"";";
 				sizeA=0;
 				sizeB=0;
 				type="END1";
@@ -621,7 +621,7 @@ class Mission
 			{
 				text="alarmkonec";
 				condition="(((damage u2>0.6) && (damage u1<0.6)) && realkonec==1) or (((damage u1>0.6) && (damage u2<0.6)) && realkonec==1)";
-				onActivation="m16_s07=1; savevar ""m16_s07"";";
+				onActivation="CAPS_M16_S07=1; savevar ""CAPS_M16_S07""; ";
 				sizeA=0;
 				sizeB=0;
 				type="END4";
@@ -1015,7 +1015,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="m16_s07=0";
+				init="";
 			};
 			id=4314;
 			type="BlackhawkWreck";

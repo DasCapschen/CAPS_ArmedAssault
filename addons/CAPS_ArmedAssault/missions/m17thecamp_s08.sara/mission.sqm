@@ -864,7 +864,7 @@ class Mission
 			class Attributes
 			{
 				condition="count units stavari == 0 && prvniteamdone==0";
-				onActivation="m17_s08=2; savevar ""m17_s08""; 0 = player execVM ""outroLost.sqf"";";
+				onActivation="0 = player execVM ""outroLost.sqf"";";
 				sizeA=0;
 				sizeB=0;
 				timeout[]={6,6,6};
@@ -952,7 +952,7 @@ class Mission
 			class Attributes
 			{
 				condition="konec==1";
-				onActivation="m17_s08=1; savevar ""m17_s08""; m04_s08=0; savevar ""m04_s08""; 0 = player execVM ""outroWin.sqf"";";
+				onActivation="0 = player execVM ""outroWin.sqf"";";
 				sizeA=0;
 				sizeB=0;
 			};
@@ -982,7 +982,7 @@ class Mission
 			class Attributes
 			{
 				condition="prvniteamdone==1 && (!canmove heli)";
-				onActivation="m17_s08=1; savevar ""m17_s08""; m04_s08=0; savevar ""m04_s08""; 0 = player execVM ""outroWin.sqf"";";
+				onActivation="0 = player execVM ""outroWin.sqf"";";
 				sizeA=0;
 				sizeB=0;
 			};
@@ -1020,7 +1020,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.69999999;
-				init="staticready=0; m17_s08=0";
+				init="staticready=0;";
 			};
 			id=4537;
 			type="CUP_B_RHIB_USMC";

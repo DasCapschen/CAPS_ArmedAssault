@@ -531,7 +531,7 @@ class Mission
 			class Attributes
 			{
 				condition="dojel==1 && (canmove heli)";
-				onActivation="""3"" objstatus ""done""; m07_s06=1; savevar ""m07_s06""; 0 = player execVM ""outroWin.sqf"";";
+				onActivation="""3"" objstatus ""done""; 0 = player execVM ""outroWin.sqf"";";
 				sizeA=0;
 				sizeB=0;
 			};
@@ -546,7 +546,7 @@ class Mission
 			class Attributes
 			{
 				condition="dojel==1 && (!canmove heli)";
-				onActivation="""3"" objstatus ""failed""; m07_s06=2; savevar ""m07_s06""; 0 = player execVM ""outroLost.sqf"";";
+				onActivation="""3"" objstatus ""failed""; 0 = player execVM ""outroLost.sqf"";";
 				sizeA=0;
 				sizeB=0;
 			};
@@ -1166,7 +1166,7 @@ class Mission
 			{
 				skill=0.60000002;
 				lock="UNLOCKED";
-				init="m07_s06=0";
+				init="";
 			};
 			id=2506;
 			type="Land_Radar";

@@ -454,7 +454,7 @@ class Mission
 				position[]={14691.753,50.708992,8934.1113};
 				angles[]={6.1911888,0,0.01123992};
 			};
-			init="call{if( not isNil ""CAPS_M06_S07"" ) then {" \n "    deleteVehicle this;" \n "};}";
+			init="call{if( CAPS_M06_S07 > 0) then {" \n "    deleteVehicle this;" \n "};}";
 			id=85;
 			type="ModuleStrategicMapMission_F";
 			class CustomAttributes
@@ -584,7 +584,7 @@ class Mission
 				position[]={14869.771,68.875542,10432.695};
 				angles[]={0.32871529,0,0.15622443};
 			};
-			init="call{if( not isNil ""CAPS_M16_S07"") then {" \n "    deleteVehicle this;" \n "};}";
+			init="call{if( CAPS_M16_S07 > 0) then {" \n "    deleteVehicle this;" \n "};}";
 			id=86;
 			type="ModuleStrategicMapMission_F";
 			atlOffset=7.6293945e-006;
@@ -975,7 +975,7 @@ class Mission
 				position[]={14691.953,50.676842,8933.7383};
 				angles[]={6.1911888,0,0.01123992};
 			};
-			init="call{_missionState = """";" \n "if( not isNil ""CAPS_M06_S07"") then {" \n "    _missionState = CAPS_M06_S07;" \n "};" \n "_value = getMissionPath (""m1_icon"" + _missionState + "".paa"");" \n "this setVariable ['Texture',_value];}";
+			init="call{_missionState = """";" \n "if(CAPS_M06_S07==1) then {_missionState = ""_done"";};" \n "if(CAPS_M06_S07==2) then {_missionState = ""_failed"";};" \n "_value = getMissionPath (""m1_icon"" + _missionState + "".paa"");" \n "this setVariable ['Texture',_value];}";
 			id=89;
 			type="ModuleStrategicMapImage_F";
 			class CustomAttributes
@@ -1105,7 +1105,7 @@ class Mission
 				position[]={14870.517,69.442139,10431.32};
 				angles[]={0.32871529,0,0.11918853};
 			};
-			init="call{_missionState = """";" \n "if(not isNil ""CAPS_M16_S07"" ) then {" \n "    _missionState = CAPS_M16_S07;" \n "};" \n "_value = getMissionPath ""m2_icon"" + _missionState + "".paa"";" \n "this setVariable ['Texture',_value];}";
+			init="call{_missionState = """";" \n "if(CAPS_M16_S07==1) then {_missionState = ""_done"";};" \n "if(CAPS_M16_S07==2) then {_missionState = ""_failed"";};" \n "_value = getMissionPath ""m2_icon"" + _missionState + "".paa"";" \n "this setVariable ['Texture',_value];}";
 			id=90;
 			type="ModuleStrategicMapImage_F";
 			class CustomAttributes
@@ -2779,7 +2779,7 @@ class Mission
 				position[]={14486.427,46.373104,11145.652};
 				angles[]={0.013229595,0,0.037891097};
 			};
-			init="call{if( not isNil ""CAPS_M16_S07"") then {" \n "    deleteVehicle this;" \n "};}";
+			init="call{if(CAPS_M16b_S07 > 0) then {" \n "    deleteVehicle this;" \n "};}";
 			id=112;
 			type="ModuleStrategicMapMission_F";
 			atlOffset=3.8146973e-006;
@@ -2910,7 +2910,7 @@ class Mission
 				position[]={14487.173,46.419594,11144.277};
 				angles[]={0.013229595,0,0.037891097};
 			};
-			init="call{_missionState = """";" \n "if(not isNil ""CAPS_M16_S07"" ) then {" \n "    _missionState = CAPS_M16_S07;" \n "};" \n "_value = getMissionPath ""m4_icon"" + _missionState + "".paa"";" \n "this setVariable ['Texture',_value];}";
+			init="call{_missionState = """";" \n "if(CAPS_M16b_S07==1) then {_missionState = ""_done"";};" \n "if(CAPS_M16b_S07==2) then {_missionState = ""_failed"";};" \n "_value = getMissionPath ""m4_icon"" + _missionState + "".paa"";" \n "this setVariable ['Texture',_value];}";
 			id=113;
 			type="ModuleStrategicMapImage_F";
 			atlOffset=3.8146973e-006;

@@ -316,7 +316,7 @@ class Mission
 			{
 				text="GoodEnd - Real";
 				condition="(xtime<310) && landing==1";
-				onActivation="m06_S07=1; savevar ""m06_s07"";  ""3"" objstatus ""done""; 0 = [] execVM ""outroWin.sqf"";";
+				onActivation="""3"" objstatus ""done""; 0 = [] execVM ""outroWin.sqf"";";
 				sizeA=0;
 				sizeB=0;
 				timeout[]={6,6,6};
@@ -407,7 +407,7 @@ class Mission
 			{
 				text="REAl Bad End";
 				condition="over2";
-				onActivation="m06_S07=2; savevar ""m06_s07""; forceEnd; ""3"" objstatus ""failed"";";
+				onActivation="forceEnd; ""3"" objstatus ""failed"";";
 				sizeA=0;
 				sizeB=0;
 				type="END2";
@@ -490,7 +490,7 @@ class Mission
 			{
 				text="Goodend";
 				condition="(xtime>300) && landing==1";
-				onActivation="m06_S07=1; savevar ""m06_s07""; ""3"" objstatus ""done""; 0 = player execVM ""outroWin.sqf"";";
+				onActivation="""3"" objstatus ""done""; 0 = player execVM ""outroWin.sqf"";";
 				sizeA=0;
 				sizeB=0;
 			};
@@ -1061,7 +1061,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="m06_S07=0";
+				init="";
 			};
 			id=1732;
 			type="FenceWoodPalet";

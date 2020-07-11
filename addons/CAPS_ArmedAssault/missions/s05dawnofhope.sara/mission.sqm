@@ -452,7 +452,7 @@ class Mission
 				position[]={10623.36,154.90302,9173.8584};
 				angles[]={0.12287118,0,0.032585297};
 			};
-			init="call{if( not isNil ""CAPS_M15_S05"" ) then {" \n "    deleteVehicle this;" \n "};}";
+			init="call{if(CAPS_M15_S05 > 0) then {" \n "    deleteVehicle this;" \n "};}";
 			id=85;
 			type="ModuleStrategicMapMission_F";
 			class CustomAttributes
@@ -582,7 +582,7 @@ class Mission
 				position[]={9633.585,48.843082,10866.699};
 				angles[]={0.16498597,0,0.033737212};
 			};
-			init="call{if( not isNil ""CAPS_M03_S05"") then {" \n "    deleteVehicle this;" \n "};}";
+			init="call{if(CAPS_M03_S05 > 0) then {" \n "    deleteVehicle this;" \n "};}";
 			id=86;
 			type="ModuleStrategicMapMission_F";
 			atlOffset=3.8146973e-006;
@@ -972,7 +972,7 @@ class Mission
 				position[]={10623.56,154.95557,9173.4854};
 				angles[]={0.12287118,0,0.032585297};
 			};
-			init="call{_missionState = """";" \n "if( not isNil ""CAPS_M15_S05"") then {" \n "    _missionState = CAPS_M15_S05;" \n "};" \n "_value = getMissionPath (""m1_icon"" + _missionState + "".paa"");" \n "this setVariable ['Texture',_value];}";
+			init="call{_missionState = """";" \n "if(CAPS_M15_S05==1) then {_missionState = ""_done"";};" \n "if(CAPS_M15_S05==2) then {_missionState = ""_failed"";};" \n "_value = getMissionPath (""m1_icon"" + _missionState + "".paa"");" \n "this setVariable ['Texture',_value];}";
 			id=89;
 			type="ModuleStrategicMapImage_F";
 			class CustomAttributes
@@ -1102,7 +1102,7 @@ class Mission
 				position[]={9634.3311,49.108727,10865.324};
 				angles[]={0.19764109,0,0};
 			};
-			init="call{_missionState = """";" \n "if(not isNil ""CAPS_M03_S05"" ) then {" \n "    _missionState = CAPS_M03_S05;" \n "};" \n "_value = getMissionPath ""m2_icon"" + _missionState + "".paa"";" \n "this setVariable ['Texture',_value];}";
+			init="call{_missionState = """";" \n "if(CAPS_M15_S05==1) then {_missionState = ""_done"";};" \n "if(CAPS_M15_S05==2) then {_missionState = ""_failed"";};" \n "_value = getMissionPath ""m2_icon"" + _missionState + "".paa"";" \n "this setVariable ['Texture',_value];}";
 			id=90;
 			type="ModuleStrategicMapImage_F";
 			class CustomAttributes

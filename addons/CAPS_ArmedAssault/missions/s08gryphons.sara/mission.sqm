@@ -411,7 +411,7 @@ class Mission
 				angles[]={0.14742251,0,0.024744498};
 			};
 			name="m1";
-			init="call{if( not isNil ""CAPS_M04_S08"" ) then {" \n "    deleteVehicle this;" \n "};}";
+			init="call{if(CAPS_M04_S08 > 0) then {" \n "    deleteVehicle this;" \n "};}";
 			id=85;
 			type="ModuleStrategicMapMission_F";
 			class CustomAttributes
@@ -542,7 +542,7 @@ class Mission
 				angles[]={0.051553503,0,0.070353284};
 			};
 			name="m2";
-			init="call{if( not isNil ""CAPS_M10_S08"") then {" \n "    deleteVehicle this;" \n "};}";
+			init="call{if(CAPS_M10_S08 > 0) then {" \n "    deleteVehicle this;" \n "};}";
 			id=86;
 			type="ModuleStrategicMapMission_F";
 			class CustomAttributes
@@ -935,7 +935,7 @@ class Mission
 				angles[]={0.14742251,0,0.024744498};
 			};
 			name="img_m1";
-			init="call{_missionState = """";" \n "if( not isNil ""CAPS_M04_S08"") then {" \n "    _missionState = CAPS_M04_S08;" \n "};" \n "_value = getMissionPath (""m1_icon"" + _missionState + "".paa"");" \n "this setVariable ['Texture',_value];}";
+			init="call{_missionState = """";" \n "if(CAPS_M04_S08==1) then {_missionState = ""_done"";};" \n "if(CAPS_M04_S08==2) then {_missionState = ""_failed"";};" \n "_value = getMissionPath (""m1_icon"" + _missionState + "".paa"");" \n "this setVariable ['Texture',_value];}";
 			id=89;
 			type="ModuleStrategicMapImage_F";
 			class CustomAttributes
@@ -1066,7 +1066,7 @@ class Mission
 				angles[]={0.051553503,0,0.070353284};
 			};
 			name="img_m2";
-			init="call{_missionState = """";" \n "if(not isNil ""CAPS_M10_S08"" ) then {" \n "    _missionState = CAPS_M10_S08;" \n "};" \n "_value = getMissionPath ""m2_icon"" + _missionState + "".paa"";" \n "this setVariable ['Texture',_value];}";
+			init="call{_missionState = """";" \n "if(CAPS_M10_S08==1) then {_missionState = ""_done"";};" \n "if(CAPS_M10_S08==2) then {_missionState = ""_failed"";};" \n "_value = getMissionPath ""m2_icon"" + _missionState + "".paa"";" \n "this setVariable ['Texture',_value];}";
 			id=90;
 			type="ModuleStrategicMapImage_F";
 			class CustomAttributes
@@ -2742,7 +2742,7 @@ class Mission
 				angles[]={6.1138239,0,6.2449536};
 			};
 			name="m4";
-			init="call{if( not isNil ""CAPS_M17_S08"" ) then {" \n "    deleteVehicle this;" \n "};}";
+			init="call{if(CAPS_M17_S08 > 0) then {" \n "    deleteVehicle this;" \n "};}";
 			id=111;
 			type="ModuleStrategicMapMission_F";
 			class CustomAttributes
@@ -2873,7 +2873,7 @@ class Mission
 				angles[]={6.1138239,0,6.2449536};
 			};
 			name="img_m4";
-			init="call{_missionState = """";" \n "if( not isNil ""CAPS_M17_S08"") then {" \n "    _missionState = CAPS_M17_S08;" \n "};" \n "_value = getMissionPath (""m4_icon"" + _missionState + "".paa"");" \n "this setVariable ['Texture',_value];}";
+			init="call{_missionState = """";" \n "if(CAPS_M17_S08==1) then {_missionState = ""_done"";};" \n "if(CAPS_M17_S08==2) then {_missionState = ""_failed"";};" \n "_value = getMissionPath (""m4_icon"" + _missionState + "".paa"");" \n "this setVariable ['Texture',_value];}";
 			id=112;
 			type="ModuleStrategicMapImage_F";
 			class CustomAttributes

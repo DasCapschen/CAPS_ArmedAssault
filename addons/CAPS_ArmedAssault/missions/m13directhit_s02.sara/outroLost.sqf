@@ -41,7 +41,7 @@ chop cameraEffect ["terminate","back"];
 camDestroy _camera;
 camUseNVG false;
 
+CAPS_M13_S02=2; 
+saveVar "CAPS_M13_S02";
 overLost = true;
 
-CAPS_M13_S02="_failed"; 
-saveVar "CAPS_M13_S02";

@@ -788,7 +788,7 @@ class Mission
 			{
 				text="KONEC SPUST OUTRO";
 				condition="konec && (damage t1 > 0.7 && damage t2 > 0.7 && damage bmp > 0.7)";
-				onActivation="m04_s08=1; savevar ""m04_s08""; 0 = player execVM ""outroWin.sqf"";";
+				onActivation="0 = player execVM ""outroWin.sqf"";";
 				sizeA=0;
 				sizeB=0;
 				timeout[]={2,2,2};
@@ -837,7 +837,7 @@ class Mission
 			{
 				text="KONEC SPUST OUTRO";
 				condition="konec && ((damage t1 < 0.7) or (damage t2 < 0.7) or (damage bmp < 0.7))";
-				onActivation="m04_s08=1; savevar ""m04_s08""; 0 = player execVM ""outroLost.sqf"";";
+				onActivation=" 0 = player execVM ""outroLost.sqf"";";
 				sizeA=0;
 				sizeB=0;
 				timeout[]={2,2,2};
@@ -915,7 +915,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.2;
-				init="m04_s08=0; dokonceno=0";
+				init="dokonceno=0";
 			};
 			id=892;
 			type="CUP_USBasicAmmunitionBox";

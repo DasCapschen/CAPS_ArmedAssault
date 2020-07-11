@@ -454,7 +454,7 @@ class Mission
 			{
 				position[]={12356.632,31.995001,8499.792};
 			};
-			init="call{if( not isNil ""CAPS_M09_S06"" ) then {" \n "    deleteVehicle this;" \n "};}";
+			init="call{if(CAPS_M09_S06 > 0) then {" \n "    deleteVehicle this;" \n "};}";
 			id=85;
 			type="ModuleStrategicMapMission_F";
 			class CustomAttributes
@@ -584,7 +584,7 @@ class Mission
 				position[]={13868.82,30.909277,10246.207};
 				angles[]={0.033737212,0,0.017994344};
 			};
-			init="call{if( not isNil ""CAPS_M07_S06"") then {" \n "    deleteVehicle this;" \n "};}";
+			init="call{if(CAPS_M07_S06 > 0) then {" \n "    deleteVehicle this;" \n "};}";
 			id=86;
 			type="ModuleStrategicMapMission_F";
 			atlOffset=-1.9073486e-006;
@@ -975,7 +975,7 @@ class Mission
 			{
 				position[]={12356.832,31.995001,8499.4189};
 			};
-			init="call{_missionState = """";" \n "if( not isNil ""CAPS_M09_S06"") then {" \n "    _missionState = CAPS_M09_S06;" \n "};" \n "_value = getMissionPath (""m1_icon"" + _missionState + "".paa"");" \n "this setVariable ['Texture',_value];}";
+			init="call{_missionState = """";" \n "if(CAPS_M09_S06==1) then {_missionState = ""_done"";};" \n "if(CAPS_M09_S06==2) then {_missionState = ""_failed"";};" \n "_value = getMissionPath (""m1_icon"" + _missionState + "".paa"");" \n "this setVariable ['Texture',_value];}";
 			id=89;
 			type="ModuleStrategicMapImage_F";
 			class CustomAttributes
@@ -1105,7 +1105,7 @@ class Mission
 				position[]={13869.566,30.969091,10244.832};
 				angles[]={0.033737212,0,0.017994344};
 			};
-			init="call{_missionState = """";" \n "if(not isNil ""CAPS_M07_S06"" ) then {" \n "    _missionState = CAPS_M07_S06;" \n "};" \n "_value = getMissionPath ""m2_icon"" + _missionState + "".paa"";" \n "this setVariable ['Texture',_value];}";
+			init="call{_missionState = """";" \n "if(CAPS_M07_S06==1) then {_missionState = ""_done"";};" \n "if(CAPS_M07_S06==2) then {_missionState = ""_failed"";};" \n "_value = getMissionPath ""m2_icon"" + _missionState + "".paa"";" \n "this setVariable ['Texture',_value];}";
 			id=90;
 			type="ModuleStrategicMapImage_F";
 			atlOffset=-1.9073486e-006;

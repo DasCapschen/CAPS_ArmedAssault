@@ -631,7 +631,7 @@ class Mission
 			class Attributes
 			{
 				condition="nakonci2==1 && zadnamoznost == 1";
-				onActivation="m01_s04=2; savevar ""m01_s04""; nakonci=1; ""4"" objstatus ""done""; 0 = player execVM ""outroLost.sqf"";";
+				onActivation="nakonci=1; ""4"" objstatus ""done""; 0 = player execVM ""outroLost.sqf"";";
 				sizeA=0;
 				sizeB=0;
 			};
@@ -646,7 +646,7 @@ class Mission
 			class Attributes
 			{
 				condition="nakonci2==1 && (!alive major)";
-				onActivation="m01_s04=1; savevar ""m01_s04""; nakonci=1; ""4"" objstatus ""done""; 0 = player execVM ""outroWin.sqf"";";
+				onActivation="nakonci=1; ""4"" objstatus ""done""; 0 = player execVM ""outroWin.sqf"";";
 				sizeA=0;
 				sizeB=0;
 			};
@@ -661,7 +661,7 @@ class Mission
 			class Attributes
 			{
 				condition="nakonci2==1 && (!alive tat2)";
-				onActivation="m01_s04=1; savevar ""m01_s04""; nakonci=1; ""4"" objstatus ""done""; 0 = player execVM ""outroWin.sqf"";";
+				onActivation="nakonci=1; ""4"" objstatus ""done""; 0 = player execVM ""outroWin.sqf"";";
 				sizeA=0;
 				sizeB=0;
 			};
@@ -676,7 +676,7 @@ class Mission
 			class Attributes
 			{
 				condition="nakonci2==1 && poplach==1 && done==0";
-				onActivation="m01_s04=2; saveVar ""m01_s04""; nakonci=1; ""4"" objstatus ""done""; 0 = player execVM ""outroLost.sqf"";";
+				onActivation="nakonci=1; ""4"" objstatus ""done""; 0 = player execVM ""outroLost.sqf"";";
 				sizeA=0;
 				sizeB=0;
 			};
@@ -1158,7 +1158,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="m01_s04=0";
+				init="";
 			};
 			id=292;
 			type="GraveCrossHelmet";

@@ -369,7 +369,7 @@ class Mission
 			{
 				text="OutroDesertedTrigger";
 				condition="call{this && introEnd && (not gameover)}";
-				onActivation="call{CAPS_M01_S02=""_failed""; saveVar ""CAPS_M01_S02""; deserted = true; player execVM ""outroLost.sqf"";}";
+				onActivation="call{deserted = true; player execVM ""outroLost.sqf"";}";
 				sizeA=200;
 				sizeB=300;
 				activationType="NOT PRESENT";

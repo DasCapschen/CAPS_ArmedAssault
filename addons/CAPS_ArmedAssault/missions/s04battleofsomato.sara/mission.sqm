@@ -453,7 +453,7 @@ class Mission
 				position[]={11589.694,250.59227,8957.6191};
 				angles[]={0.19036305,0,0.12248721};
 			};
-			init="call{if( not isNil ""CAPS_M05_S04"" ) then {" \n "    deleteVehicle this;" \n "};}";
+			init="call{if(CAPS_M05_S04 > 0) then {" \n "    deleteVehicle this;" \n "};}";
 			id=85;
 			type="ModuleStrategicMapMission_F";
 			atlOffset=1.5258789e-005;
@@ -584,7 +584,7 @@ class Mission
 				position[]={10199.781,218.93828,8140.856};
 				angles[]={0.28124237,0,0.24375267};
 			};
-			init="call{if( not isNil ""CAPS_M01_S04"") then {" \n "    deleteVehicle this;" \n "};}";
+			init="call{if(CAPS_M01_S04 > 0) then {" \n "    deleteVehicle this;" \n "};}";
 			id=86;
 			type="ModuleStrategicMapMission_F";
 			class CustomAttributes
@@ -974,7 +974,7 @@ class Mission
 				position[]={11589.895,250.68878,8957.2461};
 				angles[]={0.19036305,0,0.12248721};
 			};
-			init="call{_missionState = """";" \n "if( not isNil ""CAPS_M05_S04"") then {" \n "    _missionState = CAPS_M05_S04;" \n "};" \n "_value = getMissionPath (""m1_icon"" + _missionState + "".paa"");" \n "this setVariable ['Texture',_value];}";
+			init="call{_missionState = """";" \n "if(CAPS_M05_S04==1) then {_missionState = ""_done"";};" \n "if(CAPS_M05_S04==2) then {_missionState = ""_failed"";};" \n "_value = getMissionPath (""m1_icon"" + _missionState + "".paa"");" \n "this setVariable ['Texture',_value];}";
 			id=89;
 			type="ModuleStrategicMapImage_F";
 			atlOffset=1.5258789e-005;
@@ -1105,7 +1105,7 @@ class Mission
 				position[]={10200.527,219.6026,8139.481};
 				angles[]={0.46804494,0,0.18805923};
 			};
-			init="call{_missionState = """";" \n "if(not isNil ""CAPS_M01_S04"" ) then {" \n "    _missionState = CAPS_M01_S04;" \n "};" \n "_value = getMissionPath ""m2_icon"" + _missionState + "".paa"";" \n "this setVariable ['Texture',_value];}";
+			init="call{_missionState = """";" \n "if(CAPS_M01_S04==1) then {_missionState = ""_done"";};" \n "if(CAPS_M01_S04==2) then {_missionState = ""_failed"";};" \n "_value = getMissionPath ""m2_icon"" + _missionState + "".paa"";" \n "this setVariable ['Texture',_value];}";
 			id=90;
 			type="ModuleStrategicMapImage_F";
 			atlOffset=-1.5258789e-005;

@@ -42,4 +42,6 @@ waitUntil{ camCommitted _camera };
 boat cameraEffect ["terminate","back"];
 camDestroy _camera;
 
+CAPS_M14_S03=1; 
+saveVar "CAPS_M14_S03";
 over = true;

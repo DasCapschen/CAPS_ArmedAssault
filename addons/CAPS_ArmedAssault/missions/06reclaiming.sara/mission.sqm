@@ -542,7 +542,7 @@ class Mission
 			class Attributes
 			{
 				text="poplach";
-				condition="poplach && !S06VarM01";
+				condition="poplach && (CAPS_M09_S06 != 1)";
 				timeout[]={15,20,25};
 				isRectangle=1;
 			};
@@ -558,7 +558,7 @@ class Mission
 			class Attributes
 			{
 				text="poplach";
-				condition="poplach && !S06VarM01";
+				condition="poplach && (CAPS_M09_S06 != 1)";
 				timeout[]={40,60,80};
 				isRectangle=1;
 			};
@@ -574,7 +574,7 @@ class Mission
 			class Attributes
 			{
 				text="poplach";
-				condition="poplach && !S06VarM01";
+				condition="poplach && (CAPS_M09_S06 != 1)";
 				timeout[]={50,70,90};
 				isRectangle=1;
 			};
@@ -590,7 +590,7 @@ class Mission
 			class Attributes
 			{
 				text="poplach";
-				condition="poplach && !S06VarM01";
+				condition="poplach && (CAPS_M09_S06 != 1)";
 				timeout[]={70,85,100};
 				isRectangle=1;
 			};
@@ -606,7 +606,7 @@ class Mission
 			class Attributes
 			{
 				text="poplach";
-				condition="poplach && !S06VarM01";
+				condition="poplach && (CAPS_M09_S06 != 1)";
 				timeout[]={30,45,60};
 				isRectangle=1;
 			};
@@ -622,7 +622,7 @@ class Mission
 			class Attributes
 			{
 				text="poplach";
-				condition="poplach && !S06VarM01";
+				condition="poplach && (CAPS_M09_S06 != 1)";
 				timeout[]={80,90,100};
 				isRectangle=1;
 			};
@@ -1981,7 +1981,7 @@ class Mission
 				skill=0.2;
 				init="this addEventHandler [""killed"", {0 = [(_this select 0), true, 15, 0.2, 3, 60] execVM ""FG.sqf""}]";
 				name="t1";
-				presenceCondition="(M07_S06==0) or (M07_S06==2)";
+				presenceCondition="(CAPS_M07_S06 != 1)";
 			};
 			id=1883;
 			type="CUP_O_T72_SLA";
@@ -2001,7 +2001,7 @@ class Mission
 			{
 				skill=0.2;
 				name="t2";
-				presenceCondition="(M07_S06==0) or (M07_S06==2)";
+				presenceCondition="(CAPS_M07_S06 != 1)";
 			};
 			id=1884;
 			type="CUP_O_T72_SLA";
@@ -2021,7 +2021,7 @@ class Mission
 			{
 				skill=0.2;
 				name="bmp";
-				presenceCondition="(M07_S06==0) or (M07_S06==2)";
+				presenceCondition="(CAPS_M07_S06 != 1)";
 			};
 			id=1885;
 			type="CUP_O_BMP2_SLA";
@@ -2195,7 +2195,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.2;
-				presenceCondition="(M07_S06==0) or (M07_S06==2)";
+				presenceCondition="(CAPS_M07_S06 != 1)";
 			};
 			id=1895;
 			type="CUP_O_Ural_RU";
@@ -2214,7 +2214,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.2;
-				presenceCondition="(M07_S06==0) or (M07_S06==2)";
+				presenceCondition="(CAPS_M07_S06 != 1)";
 			};
 			id=1896;
 			type="CUP_O_Ural_RU";
@@ -2233,7 +2233,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.2;
-				presenceCondition="(M07_S06==0) or (M07_S06==2)";
+				presenceCondition="(CAPS_M07_S06 != 1)";
 			};
 			id=1897;
 			type="CUP_O_Ural_Refuel_RU";
@@ -2252,7 +2252,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.2;
-				presenceCondition="(M07_S06==0) or (M07_S06==2)";
+				presenceCondition="(CAPS_M07_S06 != 1)";
 			};
 			id=1898;
 			type="CUP_O_UAZ_Unarmed_SLA";
@@ -2542,7 +2542,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.2;
-				presenceCondition="(M07_S06==1)";
+				presenceCondition="(CAPS_M07_S06 == 1)";
 			};
 			id=1914;
 			type="JeepWreck2";
@@ -2560,7 +2560,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.2;
-				presenceCondition="(M07_S06==1)";
+				presenceCondition="(CAPS_M07_S06 == 1)";
 			};
 			id=1915;
 			type="JeepWreck3";
@@ -2579,7 +2579,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.2;
-				presenceCondition="(M07_S06==1)";
+				presenceCondition="(CAPS_M07_S06 == 1)";
 			};
 			id=1916;
 			type="M113Wreck";
@@ -2598,7 +2598,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.2;
-				presenceCondition="(M07_S06==1)";
+				presenceCondition="(CAPS_M07_S06 == 1)";
 			};
 			id=1917;
 			type="UralWreck";
@@ -2617,7 +2617,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.2;
-				presenceCondition="(M07_S06==1)";
+				presenceCondition="(CAPS_M07_S06 == 1)";
 			};
 			id=1918;
 			type="JeepWreck2";
@@ -2635,7 +2635,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.2;
-				presenceCondition="(M07_S06==1)";
+				presenceCondition="(CAPS_M07_S06 == 1)";
 			};
 			id=1919;
 			type="UralWreck";
@@ -2654,7 +2654,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.2;
-				presenceCondition="(M07_S06==1)";
+				presenceCondition="(CAPS_M07_S06 == 1)";
 			};
 			id=1920;
 			type="UralWreck";
@@ -4196,7 +4196,7 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="LIEUTENANT";
-						presenceCondition="!S06VarM01";
+						presenceCondition="(CAPS_M09_S06 != 1)";
 					};
 					id=2006;
 					type="CUP_O_sla_Soldier";
@@ -4215,7 +4215,7 @@ class Mission
 					{
 						skill=0.33333299;
 						rank="CORPORAL";
-						presenceCondition="!S06VarM01";
+						presenceCondition="(CAPS_M09_S06 != 1)";
 					};
 					id=2007;
 					type="CUP_O_sla_Soldier";
@@ -4235,7 +4235,7 @@ class Mission
 						skill=0.73333299;
 						rank="CAPTAIN";
 						name="oficir1";
-						presenceCondition="!S06VarM01";
+						presenceCondition="(CAPS_M09_S06 != 1)";
 					};
 					id=2008;
 					type="CUP_O_sla_Soldier_SL";
@@ -4254,7 +4254,7 @@ class Mission
 					{
 						skill=0.73333299;
 						rank="CAPTAIN";
-						presenceCondition="!S06VarM01";
+						presenceCondition="(CAPS_M09_S06 != 1)";
 					};
 					id=2009;
 					type="CUP_O_sla_Soldier_AT";
@@ -4304,7 +4304,7 @@ class Mission
 					{
 						skill=0.33333299;
 						rank="CORPORAL";
-						presenceCondition="!S06VarM01";
+						presenceCondition="(CAPS_M09_S06 != 1)";
 					};
 					id=2012;
 					type="CUP_O_sla_Soldier";
@@ -4323,7 +4323,7 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="LIEUTENANT";
-						presenceCondition="!S06VarM01";
+						presenceCondition="(CAPS_M09_S06 != 1)";
 					};
 					id=2013;
 					type="CUP_O_sla_Soldier";
@@ -4342,7 +4342,7 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="LIEUTENANT";
-						presenceCondition="!S06VarM01";
+						presenceCondition="(CAPS_M09_S06 != 1)";
 					};
 					id=2014;
 					type="CUP_O_sla_Soldier_MG";
@@ -4362,7 +4362,7 @@ class Mission
 						skill=0.73333299;
 						rank="CAPTAIN";
 						name="oficir2";
-						presenceCondition="!S06VarM01";
+						presenceCondition="(CAPS_M09_S06 != 1)";
 					};
 					id=2015;
 					type="CUP_O_sla_Soldier_SL";
@@ -4381,7 +4381,7 @@ class Mission
 					{
 						skill=0.73333299;
 						rank="CAPTAIN";
-						presenceCondition="!S06VarM01";
+						presenceCondition="(CAPS_M09_S06 != 1)";
 					};
 					id=2016;
 					type="CUP_O_sla_Soldier_AT";
@@ -4467,7 +4467,7 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="LIEUTENANT";
-						presenceCondition="!S06VarM01";
+						presenceCondition="(CAPS_M09_S06 != 1)";
 					};
 					id=2022;
 					type="CUP_O_sla_Soldier";
@@ -4486,7 +4486,7 @@ class Mission
 					{
 						skill=0.33333299;
 						rank="CORPORAL";
-						presenceCondition="!S06VarM01";
+						presenceCondition="(CAPS_M09_S06 != 1)";
 					};
 					id=2023;
 					type="CUP_O_sla_Soldier";
@@ -4505,7 +4505,7 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="LIEUTENANT";
-						presenceCondition="!S06VarM01";
+						presenceCondition="(CAPS_M09_S06 != 1)";
 					};
 					id=2024;
 					type="CUP_O_sla_Soldier_MG";
@@ -4526,7 +4526,7 @@ class Mission
 						skill=0.73333299;
 						rank="CAPTAIN";
 						name="oficir3";
-						presenceCondition="!S06VarM01";
+						presenceCondition="(CAPS_M09_S06 != 1)";
 					};
 					id=2025;
 					type="CUP_O_sla_Soldier_SL";
@@ -4545,7 +4545,7 @@ class Mission
 					{
 						skill=0.73333299;
 						rank="CAPTAIN";
-						presenceCondition="!S06VarM01";
+						presenceCondition="(CAPS_M09_S06 != 1)";
 					};
 					id=2026;
 					type="CUP_O_sla_Soldier_AT";
@@ -4684,7 +4684,7 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="LIEUTENANT";
-						presenceCondition="!S06VarM01";
+						presenceCondition="(CAPS_M09_S06 != 1)";
 					};
 					id=2036;
 					type="CUP_O_sla_Crew";
@@ -4703,7 +4703,7 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="LIEUTENANT";
-						presenceCondition="!S06VarM01";
+						presenceCondition="(CAPS_M09_S06 != 1)";
 					};
 					id=2037;
 					type="CUP_O_sla_Crew";
@@ -4723,7 +4723,7 @@ class Mission
 						skill=0.73333299;
 						rank="CAPTAIN";
 						name="tankista";
-						presenceCondition="!S06VarM01";
+						presenceCondition="(CAPS_M09_S06 != 1)";
 					};
 					id=2038;
 					type="CUP_O_sla_Crew";
@@ -4802,7 +4802,7 @@ class Mission
 					{
 						skill=0.33333299;
 						rank="CORPORAL";
-						presenceCondition="!S06VarM01";
+						presenceCondition="(CAPS_M09_S06 != 1)";
 					};
 					id=2043;
 					type="CUP_O_sla_Soldier";
@@ -4821,7 +4821,7 @@ class Mission
 					{
 						skill=0.33333299;
 						rank="CORPORAL";
-						presenceCondition="!S06VarM01";
+						presenceCondition="(CAPS_M09_S06 != 1)";
 					};
 					id=2044;
 					type="CUP_O_sla_Soldier";
@@ -4840,7 +4840,7 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="LIEUTENANT";
-						presenceCondition="!S06VarM01";
+						presenceCondition="(CAPS_M09_S06 != 1)";
 					};
 					id=2045;
 					type="CUP_O_sla_Soldier_MG";
@@ -4861,7 +4861,7 @@ class Mission
 						skill=0.73333299;
 						rank="CAPTAIN";
 						name="oficir1_2";
-						presenceCondition="!S06VarM01";
+						presenceCondition="(CAPS_M09_S06 != 1)";
 					};
 					id=2046;
 					type="CUP_O_sla_Soldier_SL";
@@ -4911,7 +4911,7 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="LIEUTENANT";
-						presenceCondition="!S06VarM01";
+						presenceCondition="(CAPS_M09_S06 != 1)";
 					};
 					id=2049;
 					type="CUP_O_sla_Crew";
@@ -4930,7 +4930,7 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="LIEUTENANT";
-						presenceCondition="!S06VarM01";
+						presenceCondition="(CAPS_M09_S06 != 1)";
 					};
 					id=2050;
 					type="CUP_O_sla_Crew";
@@ -4951,7 +4951,7 @@ class Mission
 						rank="CAPTAIN";
 						init="tankisti = group this";
 						name="tankista_1";
-						presenceCondition="!S06VarM01";
+						presenceCondition="(CAPS_M09_S06 != 1)";
 					};
 					id=2051;
 					type="CUP_O_sla_Crew";

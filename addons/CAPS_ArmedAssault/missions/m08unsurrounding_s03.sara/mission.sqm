@@ -741,7 +741,7 @@ class Mission
 			{
 				text="Win Outro";
 				condition="call{konec == 1}";
-				onActivation="CAPS_M08_S03=""_done""; saveVar ""CAPS_M08_S03""; 0 = player execVM ""outroWin.sqf"";";
+				onActivation="0 = player execVM ""outroWin.sqf"";";
 				sizeA=0;
 				sizeB=0;
 				timeout[]={2,2,2};
@@ -759,7 +759,7 @@ class Mission
 			{
 				text="Lost Outro";
 				condition="call{(damage car1 > 0.7) && (damage car2 > 0.7) }";
-				onActivation="CAPS_M08_S03=""_failed""; saveVar ""CAPS_M08_S03""; 0 = player execVM ""outroLost.sqf"";";
+				onActivation="0 = player execVM ""outroLost.sqf"";";
 				sizeA=0;
 				sizeB=0;
 				timeout[]={3,3,3};

@@ -41,4 +41,6 @@ waitUntil{ camCommitted _camera };
 kamera cameraEffect ["terminate","back"];
 camDestroy _camera;
 
+CAPS_M01_S04=1; 
+savevar "CAPS_M01_S04";
 over = true;

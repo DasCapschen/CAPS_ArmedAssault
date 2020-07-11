@@ -459,7 +459,7 @@ class Mission
 			class Attributes
 			{
 				condition="pocetlostu==0 && konec==1";
-				onActivation="m15_s05=1; savevar ""m15_s05""; 0 = player execVM ""outroWin.sqf""; ""1"" objstatus ""done"";";
+				onActivation="0 = player execVM ""outroWin.sqf""; ""1"" objstatus ""done"";";
 				sizeA=0;
 				sizeB=0;
 				timeout[]={5,5,5};
@@ -475,7 +475,7 @@ class Mission
 			class Attributes
 			{
 				condition="pocetlostu==1 && konec==1";
-				onActivation="m15_s05=3; savevar ""m15_s05""; 0 = player execVM ""outroWin.sqf"";""1"" objstatus ""done"";";
+				onActivation="0 = player execVM ""outroWin.sqf"";""1"" objstatus ""done"";";
 				sizeA=0;
 				sizeB=0;
 				timeout[]={5,5,5};
@@ -491,7 +491,7 @@ class Mission
 			class Attributes
 			{
 				condition="pocetlostu==2 && konec==1";
-				onActivation="m15_s05=3; savevar ""m15_s05""; 0 = player execVM ""outroWin.sqf""; ""1"" objstatus ""done"";";
+				onActivation="0 = player execVM ""outroWin.sqf""; ""1"" objstatus ""done"";";
 				sizeA=0;
 				sizeB=0;
 				timeout[]={5,5,5};
@@ -507,7 +507,7 @@ class Mission
 			class Attributes
 			{
 				condition="pocetlostu==3 && konec==1";
-				onActivation="m15_s05=2; savevar ""m15_s05""; 0 = player execVM ""outroLost.sqf""; ""1"" objstatus ""failed"";";
+				onActivation="0 = player execVM ""outroLost.sqf""; ""1"" objstatus ""failed"";";
 				sizeA=0;
 				sizeB=0;
 				timeout[]={5,5,5};

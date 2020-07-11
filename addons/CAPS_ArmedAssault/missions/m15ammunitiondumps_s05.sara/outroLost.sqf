@@ -45,4 +45,6 @@ kamera cameraEffect ["terminate","back"];
 camDestroy _camera;
 camUseNVG false;;
 
+CAPS_M15_S05=2; 
+savevar "CAPS_M15_S05";
 over2 = true;

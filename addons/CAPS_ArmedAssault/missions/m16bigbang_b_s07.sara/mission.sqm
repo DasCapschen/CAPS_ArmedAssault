@@ -799,7 +799,7 @@ class Mission
 			{
 				text="AUTA_DESTROYED";
 				condition="cars==0";
-				onActivation="m16b_s07=2; savevar ""m16b_s07""; 0 = player execVM ""outroLost.sqf"";";
+				onActivation="0 = player execVM ""outroLost.sqf"";";
 				sizeA=0;
 				sizeB=0;
 				timeout[]={8,8,8};
@@ -816,7 +816,7 @@ class Mission
 			{
 				text="AUTA_DESTROYED";
 				condition="konec==1 && cars==2";
-				onActivation="m16b_s07=1; savevar ""m16b_s07""; 0 = player execVM ""outroWin.sqf"";";
+				onActivation="0 = player execVM ""outroWin.sqf"";";
 				sizeA=0;
 				sizeB=0;
 				timeout[]={5,5,5};
@@ -833,7 +833,7 @@ class Mission
 			class Attributes
 			{
 				condition="konvojdojel==1";
-				onActivation="m16b_s07=2; savevar ""m16b_s07""; 0 = player execVM ""outroLost.sqf"";";
+				onActivation="0 = player execVM ""outroLost.sqf"";";
 				sizeA=0;
 				sizeB=0;
 				timeout[]={5,5,5};
@@ -850,7 +850,7 @@ class Mission
 			{
 				text="AUTA_DESTROYED";
 				condition="konec==1 && cars==1";
-				onActivation="m16b_s07=3; savevar ""m16b_s07""; 0 = player execVM ""outroWin.sqf"";";
+				onActivation="0 = player execVM ""outroWin.sqf"";";
 				sizeA=0;
 				sizeB=0;
 				timeout[]={4,4,4};
@@ -1426,7 +1426,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="konec=0; m16b_s07=0";
+				init="konec=0;";
 			};
 			id=4138;
 			type="FenceWood";

@@ -622,7 +622,7 @@ class Mission
 			class Attributes
 			{
 				condition="((vehicle player==jeep) && done) or brutend==1";
-				onActivation="m05_s04=1; saveVar ""m05_s04""; 0 = player execVM ""outro.sqf"";";
+				onActivation="0 = player execVM ""outro.sqf"";";
 				sizeA=400;
 				sizeB=450;
 				timeout[]={1,1,1};

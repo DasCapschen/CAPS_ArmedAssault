@@ -43,4 +43,6 @@ t1 cameraEffect ["terminate","back"];
 camDestroy _camera;
 camUseNVG false;;
 
+CAPS_M04_S08=1; 
+savevar "CAPS_M04_S08";
 over = true;

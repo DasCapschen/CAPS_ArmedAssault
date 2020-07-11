@@ -41,6 +41,6 @@ waitUntil{ camCommitted _camera };
 car cameraEffect ["terminate","back"];
 camDestroy _camera;
 
-overWin = true;
-CAPS_M01_S02 = "_done";
+CAPS_M01_S02 = 1;
 saveVar "CAPS_M01_S02";
+overWin = true;

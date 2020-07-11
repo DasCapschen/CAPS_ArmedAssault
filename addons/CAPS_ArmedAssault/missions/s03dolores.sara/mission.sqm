@@ -430,7 +430,7 @@ class Mission
 				position[]={11728.51,38.467564,6744.5537};
 				angles[]={6.0405607,0,6.2292376};
 			};
-			init="call{if( not isNil ""CAPS_M08_S03"" ) then {" \n "    deleteVehicle this;" \n "};}";
+			init="call{if(CAPS_M08_S03 > 0) then {" \n "    deleteVehicle this;" \n "};}";
 			id=173;
 			type="ModuleStrategicMapMission_F";
 			atlOffset=3.8146973e-006;
@@ -560,7 +560,7 @@ class Mission
 			{
 				position[]={13220.531,13.995004,6921.2905};
 			};
-			init="call{if( not isNil ""CAPS_M14_S03"") then {" \n "    deleteVehicle this;" \n "};}";
+			init="call{if(CAPS_M14_S03 > 0) then {" \n "    deleteVehicle this;" \n "};}";
 			id=174;
 			type="ModuleStrategicMapMission_F";
 			atlOffset=3.8146973e-006;
@@ -951,7 +951,7 @@ class Mission
 				position[]={11728.71,38.364449,6744.1807};
 				angles[]={6.0405607,0,6.2292376};
 			};
-			init="call{_missionState = """";" \n "if( not isNil ""CAPS_M08_S03"") then {" \n "    _missionState = CAPS_M08_S03;" \n "};" \n "_value = getMissionPath (""m1_icon"" + _missionState + "".paa"");" \n "this setVariable ['Texture',_value];}";
+			init="call{_missionState = """";" \n "if(CAPS_M08_S03==1) then {_missionState = ""_done"";};" \n "if(CAPS_M08_S03==2) then {_missionState = ""_failed"";};" \n "_value = getMissionPath (""m1_icon"" + _missionState + "".paa"");" \n "this setVariable ['Texture',_value];}";
 			id=177;
 			type="ModuleStrategicMapImage_F";
 			class CustomAttributes
@@ -1080,7 +1080,7 @@ class Mission
 			{
 				position[]={13221.277,13.995,6919.9146};
 			};
-			init="call{_missionState = """";" \n "if(not isNil ""CAPS_M14_S03"" ) then {" \n "    _missionState = CAPS_M14_S03;" \n "};" \n "_value = getMissionPath ""m2_icon"" + _missionState + "".paa"";" \n "this setVariable ['Texture',_value];}";
+			init="call{_missionState = """";" \n "if(CAPS_M14_S03==1) then {_missionState = ""_done"";};" \n "if(CAPS_M14_S03==2) then {_missionState = ""_failed"";};" \n "_value = getMissionPath ""m2_icon"" + _missionState + "".paa"";" \n "this setVariable ['Texture',_value];}";
 			id=178;
 			type="ModuleStrategicMapImage_F";
 			class CustomAttributes

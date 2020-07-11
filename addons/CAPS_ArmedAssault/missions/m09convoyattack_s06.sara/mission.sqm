@@ -654,7 +654,7 @@ class Mission
 			{
 				text="cont. E1";
 				condition="Over";
-				onActivation="m09_s06=1; savevar ""m09_s06""; ForceEnd";
+				onActivation="ForceEnd";
 				sizeA=0;
 				sizeB=0;
 				type="END1";
@@ -671,7 +671,7 @@ class Mission
 			{
 				text="cont.E3";
 				condition="Daleko";
-				onActivation="m09_s06=2; saveVar ""m09_s06""; ";
+				onActivation="";
 				sizeA=0;
 				sizeB=0;
 				timeout[]={1,1,1};
@@ -745,7 +745,7 @@ class Mission
 			{
 				text="BEFORE OVER";
 				condition="xkonec==1";
-				onActivation="m09_s06=2; saveVar ""m09_s06""; 0 = player execVM ""outroLost.sqf""";
+				onActivation="0 = player execVM ""outroLost.sqf""";
 				sizeA=0;
 				sizeB=0;
 				timeout[]={3,3,3};
@@ -970,7 +970,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.2;
-				init="m09_s06=0";
+				init="";
 			};
 			id=2777;
 			type="Paleta2";

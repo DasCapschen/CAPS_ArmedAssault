@@ -243,9 +243,6 @@ class RscTitles
 	};	
 };
 
-
-
-
 class CfgSounds
 {
 	sounds[] = { };
@@ -253,7 +250,7 @@ class CfgSounds
 	class 10v01
 	{
 		name = "10v01";
-		sound[] = {"10v01.ogg", db-0, 1.0};
+		sound[] = {"sound\10v01.ogg", db-0, 1.0};
 		titlesfont = "Zeppelin33Italic";
 		titlessize = 0.0390625;
 		titles[] = {0,$STRC_10v01};
@@ -261,7 +258,7 @@ class CfgSounds
 	class 10v02
 	{
 		name = "10v02";
-		sound[] = {"10v02.ogg", db-0, 1.0};
+		sound[] = {"sound\10v02.ogg", db-0, 1.0};
 		titlesfont = "Zeppelin33Italic";
 		titlessize = 0.0390625;
 		titles[] = {0,$STRC_10v02};
@@ -269,7 +266,7 @@ class CfgSounds
 	class 10v03
 	{
 		name = "10v03";
-		sound[] = {"10v03.ogg", db-0, 1.0};
+		sound[] = {"sound\10v03.ogg", db-0, 1.0};
 		titlesfont = "Zeppelin33Italic";
 		titlessize = 0.0390625;
 		titles[] = {0,$STRC_10v03};
@@ -277,7 +274,7 @@ class CfgSounds
 	class 10v04
 	{
 		name = "10v04";
-		sound[] = {"10v04.ogg", db-0, 1.0};
+		sound[] = {"sound\10v04.ogg", db-0, 1.0};
 		titlesfont = "Zeppelin33Italic";
 		titlessize = 0.0390625;
 		titles[] = {0,$STRC_10v04};
@@ -285,7 +282,7 @@ class CfgSounds
 	class 10v05
 	{
 		name = "10v05";
-		sound[] = {"10v05.ogg", db-0, 1.0};
+		sound[] = {"sound\10v05.ogg", db-0, 1.0};
 		titlesfont = "Zeppelin33Italic";
 		titlessize = 0.0390625;
 		titles[] = {0,$STRC_10v05};
@@ -293,7 +290,7 @@ class CfgSounds
 	class 10v06
 	{
 		name = "10v06";
-		sound[] = {"10v06.ogg", db-0, 1.0};
+		sound[] = {"sound\10v06.ogg", db-0, 1.0};
 		titlesfont = "Zeppelin33Italic";
 		titlessize = 0.0390625;
 		titles[] = {0,$STRC_10v06};
@@ -301,7 +298,7 @@ class CfgSounds
 	class 10v07
 	{
 		name = "10v07";
-		sound[] = {"10v07.ogg", db-0, 1.0};
+		sound[] = {"sound\10v07.ogg", db-0, 1.0};
 		titlesfont = "Zeppelin33Italic";
 		titlessize = 0.0390625;
 		titles[] = {0,$STRC_10v07};
@@ -309,7 +306,7 @@ class CfgSounds
 	class 10v08
 	{
 		name = "10v08";
-		sound[] = {"10v08.ogg", db-0, 1.0};
+		sound[] = {"sound\10v08.ogg", db-0, 1.0};
 		titlesfont = "Zeppelin33Italic";
 		titlessize = 0.0390625;
 		titles[] = {0,$STRC_10v08};
@@ -317,7 +314,7 @@ class CfgSounds
 	class 10v09
 	{
 		name = "10v09";
-		sound[] = {"10v09.ogg", db-0, 1.0};
+		sound[] = {"sound\10v09.ogg", db-0, 1.0};
 		titlesfont = "Zeppelin33Italic";
 		titlessize = 0.0390625;
 		titles[] = {0,$STRC_10v09};
@@ -325,7 +322,7 @@ class CfgSounds
 	class 10v10
 	{
 		name = "10v10";
-		sound[] = {"10v10.ogg", db-0, 1.0};
+		sound[] = {"sound\10v10.ogg", db-0, 1.0};
 		titlesfont = "Zeppelin33Italic";
 		titlessize = 0.0390625;
 		titles[] = {0,$STRC_10v10};
@@ -333,7 +330,7 @@ class CfgSounds
 	class 10v11
 	{
 		name = "10v11";
-		sound[] = {"10v11.ogg", db-0, 1.0};
+		sound[] = {"sound\10v11.ogg", db-0, 1.0};
 		titlesfont = "Zeppelin33Italic";
 		titlessize = 0.0390625;		
 		titles[] = {0,$STRC_10v11};
@@ -341,7 +338,7 @@ class CfgSounds
 	class 10v12
 	{
 		name = "10v12";
-		sound[] = {"10v12.ogg", db-0, 1.0};
+		sound[] = {"sound\10v12.ogg", db-0, 1.0};
 		titlesfont = "Zeppelin33Italic";
 		titlessize = 0.0390625;
 		titles[] = {0,$STRC_10v12};
@@ -349,7 +346,7 @@ class CfgSounds
 	class 10v13
 	{
 		name = "10v13";
-		sound[] = {"10v13.ogg", db-0, 1.0};
+		sound[] = {"sound\10v13.ogg", db-0, 1.0};
 		titlesfont = "Zeppelin33Italic";
 		titlessize = 0.0390625;
 		titles[] = {0,$STRC_10v13};
@@ -357,40 +354,24 @@ class CfgSounds
 	class 10s01
 	{
 		name = "10s01";
-		sound[] = {"10s01.ogg", db-10, 1.0};
+		sound[] = {"sound\10s01.ogg", db-10, 1.0};
 		titles[] = {};
 	};
 	class 10s02
 	{
 		name = "10s02";
-		sound[] = {"10s02.ogg", db-10, 1.0};
+		sound[] = {"sound\10s02.ogg", db-10, 1.0};
 		titles[] = {};
 	};
 };
 
-class CfgRadio
-{
-	sounds[] = { };
-};
-
-class CfgSFX
-{
-	sounds[] = {};
-};
-
 class CfgMusic
 {
- tracks[]={};
+	tracks[]={};
 
- class track_uscutscene10
- {
-  name = "track_uscutscene10";
-  sound[] = {"\sound\track_uscutscene10.ogg", db+0, 1.0};
-
-};
-
-class CfgEnvSounds
-{
-	sounds[] = {};
-
+	class track_uscutscene10
+	{
+		name = "track_uscutscene10";
+		sound[] = {"sound\track_uscutscene10.ogg", db+0, 1.0};
+	};
 };

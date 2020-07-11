@@ -217,9 +217,6 @@ class RscTitles
 	};	
 };
 
-
-
-
 class CfgSounds
 {
 	sounds[] = { };
@@ -227,7 +224,7 @@ class CfgSounds
 	class 04v01
 	{
 		name = "04v01";
-		sound[] = {"04v01.ogg", db-0, 1.0};
+		sound[] = {"sound\04v01.ogg", db-0, 1.0};
 		titlesfont = "Zeppelin33Italic";
 		titlessize = 0.0390625;
 		titles[] = {0,$STRC_04v01};
@@ -235,7 +232,7 @@ class CfgSounds
 	class 04v02
 	{
 		name = "04v02";
-		sound[] = {"04v02.ogg", db-0, 1.0};
+		sound[] = {"sound\04v02.ogg", db-0, 1.0};
 		titlesfont = "Zeppelin33Italic";
 		titlessize = 0.0390625;
 		titles[] = {0,$STRC_04v02};
@@ -243,7 +240,7 @@ class CfgSounds
 	class 04v03
 	{
 		name = "04v03";
-		sound[] = {"04v03.ogg", db-0, 1.0};
+		sound[] = {"sound\04v03.ogg", db-0, 1.0};
 		titlesfont = "Zeppelin33Italic";
 		titlessize = 0.0390625;
 		titles[] = {0,$STRC_04v03};
@@ -251,7 +248,7 @@ class CfgSounds
 	class 04v04
 	{
 		name = "04v04";
-		sound[] = {"04v04.ogg", db-0, 1.0};
+		sound[] = {"sound\04v04.ogg", db-0, 1.0};
 		titlesfont = "Zeppelin33Italic";
 		titlessize = 0.0390625;
 		titles[] = {0,$STRC_04v04};
@@ -259,7 +256,7 @@ class CfgSounds
 	class 04v05
 	{
 		name = "04v05";
-		sound[] = {"04v05.ogg", db-0, 1.0};
+		sound[] = {"sound\04v05.ogg", db-0, 1.0};
 		titlesfont = "Zeppelin33Italic";
 		titlessize = 0.0390625;
 		titles[] = {0,$STRC_04v05};
@@ -267,40 +264,21 @@ class CfgSounds
 	class 04v06
 	{
 		name = "04v06";
-		sound[] = {"04v06.ogg", db-0, 1.0};
+		sound[] = {"sound\04v06.ogg", db-0, 1.0};
 		titlesfont = "Zeppelin33Italic";
 		titlessize = 0.0390625;
 		titles[] = {0,$STRC_04v06};
 	};
 };
 
-class CfgRadio
-{
-	sounds[] = { };
-};
-
-
-
-
-class CfgSFX
-{
-	sounds[] = {};
-};
 
 class CfgMusic
-
 {
- tracks[]={};
+	tracks[]={};
 
- class track_uscutscene04
- {
-  name = "track_uscutscene04";
-  sound[] = {"\sound\track_uscutscene04.ogg", db+0, 1.0};
- };
-
-
-class CfgEnvSounds
-{
-	sounds[] = {};
-
+	class track_uscutscene04
+	{
+		name = "track_uscutscene04";
+		sound[] = {"sound\track_uscutscene04.ogg", db+0, 1.0};
+	};
 };

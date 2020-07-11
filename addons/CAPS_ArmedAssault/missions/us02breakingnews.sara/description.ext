@@ -195,9 +195,6 @@ class RscTitles
 	};
 };
 
-
-
-
 class CfgSounds
 {
 	sounds[] = { };
@@ -205,7 +202,7 @@ class CfgSounds
 	class x02v01
 	{
 		name = "x02v01";
-		sound[] = {"x02v01.ogg", db-0, 1.0};
+		sound[] = {"sound\x02v01.ogg", db-0, 1.0};
 		titlesfont = "Zeppelin33Italic";
 		titlessize = 0.040;
 		titles[] = {0,$STRC_02v01};
@@ -213,7 +210,7 @@ class CfgSounds
 	class x02v02
 	{
 		name = "x02v02";
-		sound[] = {"x02v02.ogg", db-0, 1.0};
+		sound[] = {"sound\x02v02.ogg", db-0, 1.0};
 		titlesfont = "Zeppelin33Italic";
 		titlessize = 0.040;
 		titles[] = {0,$STRC_02v02};
@@ -221,7 +218,7 @@ class CfgSounds
 	class x02v03
 	{
 		name = "x02v03";
-		sound[] = {"x02v03.ogg", db-0, 1.0};
+		sound[] = {"sound\x02v03.ogg", db-0, 1.0};
 		titlesfont = "Zeppelin33Italic";
 		titlessize = 0.040;
 		titles[] = {0,$STRC_02v03};
@@ -229,7 +226,7 @@ class CfgSounds
 	class x02v04
 	{
 		name = "x02v04";
-		sound[] = {"x02v04.ogg", db-0, 1.0};
+		sound[] = {"sound\x02v04.ogg", db-0, 1.0};
 		titlesfont = "Zeppelin33Italic";
 		titlessize = 0.040;
 		titles[] = {0,$STRC_02v04};
@@ -237,7 +234,7 @@ class CfgSounds
 	class x02v05
 	{
 		name = "x02v05";
-		sound[] = {"x02v05.ogg", db-0, 1.0};
+		sound[] = {"sound\x02v05.ogg", db-0, 1.0};
 		titlesfont = "Zeppelin33Italic";
 		titlessize = 0.040;
 		titles[] = {0,$STRC_02v05};
@@ -245,7 +242,7 @@ class CfgSounds
 	class x02v06
 	{
 		name = "x02v06";
-		sound[] = {"x02v06.ogg", db-0, 1.0};
+		sound[] = {"sound\x02v06.ogg", db-0, 1.0};
 		titlesfont = "Zeppelin33Italic";
 		titlessize = 0.040;
 		titles[] = {0,$STRC_02v06};
@@ -253,39 +250,20 @@ class CfgSounds
 	class x02v07
 	{
 		name = "x02v07";
-		sound[] = {"x02v07.ogg", db-0, 1.0};
+		sound[] = {"sound\x02v07.ogg", db-0, 1.0};
 		titlesfont = "Zeppelin33Italic";
 		titlessize = 0.040;
 		titles[] = {0,$STRC_02v07};
 	};
 };
 
-class CfgRadio
-{
-	sounds[] = { };
-};
-
-
-
-
-class CfgSFX
-{
-	sounds[] = {};
-};
-
-class CfgEnvSounds
-{
-	sounds[] = {};
-
-};
-
 class CfgMusic
 {
- tracks[]={};
+	tracks[]={};
 
- class track_uscutscene02
- {
-  name = "track_uscutscene02";
-  sound[] = {"\sound\track_uscutscene02.ogg", db+0, 1.0};
- };
+	class track_uscutscene02
+	{
+		name = "track_uscutscene02";
+		sound[] = {"sound\track_uscutscene02.ogg", db+0, 1.0};
+	};
 };

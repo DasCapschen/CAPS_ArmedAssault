@@ -192,9 +192,6 @@ class RscTitles
 	
 };
 
-
-
-
 class CfgSounds
 {
 	sounds[] = { };
@@ -202,7 +199,7 @@ class CfgSounds
 	class 09v01
 	{
 		name = "09v01";
-		sound[] = {"09v01.ogg", db-0, 1.0};
+		sound[] = {"sound\09v01.ogg", db-0, 1.0};
 		titlesfont = "Zeppelin33Italic";
 		titlessize = 0.0390625;
 		titles[] = {0,$STRC_09v01};
@@ -210,7 +207,7 @@ class CfgSounds
 	class 09v02
 	{
 		name = "09v02";
-		sound[] = {"09v02.ogg", db-0, 1.0};
+		sound[] = {"sound\09v02.ogg", db-0, 1.0};
 		titlesfont = "Zeppelin33Italic";
 		titlessize = 0.0390625;
 		titles[] = {0,$STRC_09v02};
@@ -218,7 +215,7 @@ class CfgSounds
 	class 09v03
 	{
 		name = "09v03";
-		sound[] = {"09v03.ogg", db-0, 1.0};
+		sound[] = {"sound\09v03.ogg", db-0, 1.0};
 		titlesfont = "Zeppelin33Italic";
 		titlessize = 0.0390625;
 		titles[] = {0,$STRC_09v03};
@@ -226,7 +223,7 @@ class CfgSounds
 	class 09v04
 	{
 		name = "09v04";
-		sound[] = {"09v04.ogg", db-0, 1.0};
+		sound[] = {"sound\09v04.ogg", db-0, 1.0};
 		titlesfont = "Zeppelin33Italic";
 		titlessize = 0.0390625;
 		titles[] = {0,$STRC_09v04};
@@ -234,7 +231,7 @@ class CfgSounds
 	class 09v05
 	{
 		name = "09v05";
-		sound[] = {"09v05.ogg", db-0, 1.0};
+		sound[] = {"sound\09v05.ogg", db-0, 1.0};
 		titlesfont = "Zeppelin33Italic";
 		titlessize = 0.0390625;
 		titles[] = {0,$STRC_09v05};
@@ -242,7 +239,7 @@ class CfgSounds
 	class 09v06
 	{
 		name = "09v06";
-		sound[] = {"09v06.ogg", db-0, 1.0};
+		sound[] = {"sound\09v06.ogg", db-0, 1.0};
 		titlesfont = "Zeppelin33Italic";
 		titlessize = 0.0390625;
 		titles[] = {0,$STRC_09v06};
@@ -250,38 +247,20 @@ class CfgSounds
 	class 09v07
 	{
 		name = "09v07";
-		sound[] = {"09v07.ogg", db-0, 1.0};
+		sound[] = {"sound\09v07.ogg", db-0, 1.0};
 		titlesfont = "Zeppelin33Italic";
 		titlessize = 0.0390625;
 		titles[] = {0,$STRC_09v07};
 	};
 };
 
-class CfgRadio
-{
-	sounds[] = { };
-};
-
-
-
-
-class CfgSFX
-{
-	sounds[] = {};
-};
-
 class CfgMusic
 {
- tracks[]={};
+	tracks[]={};
 
- class track_uscutscene09
- {
-  name = "track_uscutscene09";
-  sound[] = {"\sound\track_uscutscene09.ogg", db+0, 1.0};
- };
-
-class CfgEnvSounds
-{
-	sounds[] = {};
-
+	class track_uscutscene09
+	{
+		name = "track_uscutscene09";
+		sound[] = {"sound\track_uscutscene09.ogg", db+0, 1.0};
+	};
 };

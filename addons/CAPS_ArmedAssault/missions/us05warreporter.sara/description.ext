@@ -216,9 +216,6 @@ class RscTitles
 	};
 };
 
-
-
-
 class CfgSounds
 {
 	sounds[] = { };
@@ -226,7 +223,7 @@ class CfgSounds
 	class x05v01
 	{
 		name = "05v01";
-		sound[] = {"x05v01.ogg", db-0, 1.0};
+		sound[] = {"sound\x05v01.ogg", db-0, 1.0};
 		titlesfont = "Zeppelin33Italic";
 		titlessize = 0.0390625;
 		titles[] = {0,$STRC_05v01};
@@ -234,7 +231,7 @@ class CfgSounds
 	class x05v02
 	{
 		name = "05v02";
-		sound[] = {"x05v02.ogg", db-0, 1.0};
+		sound[] = {"sound\x05v02.ogg", db-0, 1.0};
 		titlesfont = "Zeppelin33Italic";
 		titlessize = 0.0390625;
 		titles[] = {0,$STRC_05v02};
@@ -242,7 +239,7 @@ class CfgSounds
 	class x05v03
 	{
 		name = "05v03";
-		sound[] = {"x05v03.ogg", db-0, 1.0};
+		sound[] = {"sound\x05v03.ogg", db-0, 1.0};
 		titlesfont = "Zeppelin33Italic";
 		titlessize = 0.0390625;
 		titles[] = {0,$STRC_05v03};
@@ -250,7 +247,7 @@ class CfgSounds
 	class x05v04
 	{
 		name = "05v04";
-		sound[] = {"x05v04.ogg", db-0, 1.0};
+		sound[] = {"sound\x05v04.ogg", db-0, 1.0};
 		titlesfont = "Zeppelin33Italic";
 		titlessize = 0.0390625;
 		titles[] = {0,$STRC_05v04};
@@ -258,7 +255,7 @@ class CfgSounds
 	class x05v05
 	{
 		name = "05v05";
-		sound[] = {"x05v05.ogg", db-0, 1.0};
+		sound[] = {"sound\x05v05.ogg", db-0, 1.0};
 		titlesfont = "Zeppelin33Italic";
 		titlessize = 0.0390625;
 		titles[] = {0,$STRC_05v05};
@@ -266,7 +263,7 @@ class CfgSounds
 	class x05v06
 	{
 		name = "05v06";
-		sound[] = {"x05v06.ogg", db-0, 1.0};
+		sound[] = {"sound\x05v06.ogg", db-0, 1.0};
 		titlesfont = "Zeppelin33Italic";
 		titlessize = 0.0390625;
 		titles[] = {0,$STRC_05v06};
@@ -274,7 +271,7 @@ class CfgSounds
 	class x05v07
 	{
 		name = "05v07";
-		sound[] = {"x05v07.ogg", db-0, 1.0};
+		sound[] = {"sound\x05v07.ogg", db-0, 1.0};
 		titlesfont = "Zeppelin33Italic";
 		titlessize = 0.0390625;
 		titles[] = {0,$STRC_05v07};
@@ -282,7 +279,7 @@ class CfgSounds
 	class x05v08
 	{
 		name = "05v08";
-		sound[] = {"x05v08.ogg", db-0, 1.0};
+		sound[] = {"sound\x05v08.ogg", db-0, 1.0};
 		titlesfont = "Zeppelin33Italic";
 		titlessize = 0.0390625;
 		titles[] = {0,$STRC_05v08};
@@ -290,7 +287,7 @@ class CfgSounds
 	class x05v09
 	{
 		name = "05v09";
-		sound[] = {"x05v09.ogg", db-08, 1.0};
+		sound[] = {"sound\x05v09.ogg", db-08, 1.0};
 		titlesfont = "Zeppelin33Italic";
 		titlessize = 0.0390625;
 		titles[] = {0,$STRC_05v15};
@@ -298,7 +295,7 @@ class CfgSounds
 	class x05v10
 	{
 		name = "05v10";
-		sound[] = {"x05v10.ogg", db-0, 1.0};
+		sound[] = {"sound\x05v10.ogg", db-0, 1.0};
 		titlesfont = "Zeppelin33Italic";
 		titlessize = 0.0390625;
 		titles[] = {0,$STRC_05v15};
@@ -306,44 +303,26 @@ class CfgSounds
 	class x05s01
 	{
 		name = "05s01";
-		sound[] = {"x05s01.wss", db-0, 1.0};
+		sound[] = {"sound\x05s01.wss", db-0, 1.0};
 		//forceTitles=true;
 		titles[] = {0,$STRC_05v15};
 	};
 	class x05s02
 	{
 		name = "05s02";
-		sound[] = {"x05s02.wss", db-6, 1.0};
+		sound[] = {"sound\x05s02.wss", db-6, 1.0};
 		//forceTitles=true;
 		titles[] = {0,$STRC_05v15};
 	};
 };
 
-class CfgRadio
-{
-	sounds[] = { };
-};
-
-
 class CfgMusic
-
 {
- tracks[]={};
+ 	tracks[]={};
 
- class track_uscutscene05
- {
-  name = "track_uscutscene05";
-  sound[] = {"\sound\track_uscutscene05.ogg", db+0, 1.0};
- };
-
-
-class CfgSFX
-{
-	sounds[] = {};
-};
-
-class CfgEnvSounds
-{
-	sounds[] = {};
-
+	class track_uscutscene05
+	{
+		name = "track_uscutscene05";
+		sound[] = {"sound\track_uscutscene05.ogg", db+0, 1.0};
+	};
 };

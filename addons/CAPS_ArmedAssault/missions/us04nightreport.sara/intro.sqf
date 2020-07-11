@@ -1,5 +1,5 @@
 //overlay vrstvy
-4 cutRsc ["sceneA3","PLAIN",0];
+99 cutRsc ["sceneA3","PLAIN",0];
 2 cutRsc ["bars","PLAIN",0];
 1 cutRsc ["BlackFade","PLAIN",0];
 
@@ -21,10 +21,10 @@ _camera camPreparePos [9732.33,10147.49,2.51];
 _camera camPrepareFOV 0.500;
 _camera camCommitPrepared 45;
 sleep 1;
-panel  setPos [ 9730,10150, 1];
+//panel  setPos [ 9730,10150, 1];
 preloadsound "04v01";
 sleep 1;
-1 fadeMusic 0.4;
+1 fadeMusic 0.2;
 playmusic "track_uscutscene04";
 1 cutFadeOut 2;
 
@@ -34,7 +34,7 @@ preloadsound "04v02";
 sleep 4;
 playSound "04v02";
 preloadsound "04v03";
-4 cutFadeOut 0.7;
+99 cutFadeOut 0.7;
 1 cutRsc ["sceneA2","PLAIN",0];
 sleep 4;
 playSound "04v03";
@@ -60,7 +60,7 @@ playSound "04v06";
 sleep 4;
 1 cutFadeOut 3;
 titleText ["","PLAIN",1];
-4 fadeMusic 0.8;
+4 fadeMusic 0.6;
 sleep 8;
 4 fadeMusic 0;
 titleText ["","BLACK OUT",2];

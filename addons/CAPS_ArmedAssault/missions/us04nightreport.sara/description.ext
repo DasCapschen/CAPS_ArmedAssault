@@ -6,7 +6,7 @@ onLoadName = "Report: Somato";
 onLoadMission = "William Porter - Reporting in";
 briefingName = "Report: Somato";
 overviewText = "The Battle of Somato";
-overviewPicture = "\CAPS_ArmedAssault\pictures\over4.paa";
+overviewPicture = "\CAPS_ArmedAssault\pictures\over04.paa";
 
 class RscTitles
 {
@@ -16,14 +16,16 @@ class RscTitles
 		movingEnable = false;
 		duration = 10000;
 		fadein = 0;
-		fadeout = 1;
+		fadeout = 0;
 		name = "TV";
 		controls[] =   {blackSolid};
 
 		class blackSolid
 		{
-			x = -1; y = 0;
-			w = 3; h = 1;
+			x = safezoneX;
+			y = safezoneY;
+			w = safezoneW; 
+			h = safezoneH;
 			type = 0;
 			idc = -1;
 			style = 48;
@@ -39,43 +41,43 @@ class RscTitles
 	{
 		idd = -1;
 		movingEnable = false;
-		duration = 1500;
+		duration = 150;
 		fadein = 0;
 		fadeout = 0;
 		name = "TV";
 		controls[] = {black1, black2};
-		class black1
-		{
-			x = -1.5;
-			y = -0.1;
-			w = 1.336;
-			h = 1.2;
-			type = 0;
-			idc = -1;
-			style = 48;
-			colorBackground[] = {0, 0, 0, 0};
-			colorText[] = {1, 1, 1, 1};
-			font = BitStream;
-			sizeEx = 0;
-			lineSpacing = 0;
-			text = "#(argb,8,8,3)color(0,0,0,1)";
-		};	
-		class black2
-		{
-			x = 1.166;
-			y = -0.1;
-			w = 1.4;
-			h = 1.2;
-			type = 0;
-			idc = -1;
-			style = 48;
-			colorBackground[] = {0, 0, 0, 0};
-			colorText[] = {1, 1, 1, 1};
-			font = BitStream;
-			sizeEx = 0;
-			lineSpacing = 0;
-			text = "#(argb,8,8,3)color(0,0,0,1)";
-		}; 
+        class black1
+        {
+            x = safezoneX;
+            y = safezoneY;
+            w = 0.115 * safezoneW;
+            h = safezoneH;
+            type = 0;
+            idc = -1;
+            style = 48;
+            colorBackground[] = {0, 0, 0, 0};
+            colorText[] = {1, 1, 1, 1};
+            font = BitStream;
+            sizeEx = 0;
+            lineSpacing = 0;
+            text = "#(argb,8,8,3)color(0,0,0,1)";
+        };
+        class black2
+        {
+            x = 0.885 * safezoneW + safezoneX;
+            y = safezoneY;
+            w = 0.115 * safezoneW;
+            h = safezoneH;
+            type = 0;
+            idc = -1;
+            style = 48;
+            colorBackground[] = {0, 0, 0, 0};
+            colorText[] = {1, 1, 1, 1};
+            font = BitStream;
+            sizeEx = 0;
+            lineSpacing = 0;
+            text = "#(argb,8,8,3)color(0,0,0,1)";
+        };
 	};
 	class sceneA1
 	{
@@ -88,10 +90,10 @@ class RscTitles
 		controls[] = {ovrl};
 		class ovrl
 		{
-			x=-0.76;
-			y=-1;
-			w=3;
-			h=2.03;
+			x=-0.376563 * safezoneW + safezoneX;
+			y=-0.688 * safezoneH + safezoneY;
+			w=1.91297 * safezoneW;
+			h=1.727 * safezoneH;
 			type = 0;
 			idc = -1;
 			style = 48;
@@ -114,10 +116,10 @@ class RscTitles
 		controls[] = {ovrl};
 		class ovrl
 		{
-			x=-0.16;
-			y=-1.6;
-			w=3.96;
-			h=2.66;
+			x=-0.00531252 * safezoneW + safezoneX;
+			y=-1.557 * safezoneH + safezoneY;
+			w=2.96484 * safezoneW;
+			h=2.618 * safezoneH;
 			type = 0;
 			idc = -1;
 			style = 48;
@@ -140,10 +142,10 @@ class RscTitles
 		controls[] = {ovrl};
 		class ovrl
 		{
-			x=-0.54;
-			y=-0.22;
-			w=1.85;
-			h=1.23;
+			x=-0.428125 * safezoneW + safezoneX;
+			y=-0.237 * safezoneH + safezoneY;
+			w=1.42828 * safezoneW;
+			h=1.243 * safezoneH;
 			type = 0;
 			idc = -1;
 			style = 48;
@@ -166,10 +168,10 @@ class RscTitles
 		controls[] = {ovrl};
 		class ovrl
 		{
-			x=-0.17;
-			y=-0.68;
-			w=2.72;
-			h=1.82;
+			x=-0.015625 * safezoneW + safezoneX;
+			y=-0.743 * safezoneH + safezoneY;
+			w=2.12437 * safezoneW;
+			h=1.881 * safezoneH;
 			type = 0;
 			idc = -1;
 			style = 48;
@@ -192,10 +194,10 @@ class RscTitles
 		controls[] = {ovrl};
 		class ovrl
 		{
-			x=-1.15;
-			y=-0.46;
-			w=2.34;
-			h=1.56;
+			x=-0.917969 * safezoneW + safezoneX;
+			y=-0.655 * safezoneH + safezoneY;
+			w=1.99031 * safezoneW;
+			h=1.738 * safezoneH;
 			type = 0;
 			idc = -1;
 			style = 48;
@@ -218,7 +220,7 @@ class CfgSounds
 		name = "04v01";
 		sound[] = {"sound\04v01.ogg", db-0, 1.0};
 		titlesfont = "Zeppelin33Italic";
-		titlessize = 0.0390625;
+		titlessize = 0.04;
 		titles[] = {0,$STRC_04v01};
 	};
 	class 04v02
@@ -226,7 +228,7 @@ class CfgSounds
 		name = "04v02";
 		sound[] = {"sound\04v02.ogg", db-0, 1.0};
 		titlesfont = "Zeppelin33Italic";
-		titlessize = 0.0390625;
+		titlessize = 0.04;
 		titles[] = {0,$STRC_04v02};
 	};
 	class 04v03
@@ -234,7 +236,7 @@ class CfgSounds
 		name = "04v03";
 		sound[] = {"sound\04v03.ogg", db-0, 1.0};
 		titlesfont = "Zeppelin33Italic";
-		titlessize = 0.0390625;
+		titlessize = 0.04;
 		titles[] = {0,$STRC_04v03};
 	};
 	class 04v04
@@ -242,7 +244,7 @@ class CfgSounds
 		name = "04v04";
 		sound[] = {"sound\04v04.ogg", db-0, 1.0};
 		titlesfont = "Zeppelin33Italic";
-		titlessize = 0.0390625;
+		titlessize = 0.04;
 		titles[] = {0,$STRC_04v04};
 	};
 	class 04v05
@@ -250,7 +252,7 @@ class CfgSounds
 		name = "04v05";
 		sound[] = {"sound\04v05.ogg", db-0, 1.0};
 		titlesfont = "Zeppelin33Italic";
-		titlessize = 0.0390625;
+		titlessize = 0.04;
 		titles[] = {0,$STRC_04v05};
 	};
 	class 04v06
@@ -258,7 +260,7 @@ class CfgSounds
 		name = "04v06";
 		sound[] = {"sound\04v06.ogg", db-0, 1.0};
 		titlesfont = "Zeppelin33Italic";
-		titlessize = 0.0390625;
+		titlessize = 0.04;
 		titles[] = {0,$STRC_04v06};
 	};
 };

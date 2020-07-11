@@ -15,6 +15,54 @@ briefingName = $STR_08_NAME;
 overviewText = "The Great battle is here. Huge avalanche of enemy armored units leaves their defence positions at Bagango and heading to us.";
 overviewPicture = "\CAPS_ArmedAssault\pictures\c08.paa";
 
+class CfgDebriefing
+{  
+	class End1
+	{
+		title = "Mission Completed";
+		subtitle = "";
+		description = "Defending Tandag base and taking out the enemy base has secured our position in this region of the island.";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+	};
+	class End2
+	{
+		title = "Mission Failed";
+		subtitle = "";
+		description = "Tandag Base has been overrun by SLA forces.";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+	};
+	class End3
+	{
+		title = "Mission Failed";
+		subtitle = "";
+		description = "The counter attack on the enemy base has been defeated.";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+	};
+	class End4
+	{
+		title = "Mission Failed";
+		subtitle = "";
+		description = "Your helicopter has been rendered inoperable.";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+	};
+	class End5
+	{
+		title = "Mission Failed";
+		subtitle = "";
+		description = "Desertion is not tolerated, soldier!";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+	};
+};
 
 class CfgSounds
 {

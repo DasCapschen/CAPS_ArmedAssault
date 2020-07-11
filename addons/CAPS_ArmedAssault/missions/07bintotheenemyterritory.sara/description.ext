@@ -20,6 +20,18 @@ briefingName = $STRC_CA_07b;
 overviewText = "Special operations commando attack the enemy helicopter base to weaken the OPFOR position on the southern area of their land.";
 overviewPicture = "\CAPS_ArmedAssault\pictures\c07b.paa";
 
+class CfgDebriefing
+{  
+	class End1
+	{
+		title = "Mission Completed";
+		subtitle = "";
+		description = "Perfect! Now the southern part of the enemy terirtorry is in our hands.";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+	};
+};
 
 class CfgRadio
 {

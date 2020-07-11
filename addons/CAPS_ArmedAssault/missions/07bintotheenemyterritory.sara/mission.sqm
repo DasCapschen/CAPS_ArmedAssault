@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=3006;
+		nextID=3010;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={14554.669,57.468899,8507.3408};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		pos[]={14561.737,57.468899,8464.2383};
+		dir[]={0.14947283,-0.68790048,0.7102502};
+		up[]={0.14166631,0.72580379,0.67315573};
+		aside[]={0.97856736,-3.7951395e-008,-0.20594053};
 	};
 };
 binarizationWanted=0;
@@ -43,7 +43,8 @@ addons[]=
 	"CUP_Creatures_Military_USArmy",
 	"CUP_TrackedVehicles_M1_Abrams",
 	"A3_Modules_F",
-	"CUP_WheeledVehicles_UAZ"
+	"CUP_WheeledVehicles_UAZ",
+	"A3_Modules_F_Intel"
 };
 class AddonsMetaData
 {
@@ -179,6 +180,9 @@ class Mission
 		forecastWeather=0.99292201;
 		forecastWind=0.1;
 		forecastWaves=0.1;
+		year=2004;
+		month=6;
+		day=30;
 		hour=6;
 		minute=5;
 		startFogDecay=0.0049333;
@@ -186,7 +190,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=171;
+		items=175;
 		class Item0
 		{
 			dataType="Marker";
@@ -236,7 +240,7 @@ class Mission
 			name="dghgfj_2";
 			text="Strykers";
 			type="mil_arrow";
-			angle=112.01087;
+			angle=112.01086;
 			id=2740;
 			atlOffset=-0.016798019;
 		};
@@ -258,7 +262,7 @@ class Mission
 			name="Start";
 			text="@STR_MISSION_M_INSERT";
 			type="mil_start";
-			angle=107.84328;
+			angle=107.84327;
 			id=2742;
 			atlOffset=-0.14296341;
 		};
@@ -926,7 +930,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={16094.829,27.209286,8908.6133};
-				angles[]={-0,1.5707964,0.008534478};
+				angles[]={0,1.5707964,0.008534478};
 			};
 			side="Empty";
 			flags=4;
@@ -944,7 +948,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={16096.345,26.942446,8906.0771};
-				angles[]={-0,0,0.008534478};
+				angles[]={0,0,0.008534478};
 			};
 			side="Empty";
 			flags=4;
@@ -2873,6 +2877,7 @@ class Mission
 			};
 			id=2888;
 			type="CUP_B_M1135_ATGMV_Woodland";
+			atlOffset=2.2888184e-005;
 		};
 		class Item153
 		{
@@ -3132,7 +3137,6 @@ class Mission
 				{
 					dataType="Waypoint";
 					position[]={16077.725,29.183409,8956.1494};
-					id=2905;
 					type="GetIn";
 					speed="FULL";
 					combat="COMBAT";
@@ -3140,6 +3144,7 @@ class Mission
 					{
 					};
 					showWP="NEVER";
+					id=2905;
 					atlOffset=0.5;
 					class AttachedTo
 					{
@@ -3425,7 +3430,6 @@ class Mission
 				{
 					dataType="Waypoint";
 					position[]={16116.038,27.604601,8955.2451};
-					id=2925;
 					type="GetIn";
 					speed="FULL";
 					combat="COMBAT";
@@ -3433,6 +3437,7 @@ class Mission
 					{
 					};
 					showWP="NEVER";
+					id=2925;
 					atlOffset=0.5;
 					class AttachedTo
 					{
@@ -3474,7 +3479,7 @@ class Mission
 					};
 					showWP="NEVER";
 					id=2928;
-					atlOffset=0.023649216;
+					atlOffset=0.023712158;
 				};
 				class Item9
 				{
@@ -3577,7 +3582,6 @@ class Mission
 				{
 					dataType="Waypoint";
 					position[]={15474.506,33.247272,9172.4287};
-					id=2935;
 					type="GetIn";
 					speed="FULL";
 					combat="COMBAT";
@@ -3585,6 +3589,7 @@ class Mission
 					{
 					};
 					showWP="NEVER";
+					id=2935;
 					atlOffset=0.5;
 					class AttachedTo
 					{
@@ -3741,7 +3746,6 @@ class Mission
 				{
 					dataType="Waypoint";
 					position[]={15512.819,33.849915,9171.5244};
-					id=2946;
 					type="GetIn";
 					speed="FULL";
 					combat="COMBAT";
@@ -3749,6 +3753,7 @@ class Mission
 					{
 					};
 					showWP="NEVER";
+					id=2946;
 					atlOffset=0.5;
 					class AttachedTo
 					{
@@ -3902,7 +3907,6 @@ class Mission
 				{
 					dataType="Waypoint";
 					position[]={15497.059,34.114857,9218.8184};
-					id=2957;
 					type="GetIn";
 					speed="FULL";
 					combat="AWARE";
@@ -3910,6 +3914,7 @@ class Mission
 					{
 					};
 					showWP="NEVER";
+					id=2957;
 					atlOffset=0.49999619;
 					class AttachedTo
 					{
@@ -4031,7 +4036,6 @@ class Mission
 				{
 					dataType="Waypoint";
 					position[]={15537.625,34.465771,9216.7031};
-					id=2966;
 					type="GetIn";
 					speed="FULL";
 					combat="AWARE";
@@ -4039,6 +4043,7 @@ class Mission
 					{
 					};
 					showWP="NEVER";
+					id=2966;
 					atlOffset=0.5;
 					class AttachedTo
 					{
@@ -4758,6 +4763,557 @@ class Mission
 			id=2996;
 			type="CUP_O_UAZ_Unarmed_SLA";
 			atlOffset=-0.01529789;
+		};
+		class Item171
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={14555.345,28.238003,8491.5352};
+			};
+			id=3006;
+			type="ModuleCreateDiaryRecord_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleCreateDiaryRecord_F_PresetTitle";
+					expression="_this setVariable ['PresetTitle',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Situation";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCreateDiaryRecord_F_Title";
+					expression="_this setVariable ['Title',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCreateDiaryRecord_F_Description";
+					expression="_this setVariable ['Description',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Wednesday, June 30" \n "<br/><br/>" \n "Yes, we are entering enemy territory. This is start of the war - but we have reasons to believe that we are doing right thing. Generality and public are sure that for the crime of genocide the Northern regime should be overthrown." \n "<br/><br/>" \n "Two operations are ahead of us. We have established the base in the city of Modesta and we have to hold it against the enemy attack. What more, we have to proceed further to enemy teritorry to make sure no more enemy presence is here, on the South.";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleCreateDiaryRecord_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=3;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleCreateDiaryRecord_F_Subject";
+					expression="_this setVariable ['Subject',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				nAttributes=5;
+			};
+		};
+		class Item172
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={14565.761,29.548367,8488.2275};
+			};
+			id=3007;
+			type="ModuleCreateDiaryRecord_F";
+			atlOffset=-1.9073486e-006;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleCreateDiaryRecord_F_PresetTitle";
+					expression="_this setVariable ['PresetTitle',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Mission";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCreateDiaryRecord_F_Title";
+					expression="_this setVariable ['Title',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCreateDiaryRecord_F_Description";
+					expression="_this setVariable ['Description',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Your task is to take care of enemy field airbase so our tanks can be safe on the enemy territory. Then proceed to the East to capture the enemy fuel depot and main military base.  " \n "<br/><br/>  " \n "Your insertion point is the small village of <marker name=""start"">Gaula</marker>.";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleCreateDiaryRecord_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=3;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleCreateDiaryRecord_F_Subject";
+					expression="_this setVariable ['Subject',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				nAttributes=5;
+			};
+		};
+		class Item173
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={14576.84,29.933973,8486.082};
+			};
+			id=3008;
+			type="ModuleCreateDiaryRecord_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleCreateDiaryRecord_F_PresetTitle";
+					expression="_this setVariable ['PresetTitle',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Execution";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCreateDiaryRecord_F_Title";
+					expression="_this setVariable ['Title',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCreateDiaryRecord_F_Description";
+					expression="_this setVariable ['Description',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="1. Proceed to the East. Tanks will move by the road, infantry in Strykers through <marker name=""Stryk"">the forest</marker>. Attack the <marker name=""air"">air base</marker>; if possible, destroy or capture helicopters while on earth." \n "<br/>" \n "2. Continue to the East and with a help of Yenkee tank squad defeat the <marker name=""cross"">enemy base</marker> at the crossroad.";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleCreateDiaryRecord_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=3;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleCreateDiaryRecord_F_Subject";
+					expression="_this setVariable ['Subject',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				nAttributes=5;
+			};
+		};
+		class Item174
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={14585.14,30.921257,8492.9941};
+			};
+			id=3009;
+			type="ModuleTaskCreate_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleTaskCreate_F_Destination";
+					expression="_this setVariable ['Destination',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleTaskCreate_F_Type";
+					expression="_this setVariable ['Type',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Default";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleTaskCreate_F_ShowNotification";
+					expression="_this setVariable ['ShowNotification',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleTaskCreate_F_Marker";
+					expression="_this setVariable ['Marker',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleTaskCreate_F_Title";
+					expression="_this setVariable ['Title',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Defeat enemy counterattack.";
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="ModuleTaskCreate_F_Description";
+					expression="_this setVariable ['Description',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="ModuleTaskCreate_F_ID";
+					expression="_this setVariable ['ID',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Task3";
+						};
+					};
+				};
+				class Attribute7
+				{
+					property="ModuleTaskCreate_F_AlwaysVisible";
+					expression="_this setVariable ['AlwaysVisible',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute8
+				{
+					property="ModuleTaskCreate_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=3;
+						};
+					};
+				};
+				class Attribute9
+				{
+					property="ModuleTaskCreate_F_State";
+					expression="_this setVariable ['State',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="ASSIGNED";
+						};
+					};
+				};
+				class Attribute10
+				{
+					property="ModuleTaskCreate_F_IDParent";
+					expression="_this setVariable ['IDParent',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				nAttributes=11;
+			};
 		};
 	};
 	class Connections

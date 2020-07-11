@@ -13,6 +13,49 @@ briefingName = $STRC_CA_05;
 overviewText = "Enemy knows that he is losing control of the situation - our victory near Somato and incoming RASC reinforcements was not in his plans. This is his next - invasion from the sea.";
 overviewPicture = "\CAPS_ArmedAssault\pictures\c05.paa";
 
+class CfgDebriefing
+{  
+	class End1
+	{
+		title = "Mission Completed";
+		subtitle = "";
+		description = "With the help of USMC air support, the enemy invasion has been repelled. It's time for us to regain the initiative in this conflict!";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+	};
+
+	class End2
+	{
+		title = "Mission Failed";
+		subtitle = "";
+		description = "Enemy forces have overrun the airfield.";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+	};
+
+	class End3
+	{
+		title = "Mission Failed";
+		subtitle = "";
+		description = "Enemy forces have overrun the capital.";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+	};
+
+	class End4
+	{
+		title = "Mission Failed";
+		subtitle = "";
+		description = "Desertion is not tolerated, soldier!";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+	};
+};
+
 class CfgSounds
 {
 	sounds[] = { };

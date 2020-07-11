@@ -1,0 +1,340 @@
+onLoadMission=$STRC_01t02;
+// onLoadIntro=$;
+
+onLoadIntroTime = false;
+onLoadMissionTime = true;
+debriefing=0;
+
+class RscTitles
+{
+	class BlackFade
+	{
+		idd = -1;
+		movingEnable = false;
+		duration = 10000;
+		fadein = 0;
+		fadeout = 1;
+		name = "TV";
+		controls[] =   {blackSolid};
+
+		class blackSolid
+		{
+			x = -1; y = 0;
+			w = 3; h = 1;
+			type = 0;
+			idc = -1;
+			style = 48;
+			colorBackground[] = {0, 0, 0, 0};
+			colorText[] = {1, 1, 1, 1};
+			font = BitStream;
+			sizeEx = 0;
+			lineSpacing = 0;
+			access = ReadAndWrite;
+			text = "#(argb,8,8,3)color(0,0,0,1)";
+		};
+	};
+	class bars
+	{
+		idd = -1;
+		movingEnable = false;
+		duration = 1500;
+		fadein = 0;
+		fadeout = 0;
+		name = "TV";
+		controls[] = {black1, black2};
+		class black1
+		{
+			x = -1.5;
+			y = -0.1;
+			w = 1.336;
+			h = 1.2;
+			type = 0;
+			idc = -1;
+			style = 48;
+			colorBackground[] = {0, 0, 0, 0};
+			colorText[] = {1, 1, 1, 1};
+			font = BitStream;
+			sizeEx = 0;
+			lineSpacing = 0;
+			access = ReadAndWrite;
+			text = "#(argb,8,8,3)color(0,0,0,1)";
+		};	
+		class black2
+		{
+			x = 1.166;
+			y = -0.1;
+			w = 1.4;
+			h = 1.2;
+			type = 0;
+			idc = -1;
+			style = 48;
+			colorBackground[] = {0, 0, 0, 0};
+			colorText[] = {1, 1, 1, 1};
+			font = BitStream;
+			sizeEx = 0;
+			lineSpacing = 0;
+			access = ReadAndWrite;
+			text = "#(argb,8,8,3)color(0,0,0,1)";
+		}; 
+	};
+	class sceneA1
+	{
+		idd = -1;
+		movingEnable = false;
+		duration = 120;
+		fadein = 0;
+		fadeout = 2;
+		name = "TV";
+		controls[] = {ovrl};
+		class ovrl
+		{
+			x=-1.14;
+			y=-0.19;
+			w=3.13;
+			h=2.1;
+			type = 0;
+			idc = -1;
+			style = 48;
+			colorBackground[] = {0, 0, 0, 0};
+			colorText[] = {1, 1, 1, 1};
+			font = BitStream;
+			sizeEx = 0;
+			lineSpacing = 0;
+			access = ReadAndWrite;
+			text = "sil_06-01_gs.paa";
+		};
+	};
+	class sceneA2
+	{
+		idd = -1;
+		movingEnable = false;
+		duration = 120;
+		fadein = 1;
+		fadeout = 2;
+		name = "TV";
+		controls[] = {ovrl};
+		class ovrl
+		{
+			x=-1.08;
+			y=-0.59;
+			w=2.4;
+			h=1.6;
+			type = 0;
+			idc = -1;
+			style = 48;
+			colorBackground[] = {0, 0, 0, 0};
+			colorText[] = {1, 1, 1, 1};
+			font = BitStream;
+			sizeEx = 0;
+			lineSpacing = 0;
+			access = ReadAndWrite;
+			text = "sil_06-01_gs.paa";
+		};
+	};
+	class sceneA3
+	{
+		idd = -1;
+		movingEnable = false;
+		duration = 120;
+		fadein = 1;
+		fadeout = 2;
+		name = "TV";
+		controls[] = {ovrl};
+		class ovrl
+		{
+			x=-0.32;
+			y=-0.58;
+			w=2.38;
+			h=1.6;
+			type = 0;
+			idc = -1;
+			style = 48;
+			colorBackground[] = {0, 0, 0, 0};
+			colorText[] = {1, 1, 1, 1};
+			font = BitStream;
+			sizeEx = 0;
+			lineSpacing = 0;
+			access = ReadAndWrite;
+			text = "sil_06-01_gs.paa";
+		};
+	};
+	class sceneB1
+	{
+		idd = -1;
+		movingEnable = false;
+		duration = 120;
+		fadein = 2;
+		fadeout = 2;
+		name = "TV";
+		controls[] = {ovrl};
+		class ovrl
+		{
+			x=-2.13;
+			y=-1.17;
+			w=3.33;
+			h=2.23;
+			type = 0;
+			idc = -1;
+			style = 48;
+			colorBackground[] = {0, 0, 0, 0};
+			colorText[] = {1, 1, 1, 1};
+			font = BitStream;
+			sizeEx = 0;
+			lineSpacing = 0;
+			access = ReadAndWrite;
+			text = "sil_06-02_gs.paa";
+		};
+	};
+	class sceneB2
+	{
+		idd = -1;
+		movingEnable = false;
+		duration = 120;
+		fadein = 1;
+		fadeout = 2;
+		name = "TV";
+		controls[] = {ovrl};
+		class ovrl
+		{
+			x=-0.18;
+			y=-0.07;
+			w=1.65;
+			h=1.1;
+			type = 0;
+			idc = -1;
+			style = 48;
+			colorBackground[] = {0, 0, 0, 0};
+			colorText[] = {1, 1, 1, 1};
+			font = BitStream;
+			sizeEx = 0;
+			lineSpacing = 0;
+			access = ReadAndWrite;
+			text = "sil_06-02_gs.paa";
+		};
+	};
+};
+
+
+
+
+class CfgSounds
+{
+	sounds[] = { };
+
+	class 06v01
+	{
+		name = "06v01";
+		sound[] = {"x06v01.ogg", db-0, 1.0};
+		titlesfont = "Zeppelin33Italic";
+		titlessize = 0.0390625;
+		titles[] = {0,$STRC_06v01};
+	};
+	class 06v02
+	{
+		name = "06v02";
+		sound[] = {"x06v02.ogg", db-0, 1.0};
+		titlesfont = "Zeppelin33Italic";
+		titlessize = 0.0390625;
+		titles[] = {0,$STRC_06v02};
+	};
+	class 06v03
+	{
+		name = "06v03";
+		sound[] = {"x06v03.ogg", db-0, 1.0};
+		titlesfont = "Zeppelin33Italic";
+		titlessize = 0.0390625;
+		titles[] = {0,$STRC_06v03};
+	};
+	class 06v04
+	{
+		name = "06v04";
+		sound[] = {"x06v04.ogg", db-0, 1.0};
+		titlesfont = "Zeppelin33Italic";
+		titlessize = 0.0390625;
+		titles[] = {0,$STRC_06v04};
+	};
+	class 06v05
+	{
+		name = "06v05";
+		sound[] = {"x06v05.ogg", db-0, 1.0};
+		titlesfont = "Zeppelin33Italic";
+		titlessize = 0.0390625;
+		titles[] = {0,$STRC_06v05};
+	};
+	class 06v06
+	{
+		name = "06v06";
+		sound[] = {"x06v06.ogg", db-0, 1.0};
+		titlesfont = "Zeppelin33Italic";
+		titlessize = 0.0390625;
+		titles[] = {0,$STRC_06v06};
+	};
+	class 06v07
+	{
+		name = "06v07";
+		sound[] = {"x06v07.ogg", db-0, 1.0};
+		titlesfont = "Zeppelin33Italic";
+		titlessize = 0.0390625;
+		titles[] = {0,$STRC_06v07};
+	};
+	class 06v08
+	{
+		name = "06v08";
+		sound[] = {"x06v08.ogg", db-0, 1.0};
+		titlesfont = "Zeppelin33Italic";
+		titlessize = 0.0390625;
+		titles[] = {0,$STRC_06v08};
+	};
+	class 06v09
+	{
+		name = "06v09";
+		sound[] = {"x06v09.ogg", db-0, 1.0};
+		titlesfont = "Zeppelin33Italic";
+		titlessize = 0.0390625;
+		titles[] = {0,$STRC_06v09};
+	};
+	class 06v10
+	{
+		name = "06v10";
+		sound[] = {"x06v10.ogg", db-0, 1.0};
+		titlesfont = "Zeppelin33Italic";
+		titlessize = 0.0390625;
+		titles[] = {0,$STRC_06v10};
+	};
+	class 06v11
+	{
+		name = "06v11";
+		sound[] = {"x06v11.ogg", db-0, 1.0};
+		titlesfont = "Zeppelin33Italic";
+		titlessize = 0.0390625;
+		titles[] = {0,$STRC_06v11};
+	};
+};
+
+class CfgRadio
+{
+	sounds[] = { };
+};
+
+class CfgMusic
+
+{
+ tracks[]={};
+
+ class track_uscutscene06
+ {
+  name = "track_uscutscene06";
+  sound[] = {"\sound\track_uscutscene06.ogg", db+0, 1.0};
+ };
+
+
+class CfgSFX
+{
+	sounds[] = {};
+};
+
+class CfgEnvSounds
+{
+	sounds[] = {};
+
+};

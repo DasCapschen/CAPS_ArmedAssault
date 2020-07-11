@@ -1,142 +1,163 @@
-version=11;
-class Mission
+version=53;
+class EditorData
 {
-	addOns[]=
+	moveGridStep=1;
+	angleGridStep=0.2617994;
+	scaleGridStep=1;
+	autoGroupingDist=10;
+	toggles=1;
+	class ItemIDProvider
 	{
-		"sara"
+		nextID=6;
 	};
-	addOnsAuto[]=
+	class Camera
 	{
-		"sara"
-	};
-	randomSeed=9323523;
-	class Intel
-	{
-		startWeather=0.100000;
-		forecastWeather=0.300000;
-		year=2007;
-		month=6;
-		day=7;
-		hour=8;
+		pos[]={9723.417,148.64101,10101.029};
+		dir[]={-0.079782337,-0.43373597,0.89750606};
+		up[]={-0.038404912,0.90103918,0.43203333};
+		aside[]={0.99607629,-2.8789509e-007,0.088545777};
 	};
 };
-class Intro
+binarizationWanted=0;
+addons[]=
 {
-	addOns[]=
-	{
-		"sara",
-		"cacharacters",
-		//"camiscus"
-	};
-	addOnsAuto[]=
-	{
-		"cacharacters",
-		//"camiscus",
-		"sara"
-	};
-	randomSeed=15785475;
-	class Intel
-	{
-		startWeather=0.100000;
-		forecastWeather=0.300000;
-		year=2007;
-		month=6;
-		day=7;
-		hour=8;
-	};
-	class Groups
+	"CUP_Creatures_Military_USMC"
+};
+class AddonsMetaData
+{
+	class List
 	{
 		items=1;
 		class Item0
 		{
-			side="WEST";
-			class Vehicles
+			className="CUP_Creatures_Military_USMC";
+			name="CUP_Creatures_Military_USMC";
+		};
+	};
+};
+randomSeed=5273274;
+class ScenarioData
+{
+	author="DasCapschen";
+};
+class Intro
+{
+	class Intel
+	{
+		startWeather=0.1;
+		startWind=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
+	};
+	class Entities
+	{
+		items=2;
+		class Item0
+		{
+			dataType="Trigger";
+			position[]={9906.9805,139.95,10107.662};
+			class Attributes
+			{
+				condition="ending";
+				sizeA=0;
+				sizeB=0;
+				type="END1";
+			};
+			id=3;
+			type="EmptyDetector";
+			atlOffset=-0.044998169;
+		};
+		class Item1
+		{
+			dataType="Group";
+			side="West";
+			class Entities
 			{
 				items=1;
 				class Item0
 				{
-					position[]={9717.191406,139.949997,10057.370117};
-					id=0;
-					side="WEST";
-					vehicle="CUP_B_USMC_Soldier";
-					player="PLAYER COMMANDER";
-					leader=1;
-					skill=0.600000;
-					text="a";
-					init="0 = this execVM ""intro.sqf""";
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={9717.1914,139.99643,10057.47};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="0 = this execVM ""intro.sqf""";
+						name="a";
+						isPlayer=1;
+						isPlayable=1;
+					};
+					id=5;
+					type="CUP_B_USMC_Soldier";
 				};
 			};
-		};
-	};
-	class Vehicles
-	{
-		items=1;
-		class Item0
-		{
-			position[]={9728.829102,139.949997,10096.665039};
-			id=1;
-			side="EMPTY";
-			vehicle="CutCube1Flat";
-			skill=0.600000;
-			text="panel";
-		};
-	};
-	class Sensors
-	{
-		items=1;
-		class Item0
-		{
-			position[]={9906.980469,139.949997,10107.662109};
-			a=0.000000;
-			b=0.000000;
-			type="END1";
-			age="UNKNOWN";
-			expCond="ending";
-			class Effects
+			class Attributes
 			{
 			};
+			id=4;
+			atlOffset=70.019997;
 		};
 	};
 };
-class OutroWin
+class Mission
 {
-	addOns[]=
-	{
-		"sara"
-	};
-	addOnsAuto[]=
-	{
-		"sara"
-	};
-	randomSeed=8932355;
 	class Intel
 	{
-		startWeather=0.100000;
-		forecastWeather=0.300000;
+		startWeather=0.1;
+		startWind=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
 		year=2007;
 		month=6;
 		day=7;
 		hour=8;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
 	};
 };
 class OutroLoose
 {
-	addOns[]=
-	{
-		"sara"
-	};
-	addOnsAuto[]=
-	{
-		"sara"
-	};
-	randomSeed=10809859;
 	class Intel
 	{
-		startWeather=0.100000;
-		forecastWeather=0.300000;
+		startWeather=0.1;
+		startWind=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
 		year=2007;
 		month=6;
 		day=7;
 		hour=8;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
+	};
+};
+class OutroWin
+{
+	class Intel
+	{
+		startWeather=0.1;
+		startWind=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
 	};
 };

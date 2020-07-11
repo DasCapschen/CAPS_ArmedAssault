@@ -1,0 +1,161 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"sara"
+	};
+	addOnsAuto[]=
+	{
+		"sara"
+	};
+	randomSeed=9323523;
+	class Intel
+	{
+		startWeather=0.285332;
+		startFog=0.739550;
+		forecastWeather=0.300000;
+		year=2007;
+		month=6;
+		day=16;
+		hour=17;
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"sara",
+		"cacharacters",
+		"CATracked",
+		"CAMisc",
+		"caair",
+		"CAA10",
+		//"camiscus"
+	};
+	addOnsAuto[]=
+	{
+		"cacharacters",
+		"CATracked",
+		//"camiscus",
+		"sara"
+	};
+	randomSeed=15785475;
+	class Intel
+	{
+		startWeather=0.133172;
+		startFog=0.043429;
+		forecastWeather=0.085316;
+		year=2007;
+		day=26;
+		hour=14;
+		minute=0;
+	};
+	class Groups
+	{
+		items=1;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9831.649414,139.949997,10097.800781};
+					id=0;
+					side="WEST";
+vehicle="CUP_B_USMC_Soldier";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.600000;
+					text="a";
+					init="0 = this execVM ""intro.sqf""";
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=2;
+		class Item0
+		{
+			position[]={12506.282227,30.887407,17634.623047};
+			azimut=-302.052002;
+			id=1;
+			side="EMPTY";
+vehicle="CUP_O_BMP2_SLA";
+			leader=1;
+			skill=0.600000;
+			text="sem";
+			init="sem setdammage 1";
+		};
+		class Item1
+		{
+			position[]={9834.398438,139.949997,10139.822266};
+			id=2;
+			side="EMPTY";
+			vehicle="CutScreen05";
+			skill=0.600000;
+			text="panel";
+		};
+	};
+	class Sensors
+	{
+		items=1;
+		class Item0
+		{
+			position[]={9906.980469,139.949997,10107.662109};
+			a=0.000000;
+			b=0.000000;
+			type="END1";
+			age="UNKNOWN";
+			expCond="ending";
+			class Effects
+			{
+			};
+		};
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"sara"
+	};
+	addOnsAuto[]=
+	{
+		"sara"
+	};
+	randomSeed=8932355;
+	class Intel
+	{
+		startWeather=0.100000;
+		forecastWeather=0.300000;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"sara"
+	};
+	addOnsAuto[]=
+	{
+		"sara"
+	};
+	randomSeed=10809859;
+	class Intel
+	{
+		startWeather=0.100000;
+		forecastWeather=0.300000;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+};

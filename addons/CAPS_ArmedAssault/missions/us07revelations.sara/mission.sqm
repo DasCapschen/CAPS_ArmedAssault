@@ -1,161 +1,192 @@
-version=11;
-class Mission
+version=53;
+class EditorData
 {
-	addOns[]=
+	moveGridStep=1;
+	angleGridStep=0.2617994;
+	scaleGridStep=1;
+	autoGroupingDist=10;
+	toggles=1;
+	class ItemIDProvider
 	{
-		"sara"
+		nextID=29;
 	};
-	addOnsAuto[]=
+	class Camera
 	{
-		"sara"
-	};
-	randomSeed=9323523;
-	class Intel
-	{
-		startWeather=0.565114;
-		startFog=0.220974;
-		forecastWeather=0.300000;
-		year=2007;
-		month=6;
-		day=16;
-		hour=17;
+		pos[]={12516.445,54.588142,17587.252};
+		dir[]={-0.44820109,-0.39814827,0.80038285};
+		up[]={-0.19453514,0.91731787,0.347395};
+		aside[]={0.87251937,2.3544999e-007,0.48859695};
 	};
 };
-class Intro
+binarizationWanted=0;
+addons[]=
 {
-	addOns[]=
-	{
-		"sara",
-		"cacharacters",
-		"CATracked",
-		"caweapons",
-		//"camiscus"
-	};
-	addOnsAuto[]=
-	{
-		"cacharacters",
-		"CATracked",
-		//"camiscus",
-		"sara"
-	};
-	randomSeed=15785475;
-	class Intel
-	{
-		startWeather=0.040580;
-		startFog=0.062453;
-		forecastWeather=0.060398;
-		forecastFog=0.040745;
-		year=2007;
-		day=26;
-		hour=16;
-		minute=0;
-	};
-	class Groups
-	{
-		items=1;
-		class Item0
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={9897.145508,139.949997,10145.169922};
-					id=0;
-					side="WEST";
-vehicle="CUP_B_USMC_Soldier";
-					player="PLAYER COMMANDER";
-					leader=1;
-					skill=0.600000;
-					text="a";
-					init="0 = this execVM ""intro.sqf""";
-				};
-			};
-		};
-	};
-	class Vehicles
+	"CUP_TrackedVehicles_BMP",
+	"CUP_Creatures_Military_USMC"
+};
+class AddonsMetaData
+{
+	class List
 	{
 		items=2;
 		class Item0
 		{
-			position[]={12506.282227,30.887407,17634.623047};
-			azimut=-302.052002;
-			id=1;
-			side="EMPTY";
-vehicle="CUP_O_BMP2_SLA";
-			leader=1;
-			skill=0.600000;
-			text="sem";
-			init="sem setdammage 1";
+			className="CUP_TrackedVehicles_BMP";
+			name="CUP_TrackedVehicles_BMP";
+			author="Community Cupgrade Project";
 		};
 		class Item1
 		{
-			position[]={9920.095703,139.949997,10157.878906};
-			id=2;
-			side="EMPTY";
-			vehicle="CutScreen07";
-			leader=1;
-			skill=0.600000;
-			text="panel";
-		};
-	};
-	class Sensors
-	{
-		items=1;
-		class Item0
-		{
-			position[]={9901.319336,139.949997,10161.063477};
-			a=0.000000;
-			b=0.000000;
-			type="END1";
-			age="UNKNOWN";
-			expCond="ending";
-			class Effects
-			{
-			};
+			className="CUP_Creatures_Military_USMC";
+			name="CUP_Creatures_Military_USMC";
 		};
 	};
 };
-class OutroWin
+randomSeed=8386362;
+class ScenarioData
 {
-	addOns[]=
-	{
-		"sara"
-	};
-	addOnsAuto[]=
-	{
-		"sara"
-	};
-	randomSeed=8932355;
+	author="DasCapschen";
+};
+class Intro
+{
 	class Intel
 	{
-		startWeather=0.100000;
-		forecastWeather=0.300000;
+		startWeather=0.040580001;
+		startFog=0.062453002;
+		startWind=0.1;
+		forecastWeather=0.060398001;
+		forecastFog=0.040745001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		year=2007;
+		day=26;
+		hour=16;
+		minute=0;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
+	};
+	class Entities
+	{
+		items=3;
+		class Item0
+		{
+			dataType="Trigger";
+			position[]={9901.3193,139.95,10161.063};
+			class Attributes
+			{
+				condition="ending";
+				sizeA=0;
+				sizeB=0;
+				type="END1";
+			};
+			id=25;
+			type="EmptyDetector";
+			atlOffset=-0.044998169;
+		};
+		class Item1
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12506.282,32.945965,17634.6};
+				angles[]={6.2716513,1.0113835,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="sem setdammage 1";
+				name="sem";
+			};
+			id=26;
+			type="CUP_O_BMP2_SLA";
+		};
+		class Item2
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={9897.1455,139.99643,10145.27};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="0 = this execVM ""intro.sqf""";
+						name="a";
+						isPlayer=1;
+						isPlayable=1;
+					};
+					id=28;
+					type="CUP_B_USMC_Soldier";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=27;
+			atlOffset=70.019997;
+		};
+	};
+};
+class Mission
+{
+	class Intel
+	{
+		startWeather=0.56511402;
+		startFog=0.220974;
+		startWind=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
 		year=2007;
 		month=6;
-		day=7;
-		hour=8;
+		day=16;
+		hour=17;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
 	};
 };
 class OutroLoose
 {
-	addOns[]=
-	{
-		"sara"
-	};
-	addOnsAuto[]=
-	{
-		"sara"
-	};
-	randomSeed=10809859;
 	class Intel
 	{
-		startWeather=0.100000;
-		forecastWeather=0.300000;
+		startWeather=0.1;
+		startWind=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
 		year=2007;
 		month=6;
 		day=7;
 		hour=8;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
+	};
+};
+class OutroWin
+{
+	class Intel
+	{
+		startWeather=0.1;
+		startWind=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
 	};
 };

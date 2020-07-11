@@ -33,7 +33,7 @@ playmusic "track_uscutscene02";
 sleep 2;
 1 cutRsc ["sceneB1","PLAIN",0];
 
-1 fadeMusic 0.3;
+1 fadeMusic 0.2;
 sleep 1;
 playSound "x02v01";
 preloadsound "x02v02";

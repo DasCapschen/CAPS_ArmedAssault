@@ -1,7 +1,7 @@
 //overlay vrstvy
 2 cutRsc ["bars","PLAIN",0];
 1 cutRsc ["BlackFade","PLAIN",0];
-3 cutRsc ["sceneA1","PLAIN",0];
+99 cutRsc ["sceneA1","PLAIN",0];
 
 _camera = "camera" camCreate [9721.48,110124.23,141.17];
 _camera cameraEffect ["internal","back"];
@@ -21,14 +21,13 @@ _camera camPreparePos [9732.32,10147.49,2.51];
 _camera camPrepareFOV 0.500;
 _camera camCommitPrepared 58;
 sleep 1;
-panel  setPos [ 9730,10150, 1];
+//panel  setPos [ 9730,10150, 1];
 preloadsound "x03v01";
 sleep 1;
-1 fadeMusic 0.50;
+1 fadeMusic 0.3;
 playmusic "track_uscutscene03";
 
 1 cutFadeOut 2;
-
 
 sleep 2;
 
@@ -40,7 +39,7 @@ sleep 2.9;
 playSound "x03v02";
 preloadsound "x03v03";
 sleep 3.9;
-3 cutFadeOut 0.5;
+99 cutFadeOut 0.5;
 1 cutRsc ["sceneA2","PLAIN",0];
 playSound "x03v03";
 preloadsound "x03v04";

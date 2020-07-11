@@ -13,6 +13,39 @@ briefingName = $STRC_CA_06;
 overviewText = "We have to push the front line back, there where it ever was. We need to clean the area out of every enemy and have full control of the northern part of the South Sahrani.";
 overviewPicture = "\CAPS_ArmedAssault\pictures\c06.paa";
 
+class CfgDebriefing
+{  
+	class End1
+	{
+		title = "Mission Completed";
+		subtitle = "";
+		description = "Corazol is back in our hands. The South has been liberated. Good job soldier!";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+	};
+
+	class End2
+	{
+		title = "Mission Failed";
+		subtitle = "";
+		description = "Corazol remains in enemy hands. Mission failed.";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+	};
+
+	class End3
+	{
+		title = "Mission Failed";
+		subtitle = "";
+		description = "Desertion is not tolerated, soldier!";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+	};
+};
+
 class CfgSounds
 {
 	sounds[] = { };
@@ -183,11 +216,11 @@ class CfgRadio
 
 class CfgMusic
 {
- tracks[]={};
+	tracks[]={};
 
- class armabeat
- {
-  name = "armabeat";
-  sound[] = {"sound\armabeat.ogg", db+0, 1.0};
- };
+	class armabeat
+	{
+		name = "armabeat";
+		sound[] = {"sound\armabeat.ogg", db+0, 1.0};
+	};
 };

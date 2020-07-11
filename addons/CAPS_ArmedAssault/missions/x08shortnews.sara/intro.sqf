@@ -57,3 +57,7 @@ sleep 3;
 ending = true;
 player cameraEffect ["terminate","back"];
 camDestroy _camera;
+
+
+clearRadio;
+setAperture -1;

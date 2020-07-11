@@ -102,4 +102,7 @@ sleep 1.5;
 ending = true;
 player cameraEffect ["terminate","back"];
 camDestroy _camera;
-setAperture -1; //reset, it messes with 3DEN
+
+
+clearRadio;
+setAperture -1;

@@ -88,26 +88,29 @@ _camera camCommit 5;
 sleep 10;
 
 Thomas kbTell [player, "interview", "XTv04"];
-sleep 8;
-sleep 7;
+sleep 15;
+
+//extra
+ed kbTell [player, "interview", "XTv24"];
+sleep 10;
+Thomas kbTell [player, "interview", "XTv25"];
+sleep 15;
+ed kbTell [player, "interview", "XTv27"];
+sleep 3;
+//extra
+
 ed kbTell [player, "interview", "XTv05"];
-sleep 2;
-sleep 5;
+sleep 7;
 Thomas kbTell [player, "interview", "XTv06"];
-sleep 3;
-sleep 5;
+sleep 8;
 Thomas kbTell [player, "interview", "XTv07"];
-sleep 3;
-sleep 5;
+sleep 8;
 Thomas kbTell [player, "interview", "XTv08"];
-sleep 6;
-sleep 5;
+sleep 11;
 Thomas kbTell [player, "interview", "XTv09"];
-sleep 5;
-sleep 5;
+sleep 10;
 Thomas kbTell [player, "interview", "XTv10"];
-sleep 5;
-sleep 5;
+sleep 10;
 Thomas kbTell [player, "interview", "XTv11"];
 sleep 2;
 

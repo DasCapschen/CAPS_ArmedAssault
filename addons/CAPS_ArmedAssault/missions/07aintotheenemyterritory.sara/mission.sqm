@@ -442,7 +442,7 @@ class Mission
 			class Attributes
 			{
 				condition="this or forcend==1";
-				onActivation="spatnykonec=1; player exec ""outro2.sqs""; ";
+				onActivation="spatnykonec=1; 0 = player execVM ""outroLost.sqf""; ";
 				sizeA=600;
 				sizeB=600;
 				activationType="NOT PRESENT";
@@ -507,7 +507,7 @@ class Mission
 			class Attributes
 			{
 				condition="(!canmove T1) && (!canmove T2) && (!canmove T3) && (!canmove T4)";
-				onActivation="player exec ""outro.sqs""";
+				onActivation="0 = player execVM ""outroWin.sqf""";
 				sizeA=600;
 				sizeB=600;
 				timeout[]={5,5,5};

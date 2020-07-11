@@ -1,8 +1,3 @@
-//could not find this in A1 PBOs, found it on BI Forums.
-//apparently is from OFP (Arma CWA). 
-//rewritten as SQF.
-//credits go to BI. APL-SA.
-
 _sv = units group (_this select 0);
 _marker = getMarkerPos (_this select 1);
 _dir = _this select 2;

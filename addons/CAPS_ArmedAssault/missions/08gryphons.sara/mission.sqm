@@ -839,7 +839,7 @@ class Mission
 			{
 				text="LAND KONEC";
 				condition="(this && (getpos wAH1 select 2 < 1)) && success==1";
-				onActivation="[] exec ""outro.sqs"";";
+				onActivation="0 = [] execVM ""outro.sqf"";";
 				repeatable=1;
 			};
 			id=3048;
@@ -1146,7 +1146,7 @@ class Mission
 			{
 				text="ZNICENA WAH1";
 				condition="!canmove wah1 && pilotsland==0";
-				onActivation="[] exec ""outro2.sqs""; ""2"" objstatus ""failed"";";
+				onActivation="0 = [] execVM ""outro2.sqf""; ""2"" objstatus ""failed"";";
 				sizeA=0;
 				sizeB=0;
 				timeout[]={2,2,2};
@@ -1210,7 +1210,7 @@ class Mission
 			class Attributes
 			{
 				condition="!canmove wuh1 && pilotsland==0 && vehicle player == player";
-				onActivation="""2"" objstatus ""failed""; [] exec ""outro3.sqs"";";
+				onActivation="""2"" objstatus ""failed""; 0 = [] execVM ""outro3.sqf"";";
 				sizeA=0;
 				sizeB=0;
 				timeout[]={1,1,1};
@@ -1241,7 +1241,7 @@ class Mission
 			class Attributes
 			{
 				condition="!canmove wuh2 && pilotsland==0 && vehicle player == player";
-				onActivation="""2"" objstatus ""failed""; [] exec ""outro4.sqs"";";
+				onActivation="""2"" objstatus ""failed""; 0 = [] execVM ""outro4.sqf"";";
 				sizeA=0;
 				sizeB=0;
 				timeout[]={1,1,1};
@@ -1272,7 +1272,7 @@ class Mission
 			class Attributes
 			{
 				condition="!canmove wah2 && pilotsland==0 && vehicle player == player";
-				onActivation="""2"" objstatus ""failed""; [] exec ""outro5.sqs"";";
+				onActivation="""2"" objstatus ""failed""; 0 = [] execVM ""outro5.sqf"";";
 				sizeA=0;
 				sizeB=0;
 				timeout[]={1,1,1};
@@ -1306,7 +1306,7 @@ class Mission
 			{
 				text="HLASKA NABIJIM";
 				condition="pristal==1 && success==0";
-				onActivation="[] exec ""refuel.sqs"";";
+				onActivation="0 = [] execVM ""refuel.sqf"";";
 				sizeA=0;
 				sizeB=0;
 				timeout[]={0.5,0.5,0.5};

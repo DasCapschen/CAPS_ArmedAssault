@@ -1030,7 +1030,7 @@ class Mission
 			class Attributes
 			{
 				condition="ending";
-				onActivation="0 = player execVM ""outroWon.sqf""; ";
+				onActivation="0 = player execVM ""outroWin.sqf""; ";
 				sizeA=0;
 				sizeB=0;
 				timeout[]={6,6,6};
@@ -1979,7 +1979,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.2;
-				init="this addEventHandler [""killed"", {0 = [(_this select 0), true, 15, 0.2, 3, 60] execVM ""scripts\FG.sqf""}]";
+				init="this addEventHandler [""killed"", {0 = [(_this select 0), true, 15, 0.2, 3, 60] execVM ""FG.sqf""}]";
 				name="t1";
 				presenceCondition="(M07_S06==0) or (M07_S06==2)";
 			};

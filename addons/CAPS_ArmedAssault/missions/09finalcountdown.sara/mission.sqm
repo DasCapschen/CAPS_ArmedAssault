@@ -532,7 +532,7 @@ class Mission
 			{
 				text="CIVIL_UKLIDNENI";
 				condition="calmdown==1";
-				onActivation="player addrating 3000; speecher exec ""camp.sqs"";";
+				onActivation="player addrating 3000; 0 = speecher execVM ""camp.sqf"";";
 				sizeA=0;
 				sizeB=0;
 				timeout[]={3,3,3};
@@ -753,7 +753,7 @@ class Mission
 			class Attributes
 			{
 				condition="this && opustil == 0;";
-				onActivation="noplease=1; this exec ""camp2.sqs"";";
+				onActivation="noplease=1; 0 = this execVM ""camp2.sqf"";";
 				sizeA=25;
 				sizeB=25;
 			};
@@ -935,7 +935,7 @@ class Mission
 			class Attributes
 			{
 				condition="(rozhovor==1 && this) or reiko==1";
-				onActivation="player exec ""outro.sqs"";";
+				onActivation="0 = player execVM ""outro.sqf"";";
 				sizeA=80;
 				isRectangle=1;
 			};

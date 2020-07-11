@@ -912,7 +912,7 @@ class Mission
 			{
 				text="KONEC";
 				condition="((zapaddone==1) && (shilkadone==1) && (severozapaddone==1) && (maincampdone==1) && (severdone==1) && (heavyguardsdone==1) && (lastguardsdone==1))";
-				onActivation="player exec ""outro.sqs""; ""4"" objstatus ""done"";";
+				onActivation="0 = player execVM ""outro.sqf""; ""4"" objstatus ""done"";";
 				sizeA=0;
 				sizeB=0;
 			};

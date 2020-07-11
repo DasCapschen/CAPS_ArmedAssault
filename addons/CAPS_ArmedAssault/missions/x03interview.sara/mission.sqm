@@ -12,10 +12,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={11431.937,33.35968,6326.9707};
-		dir[]={0.30819368,-0.60548753,-0.73377377};
-		up[]={0.23447353,0.79585356,-0.55824959};
-		aside[]={-0.92198849,1.3234094e-006,-0.38724673};
+		pos[]={11445.986,72.689056,6318.7607};
+		dir[]={-0.11907488,-0.72670013,-0.67663139};
+		up[]={-0.12595382,0.68692815,-0.71572328};
+		aside[]={-0.98491448,2.4020555e-006,0.17333008};
 	};
 };
 binarizationWanted=0;
@@ -24,6 +24,7 @@ addons[]=
 	"CUP_WheeledVehicles_HMMWV",
 	"CUP_Creatures_Military_USMC",
 	"CAPS_A1C",
+	"A3_Weapons_F",
 	"A3_Characters_F",
 	"A3_Characters_F_Exp_Civil",
 	"A3_Modules_F",
@@ -40,7 +41,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=14;
+		items=15;
 		class Item0
 		{
 			className="CUP_WheeledVehicles_HMMWV";
@@ -58,62 +59,69 @@ class AddonsMetaData
 		};
 		class Item3
 		{
+			className="A3_Weapons_F";
+			name="Arma 3 Alpha - Weapons and Accessories";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item4
+		{
 			className="A3_Characters_F";
 			name="Arma 3 Alpha - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item4
+		class Item5
 		{
 			className="A3_Characters_F_Exp";
 			name="Arma 3 Apex - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item5
+		class Item6
 		{
 			className="A3_Modules_F";
 			name="Arma 3 Alpha - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item6
+		class Item7
 		{
 			className="CUP_Creatures_Military_SLA";
 			name="CUP_Creatures_Military_SLA";
 		};
-		class Item7
+		class Item8
 		{
 			className="CUP_TrackedVehicles_BMP";
 			name="CUP_TrackedVehicles_BMP";
 			author="Community Cupgrade Project";
 		};
-		class Item8
+		class Item9
 		{
 			className="CUP_TrackedVehicles_T72";
 			name="CUP_TrackedVehicles_T72";
 		};
-		class Item9
+		class Item10
 		{
 			className="CUP_Creatures_Military_RACS";
 			name="CUP_Creatures_Military_RACS";
 		};
-		class Item10
+		class Item11
 		{
 			className="CUP_TrackedVehicles_M113";
 			name="CUP_TrackedVehicles_M113";
 		};
-		class Item11
+		class Item12
 		{
 			className="CUP_Creatures_Military_USArmy";
 			name="CUP_Creatures_Military_USArmy";
 		};
-		class Item12
+		class Item13
 		{
 			className="CUP_WheeledVehicles_Stryker";
 			name="CUP_WheeledVehicles_Stryker";
 		};
-		class Item13
+		class Item14
 		{
 			className="CUP_WheeledVehicles_BRDM2";
 			name="CUP_WheeledVehicles_BRDM2";
@@ -260,6 +268,25 @@ class Intro
 						};
 						class Attribute3
 						{
+							property="ENH_disableAI_radioProtocol";
+							expression="if(_value) then {_this disableAI 'RADIOPROTOCOL'}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute4
+						{
 							property="unitName";
 							expression="_this setname _value;";
 							class Value
@@ -277,12 +304,13 @@ class Intro
 								};
 							};
 						};
-						nAttributes=4;
+						nAttributes=5;
 					};
 				};
 			};
 			class Attributes
 			{
+				behaviour="CARELESS";
 			};
 			id=362;
 		};
@@ -299,24 +327,143 @@ class Intro
 					class PositionInfo
 					{
 						position[]={11436.846,27.96069,6322.1606};
-						angles[]={6.2764373,0,0};
+						angles[]={6.2764311,0,0};
 					};
 					side="West";
 					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this execVM ""intro.sqf""";
+						init="call{0 = this execVM ""intro.sqf""}";
 						name="caman";
 						isPlayer=1;
 						isPlayable=1;
 					};
 					id=365;
 					type="CUP_B_USMC_Soldier";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ENH_setCaptive";
+							expression="_this setCaptive _value";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01ENG";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.04;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="ENH_disableAI_radioProtocol";
+							expression="if(_value) then {_this disableAI 'RADIOPROTOCOL'}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="hideObject";
+							expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						nAttributes=6;
+					};
 				};
 			};
 			class Attributes
 			{
+				behaviour="CARELESS";
 			};
 			id=364;
 		};
@@ -342,6 +489,10 @@ class Intro
 						skill=0.60000002;
 						init="this disableai ""MOVE""; this disableai ""AUTOTARGET""; this disableai ""TARGET""; this lookAt cameraman; this setBehaviour ""safe""";
 						name="ed";
+						class Inventory
+						{
+							radio="ItemRadio";
+						};
 					};
 					id=460;
 					type="MarianQuandt";
@@ -410,6 +561,7 @@ class Intro
 			};
 			class Attributes
 			{
+				behaviour="CARELESS";
 			};
 			id=366;
 		};
@@ -426,7 +578,7 @@ class Intro
 					class PositionInfo
 					{
 						position[]={11433.96,27.969654,6323.4888};
-						angles[]={6.2764373,3.9314239,0};
+						angles[]={6.2764311,3.9314239,0};
 					};
 					side="Civilian";
 					flags=6;
@@ -437,10 +589,72 @@ class Intro
 					};
 					id=369;
 					type="C_man_1";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male03GRE";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.95999998;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ENH_disableAI_radioProtocol";
+							expression="if(_value) then {_this disableAI 'RADIOPROTOCOL'}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						nAttributes=3;
+					};
 				};
 			};
 			class Attributes
 			{
+				behaviour="CARELESS";
 			};
 			id=368;
 		};
@@ -449,11 +663,12 @@ class Intro
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={11453.952,27.787186,6326.3662};
+				position[]={11453.952,27.787184,6326.3662};
 			};
 			name="armpos";
 			id=370;
 			type="Logic";
+			atlOffset=-1.9073486e-006;
 		};
 		class Item7
 		{
@@ -1100,8 +1315,8 @@ class Intro
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11410.811,24.784792,6256.4082};
-						angles[]={6.2113094,0.78539819,0.031488817};
+						position[]={11410.811,24.784748,6256.4077};
+						angles[]={6.2113123,0.78539819,0.03148574};
 					};
 					side="West";
 					flags=6;
@@ -1111,11 +1326,72 @@ class Intro
 					};
 					id=405;
 					type="CUP_B_USMC_Soldier";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male11ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.95999998;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ENH_disableAI_radioProtocol";
+							expression="if(_value) then {_this disableAI 'RADIOPROTOCOL'}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						nAttributes=3;
+					};
 				};
 				class Item1
 				{
 					dataType="Waypoint";
-					position[]={11411.809,28.360535,6358.2007};
+					position[]={11411.809,28.360537,6358.2012};
 					speed="LIMITED";
 					combat="CARELESS";
 					class Effects
@@ -1124,7 +1400,6 @@ class Intro
 					showWP="NEVER";
 					id=406;
 					type="Move";
-					atlOffset=-1.9073486e-006;
 				};
 				class Item2
 				{
@@ -1141,6 +1416,7 @@ class Intro
 			};
 			class Attributes
 			{
+				behaviour="CARELESS";
 			};
 			id=404;
 		};
@@ -1156,8 +1432,8 @@ class Intro
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11451.672,25.749117,6249.499};
-						angles[]={-0,0,0.031488817};
+						position[]={11448.25,26.57629,6272.564};
+						angles[]={6.2359705,0,0.0022640675};
 					};
 					side="West";
 					flags=6;
@@ -1168,14 +1444,37 @@ class Intro
 					};
 					id=409;
 					type="CUP_B_USMC_Soldier_SL";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_disableAI_radioProtocol";
+							expression="if(_value) then {_this disableAI 'RADIOPROTOCOL'}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 				class Item1
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11456.672,25.906618,6244.5488};
-						angles[]={-0,0,0.031488817};
+						position[]={11446.981,25.928564,6264.3271};
+						angles[]={6.2068348,0,0.031488817};
 					};
 					side="West";
 					flags=4;
@@ -1186,14 +1485,37 @@ class Intro
 					};
 					id=410;
 					type="CUP_B_USMC_Soldier_TL";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_disableAI_radioProtocol";
+							expression="if(_value) then {_this disableAI 'RADIOPROTOCOL'}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 				class Item2
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11446.672,25.234055,6244.5488};
-						angles[]={6.2427082,0,0.071874976};
+						position[]={11451.186,26.047546,6264.1514};
+						angles[]={6.2068348,0,0.031488817};
 					};
 					side="West";
 					flags=4;
@@ -1203,14 +1525,38 @@ class Intro
 					};
 					id=411;
 					type="CUP_B_USMC_Soldier_GL";
+					atlOffset=3.8146973e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_disableAI_radioProtocol";
+							expression="if(_value) then {_this disableAI 'RADIOPROTOCOL'}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 				class Item3
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11461.672,26.098675,6239.5488};
-						angles[]={0.098678283,0,0.022498533};
+						position[]={11451.981,25.75885,6259.3271};
+						angles[]={-0,0,0.031488817};
 					};
 					side="West";
 					flags=4;
@@ -1220,14 +1566,38 @@ class Intro
 					};
 					id=412;
 					type="CUP_B_USMC_Soldier_AR";
+					atlOffset=3.8146973e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_disableAI_radioProtocol";
+							expression="if(_value) then {_this disableAI 'RADIOPROTOCOL'}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 				class Item4
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11441.672,24.656897,6239.5488};
-						angles[]={6.2135491,0,0.071875811};
+						position[]={11446.186,25.576277,6259.1514};
+						angles[]={-0,0,0.031488817};
 					};
 					side="West";
 					flags=4;
@@ -1237,14 +1607,38 @@ class Intro
 					};
 					id=413;
 					type="CUP_B_USMC_Soldier_AT";
+					atlOffset=1.9073486e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_disableAI_radioProtocol";
+							expression="if(_value) then {_this disableAI 'RADIOPROTOCOL'}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 				class Item5
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11466.672,26.706177,6234.5488};
-						angles[]={0.098678283,0,0.022498533};
+						position[]={11456.981,25.916349,6254.3271};
+						angles[]={-0,0,0.031488817};
 					};
 					side="West";
 					flags=4;
@@ -1255,14 +1649,38 @@ class Intro
 					};
 					id=414;
 					type="CUP_B_USMC_Soldier_TL";
+					atlOffset=3.8146973e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_disableAI_radioProtocol";
+							expression="if(_value) then {_this disableAI 'RADIOPROTOCOL'}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 				class Item6
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11436.672,24.025917,6234.5488};
-						angles[]={6.2045975,0,0.033737205};
+						position[]={11441.186,25.227896,6254.1514};
+						angles[]={6.2427082,0,0.071874976};
 					};
 					side="West";
 					flags=4;
@@ -1272,14 +1690,38 @@ class Intro
 					};
 					id=415;
 					type="CUP_B_USMC_Soldier_GL";
+					atlOffset=1.9073486e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_disableAI_radioProtocol";
+							expression="if(_value) then {_this disableAI 'RADIOPROTOCOL'}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 				class Item7
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11471.672,27.313675,6229.5488};
-						angles[]={0.098678283,0,0.022498533};
+						position[]={11461.981,26.056019,6249.3271};
+						angles[]={-0,0,0.022495884};
 					};
 					side="West";
 					flags=4;
@@ -1289,14 +1731,38 @@ class Intro
 					};
 					id=416;
 					type="CUP_B_USMC_Soldier_AR";
+					atlOffset=3.8146973e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_disableAI_radioProtocol";
+							expression="if(_value) then {_this disableAI 'RADIOPROTOCOL'}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 				class Item8
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11431.672,23.463419,6229.5488};
-						angles[]={6.2045984,0,0.033737205};
+						position[]={11436.186,24.931469,6249.1514};
+						angles[]={6.2427082,0,0.0022375863};
 					};
 					side="West";
 					flags=4;
@@ -1306,14 +1772,37 @@ class Intro
 					};
 					id=417;
 					type="CUP_B_USMC_Sniper_M40A3";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_disableAI_radioProtocol";
+							expression="if(_value) then {_this disableAI 'RADIOPROTOCOL'}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 				class Item9
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11419.172,20.677776,6217.0488};
-						angles[]={6.155632,0,0.21273167};
+						position[]={11447.514,25.306278,6244.8364};
+						angles[]={6.2427082,0,0.071874976};
 					};
 					side="West";
 					flags=4;
@@ -1328,8 +1817,8 @@ class Intro
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11419.172,20.677776,6217.0488};
-						angles[]={6.155632,0,0.21273167};
+						position[]={11447.514,25.306278,6244.8364};
+						angles[]={6.2427082,0,0.071874976};
 					};
 					side="West";
 					flags=4;
@@ -1342,19 +1831,19 @@ class Intro
 				class Item11
 				{
 					dataType="Waypoint";
-					position[]={11452.975,26.212225,6265.6187};
+					position[]={11447.73,26.843271,6278.2192};
 					type="Dismiss";
-					combat="SAFE";
+					combat="CARELESS";
 					class Effects
 					{
 					};
 					showWP="NEVER";
 					id=421;
-					atlOffset=-0.0063285828;
 				};
 			};
 			class Attributes
 			{
+				behaviour="CARELESS";
 			};
 			class CrewLinks
 			{
@@ -1395,8 +1884,8 @@ class Intro
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11419.113,23.265894,6217.2559};
-				angles[]={6.155632,0,0.21273167};
+				position[]={11446.969,27.829409,6244.4634};
+				angles[]={6.2427082,0,0.071874976};
 			};
 			side="West";
 			flags=4;
@@ -1406,7 +1895,30 @@ class Intro
 			};
 			id=418;
 			type="CUP_B_HMMWV_TOW_USMC";
-			atlOffset=-0.11439705;
+			atlOffset=-0.034921646;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item17
 		{
@@ -1421,7 +1933,7 @@ class Intro
 					class PositionInfo
 					{
 						position[]={11493.151,23.075159,6125.6948};
-						angles[]={6.2764282,0,6.2247524};
+						angles[]={6.2764311,0,6.2247519};
 					};
 					side="West";
 					flags=4;
@@ -1437,7 +1949,7 @@ class Intro
 					class PositionInfo
 					{
 						position[]={11493.151,23.075159,6125.6948};
-						angles[]={6.2764282,0,6.2247524};
+						angles[]={6.2764311,0,6.2247519};
 					};
 					side="West";
 					flags=6;
@@ -1450,7 +1962,7 @@ class Intro
 				class Item2
 				{
 					dataType="Waypoint";
-					position[]={11475.657,23.83382,6126.4048};
+					position[]={11475.657,23.834232,6126.4048};
 					speed="LIMITED";
 					class Effects
 					{
@@ -1458,7 +1970,7 @@ class Intro
 					showWP="NEVER";
 					id=426;
 					type="Move";
-					atlOffset=-0.014413834;
+					atlOffset=-0.014001846;
 				};
 				class Item3
 				{
@@ -1514,6 +2026,7 @@ class Intro
 			};
 			class Attributes
 			{
+				behaviour="CARELESS";
 			};
 			class CrewLinks
 			{
@@ -1555,7 +2068,7 @@ class Intro
 			class PositionInfo
 			{
 				position[]={11493.189,23.263903,6126.1846};
-				angles[]={6.2764282,0,6.2247524};
+				angles[]={6.2764311,0,6.2247519};
 			};
 			side="West";
 			flags=6;
@@ -1578,8 +2091,8 @@ class Intro
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11420.805,27.625259,6303.8315};
-						angles[]={6.2629404,4.0142574,0.0089968694};
+						position[]={11420.805,27.625271,6303.832};
+						angles[]={6.2629395,4.0142574,0.0089884456};
 					};
 					side="West";
 					flags=6;
@@ -1588,31 +2101,111 @@ class Intro
 					};
 					id=433;
 					type="CUP_B_USMC_Soldier";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male03ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.03;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ENH_disableAI_radioProtocol";
+							expression="if(_value) then {_this disableAI 'RADIOPROTOCOL'}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						nAttributes=4;
+					};
 				};
 				class Item1
 				{
 					dataType="Waypoint";
-					position[]={11414.165,25.835371,6277.144};
+					position[]={11414.165,25.835545,6277.144};
 					speed="FULL";
+					combat="CARELESS";
 					class Effects
 					{
 					};
 					showWP="NEVER";
 					id=434;
 					type="Move";
-					atlOffset=-0.0011730194;
+					atlOffset=-0.00099945068;
 				};
 				class Item2
 				{
 					dataType="Waypoint";
-					position[]={11454.138,24.746967,6228.3198};
+					position[]={11450.716,25.717571,6251.3848};
 					class Effects
 					{
 					};
 					showWP="NEVER";
 					id=435;
 					type="Move";
-					atlOffset=-0.026281357;
 				};
 				class Item3
 				{
@@ -1629,6 +2222,7 @@ class Intro
 			};
 			class Attributes
 			{
+				behaviour="CARELESS";
 			};
 			class CrewLinks
 			{
@@ -1658,8 +2252,8 @@ class Intro
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11420.781,30.226122,6303.7295};
-				angles[]={6.2629404,4.0142574,0.0089968694};
+				position[]={11420.781,30.226133,6303.73};
+				angles[]={6.2629395,4.0142574,0.0089884456};
 			};
 			side="West";
 			flags=6;
@@ -1683,7 +2277,7 @@ class Intro
 					class PositionInfo
 					{
 						position[]={11442.499,27.797457,6307.3066};
-						angles[]={6.2719393,3.6651914,6.2809477};
+						angles[]={6.271945,3.6651914,6.2809515};
 					};
 					side="West";
 					flags=6;
@@ -1693,27 +2287,87 @@ class Intro
 					};
 					id=438;
 					type="CUP_B_USMC_Soldier";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male10ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.98000002;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ENH_disableAI_radioProtocol";
+							expression="if(_value) then {_this disableAI 'RADIOPROTOCOL'}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						nAttributes=3;
+					};
 				};
 				class Item1
 				{
 					dataType="Waypoint";
-					position[]={11438.636,27.730492,6301.2646};
+					position[]={11438.636,27.730349,6301.2651};
 					speed="LIMITED";
-					combat="SAFE";
+					combat="CARELESS";
 					class Effects
 					{
 					};
 					showWP="NEVER";
 					id=439;
 					type="Move";
-					atlOffset=-0.0028457642;
+					atlOffset=-0.0030002594;
 				};
 				class Item2
 				{
 					dataType="Waypoint";
 					position[]={11430.395,27.550886,6297.959};
 					speed="NORMAL";
-					combat="SAFE";
 					class Effects
 					{
 					};
@@ -1724,18 +2378,19 @@ class Intro
 				class Item3
 				{
 					dataType="Waypoint";
-					position[]={11392.023,26.266497,6323.124};
+					position[]={11392.023,26.266443,6323.124};
 					class Effects
 					{
 					};
 					showWP="NEVER";
 					id=441;
 					type="Move";
-					atlOffset=-0.017946243;
+					atlOffset=-0.017999649;
 				};
 			};
 			class Attributes
 			{
+				behaviour="CARELESS";
 			};
 			id=437;
 		};

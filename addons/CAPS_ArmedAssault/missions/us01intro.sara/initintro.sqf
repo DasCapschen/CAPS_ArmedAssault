@@ -24,9 +24,9 @@ sleep 1;
 //_a=_a-0.3
 //_b=getPos panel select 1
 preloadsound "01v01";
-panel  setPos [ 9730,10150, 1];
+//panel  setPos [ 9730,10150, 1];
 sleep 1;
-1 fadeMusic 0.3;
+1 fadeMusic 0.1;
 playmusic "track_uscutscene01";
 
 1 cutFadeOut 2;

@@ -21,8 +21,20 @@ class Campaign
 	{
 		name = "Beginning";
 		cutscene = ;
-		firstMission = x01Intro;
+		firstMission = us01Intro;
 		endDefault = ;
+
+		class us01Intro : MissionDefault
+		{
+			end1 = x01Intro;
+			end2 = x01Intro;
+			end3 = x01Intro;
+			end4 = x01Intro;
+			end5 = x01Intro;
+			end6 = x01Intro;
+			lost = x01Intro;
+			template = us01Intro.Sara;
+		};
 
 		class x01Intro: MissionDefault
 		{
@@ -38,14 +50,26 @@ class Campaign
 		
 		class 01Transport: MissionDefault
 		{
+			end1 = us02BreakingNews;
+			end2 = us02BreakingNews;
+			end3 = us02BreakingNews;
+			end4 = us02BreakingNews;
+			end5 = us02BreakingNews;
+			end6 = us02BreakingNews;
+			lost = 01Transport;
+			template = 01Transport.Sara;
+		};
+
+		class us02BreakingNews: MissionDefault
+		{
 			end1 = x02BreakingNews;
 			end2 = x02BreakingNews;
 			end3 = x02BreakingNews;
 			end4 = x02BreakingNews;
 			end5 = x02BreakingNews;
 			end6 = x02BreakingNews;
-			lost = 01Transport;
-			template = 01Transport.Sara;
+			lost = x02BreakingNews;
+			template = us02BreakingNews.Sara;
 		};
 		class x02BreakingNews: MissionDefault
 		{
@@ -94,16 +118,28 @@ class Campaign
 		};
 		class 02BeatenDog: MissionDefault
 		{
+			end1 = us03Interview;
+			end2 = us03Interview;
+			end3 = us03Interview;
+			end4 = us03Interview;
+			end5 = us03Interview;
+			end6 = us03Interview;
+			lost = 02BeatenDog;
+			template = 02BeatenDog.Sara;
+		};
+		
+		class us03Interview: MissionDefault
+		{
 			end1 = x03Interview;
 			end2 = x03Interview;
 			end3 = x03Interview;
 			end4 = x03Interview;
 			end5 = x03Interview;
 			end6 = x03Interview;
-			lost = 02BeatenDog;
-			template = 02BeatenDog.Sara;
+			lost = x03Interview;
+			template = us03Interview.Sara;
 		};
-		
+
 		class x03Interview: MissionDefault
 		{
 			end1 = S03Dolores;
@@ -116,7 +152,6 @@ class Campaign
 			template = x03Interview.Sara;
 		};		
 
-		
 		class S03Dolores: MissionDefault
 		{
 			end1 = M08Unsurrounding_S03;
@@ -152,16 +187,28 @@ class Campaign
 		};
 		class 03Dolores: MissionDefault
 		{
+			end1 = us04NightReport;
+			end2 = us04NightReport;
+			end3 = us04NightReport;
+			end4 = us04NightReport;
+			end5 = us04NightReport;
+			end6 = us04NightReport;
+			lost = 03Dolores;
+			template = 03Dolores.Sara;
+		};
+		
+		class us04NightReport: MissionDefault
+		{
 			end1 = x04NightReport;
 			end2 = x04NightReport;
 			end3 = x04NightReport;
 			end4 = x04NightReport;
 			end5 = x04NightReport;
 			end6 = x04NightReport;
-			lost = 03Dolores;
-			template = 03Dolores.Sara;
+			lost = x04NightReport;
+			template = us04NightReport.Sara;
 		};
-		
+
 		class x04NightReport: MissionDefault
 		{
 			end1 = S04BattleOfSomato;
@@ -209,16 +256,28 @@ class Campaign
 		};
 		class 04BattleOfSomato: MissionDefault
 		{
+			end1 = us05WarReporter;
+			end2 = us05WarReporter;
+			end3 = us05WarReporter;
+			end4 = us05WarReporter;
+			end5 = us05WarReporter;
+			end6 = us05WarReporter;
+			lost = 04BattleOfSomato;
+			template = 04BattleOfSomato.Sara;
+		};
+		
+		class us05WarReporter: MissionDefault
+		{
 			end1 = x05WarReporter;
 			end2 = x05WarReporter;
 			end3 = x05WarReporter;
 			end4 = x05WarReporter;
 			end5 = x05WarReporter;
 			end6 = x05WarReporter;
-			lost = 04BattleOfSomato;
-			template = 04BattleOfSomato.Sara;
+			lost = x05WarReporter;
+			template = us05WarReporter.Sara;
 		};
-		
+
 		class x05WarReporter: MissionDefault
 		{
 			end1 = S05DawnOfHope;
@@ -229,7 +288,8 @@ class Campaign
 			end6 = S05DawnOfHope;
 			lost = S05DawnOfHope;
 			template = x05WarReporter.Sara;
-		};	
+		};
+
 		class S05DawnOfHope: MissionDefault
 		{
 			end1 = M15AmmunitionDumps_S05;
@@ -265,16 +325,28 @@ class Campaign
 		};		
 		class 05DawnOfHope: MissionDefault
 		{
+			end1 = us06ReadyForWar;
+			end2 = us06ReadyForWar;
+			end3 = us06ReadyForWar;
+			end4 = us06ReadyForWar;
+			end5 = us06ReadyForWar;
+			end6 = us06ReadyForWar;
+			lost = 05DawnOfHope;
+			template = 05DawnOfHope.Sara;
+		};
+		
+		class us06ReadyForWar: MissionDefault
+		{
 			end1 = x06ReadyForWar;
 			end2 = x06ReadyForWar;
 			end3 = x06ReadyForWar;
 			end4 = x06ReadyForWar;
 			end5 = x06ReadyForWar;
 			end6 = x06ReadyForWar;
-			lost = 05DawnOfHope;
-			template = 05DawnOfHope.Sara;
-		};
-		
+			lost = x06ReadyForWar;
+			template = us06ReadyForWar.Sara;
+		};	
+
 		class x06ReadyForWar: MissionDefault
 		{
 			end1 = S06Reclaiming;
@@ -322,15 +394,28 @@ class Campaign
 		};
 		class 06Reclaiming: MissionDefault
 		{
+			end1 = us07Revelations;
+			end2 = us07Revelations;
+			end3 = us07Revelations;
+			end4 = us07Revelations;
+			end5 = us07Revelations;
+			end6 = us07Revelations;
+			lost = 06Reclaiming;
+			template = 06Reclaiming.Sara;
+		};
+
+		class us07Revelations: MissionDefault
+		{
 			end1 = x07Revelations;
 			end2 = x07Revelations;
 			end3 = x07Revelations;
 			end4 = x07Revelations;
 			end5 = x07Revelations;
 			end6 = x07Revelations;
-			lost = 06Reclaiming;
-			template = 06Reclaiming.Sara;
+			lost = x07Revelations;
+			template = us07Revelations.Sara;
 		};
+
 		class x07Revelations: MissionDefault
 		{
 			end1 = S07IntoTheEnemyTerritory;
@@ -343,7 +428,6 @@ class Campaign
 			template = x07Revelations.Sara;
 		};	
 
-		
 		class S07IntoTheEnemyTerritory: MissionDefault
 		{
 			end1 = M06ChopperTransport_S07;
@@ -393,17 +477,28 @@ class Campaign
 				
 		class 07aIntoTheEnemyTerritory: MissionDefault
 		{
+			end1 = us08ShortNews;
+			end2 = us08ShortNews;
+			end3 = us08ShortNews;
+			end4 = us08ShortNews;
+			end5 = us08ShortNews;
+			end6 = us08ShortNews;
+			lost = 07aIntoTheEnemyTerritory;
+			template = 07aIntoTheEnemyTerritory.Sara;
+		};
+		
+		class us08ShortNews: MissionDefault
+		{
 			end1 = x08ShortNews;
 			end2 = x08ShortNews;
 			end3 = x08ShortNews;
 			end4 = x08ShortNews;
 			end5 = x08ShortNews;
 			end6 = x08ShortNews;
-			lost = 07aIntoTheEnemyTerritory;
-			template = 07aIntoTheEnemyTerritory.Sara;
+			lost = x08ShortNews;
+			template = us08ShortNews.Sara;
 		};
-		
-		
+
 		class x08ShortNews: MissionDefault
 		{
 			end1 = S08Gryphons;
@@ -466,7 +561,7 @@ class Campaign
 
 		class 08Gryphons: MissionDefault
 		{
-			end1 = x09QuickUpdate;
+			end1 = us09QuickUpdate;
 			end2 = 08Gryphons;
 			end3 = 08Gryphons;
 			end4 = 08Gryphons;
@@ -476,6 +571,18 @@ class Campaign
 			template = 08Gryphons.Sara;
 		};
 		
+		class us09QuickUpdate: MissionDefault
+		{
+			end1 = x09QuickUpdate;
+			end2 = x09QuickUpdate;
+			end3 = x09QuickUpdate;
+			end4 = x09QuickUpdate;
+			end5 = x09QuickUpdate;
+			end6 = x09QuickUpdate;
+			lost = x09QuickUpdate;
+			template = us09QuickUpdate.Sara;
+		};	
+
 		class x09QuickUpdate: MissionDefault
 		{
 			end1 = S09FinalCountdown;
@@ -487,7 +594,6 @@ class Campaign
 			lost = S09FinalCountdown;
 			template = x09QuickUpdate.Sara;
 		};		
-		
 		
 		class S09FinalCountdown: MissionDefault
 		{
@@ -515,17 +621,29 @@ class Campaign
 
 		class 09Tsunami: MissionDefault
 		{
-			end1 = X10Outro;
-			end2 = X10Outro;
-			end3 = X10Outro;
-			end4 = X10Outro;
-			end5 = X10Outro;
-			end6 = X10Outro;
+			end1 = us10Outro;
+			end2 = us10Outro;
+			end3 = us10Outro;
+			end4 = us10Outro;
+			end5 = us10Outro;
+			end6 = us10Outro;
 			lost = 09FinalCountdown;
 			template = 09Tsunami.Sara;
 		};
 
-		class X10Outro: MissionDefault
+		class us10Outro: MissionDefault
+		{
+			end1 = x10Outro;
+			end2 = x10Outro;
+			end3 = x10Outro;
+			end4 = x10Outro;
+			end5 = x10Outro;
+			end6 = x10Outro;
+			lost = x10Outro;
+			template = us10Outro.Sara;
+		};
+
+		class x10Outro: MissionDefault
 		{
 			end1 = ;
 			end2 = ;

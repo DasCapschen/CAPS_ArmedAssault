@@ -97,7 +97,7 @@ player setPos [10384.2,10154.8,0];
 sleep 1.5;
 marian kbTell [player, "interview", "05v55"];
 sleep 13;
-tankyVpred=true;;
+tankyVpred=true;
 marian kbTell [player, "interview", "05v56"];
 
 //TVstudio default kamera
@@ -134,8 +134,8 @@ player setPos [10384.2,10154.8,0];
 enableEnvironment true;
 _camera camCommitPrepared 0;
 sleep 0.8;
+tanksRoll = true;
 marian kbTell [player, "interview", "05v58"];
-
 sleep 16;
 _camera camSetTarget [81161.29,-30487.89,141.03];
 _camera camSetPos [10383.09,10155.50,1.25];
@@ -161,7 +161,7 @@ _camera camSetTarget [189425.22,-13587.16,-1199.50];
 _camera camSetPos [10383.09,10155.50,1.25];
 _camera camSetFOV 0.35;
 _camera camCommit 4;
-waitUntil{ camCommitted _camera };
+sleep 4;
 titleText["","PLAIN",0];
 cutRSC ["overlayJPGdamage","PLAIN NOFADE",0];
 bouchni setDamage 1;

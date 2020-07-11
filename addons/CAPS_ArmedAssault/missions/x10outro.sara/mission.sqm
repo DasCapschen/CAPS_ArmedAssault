@@ -225,25 +225,6 @@ class Intro
 					{
 						class Attribute0
 						{
-							property="unitName";
-							expression="_this setname _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Thomas";
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="pitch";
 							expression="_this setpitch _value;";
 							class Value
@@ -261,7 +242,45 @@ class Intro
 								};
 							};
 						};
-						nAttributes=2;
+						class Attribute1
+						{
+							property="unitName";
+							expression="_this setname _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Thomas";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="WhiteHead_10";
+								};
+							};
+						};
+						nAttributes=3;
 					};
 				};
 			};
@@ -373,7 +392,26 @@ class Intro
 								};
 							};
 						};
-						nAttributes=3;
+						class Attribute3
+						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="WhiteHead_16";
+								};
+							};
+						};
+						nAttributes=4;
 					};
 				};
 			};
@@ -558,7 +596,7 @@ class Intro
 					class PositionInfo
 					{
 						position[]={14261.84,39.961437,12485.087};
-						angles[]={-0,3.2082946,0};
+						angles[]={0,3.2082946,0};
 					};
 					side="Civilian";
 					flags=6;
@@ -659,7 +697,7 @@ class Intro
 					class PositionInfo
 					{
 						position[]={14154.219,39.961437,12470.715};
-						angles[]={-0,1.6485201,0};
+						angles[]={0,1.6485201,0};
 					};
 					side="West";
 					flags=4;
@@ -675,7 +713,7 @@ class Intro
 					class PositionInfo
 					{
 						position[]={14154.219,39.961437,12470.715};
-						angles[]={-0,1.6485201,0};
+						angles[]={0,1.6485201,0};
 					};
 					side="West";
 					flags=4;
@@ -691,7 +729,7 @@ class Intro
 					class PositionInfo
 					{
 						position[]={14154.219,39.961437,12470.715};
-						angles[]={-0,1.6485201,0};
+						angles[]={0,1.6485201,0};
 					};
 					side="West";
 					flags=6;
@@ -769,7 +807,7 @@ class Intro
 			class PositionInfo
 			{
 				position[]={14154.219,42.372299,12470.665};
-				angles[]={-0,1.6485201,0};
+				angles[]={0,1.6485201,0};
 			};
 			side="West";
 			flags=6;
@@ -1107,7 +1145,7 @@ class Intro
 					class PositionInfo
 					{
 						position[]={14264.254,39.961437,12479.278};
-						angles[]={-0,5.8190608,0};
+						angles[]={0,5.8190608,0};
 					};
 					side="West";
 					flags=6;

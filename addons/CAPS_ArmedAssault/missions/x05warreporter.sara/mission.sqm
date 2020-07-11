@@ -2313,7 +2313,7 @@ class Intro
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2511.0906,13.906434,2523.4707};
+						position[]={2511.0911,13.906439,2523.4709};
 						angles[]={0,3.1415927,0};
 					};
 					side="Civilian";
@@ -2345,7 +2345,6 @@ class Intro
 					};
 					id=500;
 					type="CUP_C_C_Functionary_01";
-					atlOffset=-4.7683716e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2405,7 +2404,26 @@ class Intro
 								};
 							};
 						};
-						nAttributes=3;
+						class Attribute3
+						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="WhiteHead_16";
+								};
+							};
+						};
+						nAttributes=4;
 					};
 				};
 			};
@@ -2413,7 +2431,6 @@ class Intro
 			{
 			};
 			id=499;
-			atlOffset=-4.7683716e-006;
 		};
 		class Item34
 		{

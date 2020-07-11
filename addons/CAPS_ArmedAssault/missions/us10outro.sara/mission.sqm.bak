@@ -1,0 +1,149 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"sara",
+		"CATracked",
+		"cacharacters"
+	};
+	addOnsAuto[]=
+	{
+		"sara"
+	};
+	randomSeed=9323523;
+	class Intel
+	{
+		startWeather=0.000000;
+		forecastWeather=0.000000;
+		year=2007;
+		month=6;
+		day=16;
+		hour=19;
+		minute=20;
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"sara",
+		"cacharacters",
+		"CATracked",
+		"CAMisc",
+		"camiscus"
+	};
+	addOnsAuto[]=
+	{
+		"cacharacters",
+		"camiscus",
+		"sara"
+	};
+	randomSeed=15785475;
+	class Intel
+	{
+		startWeather=0.147294;
+		forecastWeather=0.100000;
+		year=2007;
+		month=6;
+		day=15;
+		hour=12;
+		minute=20;
+	};
+	class Groups
+	{
+		items=1;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9367.208984,139.949997,10139.792969};
+					id=0;
+					side="WEST";
+					vehicle="SoldierWB";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.600000;
+					text="a";
+					init="this exec ""intro.sqs""";
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=1;
+		class Item0
+		{
+			position[]={9434.861328,139.949997,10137.292969};
+			id=1;
+			side="EMPTY";
+			vehicle="CutScreen10";
+			leader=1;
+			skill=0.600000;
+			text="panel";
+		};
+	};
+	class Sensors
+	{
+		items=1;
+		class Item0
+		{
+			position[]={9365.328125,139.949997,10076.657227};
+			a=0.000000;
+			b=0.000000;
+			type="END1";
+			age="UNKNOWN";
+			expCond="ending";
+			class Effects
+			{
+			};
+		};
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"sara"
+	};
+	addOnsAuto[]=
+	{
+		"sara"
+	};
+	randomSeed=8932355;
+	class Intel
+	{
+		startWeather=0.100000;
+		forecastWeather=0.300000;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"sara"
+	};
+	addOnsAuto[]=
+	{
+		"sara"
+	};
+	randomSeed=10809859;
+	class Intel
+	{
+		startWeather=0.100000;
+		forecastWeather=0.300000;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+};

@@ -31,7 +31,7 @@ class Mission
 			azimut=-302.052307;
 			id=0;
 			side="EMPTY";
-			vehicle="BMP2";
+vehicle="CUP_O_BMP2_SLA";
 			leader=1;
 			skill=0.600000;
 			health=0.000000;
@@ -82,12 +82,12 @@ class Intro
 					position[]={9895.679688,139.949997,10135.909180};
 					id=0;
 					side="WEST";
-					vehicle="SoldierWB";
+					vehicle="CUP_B_USMC_Soldier";
 					player="PLAYER COMMANDER";
 					leader=1;
 					skill=0.600000;
 					text="a";
-					init="this exec ""intro.sqs""";
+					init="0 = this execVM ""intro.sqf""";
 				};
 			};
 		};
@@ -101,7 +101,7 @@ class Intro
 			azimut=-302.052002;
 			id=1;
 			side="EMPTY";
-			vehicle="BMP2";
+vehicle="CUP_O_BMP2_SLA";
 			leader=1;
 			skill=0.600000;
 			text="sem";

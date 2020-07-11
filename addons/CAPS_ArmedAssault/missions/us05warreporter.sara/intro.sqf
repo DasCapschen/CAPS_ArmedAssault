@@ -20,13 +20,13 @@ _camera camPreparePos [9732.33,10147.49,2.51];
 _camera camPrepareFOV 0.500;
 _camera camCommitPrepared 47;
 sleep 1;
-panel  setPos [ 9730,10150, 1];
+//panel  setPos [ 9730,10150, 1];
 preloadsound "x05v01";
 sleep 1;
-1 fadeMusic 0.4;
+1 fadeMusic 0.2;
 playmusic "track_uscutscene05";
 1 cutFadeOut 2;
-2 fadeMusic 0.4;
+2 fadeMusic 0.2;
 sleep 2;
 playSound "x05v01";
 preloadsound "x05v02";
@@ -71,7 +71,7 @@ sleep 1.6;
 4 cutRsc ["BlackFadeSlow","PLAIN",0];
 titleText ["","PLAIN",1];
 
-2 fadeMusic 0.9;
+2 fadeMusic 0.6;
 
 sleep 1.5;
 

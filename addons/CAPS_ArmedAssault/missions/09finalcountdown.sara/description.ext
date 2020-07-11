@@ -3,7 +3,7 @@ avgScore=1000;
 maxScore=6000;
 debriefing = 0;
 
-onLoadMission=$STR_09_NAME;
+onLoadMission=$STR_09_OnLoad;
 
 statsColumn=2;
 
@@ -16,11 +16,41 @@ coefEnd5=0;
 coefEnd6=0;
 
 
-onLoadName = $STRC_CA_08;
-briefingName = $STRC_CA_08;
+onLoadName = $STR_09_NAME;
+briefingName = $STR_09_NAME;
 overviewText = "Following the success of the great battle we have the remaining enemy forces completely surrounded at their capital city Bagango, despite their humiliating losses they are still refusing to surrender.";
 overviewPicture = "\CAPS_ArmedAssault\pictures\c09.paa";
 
+class CfgDebriefing
+{  
+	class End1
+	{
+		title = "Mission Completed";
+		subtitle = "";
+		description = "The capital has been taken. Good job, soldiers.";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+	};
+	class End2
+	{
+		title = "Mission Failed";
+		subtitle = "";
+		description = "";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+	};
+	class End3
+	{
+		title = "Mission Failed";
+		subtitle = "";
+		description = "Desertion is not tolerated, soldier!";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+	};
+};
 
 class CfgSounds
 {

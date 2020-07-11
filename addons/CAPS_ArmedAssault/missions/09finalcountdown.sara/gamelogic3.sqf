@@ -1,4 +1,4 @@
-waitUntil{ jsouucampu = 1 };
+waitUntil{ jsouucampu == 1 };
 aP sideradio "09r06";
 
 sleep 10;

@@ -75,7 +75,6 @@ _camera camCommitPrepared 0;
 sleep 2.5;
 cutRSC ["overlayLogoAAN","PLAIN NOFADE"];
 titleText["","PLAIN",0];
-sleep 0;
 Thomas kbTell [player, "interview", "XTv03"];
 sleep 0.2;
 
@@ -89,16 +88,6 @@ sleep 10;
 
 Thomas kbTell [player, "interview", "XTv04"];
 sleep 15;
-
-//extra
-ed kbTell [player, "interview", "XTv24"];
-sleep 10;
-Thomas kbTell [player, "interview", "XTv25"];
-sleep 15;
-ed kbTell [player, "interview", "XTv27"];
-sleep 3;
-//extra
-
 ed kbTell [player, "interview", "XTv05"];
 sleep 7;
 Thomas kbTell [player, "interview", "XTv06"];
@@ -111,14 +100,65 @@ Thomas kbTell [player, "interview", "XTv09"];
 sleep 10;
 Thomas kbTell [player, "interview", "XTv10"];
 sleep 10;
-Thomas kbTell [player, "interview", "XTv11"];
+Thomas kbTell [player, "interview", "XTv11a"];
 sleep 2;
 
 //Studio Static
 _camera camPrepareTarget [9834.56,110105.47,-2666.88];
 _camera camPreparePos [9854.50,10144.91,1.60];
 _camera camPrepareFOV 0.152;
-sleep 11.7;
+sleep 7;
+titleText["","PLAIN",0];
+cutRSC ["overlayNews","PLAIN NOFADE"];
+sleep 0.5;
+setaperture 45;
+_date = date;
+setDate [(date select 0),10,22,12,30];
+_overcast = overcast;
+0 setOvercast 0;
+_rain = rain;
+0 setRain 0;
+enableEnvironment false;
+0.5 fadeSound 1;
+_camera camCommitPrepared 0;
+player setPos [9854.73,10148.6,0];
+sleep 2;
+cutRSC ["overlayLogoAAN","PLAIN NOFADE"];
+titleText["","PLAIN",0];
+
+//extra
+ed kbTell [player, "interview", "XTv24"];
+sleep 10;
+
+//Thomas Zoom
+_camera camPrepareTarget [14262.3,12481.7,1.55];
+_camera camPreparePos [14261.33,12484.52,1.55];
+_camera camPrepareFOV 0.200;
+titleText["","PLAIN",0];
+cutRSC ["overlayNews","PLAIN NOFADE"];
+sleep 0.5;
+player setPos [14261.8,12485,0];
+sleep 0.5;
+setDate _date;
+0 setOvercast _overcast;
+0 setRain _rain;
+setaperture 25;
+enableEnvironment true;
+_camera camCommitPrepared 0;
+cutRSC ["overlayLogoAAN","PLAIN NOFADE"];
+titleText["","PLAIN",0];
+
+Thomas kbTell [player, "interview", "XTv25"];
+sleep 15;
+Thomas kbTell [player, "interview", "XTv11b"];
+sleep 4;
+//extra
+
+//Studio Static
+_camera camPrepareTarget [9834.56,110105.47,-2666.88];
+_camera camPreparePos [9854.50,10144.91,1.60];
+_camera camPrepareFOV 0.152;
+sleep 1;
 titleText["","PLAIN",0];
 cutRSC ["overlayNews","PLAIN NOFADE"];
 sleep 0.5;

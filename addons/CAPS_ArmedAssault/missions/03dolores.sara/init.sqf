@@ -12,3 +12,7 @@ fightisover = 0;
 flash = 0;
 theyrleaving = 0;
 convoyGo = false;
+
+wH1moveOn = false;
+regrouped = false;
+jeez = false;

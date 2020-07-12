@@ -1,0 +1,9 @@
+callradio = 0;
+timeradio = 0;
+posily = 0;
+u1arrive = 0;
+u2arrive = 0;
+konec = 0;
+vrtulnik = 0;
+cheat1 = 0;
+realkonec = 0;

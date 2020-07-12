@@ -1002,7 +1002,6 @@ class Mission
 			class Attributes
 			{
 				skill=0.69999999;
-				init="rychlost=0.3; rychlost2=0.2; konec=0";
 			};
 			id=4536;
 			type="CUP_B_RHIB_USMC";
@@ -1020,7 +1019,6 @@ class Mission
 			class Attributes
 			{
 				skill=0.69999999;
-				init="staticready=0;";
 			};
 			id=4537;
 			type="CUP_B_RHIB_USMC";
@@ -1091,7 +1089,6 @@ class Mission
 			class Attributes
 			{
 				skill=0.69999999;
-				init="buildtent1=0; tentimer=0; buildtent2=0; buildwf2=0; buildwf3=0; buildwf1=0; wftimer=0";
 			};
 			id=4541;
 			type="Paleta2";
@@ -1262,7 +1259,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.69999999;
-				init="stat1 setpos [getpos stat1 select 0, getpos stat1 select 1, -2]; buildstat1=0";
+				init="stat1 setpos [getpos stat1 select 0, getpos stat1 select 1, -2];";
 				name="stat1";
 			};
 			id=4550;
@@ -1338,7 +1335,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="wfp1 setpos [getpos wfp1 select 0, getpos wfp1 select 1, -2]; buildwfp=0";
+				init="wfp1 setpos [getpos wfp1 select 0, getpos wfp1 select 1, -2];";
 				name="wfp1";
 			};
 			id=4554;
@@ -1377,7 +1374,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.69;
-				init="wfp5 setpos [getpos wfp5 select 0, getpos wfp5 select 1, -2]; buildwfp5=0";
+				init="wfp5 setpos [getpos wfp5 select 0, getpos wfp5 select 1, -2];";
 				name="wfp5";
 			};
 			id=4556;
@@ -1397,7 +1394,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.69;
-				init="wfp4 setpos [getpos wfp4 select 0, getpos wfp4 select 1, -2]; buildwfp4=0";
+				init="wfp4 setpos [getpos wfp4 select 0, getpos wfp4 select 1, -2];";
 				name="wfp4";
 			};
 			id=4557;
@@ -1417,7 +1414,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.69;
-				init="wfp6 setpos [getpos wfp6 select 0, getpos wfp6 select 1, -2]; buildwfp6=0";
+				init="wfp6 setpos [getpos wfp6 select 0, getpos wfp6 select 1, -2];";
 				name="wfp6";
 			};
 			id=4558;
@@ -1437,7 +1434,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.69;
-				init="wfp7 setpos [getpos wfp7 select 0, getpos wfp7 select 1, -2]; buildwfp7=0";
+				init="wfp7 setpos [getpos wfp7 select 0, getpos wfp7 select 1, -2]; ";
 				name="wfp7";
 			};
 			id=4559;
@@ -1457,7 +1454,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="wfp2 setpos [getpos wfp2 select 0, getpos wfp2 select 1, -2]; buildwfp2=0";
+				init="wfp2 setpos [getpos wfp2 select 0, getpos wfp2 select 1, -2];";
 				name="wfp2";
 			};
 			id=4560;
@@ -1477,7 +1474,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="wfp3 setpos [getpos wfp3 select 0, getpos wfp3 select 1, -2]; buildwfp3=0";
+				init="wfp3 setpos [getpos wfp3 select 0, getpos wfp3 select 1, -2];";
 				name="wfp3";
 			};
 			id=4561;
@@ -1497,7 +1494,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.69999999;
-				init="tent3 setpos [getpos tent3 select 0, getpos tent3 select 1, -4]; buildtent3=0";
+				init="tent3 setpos [getpos tent3 select 0, getpos tent3 select 1, -4];";
 				name="tent3";
 			};
 			id=4562;
@@ -1517,7 +1514,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.69999999;
-				init="flagus setpos [getpos flagus select 0, getpos flagus select 1, -7]; buildflag=0";
+				init="flagus setpos [getpos flagus select 0, getpos flagus select 1, -7];";
 				name="flagus";
 			};
 			id=4563;
@@ -1537,7 +1534,6 @@ class Mission
 			class Attributes
 			{
 				skill=0.69999999;
-				init="heligo=0;";
 				name="heli";
 			};
 			id=4564;
@@ -1698,7 +1694,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.69999999;
-						init="stavari=group this; prvniteamdone=0; pocetstavaru=count units stavari";
+						init="stavari=group this; pocetstavaru=count units stavari";
 					};
 					id=4574;
 					type="CUP_B_USMC_Engineer";
@@ -2003,7 +1999,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.69999999;
-						init="ammostavari=group this; druhyteamdone=0";
+						init="ammostavari=group this;";
 					};
 					id=4595;
 					type="CUP_B_USMC_Engineer";
@@ -2021,7 +2017,6 @@ class Mission
 					class Attributes
 					{
 						skill=0.69999999;
-						init="prvniteamdone=0;";
 					};
 					id=4596;
 					type="CUP_B_USMC_Engineer";

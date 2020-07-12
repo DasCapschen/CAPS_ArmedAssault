@@ -261,7 +261,7 @@ class Mission
 			{
 				text="Init";
 				condition="True";
-				onActivation="Kohout=true; (leader aP) groupRadio ""M05r01""";
+				onActivation="(leader aP) groupRadio ""M05r01""";
 				sizeA=0;
 				sizeB=0;
 				effectTitleEffect="PLAIN DOWN";
@@ -782,7 +782,6 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="check=0; joined=0; moved=0";
 			};
 			id=1094;
 			type="FenceWoodPalet";
@@ -1091,7 +1090,6 @@ class Mission
 					{
 						skill=0.466667;
 						rank="SERGEANT";
-						init="cheat1=0";
 					};
 					id=1112;
 					type="CUP_O_sla_Soldier";
@@ -2281,7 +2279,7 @@ class Mission
 			{
 				skill=0.60000002;
 				lock="LOCKED";
-				init="brutend=0; this allowdammage false;";
+				init="this allowdammage false;";
 				name="jeep";
 			};
 			id=1183;

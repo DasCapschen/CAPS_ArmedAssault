@@ -607,7 +607,7 @@ class Mission
 			{
 				text="INIT";
 				condition="true";
-				onActivation="zakl1 = false; zakl2 = false; druha = false; showRadio true; leader OurG sideRadio ""M10r01""; OurG = group player; over = false; spustoutro = false";
+				onActivation="showRadio true; leader OurG sideRadio ""M10r01""; OurG = group player;";
 				sizeA=0;
 				sizeB=0;
 			};
@@ -1222,7 +1222,6 @@ class Mission
 			class Attributes
 			{
 				skill=0.66553301;
-				init="tankgo=0";
 			};
 			id=3482;
 			type="GraveCrossHelmet";
@@ -1241,7 +1240,6 @@ class Mission
 			class Attributes
 			{
 				skill=0.66553301;
-				init="";
 			};
 			id=3483;
 			type="GraveCrossHelmet";
@@ -2202,7 +2200,6 @@ class Mission
 			class Attributes
 			{
 				skill=0.82667798;
-				init="postup = 0";
 				name="ut1";
 				description="@STR_DISP_XBOX_ROLE_CONQ_ONE";
 			};
@@ -5724,7 +5721,6 @@ class Mission
 			class Attributes
 			{
 				skill=0.66553301;
-				init="tankgo=0";
 			};
 			id=3727;
 			type="CUP_O_BMP2_SLA";
@@ -7324,7 +7320,6 @@ class Mission
 					{
 						skill=0.466667;
 						rank="SERGEANT";
-						init="attackk=0";
 					};
 					id=3830;
 					type="CUP_O_sla_Soldier_SL";

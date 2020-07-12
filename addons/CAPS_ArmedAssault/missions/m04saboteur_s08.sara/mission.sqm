@@ -320,9 +320,9 @@ class Mission
 			angle=0.23928286;
 			class Attributes
 			{
-				text="init";
+				text="DELETE_ME";
 				condition="true";
-				onActivation="showGPS true; hlidka_se_nehlasi = false; t1destroyed = false; t2destroyed = false; poplach = false";
+				onActivation="";
 				isRectangle=1;
 			};
 			id=858;
@@ -915,7 +915,6 @@ class Mission
 			class Attributes
 			{
 				skill=0.2;
-				init="dokonceno=0";
 			};
 			id=892;
 			type="CUP_USBasicAmmunitionBox";
@@ -1114,7 +1113,7 @@ class Mission
 					{
 						skill=0.73333299;
 						rank="CAPTAIN";
-						init="this removeweapon ""M4a1SD""; this removemagazine ""30rnd_556x45_stanagSD""; this removemagazine ""30rnd_556x45_stanagSD""; this removemagazine ""30rnd_556x45_stanagSD""; this removemagazine ""30rnd_556x45_stanagSD""; this addweapon ""binocular""; uvnitr = false; this addweapon ""MP5SD""; this addmagazine ""30Rnd_9x19_MP5SD""; this addmagazine ""30Rnd_9x19_MP5SD""; this addmagazine ""30Rnd_9x19_MP5SD""; this selectWeapon ""mp5sd""; ";
+						init="this removeweapon ""M4a1SD""; this removemagazine ""30rnd_556x45_stanagSD""; this removemagazine ""30rnd_556x45_stanagSD""; this removemagazine ""30rnd_556x45_stanagSD""; this removemagazine ""30rnd_556x45_stanagSD""; this addweapon ""binocular""; this addweapon ""MP5SD""; this addmagazine ""30Rnd_9x19_MP5SD""; this addmagazine ""30Rnd_9x19_MP5SD""; this addmagazine ""30Rnd_9x19_MP5SD""; this selectWeapon ""mp5sd""; ";
 						name="aP";
 						isPlayer=1;
 						isPlayable=1;

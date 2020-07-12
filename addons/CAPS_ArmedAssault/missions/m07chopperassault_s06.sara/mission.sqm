@@ -404,9 +404,9 @@ class Mission
 			class Attributes
 			{
 				name="init";
-				text="init";
+				text="deleteme3";
 				condition="true";
-				onActivation="end = false; dojel = 0; konec3 = false; konec2 = false;konec = false; pindy = 0; pindy2 = 0";
+				onActivation="";
 				sizeA=0;
 				sizeB=0;
 			};
@@ -1092,7 +1092,6 @@ class Mission
 			{
 				skill=0.60000002;
 				lock="LOCKED";
-				init="tanksdestroyed=0";
 			};
 			id=2502;
 			type="HeliH";
@@ -1166,7 +1165,6 @@ class Mission
 			{
 				skill=0.60000002;
 				lock="UNLOCKED";
-				init="";
 			};
 			id=2506;
 			type="Land_Radar";
@@ -1202,7 +1200,6 @@ class Mission
 			class Attributes
 			{
 				skill=0.466667;
-				init="poslidal=0";
 			};
 			id=2508;
 			type="CUP_USBasicWeaponsBox";
@@ -1344,7 +1341,6 @@ class Mission
 			{
 				skill=0.60000002;
 				lock="UNLOCKED";
-				init="m09_S06=2; savevar ""m09_S06"";";
 			};
 			id=2516;
 			type="Fortress1";

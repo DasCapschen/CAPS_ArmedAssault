@@ -1,0 +1,13 @@
+volnacesta = 0;
+poplach = 0;
+sklad1prele = 0;
+sklad2prele = 0;
+sklad3prele = 0;
+volnacesta3 = 1;
+pocetlostu = 0;
+vracise = 0;
+winning = 0;
+konec = 0;
+cesta4 = 0;
+cesta5 = 0;
+jdezpet = 0;

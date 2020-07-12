@@ -1,3 +1,24 @@
+opustil = 0;
+naklad = 0;
+utabora = 0; 
+primovtabore = 0; 
+rozhovor = 0; 
+calmdown = 0; 
+speecherjetu = 0; 
+rozhovorover = 0; 
+zdrhaj = 0; 
+noplease = 0; //yes thanks
+troops2 = false;
+druhywp = false;
+vyhodmost = 0;
+vtaborenikdo = 0;
+areasecured = 0;
+ortego_done = 0;
+tocamp = 0;
+nejede = 0;
+jsouucampu = 0;
+
+
 "1b" objstatus "hidden";;
 "2" objstatus "hidden";;
 "3" objstatus "hidden";;

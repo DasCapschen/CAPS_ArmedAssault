@@ -1,8 +1,30 @@
-"1" objstatus "HIDDEN";;
-"1b" objstatus "HIDDEN";;
-"2" objstatus "HIDDEN";;
-"3" objstatus "HIDDEN";;
+blowbridge = 0;
+jedem = 0; //also doch nur manchem?
+jedem2 = 0;
+odpoved = 0;
+vtaborenikdo = 0;
+jetu = 0;
+ortego_done = 0;
+tocamp = 0;
+racsutoci = 0;
+hotelgo = 0;
+alarm = 0;
+hidentanks = 0;
+severozapaddone = 0;
+zapaddone = 0;
+severdone = 0;
+shilkadone = 0;
+maincampdone = 0;
+zapaddone = 0;
+severozapaddone = 0;
+tsavailible = 0;
 
+
+
+"1" objstatus "HIDDEN";
+"1b" objstatus "HIDDEN";
+"2" objstatus "HIDDEN";
+"3" objstatus "HIDDEN";
 
 _preload = [] spawn {waituntil {preloadCamera [(getpos v1 select 0), getpos v1 select 1, 5]}};
 waitUntil{ ScriptDone _preload };

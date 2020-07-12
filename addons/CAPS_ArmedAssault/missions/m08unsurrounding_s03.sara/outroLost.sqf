@@ -5,6 +5,7 @@ _camera = "camera" camCreate position car1;
 _camera cameraEffect ["internal","back"];
 
 enableRadio false;
+showCinemaBorder true;
 
 //=== 10:32:09
 _camera camSetTarget position car1;

@@ -20,3 +20,5 @@ sab1fire = 0;
 sab2fire = 0; 
 sab3fire = 0;
 outofbase = 0;
+
+injeep = false;

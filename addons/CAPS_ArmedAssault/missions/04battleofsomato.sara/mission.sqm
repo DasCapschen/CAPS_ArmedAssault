@@ -801,7 +801,7 @@ class Mission
 			{
 				text="Leaving True";
 				condition="call{opust == 1}";
-				onActivation="call{""4"" objstatus ""done""; 0 = [] execVM ""task4donecomms.sqf""}";
+				onActivation="call{0 = [] execVM ""task4donecomms.sqf""}";
 				sizeA=0;
 				sizeB=0;
 				type="SWITCH";

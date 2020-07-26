@@ -18,3 +18,6 @@ Thanks goes to all contributors! See Contributors.md
 ## Mods Recommended for Contributors
 - Eden Enhanced
 - Simple Singleplayer Cheat Menu
+
+### Hints for contributors
+If you get missing images etc, either place all files in the arma 3 folder and enable file patching, or pack the files to a PBO once and load it with the game.

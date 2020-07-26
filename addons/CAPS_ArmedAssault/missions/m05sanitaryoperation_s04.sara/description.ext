@@ -17,3 +17,46 @@ coefEnd3=0;
 coefEnd4=0;
 coefEnd5=0;
 coefEnd6=0;
+
+class CfgDebriefing
+{  
+    class End1
+    {
+        title = "Mission Completed";
+        subtitle = "";
+        description = "Good job out there. The enemy military presence in the city was eliminated.";
+        pictureBackground = "";
+        picture = "b_inf";
+        pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+    };
+
+    class End2
+    {
+        title = "End of Mission";
+        subtitle = "";
+        description = "They can't leave me out here alone, damn it!";
+        pictureBackground = "";
+        picture = "b_inf";
+        pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+    };
+
+    class End3
+    {
+        title = "End of Mission";
+        subtitle = "";
+        description = "The HMMWV can not move, go home on foot.";
+        pictureBackground = "";
+        picture = "b_inf";
+        pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+    };
+
+	class End6
+    {
+        title = "Mission Failed";
+        subtitle = "";
+        description = "You have to retreat and enemy still holds the area.";
+        pictureBackground = "";
+        picture = "b_inf";
+        pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+    };
+};

@@ -8,3 +8,6 @@ poplach = 0;
 zadnamoznost = 0;
 done = 0;
 nakonci = 0;
+
+task2Failed = false;
+task3Failed = false;

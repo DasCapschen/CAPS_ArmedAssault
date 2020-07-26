@@ -8,3 +8,45 @@ onLoadMission=$STR_M01_OnLoad;
 briefingName = $STR_M01_NAME;
 overviewText = "One of the SLAs best officers is going to visit the Vida hotel near Vallejo. Go there and shoot him down.";
 overviewPicture = "\CAPS_ArmedAssault\pictures\m01s04.paa";
+
+class CfgDebriefing
+{  
+    class End1
+    {
+        title = "Mission Completed";
+        subtitle = "";
+        description = "Phenomenal work! You've killed the officer.";
+        pictureBackground = "";
+        picture = "b_inf";
+        pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+    };
+
+    class End2
+    {
+        title = "Mission Failed";
+        subtitle = "";
+        description = "You failed your mission, soldier. The enemy has been alerted.";
+        pictureBackground = "";
+        picture = "b_inf";
+        pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+    };
+
+    class End3
+    {
+        title = "Mission Completed";
+        subtitle = "";
+        description = "Unbelivable job! You killed the officer in front his soldiers eyes. That will show them who is the man.";
+        pictureBackground = "";
+        picture = "b_inf";
+        pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+    };
+    class End4
+    {
+        title = "Mission Failed";
+        subtitle = "";
+        description = "You've missed your chance to kill the officer. You've failed.";
+        pictureBackground = "";
+        picture = "b_inf";
+        pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+    };
+};

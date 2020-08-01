@@ -8,7 +8,7 @@ class EditorData
 	toggles=9;
 	class ItemIDProvider
 	{
-		nextID=957;
+		nextID=959;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={12623.725,91.600922,7617.3667};
-		dir[]={-0.34361494,-0.82842535,0.44237947};
-		up[]={-0.50818247,0.56009614,0.65424913};
-		aside[]={0.7897718,-2.8964132e-007,0.61345023};
+		pos[]={12447.185,112.13703,7562.9067};
+		dir[]={0.33495322,-0.75575876,-0.56279016};
+		up[]={0.38653094,0.65483439,-0.64945251};
+		aside[]={-0.85936457,-3.4330878e-007,-0.51146573};
 	};
 };
 binarizationWanted=0;
@@ -254,7 +254,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=371;
+		items=373;
 		class Item0
 		{
 			dataType="Marker";
@@ -8109,7 +8109,7 @@ class Mission
 				};
 			};
 			id=347;
-			atlOffset=6.8664551e-005;
+			atlOffset=-0.00031661987;
 		};
 		class Item259
 		{
@@ -8129,7 +8129,7 @@ class Mission
 			};
 			id=348;
 			type="CUP_O_T72_SLA";
-			atlOffset=6.8664551e-005;
+			atlOffset=-0.00031661987;
 		};
 		class Item260
 		{
@@ -8147,6 +8147,7 @@ class Mission
 			};
 			id=352;
 			type="CUP_O_BMP2_SLA";
+			atlOffset=-0.0035362244;
 		};
 		class Item261
 		{
@@ -8164,6 +8165,7 @@ class Mission
 			};
 			id=356;
 			type="CUP_O_BMP2_SLA";
+			atlOffset=-0.0090866089;
 		};
 		class Item262
 		{
@@ -8183,6 +8185,7 @@ class Mission
 			};
 			id=360;
 			type="CUP_O_T72_SLA";
+			atlOffset=-0.014762878;
 		};
 		class Item263
 		{
@@ -18498,6 +18501,7 @@ class Mission
 				};
 			};
 			id=812;
+			atlOffset=9.5367432e-007;
 		};
 		class Item332
 		{
@@ -18517,6 +18521,7 @@ class Mission
 			};
 			id=813;
 			type="CUP_O_BRDM2_SLA";
+			atlOffset=9.5367432e-007;
 		};
 		class Item333
 		{
@@ -18536,6 +18541,7 @@ class Mission
 			};
 			id=816;
 			type="CUP_O_BRDM2_SLA";
+			atlOffset=9.5367432e-007;
 		};
 		class Item334
 		{
@@ -23806,6 +23812,39 @@ class Mission
 			};
 			id=953;
 			atlOffset=-0.0021858215;
+		};
+		class Item371
+		{
+			dataType="Trigger";
+			position[]={12545.979,55.601208,7783.6816};
+			class Attributes
+			{
+				text="Auto-Kill Tanks (AI is retarded)";
+				condition="call{sync14}";
+				onActivation="call{bmp1 setDamage 1;" \n "bmp2 setDamage 1;}";
+				sizeA=0;
+				sizeB=0;
+				timeout[]={15,15,15};
+			};
+			id=957;
+			type="EmptyDetector";
+			atlOffset=8.392334e-005;
+		};
+		class Item372
+		{
+			dataType="Trigger";
+			position[]={12549.33,57.707321,7790.1401};
+			class Attributes
+			{
+				text="Auto-Kill Tanks (AI is retarded)";
+				condition="call{sync14}";
+				onActivation="call{t72_1 setDamage 1;" \n "t72_2 setDamage 1;}";
+				sizeA=0;
+				sizeB=0;
+				timeout[]={30,30,30};
+			};
+			id=958;
+			type="EmptyDetector";
 		};
 	};
 	class Connections

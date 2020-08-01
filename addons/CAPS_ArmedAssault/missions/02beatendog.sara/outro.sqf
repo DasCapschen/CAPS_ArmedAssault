@@ -1,6 +1,7 @@
 1 fademusic 0;;
 sleep 1;
-enableRadio false;;
+enableRadio false;
+showCinemaBorder true;
 
 titleCut ["","BLACK OUT", 2];
 

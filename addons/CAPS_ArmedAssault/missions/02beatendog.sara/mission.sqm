@@ -8,7 +8,7 @@ class EditorData
 	toggles=9;
 	class ItemIDProvider
 	{
-		nextID=984;
+		nextID=989;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={12584.478,81.3256,6987.7627};
-		dir[]={0.7247147,-0.61577982,-0.30960864};
-		up[]={0.56634849,0.78785139,-0.24195179};
-		aside[]={-0.39291379,2.6321504e-007,-0.91970921};
+		pos[]={12443.825,80.497726,7286.6362};
+		dir[]={0.073918313,-0.5793407,-0.8117407};
+		up[]={0.052539825,0.81508273,-0.57696331};
+		aside[]={-0.99589342,-3.3003744e-007,-0.090688758};
 	};
 };
 binarizationWanted=0;
@@ -263,7 +263,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=386;
+		items=390;
 		class Item0
 		{
 			dataType="Marker";
@@ -669,7 +669,7 @@ class Mission
 		class Item25
 		{
 			dataType="Trigger";
-			position[]={12399.056,18.817064,7236.0308};
+			position[]={12395.413,18.877583,7237.6279};
 			class Attributes
 			{
 				text="FirehouseTrigger";
@@ -679,43 +679,39 @@ class Mission
 			};
 			id=30;
 			type="EmptyDetector";
-			atlOffset=1.9073486e-006;
+			atlOffset=-7.6293945e-006;
 		};
 		class Item26
 		{
 			dataType="Trigger";
-			position[]={12594.326,22.800493,7080.0508};
+			position[]={12416.955,18.604633,7227.2979};
 			class Attributes
 			{
-				text="FirehouseTrue";
-				condition="firehouse==1";
-				onActivation="player say ""02v01""; ";
+				text="FirehouseTrue2";
+				condition="call{firehouse == 1}";
+				onActivation="call{player say ""02v01""; }";
 				sizeA=0;
 				sizeB=0;
-				timeout[]={9,9,9};
-				interuptable=1;
+				timeout[]={10,10,10};
 			};
 			id=31;
 			type="EmptyDetector";
-			atlOffset=0.00050163269;
 		};
 		class Item27
 		{
 			dataType="Trigger";
-			position[]={12594.214,22.799564,7075.7842};
+			position[]={12405.012,18.727747,7232.3442};
 			class Attributes
 			{
-				text="FirehouseTrue2";
-				condition="firehouse==1";
-				onActivation="leader group player say ""02v02""; ";
+				text="FirehouseTrue";
+				condition="call{firehouse == 1}";
+				onActivation="call{player say ""02v02""; }";
 				sizeA=0;
 				sizeB=0;
-				timeout[]={5,5,5};
-				interuptable=1;
+				timeout[]={2,2,2};
 			};
 			id=32;
 			type="EmptyDetector";
-			atlOffset=5.137001;
 		};
 		class Item28
 		{
@@ -19221,117 +19217,6 @@ class Mission
 		class Item339
 		{
 			dataType="Group";
-			side="East";
-			class Entities
-			{
-				items=7;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={12496.155,18.042313,7182.2607};
-						angles[]={6.2764373,4.354321,6.2764373};
-					};
-					side="East";
-					flags=6;
-					class Attributes
-					{
-						skill=0.60000002;
-						init="this addMagazine ""pipebomb"";this addMagazine ""pipebomb"";";
-						name="sab1_1";
-					};
-					id=882;
-					type="CUP_O_sla_SpecOps_Demo";
-				};
-				class Item1
-				{
-					dataType="Waypoint";
-					position[]={12493.084,18.094133,7186.9839};
-					expActiv="sab1_1 fire ""pipebombmuzzle"";";
-					class Effects
-					{
-					};
-					showWP="NEVER";
-					id=883;
-					type="Move";
-				};
-				class Item2
-				{
-					dataType="Waypoint";
-					position[]={12492.397,18.081787,7184.5142};
-					expActiv="sab1_1 fire ""pipebombmuzzle"";";
-					class Effects
-					{
-					};
-					showWP="NEVER";
-					id=884;
-					type="Move";
-					atlOffset=-1.9073486e-006;
-				};
-				class Item3
-				{
-					dataType="Waypoint";
-					position[]={12491.286,18.070787,7181.7734};
-					expActiv="sab1_1 fire ""pipebombmuzzle"";";
-					class Effects
-					{
-					};
-					showWP="NEVER";
-					id=885;
-					type="Move";
-				};
-				class Item4
-				{
-					dataType="Waypoint";
-					position[]={12490.491,18.146296,7179.4468};
-					expActiv="sab1_1 fire ""pipebombmuzzle"";";
-					class Effects
-					{
-					};
-					showWP="NEVER";
-					id=886;
-					type="Move";
-				};
-				class Item5
-				{
-					dataType="Waypoint";
-					position[]={12480.023,18.253788,7179.3999};
-					class Effects
-					{
-					};
-					showWP="NEVER";
-					id=887;
-					type="Move";
-					atlOffset=-1.9073486e-006;
-				};
-				class Item6
-				{
-					dataType="Waypoint";
-					position[]={12477.072,18.307358,7179.9614};
-					combatMode="BLUE";
-					combat="STEALTH";
-					expCond="firehouse==1";
-					expActiv="sab1_1 action [""TOUCHOFF"", sab1_1];";
-					class Effects
-					{
-					};
-					timeoutMin=4;
-					timeoutMid=4;
-					timeoutMax=4;
-					showWP="NEVER";
-					id=888;
-					type="Move";
-				};
-			};
-			class Attributes
-			{
-			};
-			id=881;
-		};
-		class Item340
-		{
-			dataType="Group";
 			side="West";
 			class Entities
 			{
@@ -19424,7 +19309,7 @@ class Mission
 			};
 			id=889;
 		};
-		class Item341
+		class Item340
 		{
 			dataType="Group";
 			side="West";
@@ -19484,7 +19369,7 @@ class Mission
 			};
 			id=895;
 		};
-		class Item342
+		class Item341
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -19595,7 +19480,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item343
+		class Item342
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -19706,7 +19591,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item344
+		class Item343
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -19931,7 +19816,7 @@ class Mission
 				nAttributes=11;
 			};
 		};
-		class Item345
+		class Item344
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -20156,7 +20041,7 @@ class Mission
 				nAttributes=11;
 			};
 		};
-		class Item346
+		class Item345
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -20381,7 +20266,7 @@ class Mission
 				nAttributes=11;
 			};
 		};
-		class Item347
+		class Item346
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -20606,7 +20491,7 @@ class Mission
 				nAttributes=11;
 			};
 		};
-		class Item348
+		class Item347
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -20830,7 +20715,7 @@ class Mission
 				nAttributes=11;
 			};
 		};
-		class Item349
+		class Item348
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -21055,7 +20940,7 @@ class Mission
 				nAttributes=11;
 			};
 		};
-		class Item350
+		class Item349
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -21109,7 +20994,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item351
+		class Item350
 		{
 			dataType="Trigger";
 			position[]={12674.027,14.158653,6786.4697};
@@ -21124,7 +21009,7 @@ class Mission
 			type="EmptyDetector";
 			atlOffset=3.8146973e-006;
 		};
-		class Item352
+		class Item351
 		{
 			dataType="Trigger";
 			position[]={13171.107,16.130642,8517.5283};
@@ -21138,7 +21023,7 @@ class Mission
 			id=913;
 			type="EmptyDetector";
 		};
-		class Item353
+		class Item352
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -21192,7 +21077,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item354
+		class Item353
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -21247,7 +21132,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item355
+		class Item354
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -21300,7 +21185,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item356
+		class Item355
 		{
 			dataType="Group";
 			side="West";
@@ -21789,7 +21674,7 @@ class Mission
 			id=921;
 			atlOffset=-3.8146973e-006;
 		};
-		class Item357
+		class Item356
 		{
 			dataType="Object";
 			class PositionInfo
@@ -21807,7 +21692,7 @@ class Mission
 			type="FenceWood";
 			atlOffset=0.00018310547;
 		};
-		class Item358
+		class Item357
 		{
 			dataType="Object";
 			class PositionInfo
@@ -21825,7 +21710,7 @@ class Mission
 			type="FenceWood";
 			atlOffset=0.00011062622;
 		};
-		class Item359
+		class Item358
 		{
 			dataType="Object";
 			class PositionInfo
@@ -21843,7 +21728,7 @@ class Mission
 			type="FenceWood";
 			atlOffset=3.8146973e-006;
 		};
-		class Item360
+		class Item359
 		{
 			dataType="Object";
 			class PositionInfo
@@ -21860,7 +21745,7 @@ class Mission
 			id=930;
 			type="FenceWood";
 		};
-		class Item361
+		class Item360
 		{
 			dataType="Object";
 			class PositionInfo
@@ -21878,7 +21763,7 @@ class Mission
 			type="FenceWood";
 			atlOffset=-3.8146973e-006;
 		};
-		class Item362
+		class Item361
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -21988,7 +21873,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item363
+		class Item362
 		{
 			dataType="Group";
 			side="East";
@@ -22772,7 +22657,7 @@ class Mission
 			id=949;
 			atlOffset=-0.052902222;
 		};
-		class Item364
+		class Item363
 		{
 			dataType="Group";
 			side="East";
@@ -23559,7 +23444,7 @@ class Mission
 			id=953;
 			atlOffset=-0.0021858215;
 		};
-		class Item365
+		class Item364
 		{
 			dataType="Trigger";
 			position[]={12545.979,55.601345,7783.6821};
@@ -23575,7 +23460,7 @@ class Mission
 			id=957;
 			type="EmptyDetector";
 		};
-		class Item366
+		class Item365
 		{
 			dataType="Trigger";
 			position[]={12549.33,57.707321,7790.1401};
@@ -23591,7 +23476,7 @@ class Mission
 			id=958;
 			type="EmptyDetector";
 		};
-		class Item367
+		class Item366
 		{
 			dataType="Trigger";
 			position[]={12555.622,51.52673,7779.3838};
@@ -23608,7 +23493,7 @@ class Mission
 			type="EmptyDetector";
 			atlOffset=-3.8146973e-006;
 		};
-		class Item368
+		class Item367
 		{
 			dataType="Trigger";
 			position[]={12558.974,53.972054,7785.8418};
@@ -23624,7 +23509,7 @@ class Mission
 			id=962;
 			type="EmptyDetector";
 		};
-		class Item369
+		class Item368
 		{
 			dataType="Group";
 			side="East";
@@ -23745,7 +23630,7 @@ class Mission
 			id=963;
 			atlOffset=-0.0034103394;
 		};
-		class Item370
+		class Item369
 		{
 			dataType="Trigger";
 			position[]={12700.008,14.949121,6813.7861};
@@ -23760,7 +23645,7 @@ class Mission
 			type="EmptyDetector";
 			atlOffset=9.5367432e-007;
 		};
-		class Item371
+		class Item370
 		{
 			dataType="Object";
 			class PositionInfo
@@ -23776,7 +23661,7 @@ class Mission
 			type="SatchelCharge_F";
 			atlOffset=0.34100151;
 		};
-		class Item372
+		class Item371
 		{
 			dataType="Object";
 			class PositionInfo
@@ -23793,7 +23678,7 @@ class Mission
 			id=970;
 			type="SatchelCharge_F";
 		};
-		class Item373
+		class Item372
 		{
 			dataType="Object";
 			class PositionInfo
@@ -23810,7 +23695,7 @@ class Mission
 			id=971;
 			type="SatchelCharge_F";
 		};
-		class Item374
+		class Item373
 		{
 			dataType="Object";
 			class PositionInfo
@@ -23827,7 +23712,7 @@ class Mission
 			id=972;
 			type="SatchelCharge_F";
 		};
-		class Item375
+		class Item374
 		{
 			dataType="Trigger";
 			position[]={12657.888,33.843487,7157.1221};
@@ -23838,11 +23723,12 @@ class Mission
 				onActivation="call{satchel1 setDamage 1;" \n "satchel2 setDamage 1;" \n "satchel3 setDamage 1;" \n "satchel4 setDamage 1;}";
 				sizeA=0;
 				sizeB=0;
+				timeout[]={4,4,4};
 			};
 			id=973;
 			type="EmptyDetector";
 		};
-		class Item376
+		class Item375
 		{
 			dataType="Object";
 			class PositionInfo
@@ -23859,7 +23745,7 @@ class Mission
 			type="SatchelCharge_F";
 			atlOffset=0.34098053;
 		};
-		class Item377
+		class Item376
 		{
 			dataType="Object";
 			class PositionInfo
@@ -23876,7 +23762,7 @@ class Mission
 			id=975;
 			type="SatchelCharge_F";
 		};
-		class Item378
+		class Item377
 		{
 			dataType="Object";
 			class PositionInfo
@@ -23893,7 +23779,7 @@ class Mission
 			id=976;
 			type="SatchelCharge_F";
 		};
-		class Item379
+		class Item378
 		{
 			dataType="Object";
 			class PositionInfo
@@ -23910,7 +23796,7 @@ class Mission
 			id=977;
 			type="SatchelCharge_F";
 		};
-		class Item380
+		class Item379
 		{
 			dataType="Trigger";
 			position[]={12671.199,36.598415,7072.7412};
@@ -23927,7 +23813,7 @@ class Mission
 			id=978;
 			type="EmptyDetector";
 		};
-		class Item381
+		class Item380
 		{
 			dataType="Object";
 			class PositionInfo
@@ -23967,13 +23853,13 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item382
+		class Item381
 		{
 			dataType="Object";
 			class PositionInfo
 			{
 				position[]={12675.167,18.204048,6928.6719};
-				angles[]={-0,4.8852029,0};
+				angles[]={0,4.8852029,0};
 			};
 			side="Empty";
 			flags=4;
@@ -24007,7 +23893,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item383
+		class Item382
 		{
 			dataType="Object";
 			class PositionInfo
@@ -24048,7 +23934,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item384
+		class Item383
 		{
 			dataType="Object";
 			class PositionInfo
@@ -24088,13 +23974,13 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item385
+		class Item384
 		{
 			dataType="Object";
 			class PositionInfo
 			{
 				position[]={12699.282,18.204048,6938.605};
-				angles[]={-0,5.2592597,0};
+				angles[]={0,5.2592597,0};
 			};
 			side="Empty";
 			flags=4;
@@ -24127,6 +24013,93 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item385
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12484.868,18.663483,7178.5151};
+				angles[]={0,1.6938838,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				name="satchel1_2";
+			};
+			id=984;
+			type="SatchelCharge_F";
+			atlOffset=0.34082222;
+		};
+		class Item386
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12480.792,18.3738,7178.5762};
+				angles[]={0.19763607,1.6938838,6.2247515};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="satchel2_2";
+			};
+			id=985;
+			type="SatchelCharge_F";
+		};
+		class Item387
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12478.516,18.428841,7178.9492};
+				angles[]={0.19763607,1.6938838,6.226994};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="satchel3_2";
+			};
+			id=986;
+			type="SatchelCharge_F";
+			atlOffset=-1.9073486e-006;
+		};
+		class Item388
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12475.461,18.53146,7179.2949};
+				angles[]={0.19763607,1.6938838,6.226994};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="satchel4_2";
+			};
+			id=987;
+			type="SatchelCharge_F";
+			atlOffset=-1.9073486e-006;
+		};
+		class Item389
+		{
+			dataType="Trigger";
+			position[]={12479.43,19.882708,7171.4321};
+			angle=1.6938767;
+			class Attributes
+			{
+				text="FireHouse3";
+				condition="call{firehouse == 1}";
+				onActivation="call{satchel1_2 setDamage 1;" \n "satchel2_2 setDamage 1;" \n "satchel3_2 setDamage 1;" \n "satchel4_2 setDamage 1;}";
+				sizeA=0;
+				sizeB=0;
+			};
+			id=988;
+			type="EmptyDetector";
+			atlOffset=-1.9073486e-006;
 		};
 	};
 	class Connections

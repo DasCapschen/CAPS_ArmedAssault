@@ -34,29 +34,25 @@ class CfgDebriefing
 
 class CfgSounds
 {
-	sounds[] = 
-	{};
+	sounds[] = {};
 	
 	class 02v01
 	{
 		name = "02v01";
-		sound[] = {"sound\02v01.ogg", db-0, 1.0};
-		titles[] = {};	
+		sound[] = {"sound\02v01.ogg", db+20, 1.0};
+		titles[] = {0, "What the hell was that!?"};	
 	};
 	class 02v02
 	{
 		name = "02v02";
-		sound[] = {"sound\02v02.ogg", db-0, 1.0};
-		titles[] = {};	
+		sound[] = {"sound\02v02.ogg", db+20, 1.0};
+		titles[] = {0, "Fuck!"};	
 	};
-
 };
 
 class CfgRadio
 {
-	sounds[] = 
-	{
-	};
+	sounds[] = {};
 
 	class 02r01
 	{
@@ -151,19 +147,4 @@ class CfgRadio
 		sound[] = {"sound\02r17.ogg", db+20, 1.0};
 		title = $STRC_02r17;
 	};
-};
-
-
-class CfgSFX
-{
-	sounds[] = {};
-};
-class CfgEnvSounds
-{
-	sounds[] = {};
-};
-
-class CfgMusic
-{
-	tracks[]= {};
 };

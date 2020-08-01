@@ -1,6 +1,5 @@
 titleCut ["","BLACK OUT", 0];
-
-
+showCinemaBorder true;
 
 _camera = "camera" camCreate position player;
 _camera cameraEffect ["internal","back"];

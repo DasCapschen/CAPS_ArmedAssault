@@ -9,5 +9,6 @@ zadnamoznost = 0;
 done = 0;
 nakonci = 0;
 
+task1Failed = false;
 task2Failed = false;
 task3Failed = false;

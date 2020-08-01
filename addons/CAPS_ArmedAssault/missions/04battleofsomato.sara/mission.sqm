@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={8939.5352,227.27684,6775.5288};
-		dir[]={0.11739797,-0.53947598,-0.8339116};
-		up[]={0.075213701,0.84197032,-0.53426212};
-		aside[]={-0.99034184,6.048358e-007,-0.13942392};
+		pos[]={8773.8799,95.71595,6233.9678};
+		dir[]={-0.018787989,-0.26348135,0.96460021};
+		up[]={-0.0051335385,0.96464038,0.26353505};
+		aside[]={0.99991769,2.3389221e-006,0.01948059};
 	};
 };
 binarizationWanted=0;
@@ -266,7 +266,7 @@ class Mission
 			colorName="ColorEAST";
 			a=420;
 			b=200;
-			angle=309.60587;
+			angle=309.60583;
 			id=8;
 			atlOffset=-0.0076293945;
 		};
@@ -505,7 +505,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={8716.4766,35.489723,6450.3501};
-			angle=0.29440206;
+			angle=0.29440203;
 			class Attributes
 			{
 				text="Near Trigger";
@@ -558,7 +558,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={9468.0732,36.287983,5024.292};
-			angle=3.0664382;
+			angle=3.066438;
 			class Attributes
 			{
 				text="arty1 shoot";
@@ -577,7 +577,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={9477.0889,35.820362,5026.1782};
-			angle=3.0664382;
+			angle=3.066438;
 			class Attributes
 			{
 				text="arty2 shoot";
@@ -596,7 +596,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={9485.959,35.688099,5028.6611};
-			angle=3.0664382;
+			angle=3.066438;
 			class Attributes
 			{
 				text="arty3 shoot";
@@ -615,7 +615,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={9477.2441,34.884094,5016.5039};
-			angle=3.0664382;
+			angle=3.066438;
 			class Attributes
 			{
 				text="arty4 shoot";
@@ -634,7 +634,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={9486.7012,33.861782,5017.1958};
-			angle=3.0664382;
+			angle=3.066438;
 			class Attributes
 			{
 				text="shoot2 trigger";
@@ -653,7 +653,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={9495.2832,33.093018,5018.2368};
-			angle=3.0664382;
+			angle=3.066438;
 			class Attributes
 			{
 				text="shoot3 trigger";
@@ -672,7 +672,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={9487.7422,31.172239,5007.834};
-			angle=3.0664382;
+			angle=3.066438;
 			class Attributes
 			{
 				text="shoot2 true, shoot1 trigger";
@@ -709,7 +709,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={8645.1924,34.965,6303.5469};
-			angle=4.9681482;
+			angle=4.9681478;
 			class Attributes
 			{
 				text="shoot1 true";
@@ -745,9 +745,9 @@ class Mission
 			position[]={9128.3594,40.825535,6193.499};
 			class Attributes
 			{
-				text="Firing True, comms";
+				text="Firing True, comms, arty trigger";
 				condition="call{palba == 1}";
-				onActivation="call{0 = [] execVM ""firingcomms.sqf""}";
+				onActivation="call{0 = [] execVM ""firingcomms.sqf""; " \n "comment ""firingcomms.sqf sets strilej=1, which makes arty shoot""}";
 				sizeA=0;
 				sizeB=0;
 			};
@@ -3610,6 +3610,7 @@ class Mission
 			};
 			id=201;
 			type="CUP_O_BRDM2_SLA";
+			atlOffset=-0.0014648438;
 		};
 		class Item137
 		{
@@ -3630,6 +3631,7 @@ class Mission
 			};
 			id=204;
 			type="CUP_O_BRDM2_SLA";
+			atlOffset=-0.0018768311;
 		};
 		class Item138
 		{
@@ -4223,6 +4225,7 @@ class Mission
 			};
 			id=233;
 			type="CUP_O_T72_SLA";
+			atlOffset=-3.0517578e-005;
 		};
 		class Item141
 		{
@@ -4242,6 +4245,7 @@ class Mission
 			};
 			id=237;
 			type="CUP_O_UAZ_MG_SLA";
+			atlOffset=-0.0078277588;
 		};
 		class Item142
 		{

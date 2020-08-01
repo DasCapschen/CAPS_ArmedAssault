@@ -5,7 +5,7 @@ alldestroyed = 0;
 detected2 = 0;
 pocet = 0;
 
-tanks = 7;
+tanks = 5;
 
 cheat1 = 0;
 

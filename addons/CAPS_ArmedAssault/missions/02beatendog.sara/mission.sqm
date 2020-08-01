@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={12856.898,94.294968,6835.5776};
-		dir[]={-0.19806178,-0.76274633,0.61564994};
-		up[]={-0.23359472,0.64669204,0.72610074};
-		aside[]={0.95196724,-2.4458859e-007,0.30625927};
+		pos[]={12623.725,91.600922,7617.3667};
+		dir[]={-0.34361494,-0.82842535,0.44237947};
+		up[]={-0.50818247,0.56009614,0.65424913};
+		aside[]={0.7897718,-2.8964132e-007,0.61345023};
 	};
 };
 binarizationWanted=0;
@@ -46,6 +46,11 @@ addons[]=
 	"CUP_Creatures_Military_SLA",
 	"CUP_TrackedVehicles_BMP",
 	"CUP_TrackedVehicles_T72",
+	"CUP_Weapons_M16",
+	"CUP_Weapons_West_Attachments",
+	"CUP_Weapons_SMAW",
+	"CUP_Weapons_NVG",
+	"CUP_Weapons_Grenades",
 	"A3_Modules_F",
 	"CUP_WheeledVehicles_MTVR",
 	"CUP_Creatures_Military_RACS",
@@ -56,7 +61,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=24;
+		items=29;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -164,22 +169,47 @@ class AddonsMetaData
 		};
 		class Item20
 		{
+			className="CUP_Weapons_M16";
+			name="CUP_Weapons_M16";
+		};
+		class Item21
+		{
+			className="CUP_Weapons_West_Attachments";
+			name="CUP_Weapons_West_Attachments";
+		};
+		class Item22
+		{
+			className="CUP_Weapons_SMAW";
+			name="CUP_Weapons_SMAW";
+		};
+		class Item23
+		{
+			className="CUP_Weapons_NVG";
+			name="CUP_Weapons_NVG";
+		};
+		class Item24
+		{
+			className="CUP_Weapons_Grenades";
+			name="CUP_Weapons_Grenades";
+		};
+		class Item25
+		{
 			className="A3_Modules_F";
 			name="Arma 3 Alpha - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item21
+		class Item26
 		{
 			className="CUP_WheeledVehicles_MTVR";
 			name="CUP_WheeledVehicles_MTVR";
 		};
-		class Item22
+		class Item27
 		{
 			className="CUP_Creatures_Military_RACS";
 			name="CUP_Creatures_Military_RACS";
 		};
-		class Item23
+		class Item28
 		{
 			className="A3_Characters_F";
 			name="Arma 3 Alpha - Characters and Clothing";
@@ -8874,6 +8904,108 @@ class Mission
 						skill=0.60000002;
 						init="group this enableAttack false;";
 						name="raketnik4";
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="CUP_arifle_M16A4_Base";
+								optics="CUP_optic_CompM2_low";
+								flashlight="CUP_acc_ANPEQ_2";
+								class primaryMuzzleMag
+								{
+									name="CUP_30Rnd_556x45_Stanag";
+									ammoLeft=30;
+								};
+							};
+							class secondaryWeapon
+							{
+								name="CUP_launch_Mk153Mod0";
+								optics="CUP_optic_SMAW_Scope";
+								class primaryMuzzleMag
+								{
+									name="CUP_SMAW_HEAA_M";
+									ammoLeft=1;
+								};
+							};
+							class uniform
+							{
+								typeName="CUP_U_B_USMC_MARPAT_WDL_Sleeves";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="CUP_30Rnd_556x45_Stanag";
+										count=1;
+										ammoLeft=30;
+									};
+									class Item1
+									{
+										name="CUP_HandGrenade_M67";
+										count=1;
+										ammoLeft=1;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="CUP_V_B_MTV_Pouches";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=3;
+									class Item0
+									{
+										name="CUP_30Rnd_556x45_Stanag";
+										count=2;
+										ammoLeft=30;
+									};
+									class Item1
+									{
+										name="CUP_HandGrenade_M67";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="CUP_SMAW_Spotting";
+										count=1;
+										ammoLeft=5;
+									};
+								};
+							};
+							class backpack
+							{
+								typeName="CUP_B_USMC_AssaultPack_SMAW";
+								isBackpack=1;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="CUP_SMAW_HEAA_M";
+										count=2;
+										ammoLeft=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							hmd="CUP_NVG_PVS7";
+							headgear="CUP_H_USMC_Headset_HelmetWDL";
+						};
 					};
 					id=412;
 					type="CUP_B_USMC_Soldier_AT";
@@ -9149,6 +9281,108 @@ class Mission
 						skill=0.60000002;
 						init="group this enableAttack false;";
 						name="raketnik3";
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="CUP_arifle_M16A4_Base";
+								optics="CUP_optic_CompM2_low";
+								flashlight="CUP_acc_ANPEQ_2";
+								class primaryMuzzleMag
+								{
+									name="CUP_30Rnd_556x45_Stanag";
+									ammoLeft=30;
+								};
+							};
+							class secondaryWeapon
+							{
+								name="CUP_launch_Mk153Mod0";
+								optics="CUP_optic_SMAW_Scope";
+								class primaryMuzzleMag
+								{
+									name="CUP_SMAW_HEAA_M";
+									ammoLeft=1;
+								};
+							};
+							class uniform
+							{
+								typeName="CUP_U_B_USMC_MARPAT_WDL_Sleeves";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="CUP_30Rnd_556x45_Stanag";
+										count=1;
+										ammoLeft=30;
+									};
+									class Item1
+									{
+										name="CUP_HandGrenade_M67";
+										count=1;
+										ammoLeft=1;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="CUP_V_B_MTV_Pouches";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=3;
+									class Item0
+									{
+										name="CUP_30Rnd_556x45_Stanag";
+										count=2;
+										ammoLeft=30;
+									};
+									class Item1
+									{
+										name="CUP_HandGrenade_M67";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="CUP_SMAW_Spotting";
+										count=1;
+										ammoLeft=5;
+									};
+								};
+							};
+							class backpack
+							{
+								typeName="CUP_B_USMC_AssaultPack_SMAW";
+								isBackpack=1;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="CUP_SMAW_HEAA_M";
+										count=2;
+										ammoLeft=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							hmd="CUP_NVG_PVS7";
+							headgear="CUP_H_USMC_Headset_HelmetWDL";
+						};
 					};
 					id=416;
 					type="CUP_B_USMC_Soldier_AT";
@@ -9426,6 +9660,108 @@ class Mission
 						skill=0.60000002;
 						init="group this enableAttack false;";
 						name="raketnik1";
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="CUP_arifle_M16A4_Base";
+								optics="CUP_optic_CompM2_low";
+								flashlight="CUP_acc_ANPEQ_2";
+								class primaryMuzzleMag
+								{
+									name="CUP_30Rnd_556x45_Stanag";
+									ammoLeft=30;
+								};
+							};
+							class secondaryWeapon
+							{
+								name="CUP_launch_Mk153Mod0";
+								optics="CUP_optic_SMAW_Scope";
+								class primaryMuzzleMag
+								{
+									name="CUP_SMAW_HEAA_M";
+									ammoLeft=1;
+								};
+							};
+							class uniform
+							{
+								typeName="CUP_U_B_USMC_MARPAT_WDL_Sleeves";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="CUP_30Rnd_556x45_Stanag";
+										count=1;
+										ammoLeft=30;
+									};
+									class Item1
+									{
+										name="CUP_HandGrenade_M67";
+										count=1;
+										ammoLeft=1;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="CUP_V_B_MTV_Pouches";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=3;
+									class Item0
+									{
+										name="CUP_30Rnd_556x45_Stanag";
+										count=2;
+										ammoLeft=30;
+									};
+									class Item1
+									{
+										name="CUP_HandGrenade_M67";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="CUP_SMAW_Spotting";
+										count=1;
+										ammoLeft=5;
+									};
+								};
+							};
+							class backpack
+							{
+								typeName="CUP_B_USMC_AssaultPack_SMAW";
+								isBackpack=1;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="CUP_SMAW_HEAA_M";
+										count=2;
+										ammoLeft=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							hmd="CUP_NVG_PVS7";
+							headgear="CUP_H_USMC_Headset_HelmetWDL";
+						};
 					};
 					id=420;
 					type="CUP_B_USMC_Soldier_AT";
@@ -9682,6 +10018,108 @@ class Mission
 						skill=0.60000002;
 						init="group this enableAttack false;";
 						name="raketnik2";
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="CUP_arifle_M16A4_Base";
+								optics="CUP_optic_CompM2_low";
+								flashlight="CUP_acc_ANPEQ_2";
+								class primaryMuzzleMag
+								{
+									name="CUP_30Rnd_556x45_Stanag";
+									ammoLeft=30;
+								};
+							};
+							class secondaryWeapon
+							{
+								name="CUP_launch_Mk153Mod0";
+								optics="CUP_optic_SMAW_Scope";
+								class primaryMuzzleMag
+								{
+									name="CUP_SMAW_HEAA_M";
+									ammoLeft=1;
+								};
+							};
+							class uniform
+							{
+								typeName="CUP_U_B_USMC_MARPAT_WDL_Sleeves";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="CUP_30Rnd_556x45_Stanag";
+										count=1;
+										ammoLeft=30;
+									};
+									class Item1
+									{
+										name="CUP_HandGrenade_M67";
+										count=1;
+										ammoLeft=1;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="CUP_V_B_MTV_Pouches";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=3;
+									class Item0
+									{
+										name="CUP_30Rnd_556x45_Stanag";
+										count=2;
+										ammoLeft=30;
+									};
+									class Item1
+									{
+										name="CUP_HandGrenade_M67";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="CUP_SMAW_Spotting";
+										count=1;
+										ammoLeft=5;
+									};
+								};
+							};
+							class backpack
+							{
+								typeName="CUP_B_USMC_AssaultPack_SMAW";
+								isBackpack=1;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="CUP_SMAW_HEAA_M";
+										count=2;
+										ammoLeft=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							hmd="CUP_NVG_PVS7";
+							headgear="CUP_H_USMC_Headset_HelmetWDL";
+						};
 					};
 					id=423;
 					type="CUP_B_USMC_Soldier_AT";
@@ -14445,6 +14883,108 @@ class Mission
 					{
 						skill=1;
 						name="aa1";
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="CUP_arifle_M16A4_Base";
+								optics="CUP_optic_CompM2_low";
+								flashlight="CUP_acc_ANPEQ_2";
+								class primaryMuzzleMag
+								{
+									name="CUP_30Rnd_556x45_Stanag";
+									ammoLeft=30;
+								};
+							};
+							class secondaryWeapon
+							{
+								name="CUP_launch_Mk153Mod0";
+								optics="CUP_optic_SMAW_Scope";
+								class primaryMuzzleMag
+								{
+									name="CUP_SMAW_HEAA_M";
+									ammoLeft=1;
+								};
+							};
+							class uniform
+							{
+								typeName="CUP_U_B_USMC_MARPAT_WDL_Sleeves";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="CUP_30Rnd_556x45_Stanag";
+										count=1;
+										ammoLeft=30;
+									};
+									class Item1
+									{
+										name="CUP_HandGrenade_M67";
+										count=1;
+										ammoLeft=1;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="CUP_V_B_MTV_Pouches";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=3;
+									class Item0
+									{
+										name="CUP_30Rnd_556x45_Stanag";
+										count=2;
+										ammoLeft=30;
+									};
+									class Item1
+									{
+										name="CUP_HandGrenade_M67";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="CUP_SMAW_Spotting";
+										count=1;
+										ammoLeft=5;
+									};
+								};
+							};
+							class backpack
+							{
+								typeName="CUP_B_USMC_AssaultPack_SMAW";
+								isBackpack=1;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="CUP_SMAW_HEAA_M";
+										count=2;
+										ammoLeft=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							hmd="CUP_NVG_PVS7";
+							headgear="CUP_H_USMC_Headset_HelmetWDL";
+						};
 					};
 					id=919;
 					type="CUP_B_USMC_Soldier_AT";
@@ -14676,6 +15216,108 @@ class Mission
 					{
 						skill=1;
 						name="aa2";
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="CUP_arifle_M16A4_Base";
+								optics="CUP_optic_CompM2_low";
+								flashlight="CUP_acc_ANPEQ_2";
+								class primaryMuzzleMag
+								{
+									name="CUP_30Rnd_556x45_Stanag";
+									ammoLeft=30;
+								};
+							};
+							class secondaryWeapon
+							{
+								name="CUP_launch_Mk153Mod0";
+								optics="CUP_optic_SMAW_Scope";
+								class primaryMuzzleMag
+								{
+									name="CUP_SMAW_HEAA_M";
+									ammoLeft=1;
+								};
+							};
+							class uniform
+							{
+								typeName="CUP_U_B_USMC_MARPAT_WDL_Sleeves";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="CUP_30Rnd_556x45_Stanag";
+										count=1;
+										ammoLeft=30;
+									};
+									class Item1
+									{
+										name="CUP_HandGrenade_M67";
+										count=1;
+										ammoLeft=1;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="CUP_V_B_MTV_Pouches";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=3;
+									class Item0
+									{
+										name="CUP_30Rnd_556x45_Stanag";
+										count=2;
+										ammoLeft=30;
+									};
+									class Item1
+									{
+										name="CUP_HandGrenade_M67";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="CUP_SMAW_Spotting";
+										count=1;
+										ammoLeft=5;
+									};
+								};
+							};
+							class backpack
+							{
+								typeName="CUP_B_USMC_AssaultPack_SMAW";
+								isBackpack=1;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="CUP_SMAW_HEAA_M";
+										count=2;
+										ammoLeft=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							hmd="CUP_NVG_PVS7";
+							headgear="CUP_H_USMC_Headset_HelmetWDL";
+						};
 					};
 					id=920;
 					type="CUP_B_USMC_Soldier_AT";

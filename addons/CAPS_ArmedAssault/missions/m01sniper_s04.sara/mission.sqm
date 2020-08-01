@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=524;
+		nextID=526;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={10339.533,102.63389,7385.3398};
-		dir[]={-0.60075659,-0.67301822,0.43174478};
-		up[]={-0.54656363,0.73962611,0.39278659};
-		aside[]={0.58365631,-1.9784784e-006,0.81213838};
+		pos[]={10271.116,68.859406,7358.8203};
+		dir[]={-0.97781444,0.11443529,-0.17620561};
+		up[]={0.11246061,0.99347901,0.020255774};
+		aside[]={-0.17736591,-1.4087418e-006,0.98424983};
 	};
 };
 binarizationWanted=0;
@@ -56,13 +56,14 @@ addons[]=
 	"A3_Weapons_F_Items",
 	"CUP_Weapons_Grenades",
 	"A3_Modules_F_Intel",
-	"CUP_AirVehicles_Ka50"
+	"CUP_AirVehicles_Ka50",
+	"A3_Structures_F_EPA_Walls"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=27;
+		items=28;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -207,6 +208,13 @@ class AddonsMetaData
 		{
 			className="CUP_AirVehicles_Ka50";
 			name="CUP_AirVehicles_Ka50";
+		};
+		class Item27
+		{
+			className="A3_Structures_F_EPA";
+			name="Arma 3 Survive Episode - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
 		};
 	};
 };
@@ -6705,7 +6713,6 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="call{this attachTo [heliSpot]}";
 				name="heli";
 				reportRemoteTargets=1;
 				receiveRemoteTargets=1;
@@ -6720,32 +6727,32 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={10270.307,66.001999,7372.8608};
-				angles[]={0,1.5728395,-0};
+				position[]={10274.229,64.804222,7373.8979};
+				angles[]={0,4.7621708,0};
 			};
 			side="Empty";
 			class Attributes
 			{
-				name="heliSpot";
 			};
-			id=515;
-			type="HeliH";
-			atlOffset=0.35771942;
+			id=524;
+			type="Land_InvisibleBarrier_F";
+			atlOffset=2.6639709;
 		};
 		class Item64
 		{
-			dataType="Trigger";
-			position[]={9586.9717,184.83662,7280.1099};
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={10269.297,64.786491,7373.6509};
+				angles[]={0,4.6468649,0};
+			};
+			side="Empty";
 			class Attributes
 			{
-				condition="call{poplach==1}";
-				onActivation="call{detach heli;}";
-				sizeA=0;
-				sizeB=0;
-				timeout[]={10,10,10};
 			};
-			id=516;
-			type="EmptyDetector";
+			id=525;
+			type="Land_InvisibleBarrier_F";
+			atlOffset=2.6462402;
 		};
 	};
 	class Connections

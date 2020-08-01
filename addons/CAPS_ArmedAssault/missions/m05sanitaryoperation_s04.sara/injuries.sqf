@@ -21,7 +21,7 @@ while {true} do {
 	_j = 0;
 	while {true} do {
 		if(_j >= count _venku) exitWith{};
-		if(_venku select _j distance aUH) then {
+		if(_venku select _j distance aUH < 50) then {
 			breakTo "ZAB";
 		};
 		[_venku select _j] join GrpNull;

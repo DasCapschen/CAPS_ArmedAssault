@@ -1,4 +1,5 @@
 enableRadio false;
+showCinemaBorder true;
 
 titleCut ["","BLACK OUT", 2];
 
@@ -12,8 +13,8 @@ _camera cameraEffect ["internal","back"];
 {_x setpos position sem} foreach units group player;
 group player enableattack false;
 {_x moveincargo truck} foreach units group player;
-
-truck lock 3; //lock for player only!
+sleep 0.1;
+truck lock true;
 
 //=== 11:24:03
 _camera camPrepareTarget [82373.95,78339.13,-9477.26];

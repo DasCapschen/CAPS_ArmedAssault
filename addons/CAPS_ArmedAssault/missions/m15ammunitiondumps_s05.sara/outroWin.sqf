@@ -47,4 +47,4 @@ camUseNVG false;;
 
 CAPS_M15_S05=1; 
 savevar "CAPS_M15_S05";
-over = true;
+overWin = true;

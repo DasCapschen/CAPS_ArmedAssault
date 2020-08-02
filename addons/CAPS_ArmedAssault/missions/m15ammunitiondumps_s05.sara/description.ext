@@ -8,148 +8,113 @@ briefingName = $STR_M15_NAME;
 overviewText = "The ammunition stocks available to US Forces have reached perilously low levels and you have to guard them... all night...";
 overviewPicture = "\CAPS_ArmedAssault\pictures\m15s05.paa";
 
-// Control types
-#define CT_STATIC           0
-#define CT_BUTTON           1
-#define CT_EDIT             2
-#define CT_SLIDER           3
-#define CT_COMBO            4
-#define CT_LISTBOX          5
-#define CT_TOOLBOX          6
-#define CT_CHECKBOXES       7
-#define CT_PROGRESS         8
-#define CT_HTML             9
-#define CT_STATIC_SKEW      10
-#define CT_ACTIVETEXT       11
-#define CT_TREE             12
-#define CT_STRUCTURED_TEXT  13
-#define CT_CONTEXT_MENU     14
-#define CT_CONTROLS_GROUP   15
-#define CT_XKEYDESC         40
-#define CT_XBUTTON          41
-#define CT_XLISTBOX         42
-#define CT_XSLIDER          43
-#define CT_XCOMBO           44
-#define CT_ANIMATED_TEXTURE 45
-#define CT_OBJECT           80
-#define CT_OBJECT_ZOOM      81
-#define CT_OBJECT_CONTAINER 82
-#define CT_OBJECT_CONT_ANIM 83
-#define CT_LINEBREAK        98
-#define CT_USER             99
-#define CT_MAP              100
-#define CT_MAP_MAIN         101
-
-
-// Static styles
-#define ST_POS            0x0F
-#define ST_HPOS           0x03
-#define ST_VPOS           0x0C
-#define ST_LEFT           0x00
-#define ST_RIGHT          0x01
-#define ST_CENTER         0x02
-#define ST_DOWN           0x04
-#define ST_UP             0x08
-#define ST_VCENTER        0x0c
-
-#define ST_TYPE           0xF0
-#define ST_SINGLE         0
-#define ST_MULTI          16
-#define ST_TITLE_BAR      32
-#define ST_PICTURE        48
-#define ST_FRAME          64
-#define ST_BACKGROUND     80
-#define ST_GROUP_BOX      96
-#define ST_GROUP_BOX2     112
-#define ST_HUD_BACKGROUND 128
-#define ST_TILE_PICTURE   144
-#define ST_WITH_RECT      160
-#define ST_LINE           176
-
-
-class CfgSounds
+class CfgDebriefing
 {
-	sounds[] = {};
+	class End1
+	{
+		title = "Mission Completed";
+		subtitle = "";
+		description = "Perfect job there. Our ammunition is saved.";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+	};
+	class End2
+	{
+		title = "Mission Completed";
+		subtitle = "";
+		description = "Good job. We have lost one ammunition dump, but you have protected the other two of them.";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+	};
+	class End3
+	{
+		title = "Mission Completed";
+		subtitle = "";
+		description = "Two of three dumps were destroyed, but you've saved one of it.";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+	};
+	class End4
+	{
+		title = "Mission Failed";
+		subtitle = "";
+		description = "All ammunition dumps was destroyed. Mission failed.";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+	};
 };
+
 class CfgRadio
 {
 	sounds[] = {};
 
-class M03r01
+	class M03r01
 	{
 		name = "";
 		sound[] = {"M03r01.wss", db+20, 1.0};
 		title = $STRC_M03r01;
 	};
 
-class M03r02
+	class M03r02
 	{
 		name = "";
 		sound[] = {"M03r02.wss", db+20, 1.0};
 		title = $STRC_M03r02;
 	};
 
-class M03r03
+	class M03r03
 	{
 		name = "";
 		sound[] = {"M03r03.wss", db+20, 1.0};
 		title = $STRC_M03r03;
 	};
 
-class M03r04
+	class M03r04
 	{
 		name = "";
 		sound[] = {"M03r04.wss", db+20, 1.0};
 		title = $STRC_M03r04;
 	};
 
-class M03r05
+	class M03r05
 	{
 		name = "";
 		sound[] = {"M03r05.wss", db+20, 1.0};
 		title = $STRC_M03r05;
 	};
 
-class M03r06
+	class M03r06
 	{
 		name = "";
 		sound[] = {"M03r06.wss", db+20, 1.0};
 		title = $STRC_M03r06;
 	};
 
-class M03r07
+	class M03r07
 	{
 		name = "";
 		sound[] = {"M03r07.wss", db+20, 1.0};
 		title = $STRC_M03r07;
 	};
 
-class M03r08
+	class M03r08
 	{
 		name = "";
 		sound[] = {"M03r08.wss", db+20, 1.0};
 		title = $STRC_M03r08;
 	};
 
-class M03r09
+	class M03r09
 	{
 		name = "";
 		sound[] = {"03rM09.wss", db+20, 1.0};
 		title = $STRC_M03r09;
 	};
 
-};
-class CfgSFX
-{
-	sounds[] = {};
-};
-class CfgEnvSounds
-{
-	sounds[] = {};
-};
-class CfgMusic
-{
-	tracks[]= {};
 };
 
 class TimeWindow
@@ -161,7 +126,9 @@ class TimeWindow
 
   class Text
   {
-		idc = -1; type = 0;style = ST_CENTER;
+		idc = -1; 
+		type = 0;
+		style = 2;
 		colorText[]= {1,1,1,1};
 		font = BitStream;
 		SizeEx = 0.024;
@@ -173,7 +140,8 @@ class TimeWindow
   class Time : Text
   {
     idc = 2000;
-    y = 0.08; h = 0.04;
+    y = 0.08; 
+	h = 0.04;
     sizeEx = 0.024;
     text = 0.09;
   };

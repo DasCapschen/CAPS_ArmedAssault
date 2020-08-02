@@ -6,4 +6,26 @@ onLoadName = $STR_M17_Name;
 onLoadMission=$STRD_M17_OnLoad;
 briefingName = $STR_M17_Name;
 overviewText = "We've decided to try to surround the enemy, so we're sending five engineers to build a camp close to enemy territory. You have to protect them until they've finished their work.";
-overviewPicture = "\CAPS_ArmedAssault\pictures\m16as07.paa";
+overviewPicture = "\CAPS_ArmedAssault\pictures\m17s08.paa";
+
+class CfgDebriefing
+{
+	class End1
+	{
+		title = "Mission Completed";
+		subtitle = "";
+		description = "Phenomenal job, soldier. You've retained the area.";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+	};
+	class End2
+	{
+		title = "Mission Failed";
+		subtitle = "";
+		description = "All of the main engineers were killed.";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+	};
+};

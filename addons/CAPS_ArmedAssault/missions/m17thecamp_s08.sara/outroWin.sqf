@@ -43,4 +43,4 @@ camDestroy _camera;
 
 CAPS_M17_S08=1;
 savevar "CAPS_M17_S08";
-over = true;
+overWin = true;

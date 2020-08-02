@@ -11,7 +11,7 @@ sleep 210;
 platoonD sideradio "03r07";
 
 //after 400 sec
-sleep 190;
+sleep 160;
 platoonD sideradio "03r08";
 
 //after 420 sec
@@ -19,6 +19,6 @@ sleep 20;
 [west, "HQ"] sideradio "03r09"; 
 fightisover=1;
 
-//after 440 sec
-sleep 20;
+//after 425 sec
+sleep 5;
 [west, "HQ"] sideradio "03r10"; 

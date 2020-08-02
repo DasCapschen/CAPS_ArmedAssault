@@ -7,3 +7,25 @@ onLoadMission=$STR_M10_OnLoad;
 briefingName = $STR_M10_Name;
 overviewText = "US armored forces take on a couple of enemy bases.";
 overviewPicture = "\CAPS_ArmedAssault\pictures\m10s08.paa";
+
+class CfgDebriefing
+{  
+	class End1
+	{
+		title = "Mission Completed";
+		subtitle = "";
+		description = "You did it. Both bases are under our control. Good work!";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+	};
+    class End2
+	{
+		title = "Mission Failed";
+		subtitle = "";
+		description = "You were unable to secure the bases.";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+	};
+};

@@ -7,3 +7,43 @@ onLoadMission=$STRD_M01_OnLoad;
 briefingName = $STR_M01_Name;
 overviewText = "There are two large SLA bases in the city of Obregan. At the Northern one there should be two Urals completely filled with ammunition. If we can destroy them we'll deal a significant blow to the enemy.";
 overviewPicture = "\CAPS_ArmedAssault\pictures\m16as07.paa";
+
+class CfgDebriefing
+{
+	class End1
+	{
+		title = "Mission Completed";
+		subtitle = "";
+		description = "Great job, soldier! Both Urals were destroyed.";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+	};
+	class End2
+	{
+		title = "Mission Failed";
+		subtitle = "";
+		description = "You allowed the enemy to gather reinforcements and they saved their urals. You failed, miserably.";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+	};
+	class End3
+	{
+		title = "Mission Failed";
+		subtitle = "";
+		description = "You've allowed the Urals to flee. Mission failed.";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+	};
+	class End4
+	{
+		title = "Mission Completed";
+		subtitle = "";
+		description = "You've destroyed one enemy Ural. Not bad.";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+	};
+};

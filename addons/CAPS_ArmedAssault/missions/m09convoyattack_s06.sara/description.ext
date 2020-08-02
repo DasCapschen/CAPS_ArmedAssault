@@ -18,3 +18,52 @@ onLoadMission=$STRD_M09_OnLoad;
 briefingName = $STR_M09_Name;
 overviewText = "Take to the skies in your attack helicopter. Fly low, hit hard, get in there and take out that convoy.";
 overviewPicture = "\CAPS_ArmedAssault\pictures\m09s06.paa";
+
+class CfgDebriefing
+{  
+	class End1
+	{
+		title = "Mission Completed";
+		subtitle = "";
+		description = "Congratulations. You did it. The convoy is crushed to pieces.";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+	};
+    class End2
+	{
+		title = "Mission Failed";
+		subtitle = "";
+		description = "Well... you weren't able to stop them. It happens.";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+	};
+    class End3
+	{
+		title = "Mission Failed";
+		subtitle = "Lost";
+		description = "You're hopelessly lost.";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+	};
+    class End4
+	{
+		title = "Mission Completed";
+		subtitle = "";
+		description = "Good job, soldier. All marked camps were destroyed.";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+	};
+    class End5
+	{
+		title = "Mission Failed";
+		subtitle = "";
+		description = "Both HMMWV has been destroyed. Mission failed.";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+	};
+};

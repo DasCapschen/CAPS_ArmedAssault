@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1;
+	toggles=1025;
 	class ItemIDProvider
 	{
 		nextID=1479;
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={12182.181,29.979807,6576.8599};
-		dir[]={-0.7052328,-0.55093491,0.44650486};
-		up[]={-0.46554428,0.83449048,0.29475212};
-		aside[]={0.53498256,7.1176328e-007,0.84499252};
+		pos[]={11706.35,31.375299,6158.3218};
+		dir[]={-0.49803302,-0.29678205,0.81494361};
+		up[]={-0.15482351,0.95489627,0.2533446};
+		aside[]={0.85336554,2.6558992e-006,0.52152103};
 	};
 };
 binarizationWanted=0;
@@ -534,7 +534,7 @@ class Mission
 			text="@STRC_03t01";
 			type="mil_objective";
 			id=957;
-			atlOffset=0.078199387;
+			atlOffset=0.078048706;
 		};
 		class Item25
 		{
@@ -607,7 +607,7 @@ class Mission
 			};
 			id=964;
 			type="EmptyDetector";
-			atlOffset=2.0950413;
+			atlOffset=2.0948906;
 		};
 		class Item30
 		{
@@ -672,7 +672,7 @@ class Mission
 			};
 			id=970;
 			type="EmptyDetector";
-			atlOffset=0.00024223328;
+			atlOffset=9.1552734e-005;
 		};
 		class Item34
 		{
@@ -903,21 +903,22 @@ class Mission
 		class Item48
 		{
 			dataType="Trigger";
-			position[]={11662.165,5.7922616,6203.7759};
+			position[]={11661.335,5.7922616,6208.7119};
 			angle=3.1457286;
 			class Attributes
 			{
 				text="FlashTrue";
 				condition="call{flash == 1}";
-				onActivation="{_x setDamage 1} foreach thislist;";
-				sizeA=49.126999;
-				sizeB=10;
-				timeout[]={1,2,3};
+				onActivation="call{{_x setDamage 1} foreach thisList;}";
+				sizeA=39.250275;
+				sizeB=14.931965;
+				timeout[]={2,2,3};
+				activationBy="EAST";
 				isRectangle=1;
 			};
 			id=994;
 			type="EmptyDetector";
-			atlOffset=5.8340001;
+			atlOffset=5.6485357;
 		};
 		class Item49
 		{
@@ -14061,7 +14062,7 @@ class Mission
 						position[]={12141.327,22.241104,6537.1167};
 					};
 					side="East";
-					flags=7;
+					flags=3;
 					class Attributes
 					{
 						skill=0.44999999;
@@ -14069,7 +14070,7 @@ class Mission
 					};
 					id=1465;
 					type="CUP_O_sla_Soldier_MG";
-					atlOffset=-0.00054168701;
+					atlOffset=0.30298805;
 				};
 				class Item1
 				{
@@ -14079,7 +14080,7 @@ class Mission
 						position[]={12138.383,22.245401,6539.7432};
 					};
 					side="East";
-					flags=5;
+					flags=1;
 					class Attributes
 					{
 						skill=0.44999999;
@@ -14087,7 +14088,7 @@ class Mission
 					};
 					id=1466;
 					type="CUP_O_sla_Soldier_GL";
-					atlOffset=-0.00054168701;
+					atlOffset=0.30298996;
 				};
 				class Item2
 				{
@@ -14097,14 +14098,14 @@ class Mission
 						position[]={12141.327,22.241104,6537.1167};
 					};
 					side="East";
-					flags=5;
+					flags=1;
 					class Attributes
 					{
 						skill=0.40000001;
 					};
 					id=1467;
 					type="CUP_O_sla_Soldier";
-					atlOffset=-0.00054168701;
+					atlOffset=0.30298805;
 				};
 				class Item3
 				{
@@ -14114,14 +14115,14 @@ class Mission
 						position[]={12141.327,22.241104,6537.1167};
 					};
 					side="East";
-					flags=5;
+					flags=1;
 					class Attributes
 					{
 						skill=0.40000001;
 					};
 					id=1468;
 					type="CUP_O_sla_Soldier";
-					atlOffset=-0.00054168701;
+					atlOffset=0.30298805;
 				};
 			};
 			class Attributes
@@ -14200,7 +14201,7 @@ class Mission
 						position[]={12158.562,22.046186,6557.4282};
 					};
 					side="East";
-					flags=7;
+					flags=3;
 					class Attributes
 					{
 						skill=0.44999999;
@@ -14208,7 +14209,7 @@ class Mission
 					};
 					id=1470;
 					type="CUP_O_sla_Soldier_MG";
-					atlOffset=-0.00036430359;
+					atlOffset=0.30318069;
 				};
 				class Item1
 				{
@@ -14218,7 +14219,7 @@ class Mission
 						position[]={12158.562,22.046186,6557.4282};
 					};
 					side="East";
-					flags=5;
+					flags=1;
 					class Attributes
 					{
 						skill=0.44999999;
@@ -14226,7 +14227,7 @@ class Mission
 					};
 					id=1471;
 					type="CUP_O_sla_Soldier_GL";
-					atlOffset=-0.00036430359;
+					atlOffset=0.30318069;
 				};
 				class Item2
 				{
@@ -14236,14 +14237,14 @@ class Mission
 						position[]={12155.539,22.045958,6559.9644};
 					};
 					side="East";
-					flags=5;
+					flags=1;
 					class Attributes
 					{
 						skill=0.40000001;
 					};
 					id=1472;
 					type="CUP_O_sla_Soldier";
-					atlOffset=-0.00036430359;
+					atlOffset=0.30318451;
 				};
 				class Item3
 				{
@@ -14253,14 +14254,14 @@ class Mission
 						position[]={12155.539,22.045958,6559.9644};
 					};
 					side="East";
-					flags=5;
+					flags=1;
 					class Attributes
 					{
 						skill=0.40000001;
 					};
 					id=1473;
 					type="CUP_O_sla_Soldier";
-					atlOffset=-0.00036430359;
+					atlOffset=0.30318451;
 				};
 			};
 			class Attributes
@@ -14339,7 +14340,7 @@ class Mission
 						position[]={12177.777,21.792337,6580.1567};
 					};
 					side="East";
-					flags=7;
+					flags=3;
 					class Attributes
 					{
 						skill=0.44999999;
@@ -14347,7 +14348,7 @@ class Mission
 					};
 					id=1475;
 					type="CUP_O_sla_Soldier_MG";
-					atlOffset=-0.0091915131;
+					atlOffset=0.29306412;
 				};
 				class Item1
 				{
@@ -14357,7 +14358,7 @@ class Mission
 						position[]={12177.777,21.792337,6580.1567};
 					};
 					side="East";
-					flags=5;
+					flags=1;
 					class Attributes
 					{
 						skill=0.44999999;
@@ -14365,7 +14366,7 @@ class Mission
 					};
 					id=1476;
 					type="CUP_O_sla_Soldier_GL";
-					atlOffset=-0.0091915131;
+					atlOffset=0.29306412;
 				};
 				class Item2
 				{
@@ -14375,14 +14376,14 @@ class Mission
 						position[]={12174.907,21.722563,6582.8638};
 					};
 					side="East";
-					flags=5;
+					flags=1;
 					class Attributes
 					{
 						skill=0.40000001;
 					};
 					id=1477;
 					type="CUP_O_sla_Soldier";
-					atlOffset=-0.0091915131;
+					atlOffset=0.29314041;
 				};
 				class Item3
 				{
@@ -14392,14 +14393,14 @@ class Mission
 						position[]={12174.907,21.722563,6582.8638};
 					};
 					side="East";
-					flags=5;
+					flags=1;
 					class Attributes
 					{
 						skill=0.40000001;
 					};
 					id=1478;
 					type="CUP_O_sla_Soldier";
-					atlOffset=-0.0091915131;
+					atlOffset=0.29314041;
 				};
 			};
 			class Attributes

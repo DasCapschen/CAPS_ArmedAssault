@@ -7,3 +7,36 @@ onLoadMission=$STRC_CM07n04;
 briefingName = $STR_M07_Name;
 overviewText = "Air assault supporting US attack on enemy base. ";
 overviewPicture = "\CAPS_ArmedAssault\pictures\m07s06.paa";
+
+class CfgDebriefing
+{  
+    class End1
+    {
+        title = "Mission Completed";
+        subtitle = "";
+        description = "All armored vehicles are neutralized. Well done.";
+        pictureBackground = "";
+        picture = "b_inf";
+        pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+    };
+
+    class End2
+    {
+        title = "Mission Failed";
+        subtitle = "";
+        description = "You've lost chopper, but at least you are still alive.";
+        pictureBackground = "";
+        picture = "b_inf";
+        pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+    };
+
+    class End3
+    {
+        title = "Mission Failed";
+        subtitle = "";
+        description = "The enemy base was not attacked. All of the enemy armored vehicles are intact and will most certainly be used against us in the future. God help us all.";
+        pictureBackground = "";
+        picture = "b_inf";
+        pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+    };
+};

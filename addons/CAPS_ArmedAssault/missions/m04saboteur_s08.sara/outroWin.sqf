@@ -45,4 +45,4 @@ camUseNVG false;;
 
 CAPS_M04_S08=1; 
 savevar "CAPS_M04_S08";
-over = true;
+overWin = true;

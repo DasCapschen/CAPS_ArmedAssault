@@ -21,3 +21,36 @@ coefEnd6=0;
 minScore=0;
 avgScore=1900;
 maxScore=4500;
+
+class CfgDebriefing
+{  
+    class End1
+    {
+        title = "Mission Completed";
+        subtitle = "";
+        description = "All armored targets destroyed. Excellent job.";
+        pictureBackground = "";
+        picture = "b_inf";
+        pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+    };
+
+    class End2
+    {
+        title = "Mission Accomplished";
+        subtitle = "";
+        description = "Targets partially destroyed. Not bad.";
+        pictureBackground = "";
+        picture = "b_inf";
+        pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+    };
+
+	class End3
+    {
+        title = "Mission Failed";
+        subtitle = "";
+        description = "You failed to destroy any enemy armored targets.";
+        pictureBackground = "";
+        picture = "b_inf";
+        pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+    };
+};

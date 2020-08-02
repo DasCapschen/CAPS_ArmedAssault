@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={11706.35,31.375299,6158.3218};
-		dir[]={-0.49803302,-0.29678205,0.81494361};
-		up[]={-0.15482351,0.95489627,0.2533446};
-		aside[]={0.85336554,2.6558992e-006,0.52152103};
+		pos[]={11185.983,107.91071,6782.3428};
+		dir[]={0.38811821,-0.3991594,-0.83083946};
+		up[]={0.16898482,0.91682577,-0.36174527};
+		aside[]={-0.90611595,2.2192253e-006,-0.42329133};
 	};
 };
 binarizationWanted=0;
@@ -534,7 +534,7 @@ class Mission
 			text="@STRC_03t01";
 			type="mil_objective";
 			id=957;
-			atlOffset=0.078048706;
+			atlOffset=0.078035355;
 		};
 		class Item25
 		{
@@ -607,7 +607,7 @@ class Mission
 			};
 			id=964;
 			type="EmptyDetector";
-			atlOffset=2.0948906;
+			atlOffset=2.0948772;
 		};
 		class Item30
 		{
@@ -672,7 +672,7 @@ class Mission
 			};
 			id=970;
 			type="EmptyDetector";
-			atlOffset=9.1552734e-005;
+			atlOffset=7.8201294e-005;
 		};
 		class Item34
 		{
@@ -4874,6 +4874,181 @@ class Mission
 					};
 					id=1221;
 					type="CUP_B_USMC_Crew";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_aimingSpeed";
+							expression="_this setSkill ['aimingSpeed',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ENH_spotTime";
+							expression="_this setSkill ['spotTime',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ENH_spotDistance";
+							expression="_this setSkill ['spotDistance',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ENH_reloadingSpeed";
+							expression="_this setSkill ['reloadSpeed',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="enh_general";
+							expression="_this setSkill ['general',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="ENH_commanding";
+							expression="_this setSkill ['commanding',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="ENH_aimingShake";
+							expression="_this setSkill ['aimingShake',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute7
+						{
+							property="ENH_courage";
+							expression="_this setSkill ['courage',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute8
+						{
+							property="ENH_aimingAccuracy";
+							expression="_this setSkill ['aimingAccuracy',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						nAttributes=9;
+					};
 				};
 				class Item1
 				{
@@ -4893,6 +5068,181 @@ class Mission
 					};
 					id=1222;
 					type="CUP_B_USMC_Crew";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_aimingSpeed";
+							expression="_this setSkill ['aimingSpeed',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ENH_spotTime";
+							expression="_this setSkill ['spotTime',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ENH_spotDistance";
+							expression="_this setSkill ['spotDistance',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ENH_reloadingSpeed";
+							expression="_this setSkill ['reloadSpeed',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="enh_general";
+							expression="_this setSkill ['general',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="ENH_commanding";
+							expression="_this setSkill ['commanding',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="ENH_aimingShake";
+							expression="_this setSkill ['aimingShake',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute7
+						{
+							property="ENH_courage";
+							expression="_this setSkill ['courage',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute8
+						{
+							property="ENH_aimingAccuracy";
+							expression="_this setSkill ['aimingAccuracy',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						nAttributes=9;
+					};
 				};
 				class Item2
 				{
@@ -5010,7 +5360,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={11169.884,52.610424,6657.7456};
-						angles[]={6.2766438,2.4614379,0.038331646};
+						angles[]={6.2766404,2.4614377,0.038327433};
 					};
 					side="West";
 					flags=6;
@@ -5021,6 +5371,219 @@ class Mission
 					};
 					id=1231;
 					type="CUP_B_USMC_Soldier";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_aimingSpeed";
+							expression="_this setSkill ['aimingSpeed',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ENH_spotTime";
+							expression="_this setSkill ['spotTime',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ENH_spotDistance";
+							expression="_this setSkill ['spotDistance',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.98000002;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="ENH_reloadingSpeed";
+							expression="_this setSkill ['reloadSpeed',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male10ENG";
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="enh_general";
+							expression="_this setSkill ['general',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute7
+						{
+							property="ENH_commanding";
+							expression="_this setSkill ['commanding',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute8
+						{
+							property="ENH_aimingShake";
+							expression="_this setSkill ['aimingShake',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute9
+						{
+							property="ENH_aimingAccuracy";
+							expression="_this setSkill ['aimingAccuracy',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute10
+						{
+							property="ENH_courage";
+							expression="_this setSkill ['courage',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						nAttributes=11;
+					};
 				};
 				class Item1
 				{
@@ -5039,6 +5602,181 @@ class Mission
 					};
 					id=1232;
 					type="CUP_B_USMC_Soldier";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_aimingSpeed";
+							expression="_this setSkill ['aimingSpeed',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ENH_spotTime";
+							expression="_this setSkill ['spotTime',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ENH_spotDistance";
+							expression="_this setSkill ['spotDistance',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ENH_reloadingSpeed";
+							expression="_this setSkill ['reloadSpeed',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="enh_general";
+							expression="_this setSkill ['general',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="ENH_commanding";
+							expression="_this setSkill ['commanding',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="ENH_aimingShake";
+							expression="_this setSkill ['aimingShake',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute7
+						{
+							property="ENH_courage";
+							expression="_this setSkill ['courage',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute8
+						{
+							property="ENH_aimingAccuracy";
+							expression="_this setSkill ['aimingAccuracy',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						nAttributes=9;
+					};
 				};
 				class Item2
 				{
@@ -5123,7 +5861,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={11172.858,52.582771,6661.9849};
-						angles[]={0.067328267,2.4614379,0.029140828};
+						angles[]={0.067334801,2.4614377,0.029146997};
 					};
 					side="West";
 					flags=6;
@@ -5134,6 +5872,219 @@ class Mission
 					};
 					id=1238;
 					type="CUP_B_USMC_Soldier";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_aimingSpeed";
+							expression="_this setSkill ['aimingSpeed',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ENH_spotTime";
+							expression="_this setSkill ['spotTime',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ENH_spotDistance";
+							expression="_this setSkill ['spotDistance',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.02;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="ENH_reloadingSpeed";
+							expression="_this setSkill ['reloadSpeed',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01ENG";
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="enh_general";
+							expression="_this setSkill ['general',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute7
+						{
+							property="ENH_commanding";
+							expression="_this setSkill ['commanding',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute8
+						{
+							property="ENH_aimingShake";
+							expression="_this setSkill ['aimingShake',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute9
+						{
+							property="ENH_aimingAccuracy";
+							expression="_this setSkill ['aimingAccuracy',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute10
+						{
+							property="ENH_courage";
+							expression="_this setSkill ['courage',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						nAttributes=11;
+					};
 				};
 				class Item1
 				{
@@ -5152,6 +6103,181 @@ class Mission
 					};
 					id=1239;
 					type="CUP_B_USMC_Soldier";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_aimingSpeed";
+							expression="_this setSkill ['aimingSpeed',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ENH_spotTime";
+							expression="_this setSkill ['spotTime',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ENH_spotDistance";
+							expression="_this setSkill ['spotDistance',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ENH_reloadingSpeed";
+							expression="_this setSkill ['reloadSpeed',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="enh_general";
+							expression="_this setSkill ['general',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="ENH_commanding";
+							expression="_this setSkill ['commanding',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="ENH_aimingShake";
+							expression="_this setSkill ['aimingShake',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute7
+						{
+							property="ENH_courage";
+							expression="_this setSkill ['courage',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute8
+						{
+							property="ENH_aimingAccuracy";
+							expression="_this setSkill ['aimingAccuracy',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						nAttributes=9;
+					};
 				};
 				class Item2
 				{
@@ -5247,6 +6373,181 @@ class Mission
 					};
 					id=1245;
 					type="CUP_B_USMC_Soldier";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_aimingSpeed";
+							expression="_this setSkill ['aimingSpeed',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ENH_spotTime";
+							expression="_this setSkill ['spotTime',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ENH_spotDistance";
+							expression="_this setSkill ['spotDistance',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ENH_reloadingSpeed";
+							expression="_this setSkill ['reloadSpeed',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="enh_general";
+							expression="_this setSkill ['general',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="ENH_commanding";
+							expression="_this setSkill ['commanding',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="ENH_aimingShake";
+							expression="_this setSkill ['aimingShake',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute7
+						{
+							property="ENH_courage";
+							expression="_this setSkill ['courage',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute8
+						{
+							property="ENH_aimingAccuracy";
+							expression="_this setSkill ['aimingAccuracy',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						nAttributes=9;
+					};
 				};
 				class Item1
 				{
@@ -5265,6 +6566,181 @@ class Mission
 					};
 					id=1246;
 					type="CUP_B_USMC_Soldier";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_aimingSpeed";
+							expression="_this setSkill ['aimingSpeed',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ENH_spotTime";
+							expression="_this setSkill ['spotTime',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ENH_spotDistance";
+							expression="_this setSkill ['spotDistance',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ENH_reloadingSpeed";
+							expression="_this setSkill ['reloadSpeed',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="enh_general";
+							expression="_this setSkill ['general',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="ENH_commanding";
+							expression="_this setSkill ['commanding',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="ENH_aimingShake";
+							expression="_this setSkill ['aimingShake',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute7
+						{
+							property="ENH_courage";
+							expression="_this setSkill ['courage',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute8
+						{
+							property="ENH_aimingAccuracy";
+							expression="_this setSkill ['aimingAccuracy',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						nAttributes=9;
+					};
 				};
 				class Item2
 				{
@@ -5360,6 +6836,181 @@ class Mission
 					};
 					id=1252;
 					type="CUP_B_USMC_Soldier";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_aimingSpeed";
+							expression="_this setSkill ['aimingSpeed',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ENH_spotTime";
+							expression="_this setSkill ['spotTime',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ENH_spotDistance";
+							expression="_this setSkill ['spotDistance',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ENH_reloadingSpeed";
+							expression="_this setSkill ['reloadSpeed',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="enh_general";
+							expression="_this setSkill ['general',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="ENH_commanding";
+							expression="_this setSkill ['commanding',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="ENH_aimingShake";
+							expression="_this setSkill ['aimingShake',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute7
+						{
+							property="ENH_courage";
+							expression="_this setSkill ['courage',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute8
+						{
+							property="ENH_aimingAccuracy";
+							expression="_this setSkill ['aimingAccuracy',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						nAttributes=9;
+					};
 				};
 				class Item1
 				{
@@ -5378,6 +7029,181 @@ class Mission
 					};
 					id=1253;
 					type="CUP_B_USMC_Soldier";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_aimingSpeed";
+							expression="_this setSkill ['aimingSpeed',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ENH_spotTime";
+							expression="_this setSkill ['spotTime',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ENH_spotDistance";
+							expression="_this setSkill ['spotDistance',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ENH_reloadingSpeed";
+							expression="_this setSkill ['reloadSpeed',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="enh_general";
+							expression="_this setSkill ['general',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="ENH_commanding";
+							expression="_this setSkill ['commanding',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="ENH_aimingShake";
+							expression="_this setSkill ['aimingShake',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute7
+						{
+							property="ENH_courage";
+							expression="_this setSkill ['courage',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute8
+						{
+							property="ENH_aimingAccuracy";
+							expression="_this setSkill ['aimingAccuracy',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						nAttributes=9;
+					};
 				};
 				class Item2
 				{
@@ -5434,7 +7260,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={11294.946,35.007221,6736.1841};
-						angles[]={0.0051327683,4.4492226,6.2345643};
+						angles[]={0.0051312679,4.4492283,6.23456};
 					};
 					side="West";
 					flags=6;
@@ -5445,6 +7271,181 @@ class Mission
 					};
 					id=1257;
 					type="CUP_B_USMC_Soldier";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_aimingSpeed";
+							expression="_this setSkill ['aimingSpeed',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ENH_spotTime";
+							expression="_this setSkill ['spotTime',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ENH_spotDistance";
+							expression="_this setSkill ['spotDistance',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ENH_reloadingSpeed";
+							expression="_this setSkill ['reloadSpeed',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="enh_general";
+							expression="_this setSkill ['general',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="ENH_commanding";
+							expression="_this setSkill ['commanding',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="ENH_aimingShake";
+							expression="_this setSkill ['aimingShake',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute7
+						{
+							property="ENH_courage";
+							expression="_this setSkill ['courage',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute8
+						{
+							property="ENH_aimingAccuracy";
+							expression="_this setSkill ['aimingAccuracy',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						nAttributes=9;
+					};
 				};
 				class Item1
 				{
@@ -5452,7 +7453,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={11296.854,34.924503,6734.2148};
-						angles[]={0.0051327683,4.4492226,6.2345643};
+						angles[]={0.0051312679,4.4492283,6.23456};
 					};
 					side="West";
 					flags=4;
@@ -5463,6 +7464,181 @@ class Mission
 					};
 					id=1258;
 					type="CUP_B_USMC_Soldier";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_aimingSpeed";
+							expression="_this setSkill ['aimingSpeed',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ENH_spotTime";
+							expression="_this setSkill ['spotTime',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ENH_spotDistance";
+							expression="_this setSkill ['spotDistance',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ENH_reloadingSpeed";
+							expression="_this setSkill ['reloadSpeed',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="enh_general";
+							expression="_this setSkill ['general',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="ENH_commanding";
+							expression="_this setSkill ['commanding',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="ENH_aimingShake";
+							expression="_this setSkill ['aimingShake',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute7
+						{
+							property="ENH_courage";
+							expression="_this setSkill ['courage',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute8
+						{
+							property="ENH_aimingAccuracy";
+							expression="_this setSkill ['aimingAccuracy',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						nAttributes=9;
+					};
 				};
 				class Item2
 				{
@@ -5531,14 +7707,189 @@ class Mission
 					};
 					id=1262;
 					type="CUP_B_USMC_Crew";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_aimingSpeed";
+							expression="_this setSkill ['aimingSpeed',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ENH_spotTime";
+							expression="_this setSkill ['spotTime',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ENH_spotDistance";
+							expression="_this setSkill ['spotDistance',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ENH_reloadingSpeed";
+							expression="_this setSkill ['reloadSpeed',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="enh_general";
+							expression="_this setSkill ['general',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="ENH_commanding";
+							expression="_this setSkill ['commanding',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="ENH_aimingShake";
+							expression="_this setSkill ['aimingShake',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute7
+						{
+							property="ENH_courage";
+							expression="_this setSkill ['courage',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute8
+						{
+							property="ENH_aimingAccuracy";
+							expression="_this setSkill ['aimingAccuracy',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						nAttributes=9;
+					};
 				};
 				class Item1
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11142.044,49.954746,6715.3979};
-						angles[]={6.2413793,2.5410361,6.2259684};
+						position[]={11139.92,50.181763,6717.9951};
+						angles[]={6.2413793,2.5410361,6.2672844};
 					};
 					side="West";
 					flags=4;
@@ -5550,6 +7901,181 @@ class Mission
 					};
 					id=1263;
 					type="CUP_B_USMC_Crew";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_aimingSpeed";
+							expression="_this setSkill ['aimingSpeed',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ENH_spotTime";
+							expression="_this setSkill ['spotTime',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ENH_spotDistance";
+							expression="_this setSkill ['spotDistance',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ENH_reloadingSpeed";
+							expression="_this setSkill ['reloadSpeed',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="enh_general";
+							expression="_this setSkill ['general',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="ENH_commanding";
+							expression="_this setSkill ['commanding',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="ENH_aimingShake";
+							expression="_this setSkill ['aimingShake',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute7
+						{
+							property="ENH_courage";
+							expression="_this setSkill ['courage',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute8
+						{
+							property="ENH_aimingAccuracy";
+							expression="_this setSkill ['aimingAccuracy',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						nAttributes=9;
+					};
 				};
 				class Item2
 				{
@@ -5839,6 +8365,181 @@ class Mission
 					};
 					id=1283;
 					type="CUP_B_USMC_Soldier";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_aimingSpeed";
+							expression="_this setSkill ['aimingSpeed',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ENH_spotTime";
+							expression="_this setSkill ['spotTime',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ENH_spotDistance";
+							expression="_this setSkill ['spotDistance',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ENH_reloadingSpeed";
+							expression="_this setSkill ['reloadSpeed',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="enh_general";
+							expression="_this setSkill ['general',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="ENH_commanding";
+							expression="_this setSkill ['commanding',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="ENH_aimingShake";
+							expression="_this setSkill ['aimingShake',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute7
+						{
+							property="ENH_courage";
+							expression="_this setSkill ['courage',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute8
+						{
+							property="ENH_aimingAccuracy";
+							expression="_this setSkill ['aimingAccuracy',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						nAttributes=9;
+					};
 				};
 				class Item1
 				{
@@ -5856,6 +8557,181 @@ class Mission
 					};
 					id=1284;
 					type="CUP_B_USMC_Soldier";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_aimingSpeed";
+							expression="_this setSkill ['aimingSpeed',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ENH_spotTime";
+							expression="_this setSkill ['spotTime',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ENH_spotDistance";
+							expression="_this setSkill ['spotDistance',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ENH_reloadingSpeed";
+							expression="_this setSkill ['reloadSpeed',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="enh_general";
+							expression="_this setSkill ['general',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="ENH_commanding";
+							expression="_this setSkill ['commanding',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="ENH_aimingShake";
+							expression="_this setSkill ['aimingShake',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute7
+						{
+							property="ENH_courage";
+							expression="_this setSkill ['courage',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute8
+						{
+							property="ENH_aimingAccuracy";
+							expression="_this setSkill ['aimingAccuracy',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						nAttributes=9;
+					};
 				};
 				class Item2
 				{
@@ -5874,6 +8750,181 @@ class Mission
 					};
 					id=1285;
 					type="CUP_B_USMC_Soldier_SL";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_aimingSpeed";
+							expression="_this setSkill ['aimingSpeed',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ENH_spotTime";
+							expression="_this setSkill ['spotTime',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ENH_spotDistance";
+							expression="_this setSkill ['spotDistance',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ENH_reloadingSpeed";
+							expression="_this setSkill ['reloadSpeed',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="enh_general";
+							expression="_this setSkill ['general',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="ENH_commanding";
+							expression="_this setSkill ['commanding',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="ENH_aimingShake";
+							expression="_this setSkill ['aimingShake',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute7
+						{
+							property="ENH_courage";
+							expression="_this setSkill ['courage',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute8
+						{
+							property="ENH_aimingAccuracy";
+							expression="_this setSkill ['aimingAccuracy',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						nAttributes=9;
+					};
 				};
 				class Item3
 				{
@@ -5892,6 +8943,181 @@ class Mission
 					};
 					id=1286;
 					type="CUP_B_USMC_Soldier_TL";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_aimingSpeed";
+							expression="_this setSkill ['aimingSpeed',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ENH_spotTime";
+							expression="_this setSkill ['spotTime',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ENH_spotDistance";
+							expression="_this setSkill ['spotDistance',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ENH_reloadingSpeed";
+							expression="_this setSkill ['reloadSpeed',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="enh_general";
+							expression="_this setSkill ['general',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="ENH_commanding";
+							expression="_this setSkill ['commanding',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="ENH_aimingShake";
+							expression="_this setSkill ['aimingShake',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute7
+						{
+							property="ENH_courage";
+							expression="_this setSkill ['courage',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute8
+						{
+							property="ENH_aimingAccuracy";
+							expression="_this setSkill ['aimingAccuracy',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						nAttributes=9;
+					};
 				};
 				class Item4
 				{
@@ -5909,6 +9135,181 @@ class Mission
 					};
 					id=1287;
 					type="CUP_B_USMC_Soldier_GL";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_aimingSpeed";
+							expression="_this setSkill ['aimingSpeed',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ENH_spotTime";
+							expression="_this setSkill ['spotTime',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ENH_spotDistance";
+							expression="_this setSkill ['spotDistance',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ENH_reloadingSpeed";
+							expression="_this setSkill ['reloadSpeed',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="enh_general";
+							expression="_this setSkill ['general',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="ENH_commanding";
+							expression="_this setSkill ['commanding',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="ENH_aimingShake";
+							expression="_this setSkill ['aimingShake',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute7
+						{
+							property="ENH_courage";
+							expression="_this setSkill ['courage',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute8
+						{
+							property="ENH_aimingAccuracy";
+							expression="_this setSkill ['aimingAccuracy',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						nAttributes=9;
+					};
 				};
 				class Item5
 				{
@@ -5927,6 +9328,181 @@ class Mission
 					id=1289;
 					type="CUP_B_US_Crew";
 					atlOffset=0.018863678;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_aimingSpeed";
+							expression="_this setSkill ['aimingSpeed',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ENH_spotTime";
+							expression="_this setSkill ['spotTime',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ENH_spotDistance";
+							expression="_this setSkill ['spotDistance',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ENH_reloadingSpeed";
+							expression="_this setSkill ['reloadSpeed',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="enh_general";
+							expression="_this setSkill ['general',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="ENH_commanding";
+							expression="_this setSkill ['commanding',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="ENH_aimingShake";
+							expression="_this setSkill ['aimingShake',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute7
+						{
+							property="ENH_courage";
+							expression="_this setSkill ['courage',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute8
+						{
+							property="ENH_aimingAccuracy";
+							expression="_this setSkill ['aimingAccuracy',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						nAttributes=9;
+					};
 				};
 				class Item6
 				{
@@ -5945,6 +9521,181 @@ class Mission
 					id=1290;
 					type="CUP_B_US_Crew";
 					atlOffset=0.018863678;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_aimingSpeed";
+							expression="_this setSkill ['aimingSpeed',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ENH_spotTime";
+							expression="_this setSkill ['spotTime',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ENH_spotDistance";
+							expression="_this setSkill ['spotDistance',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ENH_reloadingSpeed";
+							expression="_this setSkill ['reloadSpeed',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="enh_general";
+							expression="_this setSkill ['general',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="ENH_commanding";
+							expression="_this setSkill ['commanding',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="ENH_aimingShake";
+							expression="_this setSkill ['aimingShake',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute7
+						{
+							property="ENH_courage";
+							expression="_this setSkill ['courage',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute8
+						{
+							property="ENH_aimingAccuracy";
+							expression="_this setSkill ['aimingAccuracy',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						nAttributes=9;
+					};
 				};
 				class Item7
 				{
@@ -5962,6 +9713,181 @@ class Mission
 					id=1292;
 					type="CUP_B_USMC_Soldier";
 					atlOffset=3.8146973e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_aimingSpeed";
+							expression="_this setSkill ['aimingSpeed',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ENH_spotTime";
+							expression="_this setSkill ['spotTime',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ENH_spotDistance";
+							expression="_this setSkill ['spotDistance',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ENH_reloadingSpeed";
+							expression="_this setSkill ['reloadSpeed',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="enh_general";
+							expression="_this setSkill ['general',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="ENH_commanding";
+							expression="_this setSkill ['commanding',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="ENH_aimingShake";
+							expression="_this setSkill ['aimingShake',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute7
+						{
+							property="ENH_courage";
+							expression="_this setSkill ['courage',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute8
+						{
+							property="ENH_aimingAccuracy";
+							expression="_this setSkill ['aimingAccuracy',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						nAttributes=9;
+					};
 				};
 				class Item8
 				{
@@ -5979,6 +9905,181 @@ class Mission
 					id=1293;
 					type="CUP_B_USMC_Soldier";
 					atlOffset=3.8146973e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_aimingSpeed";
+							expression="_this setSkill ['aimingSpeed',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ENH_spotTime";
+							expression="_this setSkill ['spotTime',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ENH_spotDistance";
+							expression="_this setSkill ['spotDistance',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ENH_reloadingSpeed";
+							expression="_this setSkill ['reloadSpeed',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="enh_general";
+							expression="_this setSkill ['general',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="ENH_commanding";
+							expression="_this setSkill ['commanding',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="ENH_aimingShake";
+							expression="_this setSkill ['aimingShake',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute7
+						{
+							property="ENH_courage";
+							expression="_this setSkill ['courage',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute8
+						{
+							property="ENH_aimingAccuracy";
+							expression="_this setSkill ['aimingAccuracy',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						nAttributes=9;
+					};
 				};
 				class Item9
 				{
@@ -6233,6 +10334,181 @@ class Mission
 					};
 					id=1301;
 					type="CUP_B_USMC_Soldier_AR";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_aimingSpeed";
+							expression="_this setSkill ['aimingSpeed',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ENH_spotTime";
+							expression="_this setSkill ['spotTime',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ENH_spotDistance";
+							expression="_this setSkill ['spotDistance',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ENH_reloadingSpeed";
+							expression="_this setSkill ['reloadSpeed',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="enh_general";
+							expression="_this setSkill ['general',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="ENH_commanding";
+							expression="_this setSkill ['commanding',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="ENH_aimingShake";
+							expression="_this setSkill ['aimingShake',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute7
+						{
+							property="ENH_courage";
+							expression="_this setSkill ['courage',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute8
+						{
+							property="ENH_aimingAccuracy";
+							expression="_this setSkill ['aimingAccuracy',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						nAttributes=9;
+					};
 				};
 				class Item1
 				{
@@ -6250,6 +10526,181 @@ class Mission
 					};
 					id=1302;
 					type="CUP_B_USMC_Soldier_GL";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_aimingSpeed";
+							expression="_this setSkill ['aimingSpeed',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ENH_spotTime";
+							expression="_this setSkill ['spotTime',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ENH_spotDistance";
+							expression="_this setSkill ['spotDistance',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ENH_reloadingSpeed";
+							expression="_this setSkill ['reloadSpeed',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="enh_general";
+							expression="_this setSkill ['general',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="ENH_commanding";
+							expression="_this setSkill ['commanding',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="ENH_aimingShake";
+							expression="_this setSkill ['aimingShake',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute7
+						{
+							property="ENH_courage";
+							expression="_this setSkill ['courage',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute8
+						{
+							property="ENH_aimingAccuracy";
+							expression="_this setSkill ['aimingAccuracy',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						nAttributes=9;
+					};
 				};
 				class Item2
 				{
@@ -6267,6 +10718,181 @@ class Mission
 					};
 					id=1303;
 					type="CUP_B_USMC_Soldier_AR";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_aimingSpeed";
+							expression="_this setSkill ['aimingSpeed',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ENH_spotTime";
+							expression="_this setSkill ['spotTime',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ENH_spotDistance";
+							expression="_this setSkill ['spotDistance',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ENH_reloadingSpeed";
+							expression="_this setSkill ['reloadSpeed',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="enh_general";
+							expression="_this setSkill ['general',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="ENH_commanding";
+							expression="_this setSkill ['commanding',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="ENH_aimingShake";
+							expression="_this setSkill ['aimingShake',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute7
+						{
+							property="ENH_courage";
+							expression="_this setSkill ['courage',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute8
+						{
+							property="ENH_aimingAccuracy";
+							expression="_this setSkill ['aimingAccuracy',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						nAttributes=9;
+					};
 				};
 				class Item3
 				{
@@ -6284,6 +10910,181 @@ class Mission
 					};
 					id=1304;
 					type="CUP_B_USMC_Soldier";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_aimingSpeed";
+							expression="_this setSkill ['aimingSpeed',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ENH_spotTime";
+							expression="_this setSkill ['spotTime',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ENH_spotDistance";
+							expression="_this setSkill ['spotDistance',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ENH_reloadingSpeed";
+							expression="_this setSkill ['reloadSpeed',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="enh_general";
+							expression="_this setSkill ['general',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="ENH_commanding";
+							expression="_this setSkill ['commanding',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="ENH_aimingShake";
+							expression="_this setSkill ['aimingShake',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute7
+						{
+							property="ENH_courage";
+							expression="_this setSkill ['courage',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute8
+						{
+							property="ENH_aimingAccuracy";
+							expression="_this setSkill ['aimingAccuracy',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						nAttributes=9;
+					};
 				};
 				class Item4
 				{
@@ -6301,6 +11102,181 @@ class Mission
 					};
 					id=1305;
 					type="CUP_B_USMC_Soldier";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_aimingSpeed";
+							expression="_this setSkill ['aimingSpeed',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ENH_spotTime";
+							expression="_this setSkill ['spotTime',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ENH_spotDistance";
+							expression="_this setSkill ['spotDistance',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ENH_reloadingSpeed";
+							expression="_this setSkill ['reloadSpeed',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="enh_general";
+							expression="_this setSkill ['general',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="ENH_commanding";
+							expression="_this setSkill ['commanding',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="ENH_aimingShake";
+							expression="_this setSkill ['aimingShake',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute7
+						{
+							property="ENH_courage";
+							expression="_this setSkill ['courage',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute8
+						{
+							property="ENH_aimingAccuracy";
+							expression="_this setSkill ['aimingAccuracy',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						nAttributes=9;
+					};
 				};
 				class Item5
 				{
@@ -6354,7 +11330,6 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						skill=0.2;
 						name="eT5D";
 					};
 					id=1310;
@@ -6377,7 +11352,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -6396,7 +11371,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -6415,7 +11390,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -6453,7 +11428,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -6491,7 +11466,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -6510,7 +11485,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -6529,7 +11504,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -6548,7 +11523,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -6567,7 +11542,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -6586,7 +11561,6 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						skill=0.2;
 						name="eT5G";
 					};
 					id=1311;
@@ -6609,7 +11583,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -6628,7 +11602,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -6647,7 +11621,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -6685,7 +11659,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -6723,7 +11697,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -6742,7 +11716,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -6761,7 +11735,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -6780,7 +11754,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -6799,7 +11773,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -6818,7 +11792,6 @@ class Mission
 					flags=6;
 					class Attributes
 					{
-						skill=0.2;
 						name="eT5C";
 					};
 					id=1312;
@@ -6841,7 +11814,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -6860,7 +11833,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -6879,7 +11852,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -6917,7 +11890,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -6955,7 +11928,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -6974,7 +11947,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -6993,7 +11966,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -7012,7 +11985,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -7031,7 +12004,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -7050,7 +12023,6 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						skill=0.2;
 						name="eT6D";
 					};
 					id=1314;
@@ -7073,7 +12045,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -7092,7 +12064,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -7111,7 +12083,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -7149,7 +12121,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -7187,7 +12159,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -7206,7 +12178,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -7225,7 +12197,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -7244,7 +12216,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -7263,7 +12235,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -7282,7 +12254,6 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						skill=0.2;
 						name="eT6G";
 					};
 					id=1315;
@@ -7305,7 +12276,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -7324,7 +12295,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -7343,7 +12314,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -7381,7 +12352,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -7419,7 +12390,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -7438,7 +12409,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -7457,7 +12428,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -7476,7 +12447,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -7495,7 +12466,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -7514,7 +12485,6 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						skill=0.2;
 						name="eT6C";
 					};
 					id=1316;
@@ -7537,7 +12507,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -7556,7 +12526,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -7575,7 +12545,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -7613,7 +12583,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -7651,7 +12621,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -7670,7 +12640,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -7689,7 +12659,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -7708,7 +12678,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -7727,7 +12697,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -7746,7 +12716,6 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						skill=0.2;
 						name="eT4D";
 					};
 					id=1318;
@@ -7769,7 +12738,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -7788,7 +12757,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -7807,7 +12776,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -7845,7 +12814,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -7883,7 +12852,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -7902,7 +12871,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -7921,7 +12890,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -7940,7 +12909,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -7959,7 +12928,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -7978,7 +12947,6 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						skill=0.2;
 						name="eT4G";
 					};
 					id=1319;
@@ -8001,7 +12969,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -8020,7 +12988,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -8039,7 +13007,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -8077,7 +13045,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -8115,7 +13083,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -8134,7 +13102,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -8153,7 +13121,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -8172,7 +13140,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -8191,7 +13159,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -8210,7 +13178,6 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						skill=0.2;
 						name="eT4C";
 					};
 					id=1320;
@@ -8233,7 +13200,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -8252,7 +13219,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -8271,7 +13238,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -8309,7 +13276,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -8347,7 +13314,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -8366,7 +13333,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -8385,7 +13352,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -8404,7 +13371,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -8423,7 +13390,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -8749,14 +13716,13 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={12138.74,21.971085,6537.2617};
+						position[]={12138.708,21.971966,6537.228};
 						angles[]={0.013491395,3.8698487,6.2696939};
 					};
 					side="East";
 					flags=4;
 					class Attributes
 					{
-						skill=0.2;
 						name="eT2D";
 					};
 					id=1331;
@@ -8778,7 +13744,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -8797,7 +13763,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -8816,7 +13782,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -8854,7 +13820,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -8892,7 +13858,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -8911,7 +13877,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -8930,7 +13896,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -8949,7 +13915,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -8968,7 +13934,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -8980,14 +13946,13 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={12138.74,21.971085,6537.2617};
+						position[]={12138.708,21.971966,6537.228};
 						angles[]={0.013491395,3.8698487,6.2696939};
 					};
 					side="East";
 					flags=4;
 					class Attributes
 					{
-						skill=0.2;
 						name="eT2G";
 					};
 					id=1332;
@@ -9009,7 +13974,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -9028,7 +13993,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -9047,7 +14012,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -9085,7 +14050,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -9123,7 +14088,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -9142,7 +14107,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -9161,7 +14126,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -9180,7 +14145,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -9199,7 +14164,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -9211,14 +14176,13 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={12138.74,21.971085,6537.2617};
+						position[]={12138.708,21.971966,6537.228};
 						angles[]={0.013491395,3.8698487,6.2696939};
 					};
 					side="East";
 					flags=6;
 					class Attributes
 					{
-						skill=0.2;
 						name="eT2C";
 					};
 					id=1333;
@@ -9240,7 +14204,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -9259,7 +14223,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -9278,7 +14242,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -9316,7 +14280,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -9354,7 +14318,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -9373,7 +14337,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -9392,7 +14356,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -9411,7 +14375,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -9430,7 +14394,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -9442,14 +14406,13 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={12155.96,21.772289,6557.4268};
+						position[]={12155.941,21.772064,6557.46};
 						angles[]={0.013491395,3.8395498,6.271945};
 					};
 					side="East";
 					flags=4;
 					class Attributes
 					{
-						skill=0.2;
 						name="eT1D";
 					};
 					id=1335;
@@ -9472,7 +14435,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -9491,7 +14454,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -9510,7 +14473,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -9548,7 +14511,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -9586,7 +14549,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -9605,7 +14568,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -9624,7 +14587,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -9643,7 +14606,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -9662,7 +14625,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -9674,14 +14637,13 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={12155.96,21.772289,6557.4268};
+						position[]={12155.941,21.772064,6557.46};
 						angles[]={0.013491395,3.8395498,6.271945};
 					};
 					side="East";
 					flags=4;
 					class Attributes
 					{
-						skill=0.2;
 						name="eT1G";
 					};
 					id=1336;
@@ -9704,7 +14666,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -9723,7 +14685,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -9742,7 +14704,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -9780,7 +14742,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -9818,7 +14780,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -9837,7 +14799,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -9856,7 +14818,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -9875,7 +14837,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -9894,7 +14856,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -9906,14 +14868,13 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={12155.96,21.772289,6557.4268};
+						position[]={12155.941,21.772064,6557.46};
 						angles[]={0.013491395,3.8395498,6.271945};
 					};
 					side="East";
 					flags=4;
 					class Attributes
 					{
-						skill=0.2;
 						name="eT1C";
 					};
 					id=1337;
@@ -9936,7 +14897,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -9955,7 +14916,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -9974,7 +14935,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -10012,7 +14973,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -10050,7 +15011,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -10069,7 +15030,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -10088,7 +15049,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -10107,7 +15068,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -10126,7 +15087,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -10138,18 +15099,18 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={12175.282,21.527075,6580.4839};
+						position[]={12175.16,21.526718,6580.333};
 						angles[]={0.043650683,3.8977392,6.2663255};
 					};
 					side="East";
 					flags=4;
 					class Attributes
 					{
-						skill=0.2;
 						name="eT3D";
 					};
 					id=1339;
 					type="CUP_O_sla_Crew";
+					atlOffset=-0.0090007782;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -10167,7 +15128,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -10186,7 +15147,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -10224,7 +15185,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -10262,7 +15223,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -10300,7 +15261,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -10319,7 +15280,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -10338,7 +15299,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -10357,7 +15318,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -10376,7 +15337,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -10388,18 +15349,18 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={12175.282,21.527075,6580.4839};
+						position[]={12175.16,21.526718,6580.333};
 						angles[]={0.043650683,3.8977392,6.2663255};
 					};
 					side="East";
 					flags=4;
 					class Attributes
 					{
-						skill=0.2;
 						name="eT3G";
 					};
 					id=1340;
 					type="CUP_O_sla_Crew";
+					atlOffset=-0.0090007782;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -10417,7 +15378,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -10436,7 +15397,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -10455,7 +15416,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -10493,7 +15454,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -10531,7 +15492,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -10550,7 +15511,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -10569,7 +15530,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -10588,7 +15549,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -10607,7 +15568,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -10619,18 +15580,18 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={12175.282,21.527075,6580.4839};
+						position[]={12175.16,21.526718,6580.333};
 						angles[]={0.043650683,3.8977392,6.2663255};
 					};
 					side="East";
 					flags=4;
 					class Attributes
 					{
-						skill=0.2;
 						name="eT3C";
 					};
 					id=1341;
 					type="CUP_O_sla_Crew";
+					atlOffset=-0.0090007782;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -10648,7 +15609,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -10667,7 +15628,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -10705,7 +15666,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -10743,7 +15704,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -10781,7 +15742,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -10800,7 +15761,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -10819,7 +15780,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -10838,7 +15799,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -10857,7 +15818,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.2;
+									value=0.5;
 								};
 							};
 						};
@@ -10912,14 +15873,15 @@ class Mission
 				class Item12
 				{
 					dataType="Waypoint";
-					position[]={11521.153,26.961941,6341.0361};
+					position[]={11518.438,26.598475,6340.7046};
 					type="TransportUnload";
+					expCond="call{true}";
+					expActiv="call{{ unassignVehicle _x; doGetOut _x; } forEach units inf1;" \n "{ unassignVehicle _x; doGetOut _x; } forEach units inf2;" \n "{ unassignVehicle _x; doGetOut _x; } forEach units inf3;}";
 					class Effects
 					{
 					};
 					showWP="NEVER";
 					id=1345;
-					atlOffset=0.44231987;
 				};
 				class Item13
 				{
@@ -11114,15 +16076,14 @@ class Mission
 				};
 			};
 			id=1329;
-			atlOffset=-0.00054168701;
 		};
 		class Item261
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={12138.735,24.017773,6537.2056};
-				angles[]={0.013496465,3.869849,6.2696891};
+				position[]={12138.735,24.018307,6537.2061};
+				angles[]={0.013491395,3.8698487,6.2696939};
 			};
 			side="East";
 			flags=6;
@@ -11133,15 +16094,14 @@ class Mission
 			};
 			id=1330;
 			type="CUP_O_BMP2_SLA";
-			atlOffset=-0.00054168701;
 		};
 		class Item262
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={12155.965,23.818096,6557.438};
-				angles[]={0.013496465,3.8395472,6.2719393};
+				position[]={12155.965,23.818462,6557.438};
+				angles[]={0.013491395,3.8395498,6.271945};
 			};
 			side="East";
 			flags=4;
@@ -11152,15 +16112,15 @@ class Mission
 			};
 			id=1334;
 			type="CUP_O_BMP2_SLA";
-			atlOffset=-0.00036430359;
+			atlOffset=1.9073486e-006;
 		};
 		class Item263
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={12175.194,23.571001,6580.3726};
-				angles[]={0.043652095,3.8977313,6.2663202};
+				position[]={12175.194,23.571192,6580.3726};
+				angles[]={0.043650683,3.8977392,6.2663255};
 			};
 			side="East";
 			flags=4;
@@ -11171,7 +16131,7 @@ class Mission
 			};
 			id=1338;
 			type="CUP_O_BMP2_SLA";
-			atlOffset=-0.0091915131;
+			atlOffset=-0.0090007782;
 		};
 		class Item264
 		{
@@ -11460,7 +16420,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={11190.063,52.931725,6650.418};
-						angles[]={0.016227726,2.3021994,6.2699881};
+						angles[]={0.016231563,2.3021941,6.2699904};
 					};
 					side="West";
 					flags=6;
@@ -11469,6 +16429,219 @@ class Mission
 					};
 					id=1366;
 					type="CUP_B_USMC_Soldier";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_aimingSpeed";
+							expression="_this setSkill ['aimingSpeed',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ENH_spotTime";
+							expression="_this setSkill ['spotTime',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ENH_spotDistance";
+							expression="_this setSkill ['spotDistance',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="ENH_reloadingSpeed";
+							expression="_this setSkill ['reloadSpeed',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male05ENG";
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="enh_general";
+							expression="_this setSkill ['general',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute7
+						{
+							property="ENH_commanding";
+							expression="_this setSkill ['commanding',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute8
+						{
+							property="ENH_aimingShake";
+							expression="_this setSkill ['aimingShake',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute9
+						{
+							property="ENH_aimingAccuracy";
+							expression="_this setSkill ['aimingAccuracy',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						class Attribute10
+						{
+							property="ENH_courage";
+							expression="_this setSkill ['courage',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.30000001;
+								};
+							};
+						};
+						nAttributes=11;
+					};
 				};
 				class Item1
 				{
@@ -14059,10 +19232,11 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={12141.327,22.241104,6537.1167};
+						position[]={12138.708,21.971966,6537.228};
+						angles[]={0.013491395,3.8698487,6.2696939};
 					};
 					side="East";
-					flags=3;
+					flags=7;
 					class Attributes
 					{
 						skill=0.44999999;
@@ -14070,17 +19244,17 @@ class Mission
 					};
 					id=1465;
 					type="CUP_O_sla_Soldier_MG";
-					atlOffset=0.30298805;
 				};
 				class Item1
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={12138.383,22.245401,6539.7432};
+						position[]={12138.708,21.971966,6537.228};
+						angles[]={0.013491395,3.8698487,6.2696939};
 					};
 					side="East";
-					flags=1;
+					flags=5;
 					class Attributes
 					{
 						skill=0.44999999;
@@ -14088,45 +19262,45 @@ class Mission
 					};
 					id=1466;
 					type="CUP_O_sla_Soldier_GL";
-					atlOffset=0.30298996;
 				};
 				class Item2
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={12141.327,22.241104,6537.1167};
+						position[]={12138.708,21.971966,6537.228};
+						angles[]={0.013491395,3.8698487,6.2696939};
 					};
 					side="East";
-					flags=1;
+					flags=5;
 					class Attributes
 					{
 						skill=0.40000001;
 					};
 					id=1467;
 					type="CUP_O_sla_Soldier";
-					atlOffset=0.30298805;
 				};
 				class Item3
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={12141.327,22.241104,6537.1167};
+						position[]={12138.708,21.971966,6537.228};
+						angles[]={0.013491395,3.8698487,6.2696939};
 					};
 					side="East";
-					flags=1;
+					flags=5;
 					class Attributes
 					{
 						skill=0.40000001;
 					};
 					id=1468;
 					type="CUP_O_sla_Soldier";
-					atlOffset=0.30298805;
 				};
 			};
 			class Attributes
 			{
+				name="inf1";
 			};
 			class CrewLinks
 			{
@@ -14184,7 +19358,6 @@ class Mission
 				};
 			};
 			id=1464;
-			atlOffset=-0.00054168701;
 		};
 		class Item305
 		{
@@ -14198,10 +19371,11 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={12158.562,22.046186,6557.4282};
+						position[]={12155.941,21.772064,6557.46};
+						angles[]={0.013491395,3.8395498,6.271945};
 					};
 					side="East";
-					flags=3;
+					flags=7;
 					class Attributes
 					{
 						skill=0.44999999;
@@ -14209,17 +19383,18 @@ class Mission
 					};
 					id=1470;
 					type="CUP_O_sla_Soldier_MG";
-					atlOffset=0.30318069;
+					atlOffset=1.9073486e-006;
 				};
 				class Item1
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={12158.562,22.046186,6557.4282};
+						position[]={12155.941,21.772064,6557.46};
+						angles[]={0.013491395,3.8395498,6.271945};
 					};
 					side="East";
-					flags=1;
+					flags=5;
 					class Attributes
 					{
 						skill=0.44999999;
@@ -14227,45 +19402,48 @@ class Mission
 					};
 					id=1471;
 					type="CUP_O_sla_Soldier_GL";
-					atlOffset=0.30318069;
+					atlOffset=1.9073486e-006;
 				};
 				class Item2
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={12155.539,22.045958,6559.9644};
+						position[]={12155.941,21.772064,6557.46};
+						angles[]={0.013491395,3.8395498,6.271945};
 					};
 					side="East";
-					flags=1;
+					flags=5;
 					class Attributes
 					{
 						skill=0.40000001;
 					};
 					id=1472;
 					type="CUP_O_sla_Soldier";
-					atlOffset=0.30318451;
+					atlOffset=1.9073486e-006;
 				};
 				class Item3
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={12155.539,22.045958,6559.9644};
+						position[]={12155.941,21.772064,6557.46};
+						angles[]={0.013491395,3.8395498,6.271945};
 					};
 					side="East";
-					flags=1;
+					flags=5;
 					class Attributes
 					{
 						skill=0.40000001;
 					};
 					id=1473;
 					type="CUP_O_sla_Soldier";
-					atlOffset=0.30318451;
+					atlOffset=1.9073486e-006;
 				};
 			};
 			class Attributes
 			{
+				name="inf2";
 			};
 			class CrewLinks
 			{
@@ -14323,7 +19501,7 @@ class Mission
 				};
 			};
 			id=1469;
-			atlOffset=-0.00036430359;
+			atlOffset=1.9073486e-006;
 		};
 		class Item306
 		{
@@ -14337,10 +19515,11 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={12177.777,21.792337,6580.1567};
+						position[]={12175.16,21.526718,6580.333};
+						angles[]={0.043650683,3.8977392,6.2663255};
 					};
 					side="East";
-					flags=3;
+					flags=7;
 					class Attributes
 					{
 						skill=0.44999999;
@@ -14348,17 +19527,18 @@ class Mission
 					};
 					id=1475;
 					type="CUP_O_sla_Soldier_MG";
-					atlOffset=0.29306412;
+					atlOffset=-0.0090007782;
 				};
 				class Item1
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={12177.777,21.792337,6580.1567};
+						position[]={12175.16,21.526718,6580.333};
+						angles[]={0.043650683,3.8977392,6.2663255};
 					};
 					side="East";
-					flags=1;
+					flags=5;
 					class Attributes
 					{
 						skill=0.44999999;
@@ -14366,45 +19546,48 @@ class Mission
 					};
 					id=1476;
 					type="CUP_O_sla_Soldier_GL";
-					atlOffset=0.29306412;
+					atlOffset=-0.0090007782;
 				};
 				class Item2
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={12174.907,21.722563,6582.8638};
+						position[]={12175.16,21.526718,6580.333};
+						angles[]={0.043650683,3.8977392,6.2663255};
 					};
 					side="East";
-					flags=1;
+					flags=5;
 					class Attributes
 					{
 						skill=0.40000001;
 					};
 					id=1477;
 					type="CUP_O_sla_Soldier";
-					atlOffset=0.29314041;
+					atlOffset=-0.0090007782;
 				};
 				class Item3
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={12174.907,21.722563,6582.8638};
+						position[]={12175.16,21.526718,6580.333};
+						angles[]={0.043650683,3.8977392,6.2663255};
 					};
 					side="East";
-					flags=1;
+					flags=5;
 					class Attributes
 					{
 						skill=0.40000001;
 					};
 					id=1478;
 					type="CUP_O_sla_Soldier";
-					atlOffset=0.29314041;
+					atlOffset=-0.0090007782;
 				};
 			};
 			class Attributes
 			{
+				name="inf3";
 			};
 			class CrewLinks
 			{
@@ -14462,7 +19645,7 @@ class Mission
 				};
 			};
 			id=1474;
-			atlOffset=-0.0091915131;
+			atlOffset=-0.0090007782;
 		};
 	};
 	class Connections

@@ -43,4 +43,4 @@ camDestroy _camera;
 
 CAPS_M03_S05=2; 
 savevar "CAPS_M03_S05";
-over2 = true;
+overLost = true;

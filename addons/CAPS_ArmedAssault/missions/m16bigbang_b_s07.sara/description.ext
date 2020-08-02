@@ -7,3 +7,43 @@ onLoadMission=$STRD_M01_OnLoad;
 briefingName = $STR_M01_Name;
 overviewText = "The enemy is trying to leave their base complex at the city of Obregan and pull back to their capital city of Bagango. You have to hunt them down as they retreat.";
 overviewPicture = "\CAPS_ArmedAssault\pictures\m16bs07.paa";
+
+class CfgDebriefing
+{
+	class End1
+	{
+		title = "Mission Completed";
+		subtitle = "";
+		description = "Great job, soldier! You hunted them down like the vermin they are.";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+	};
+	class End2
+	{
+		title = "Mission Failed";
+		subtitle = "";
+		description = "The SLA's convoy is now safe and the enemy has regrouped in Bagango.";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+	};
+	class End3
+	{
+		title = "Mission Failed";
+		subtitle = "";
+		description = "Both HMMWVs were destroyed. You failed.";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+	};
+	class End4
+	{
+		title = "Mission Completed";
+		subtitle = "";
+		description = "You allowed only one of the HMMWVs to be destroyed, not bad, but not great either.";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+	};
+};

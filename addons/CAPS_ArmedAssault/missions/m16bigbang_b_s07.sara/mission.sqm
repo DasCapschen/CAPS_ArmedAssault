@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=4259;
+		nextID=4262;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={13811.81,54.604218,9439.5361};
-		dir[]={0,-0.70710677,0.70710683};
-		up[]={0,0.70710677,0.70710671};
-		aside[]={0.99999994,0,-0};
+		pos[]={13809.691,54.604218,9436.5078};
+		dir[]={-0.54371226,-0.6502099,0.53067195};
+		up[]={-0.46531439,0.75975299,0.45415398};
+		aside[]={0.69847357,-5.6810677e-008,0.71563768};
 	};
 };
 binarizationWanted=0;
@@ -36,13 +36,14 @@ addons[]=
 	"CUP_Creatures_Military_SLA",
 	"CUP_Creatures_Military_USMC",
 	"CUP_WheeledVehicles_HMMWV",
-	"CUP_Creatures_StaticWeapons"
+	"CUP_Creatures_StaticWeapons",
+	"A3_Modules_F_Intel"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=12;
+		items=13;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -107,6 +108,13 @@ class AddonsMetaData
 			className="CUP_Creatures_StaticWeapons";
 			name="CUP_Creatures_StaticWeapons";
 		};
+		class Item12
+		{
+			className="A3_Modules_F";
+			name="Arma 3 Alpha - Scripted Modules";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
 	};
 };
 randomSeed=1184060;
@@ -143,7 +151,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=121;
+		items=124;
 		class Item0
 		{
 			dataType="Marker";
@@ -160,7 +168,7 @@ class Mission
 			position[]={14547.327,55.067558,12085.478};
 			name="camp";
 			type="mil_Flag";
-			angle=4.8909883;
+			angle=4.8909879;
 			id=4053;
 			atlOffset=7.6293945e-006;
 		};
@@ -310,7 +318,7 @@ class Mission
 			type="mil_Dot";
 			angle=275.418;
 			id=4068;
-			atlOffset=-3.8146973e-006;
+			atlOffset=-4.196167e-005;
 		};
 		class Item17
 		{
@@ -328,7 +336,7 @@ class Mission
 			position[]={14721.595,53.107441,11423.592};
 			name="d_6_3_1";
 			type="mil_Dot";
-			angle=237.16243;
+			angle=237.1624;
 			id=4070;
 			atlOffset=3.8146973e-006;
 		};
@@ -338,7 +346,7 @@ class Mission
 			position[]={14675.95,49.203274,11511.852};
 			name="d_6_2_1_1";
 			type="mil_Dot";
-			angle=237.16243;
+			angle=237.1624;
 			id=4071;
 			atlOffset=-1.1444092e-005;
 		};
@@ -400,14 +408,14 @@ class Mission
 			colorName="ColorRed";
 			a=120;
 			b=30;
-			angle=219.41498;
+			angle=219.41496;
 			id=4077;
 		};
 		class Item26
 		{
 			dataType="Trigger";
 			position[]={14539.428,55.944935,12097.235};
-			angle=10.831364;
+			angle=10.831363;
 			class Attributes
 			{
 				name="Gr2list";
@@ -426,7 +434,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={14538.917,55.315933,12091.716};
-			angle=10.831364;
+			angle=10.831363;
 			class Attributes
 			{
 				name="Gr1list";
@@ -444,11 +452,11 @@ class Mission
 		class Item28
 		{
 			dataType="Trigger";
-			position[]={14543.692,55.838356,12093.754};
-			angle=10.831371;
+			position[]={14543.692,55.838226,12093.754};
+			angle=4.5481887;
 			class Attributes
 			{
-				text="TargetsAtHome";
+				text="konvojdojel trigger";
 				onActivation="konvojdojel=1; titleText [localize ""STR_M16b_END_2"", ""PLAIN DOWN"",0.3] ";
 				sizeA=150;
 				sizeB=150;
@@ -458,7 +466,7 @@ class Mission
 			};
 			id=4080;
 			type="EmptyDetector";
-			atlOffset=-0.11986923;
+			atlOffset=-0.11999893;
 		};
 		class Item29
 		{
@@ -467,7 +475,7 @@ class Mission
 			angle=4.806951;
 			class Attributes
 			{
-				text="CHEATKillAll";
+				text="cheat1";
 				condition="cheat1==1";
 				onActivation="{_x setDammage 1} forEach (units gr1 + units gr2)";
 				sizeA=0;
@@ -480,11 +488,11 @@ class Mission
 		class Item30
 		{
 			dataType="Trigger";
-			position[]={14564.462,50.78896,11006.844};
+			position[]={14564.462,50.788826,11006.844};
 			angle=4.806951;
 			class Attributes
 			{
-				text="finishin";
+				text="Task1Done, Finish Trigger";
 				condition="(!canmove ur1) && (!canmove ur2)";
 				onActivation="finish=1; (driver car) commandmove (getpos ep); ""1"" objstatus ""done"";";
 				sizeA=0;
@@ -493,14 +501,15 @@ class Mission
 			};
 			id=4082;
 			type="EmptyDetector";
-			atlOffset=-0.42186356;
+			atlOffset=-0.42199707;
 		};
 		class Item31
 		{
 			dataType="Trigger";
-			position[]={13753.291,22.823032,10002.094};
+			position[]={13753.29,22.823017,10002.094};
 			class Attributes
 			{
+				text="timer true";
 				condition="timer==1";
 				onActivation="[car1, 1] setWPPos getPos ur1";
 				sizeA=0;
@@ -509,14 +518,14 @@ class Mission
 			};
 			id=4083;
 			type="EmptyDetector";
-			atlOffset=-2.4795532e-005;
 		};
 		class Item32
 		{
 			dataType="Trigger";
-			position[]={13782.212,26.958569,10000.214};
+			position[]={13782.212,26.958574,10000.214};
 			class Attributes
 			{
+				text="timer false, timer trigger";
 				condition="timer==0";
 				onActivation="timer=1";
 				sizeA=0;
@@ -526,14 +535,14 @@ class Mission
 			};
 			id=4084;
 			type="EmptyDetector";
-			atlOffset=-5.7220459e-006;
 		};
 		class Item33
 		{
 			dataType="Trigger";
-			position[]={13782.212,27.595213,9973.748};
+			position[]={13782.212,27.595224,9973.748};
 			class Attributes
 			{
+				text="timer true, timer deactivate";
 				condition="timer==1";
 				onActivation="timer=0";
 				sizeA=0;
@@ -543,7 +552,6 @@ class Mission
 			};
 			id=4085;
 			type="EmptyDetector";
-			atlOffset=-1.1444092e-005;
 		};
 		class Item34
 		{
@@ -551,6 +559,7 @@ class Mission
 			position[]={14334.404,43.912231,10673.364};
 			class Attributes
 			{
+				text="move car";
 				onActivation="(driver car) commandmove (getpos ur1)";
 			};
 			id=4086;
@@ -559,24 +568,25 @@ class Mission
 		class Item35
 		{
 			dataType="Trigger";
-			position[]={14451.199,41.804996,10906.955};
-			angle=1.7390758;
+			position[]={14451.2,41.805,10906.955};
+			angle=1.7390809;
 			class Attributes
 			{
+				text="move car";
 				onActivation="(driver car) commandmove (getpos ur1)";
 				activationBy="WEST";
 			};
 			id=4087;
 			type="EmptyDetector";
-			atlOffset=-3.8146973e-006;
 		};
 		class Item36
 		{
 			dataType="Trigger";
 			position[]={14659.982,49.17543,11180.437};
-			angle=1.7390758;
+			angle=1.7390809;
 			class Attributes
 			{
+				text="move car";
 				onActivation="(driver car) commandmove (getpos ur1)";
 				activationBy="WEST";
 			};
@@ -586,25 +596,27 @@ class Mission
 		class Item37
 		{
 			dataType="Trigger";
-			position[]={14208.325,46.396439,10295.269};
+			position[]={14208.325,46.396442,10295.269};
 			class Attributes
 			{
+				text="saboteurGo Trigger";
 				onActivation="saboteurgo=1";
 			};
 			id=4089;
 			type="EmptyDetector";
+			atlOffset=3.8146973e-006;
 		};
 		class Item38
 		{
 			dataType="Trigger";
-			position[]={14506.015,43.964996,10715.09};
+			position[]={14506.015,43.965,10715.09};
 			class Attributes
 			{
+				text="move car";
 				onActivation="(driver car) commandmove (getpos ur1)";
 			};
 			id=4090;
 			type="EmptyDetector";
-			atlOffset=-3.8146973e-006;
 		};
 		class Item39
 		{
@@ -612,6 +624,7 @@ class Mission
 			position[]={14497.581,43.845295,10816.277};
 			class Attributes
 			{
+				text="move car";
 				onActivation="(driver car) commandmove (getpos ur1)";
 			};
 			id=4091;
@@ -621,9 +634,10 @@ class Mission
 		class Item40
 		{
 			dataType="Trigger";
-			position[]={14273.132,53.746468,12251.838};
+			position[]={14273.132,53.746246,12251.838};
 			class Attributes
 			{
+				text="timer2 True";
 				condition="timer2==1";
 				onActivation="[uaz, 2] setWPPos getPos car";
 				sizeA=0;
@@ -632,14 +646,15 @@ class Mission
 			};
 			id=4092;
 			type="EmptyDetector";
-			atlOffset=-0.17277908;
+			atlOffset=-0.17300034;
 		};
 		class Item41
 		{
 			dataType="Trigger";
-			position[]={14302.053,54.135612,12249.958};
+			position[]={14302.053,54.135353,12249.958};
 			class Attributes
 			{
+				text="timer2 False, Timer2 Trigger";
 				condition="timer2==0";
 				onActivation="timer2=1";
 				sizeA=0;
@@ -649,14 +664,15 @@ class Mission
 			};
 			id=4093;
 			type="EmptyDetector";
-			atlOffset=-0.029743195;
+			atlOffset=-0.030002594;
 		};
 		class Item42
 		{
 			dataType="Trigger";
-			position[]={14302.053,55.100075,12223.492};
+			position[]={14302.053,55.099663,12223.492};
 			class Attributes
 			{
+				text="timer2 true, timer2 deactivate";
 				condition="timer2==1";
 				onActivation="timer2=0";
 				sizeA=0;
@@ -666,14 +682,15 @@ class Mission
 			};
 			id=4094;
 			type="EmptyDetector";
-			atlOffset=0.049411774;
+			atlOffset=0.048999786;
 		};
 		class Item43
 		{
 			dataType="Trigger";
-			position[]={14271.312,54.509277,12237.283};
+			position[]={14271.312,54.509056,12237.283};
 			class Attributes
 			{
+				text="timer2 true";
 				condition="timer2==1";
 				onActivation="[pilot, 3] setWPPos getPos car";
 				sizeA=0;
@@ -682,29 +699,31 @@ class Mission
 			};
 			id=4095;
 			type="EmptyDetector";
-			atlOffset=0.24222183;
+			atlOffset=0.24200058;
 		};
 		class Item44
 		{
 			dataType="Trigger";
-			position[]={14597.174,57.915142,12447.361};
+			position[]={14597.174,57.915161,12447.361};
 			class Attributes
 			{
+				text="finish true";
 				condition="finish==1";
 				sizeA=0;
 				sizeB=0;
 			};
 			id=4096;
 			type="EmptyDetector";
-			atlOffset=-0.49601364;
+			atlOffset=-0.49599457;
 		};
 		class Item45
 		{
 			dataType="Trigger";
-			position[]={13860.914,26.71254,9486.127};
-			angle=-3.6926973;
+			position[]={13860.914,26.712048,9486.127};
+			angle=2.5904875;
 			class Attributes
 			{
+				text="Task2Done";
 				condition="this && finish==1";
 				onActivation="""2"" objstatus ""done"";";
 				sizeA=400;
@@ -714,28 +733,30 @@ class Mission
 			};
 			id=4097;
 			type="EmptyDetector";
-			atlOffset=0.027492523;
+			atlOffset=0.027000427;
 		};
 		class Item46
 		{
 			dataType="Trigger";
-			position[]={13819.877,27.097555,9463.3584};
+			position[]={13819.877,27.097393,9463.3584};
 			class Attributes
 			{
+				text="Konec Trigger";
 				condition="this && finish==1 && cars>0";
 				onActivation=" titleText [localize ""STR_M16b_END_1"", ""PLAIN DOWN"",0.3]; konec=1";
 				activationByOwner="MEMBER";
 			};
 			id=4098;
 			type="EmptyDetector";
-			atlOffset=-0.026838303;
+			atlOffset=-0.027000427;
 		};
 		class Item47
 		{
 			dataType="Trigger";
-			position[]={14274.251,55.241383,12210.818};
+			position[]={14274.251,55.24091,12210.818};
 			class Attributes
 			{
+				text="Timer2 True";
 				condition="timer2==1";
 				onActivation="[pesaci, 2] setWPPos getPos car";
 				sizeA=0;
@@ -744,14 +765,15 @@ class Mission
 			};
 			id=4099;
 			type="EmptyDetector";
-			atlOffset=0.037471771;
+			atlOffset=0.036998749;
 		};
 		class Item48
 		{
 			dataType="Trigger";
-			position[]={14330.316,44.058735,10666.119};
+			position[]={14330.316,44.058739,10666.119};
 			class Attributes
 			{
+				text="odpalto Trigger";
 				condition="this && finish==1";
 				onActivation="odpalto=1";
 				repeatable=1;
@@ -759,14 +781,14 @@ class Mission
 			};
 			id=4100;
 			type="EmptyDetector";
-			atlOffset=-3.8146973e-006;
 		};
 		class Item49
 		{
 			dataType="Trigger";
-			position[]={13718.873,22.777534,9475.3105};
+			position[]={13718.873,22.77759,9475.3105};
 			class Attributes
 			{
+				text="cars-1";
 				condition="(damage car2 > 0.4) && (!canmove car2)";
 				onActivation="cars=cars-1";
 				sizeA=0;
@@ -774,14 +796,15 @@ class Mission
 			};
 			id=4101;
 			type="EmptyDetector";
-			atlOffset=0.098945618;
+			atlOffset=0.099000931;
 		};
 		class Item50
 		{
 			dataType="Trigger";
-			position[]={13728.615,23.652369,9476.1973};
+			position[]={13728.615,23.652056,9476.1973};
 			class Attributes
 			{
+				text="cars-1";
 				condition="(damage car > 0.4) && (!canmove car)";
 				onActivation="cars=cars-1";
 				sizeA=0;
@@ -789,15 +812,15 @@ class Mission
 			};
 			id=4102;
 			type="EmptyDetector";
-			atlOffset=-0.074687958;
+			atlOffset=-0.075000763;
 		};
 		class Item51
 		{
 			dataType="Trigger";
-			position[]={13623.055,15.601723,9617.1689};
+			position[]={13623.055,15.601974,9617.1689};
 			class Attributes
 			{
-				text="AUTA_DESTROYED";
+				text="Outro Lost";
 				condition="cars==0";
 				onActivation="0 = player execVM ""outroLost.sqf"";";
 				sizeA=0;
@@ -806,15 +829,15 @@ class Mission
 			};
 			id=4103;
 			type="EmptyDetector";
-			atlOffset=-0.031250954;
+			atlOffset=-0.031000137;
 		};
 		class Item52
 		{
 			dataType="Trigger";
-			position[]={13549.878,14.677523,9618.4561};
+			position[]={13549.878,14.678019,9618.4561};
 			class Attributes
 			{
-				text="AUTA_DESTROYED";
+				text="Outro Win";
 				condition="konec==1 && cars==2";
 				onActivation="0 = player execVM ""outroWin.sqf"";";
 				sizeA=0;
@@ -824,14 +847,15 @@ class Mission
 			};
 			id=4104;
 			type="EmptyDetector";
-			atlOffset=-0.0074958801;
+			atlOffset=-0.0069999695;
 		};
 		class Item53
 		{
 			dataType="Trigger";
-			position[]={13585.296,15.25317,9617.8516};
+			position[]={13585.296,15.253254,9617.8516};
 			class Attributes
 			{
+				text="OutroLost, konvojdojel True";
 				condition="konvojdojel==1";
 				onActivation="0 = player execVM ""outroLost.sqf"";";
 				sizeA=0;
@@ -840,15 +864,15 @@ class Mission
 			};
 			id=4105;
 			type="EmptyDetector";
-			atlOffset=-0.0070838928;
+			atlOffset=-0.0069999695;
 		};
 		class Item54
 		{
 			dataType="Trigger";
-			position[]={13654.862,16.802711,9616.5156};
+			position[]={13654.862,16.802277,9616.5156};
 			class Attributes
 			{
-				text="AUTA_DESTROYED";
+				text="Outro Win";
 				condition="konec==1 && cars==1";
 				onActivation="0 = player execVM ""outroWin.sqf"";";
 				sizeA=0;
@@ -858,47 +882,48 @@ class Mission
 			};
 			id=4106;
 			type="EmptyDetector";
-			atlOffset=-0.011562347;
+			atlOffset=-0.011997223;
 		};
 		class Item55
 		{
 			dataType="Trigger";
-			position[]={13582.706,15.909444,9577.2686};
+			position[]={13582.706,15.909267,9577.2686};
 			class Attributes
 			{
-				condition="over2 && konvojdojel==1";
+				text="End2";
+				condition="call{overLost && konvojdojel==1}";
 				sizeA=0;
 				sizeB=0;
 				type="END2";
 			};
 			id=4107;
 			type="EmptyDetector";
-			atlOffset=-0.01082325;
+			atlOffset=-0.01099968;
 		};
 		class Item56
 		{
 			dataType="Trigger";
-			position[]={13622.192,15.962826,9584.3623};
+			position[]={13622.192,15.963062,9584.3623};
 			class Attributes
 			{
-				text="AUTA_DESTROYED";
-				condition="cars==0 && over2";
+				text="End3";
+				condition="call{cars==0 && overLost}";
 				sizeA=0;
 				sizeB=0;
 				type="END3";
 			};
 			id=4108;
 			type="EmptyDetector";
-			atlOffset=-0.011236191;
+			atlOffset=-0.01099968;
 		};
 		class Item57
 		{
 			dataType="Trigger";
-			position[]={13662.632,18.079603,9580.252};
+			position[]={13662.632,18.079397,9580.252};
 			class Attributes
 			{
-				text="AUTA_DESTROYED";
-				condition="konec==1 && cars==1 && over";
+				text="End4";
+				condition="call{konec==1 && cars==1 && overWin}";
 				sizeA=0;
 				sizeB=0;
 				repeatable=1;
@@ -906,16 +931,16 @@ class Mission
 			};
 			id=4109;
 			type="EmptyDetector";
-			atlOffset=-0.0077934265;
+			atlOffset=-0.0079994202;
 		};
 		class Item58
 		{
 			dataType="Trigger";
-			position[]={13550.743,14.301798,9586.5107};
+			position[]={13550.743,14.301977,9586.5107};
 			class Attributes
 			{
-				text="AUTA_DESTROYED";
-				condition="konec==1 && cars==2 && over";
+				text="End1";
+				condition="call{konec==1 && cars==2 && overWin}";
 				sizeA=0;
 				sizeB=0;
 				repeatable=1;
@@ -923,7 +948,7 @@ class Mission
 			};
 			id=4110;
 			type="EmptyDetector";
-			atlOffset=-0.0061788559;
+			atlOffset=-0.0059995651;
 		};
 		class Item59
 		{
@@ -1087,7 +1112,7 @@ class Mission
 			};
 			id=4119;
 			type="Paleta2";
-			atlOffset=0.0026092529;
+			atlOffset=0.0027427673;
 		};
 		class Item68
 		{
@@ -1462,7 +1487,7 @@ class Mission
 			};
 			id=4140;
 			type="FenceWood";
-			atlOffset=3.8146973e-006;
+			atlOffset=-1.9073486e-006;
 		};
 		class Item89
 		{
@@ -1513,7 +1538,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={14567.144,43.966438,10618.841};
-						angles[]={-0,5.5424151,0};
+						angles[]={0,5.5424151,0};
 					};
 					side="East";
 					flags=6;
@@ -1530,7 +1555,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={14573.523,43.966438,10613.297};
-						angles[]={-0,5.5424151,0};
+						angles[]={0,5.5424151,0};
 					};
 					side="East";
 					flags=4;
@@ -1624,7 +1649,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={14567.144,46.154026,10618.791};
-				angles[]={-0,5.5424151,0};
+				angles[]={0,5.5424151,0};
 			};
 			side="East";
 			flags=6;
@@ -1644,7 +1669,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={14573.523,46.152988,10613.247};
-				angles[]={-0,5.5424151,0};
+				angles[]={0,5.5424151,0};
 			};
 			side="East";
 			flags=4;
@@ -1682,6 +1707,7 @@ class Mission
 					};
 					id=4152;
 					type="CUP_O_sla_Soldier_SL";
+					atlOffset=-4.196167e-005;
 				};
 				class Item1
 				{
@@ -1854,6 +1880,7 @@ class Mission
 			{
 			};
 			id=4151;
+			atlOffset=-4.196167e-005;
 		};
 		class Item95
 		{
@@ -2184,12 +2211,12 @@ class Mission
 				{
 					dataType="Waypoint";
 					position[]={14576.347,57.030487,12430.05};
-					id=4183;
 					type="GetIn";
 					class Effects
 					{
 					};
 					showWP="NEVER";
+					id=4183;
 					atlOffset=0.5;
 					class AttachedTo
 					{
@@ -2728,11 +2755,11 @@ class Mission
 				{
 					dataType="Waypoint";
 					position[]={14250.597,43.593719,10476.396};
-					id=4214;
 					class Effects
 					{
 					};
 					showWP="NEVER";
+					id=4214;
 					type="Move";
 					atlOffset=0.5;
 					class AttachedTo
@@ -2883,7 +2910,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={13663.581,21.376438,9185.8115};
-						angles[]={-0,0.032270908,0};
+						angles[]={0,0.032270908,0};
 					};
 					side="West";
 					flags=6;
@@ -3584,6 +3611,333 @@ class Mission
 			};
 			id=4257;
 			type="CUP_O_DSHKM_SLA";
+		};
+		class Item121
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={13786.672,25.667547,9451.9414};
+			};
+			id=4259;
+			type="ModuleCreateDiaryRecord_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleCreateDiaryRecord_F_PresetTitle";
+					expression="_this setVariable ['PresetTitle',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Situation";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCreateDiaryRecord_F_Title";
+					expression="_this setVariable ['Title',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCreateDiaryRecord_F_Description";
+					expression="_this setVariable ['Description',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Don't forget that you will be going deep into their own backyard, so be sure to be on your guard as you make your to the convoy as there may be some enemy soldiers along the way. Don't waste your time with them unless absolutely necessary, try to keep going. You have to be really fast, the closer the convoy will be to Bogango, the sooner that reinforcements may come to their aid. It's more than possible that after you destroy the convoy, you will be the one who is hunted, so be on your guard.<br/><br/>Team switch will be available.";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleCreateDiaryRecord_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=3;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleCreateDiaryRecord_F_Subject";
+					expression="_this setVariable ['Subject',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				nAttributes=5;
+			};
+		};
+		class Item122
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={13787.37,25.935215,9463.8291};
+			};
+			id=4260;
+			type="ModuleCreateDiaryRecord_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleCreateDiaryRecord_F_PresetTitle";
+					expression="_this setVariable ['PresetTitle',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Mission";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCreateDiaryRecord_F_Title";
+					expression="_this setVariable ['Title',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCreateDiaryRecord_F_Description";
+					expression="_this setVariable ['Description',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Our special team caused huge damage in one of the SLA's bases at the city of Obregan. It seems that they're really scared now and they want to do all that they can to ensure they don't lose any more men in <marker name=""ebase"">this complex</marker>, so they're trying to escape and <marker name=""camp"">regroup</marker> in their capital city Bagango. The whole convoy includes two trucks filled with soldiers. They are moving through their territory, so they won't be expecting any US attack on <marker name=""way"">their way</marker>. We will try to take our chances, so we'll send <marker name=""start"">two HMMWV's</marker> (one with machine gun and one with grenade launcher) to hunt that fleeing convoy, <marker name=""destroy"">destroy it</marker> and quickly drive back <marker name=""end"">to Corazol</marker> before SLA's reinforcements arrive.";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleCreateDiaryRecord_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=3;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleCreateDiaryRecord_F_Subject";
+					expression="_this setVariable ['Subject',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				nAttributes=5;
+			};
+		};
+		class Item123
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={13792.078,26.361982,9480.1475};
+			};
+			id=4261;
+			type="ModuleCreateDiaryRecord_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleCreateDiaryRecord_F_PresetTitle";
+					expression="_this setVariable ['PresetTitle',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Execution";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCreateDiaryRecord_F_Title";
+					expression="_this setVariable ['Title',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCreateDiaryRecord_F_Description";
+					expression="_this setVariable ['Description',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="1. Hunt the convoy and destroy it." \n "<br/>" \n "2. Drive fast to the city of Corazol." \n "<br/>" \n "3. At least one HMMWV must survive.";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleCreateDiaryRecord_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=3;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleCreateDiaryRecord_F_Subject";
+					expression="_this setVariable ['Subject',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				nAttributes=5;
+			};
 		};
 	};
 	class Connections
